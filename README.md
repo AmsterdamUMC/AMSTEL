@@ -1,4 +1,4 @@
-<img src="https://github.com/AmsterdamUMC/Amstel/blob/master/img/logo_c4i_square.png?raw=1" alt="Logo C4I" width=128px><img src="https://github.com/AmsterdamUMC/Amstel/blob/master/img/logo_amds.png?raw=1" alt="Logo AMDS" width=128px/><img src="https://github.com/AmsterdamUMC/Amstel/blob/master/img/lala_amds.png?raw=1" alt="LaLa" width=128px/><img src="https://github.com/AmsterdamUMC/Amstel/blob/master/img/gaia.png?raw=1" alt="Gaia Scientific" width=128px/><img src="https://github.com/AmsterdamUMC/Amstel/blob/master/img/ehden.png?raw=1" alt="EHDEN" width=128px/>
+<img src="https://github.com/AmsterdamUMC/Amstel/blob/main/img/logo_c4i_square.png?raw=1" alt="Logo C4I" width=128px><img src="https://github.com/AmsterdamUMC/Amstel/blob/main/img/logo_amds.png?raw=1" alt="Logo AMDS" width=128px/><img src="https://github.com/AmsterdamUMC/Amstel/blob/main/img/lala.png?raw=1" alt="LaLa" width=128px/><img src="https://github.com/AmsterdamUMC/Amstel/blob/main/img/gaia.png?raw=1" alt="Gaia Scientific" width=128px/><img src="https://github.com/AmsterdamUMC/Amstel/blob/main/img/ehden.png?raw=1" alt="EHDEN" width=128px/>
 
 # AMSTEL: AmsterdamUMCdb - OMOP Common Data Model ETL
 
