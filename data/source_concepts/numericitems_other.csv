@@ -1,0 +1,704 @@
+source_concept_id,source_concept,item_en,vocabulary_id,vocabulary_concept_code,vocabulary_concept_name,abbreviation,categoryid,category,category_en,ordercategoryid,ordercategory,islabresult,valueid,value,unitid,unit,ucum_code,low_normal_value,high_normal_value,expected_min_value,expected_max_value,table,count,count_validated,source_concept_en
+6637,Opname gewicht,,,,,GewichtOpname,466,Patientenbestandparameters,,,,0,,,12,kg,kg,,,,,numericitems,2609,2609,Recording weight
+6638,Huidig gewicht,,,,,GewichtX,328,OLGV-OUD,,,,0,,,12,kg,kg,,,,,numericitems,2751,2751,Current weight
+6640,Hartfrequentie,heart rate,LOINC,76282-3,Heart rate.beat-to-beat by EKG,HF,320,HD-Hartritme,hemodynamics-heart rhythm,,,0,,,15,/min,/min,80,120,1,250,numericitems,37732398,2218626,heart rate
+6641,ABP systolisch,invasive systolic arterial pressure,LOINC,76215-3,Invasive Systolic blood pressure,ABPs,323,HD-Bloeddrukken,hemodynamics-blood pressures,,,0,,,173,mmHg,mm[Hg],80,160,40,250,numericitems,33343613,2109758,invasive systolic arterial pressure
+6642,ABP gemiddeld,invasive mean arterial pressure,LOINC,76214-6,Invasive Mean blood pressure,ABPm,323,HD-Bloeddrukken,hemodynamics-blood pressures,,,0,,,173,mmHg,mm[Hg],50,120,30,250,numericitems,33352770,2109165,invasive mean arterial pressure
+6643,ABP diastolisch,invasive diastolic arterial pressure,LOINC,76213-8,Invasive Diastolic blood pressure,ABPd,323,HD-Bloeddrukken,hemodynamics-blood pressures,,,0,,,173,mmHg,mm[Hg],40,100,20,150,numericitems,33343274,2109346,invasive diastolic arterial pressure
+6644,PAP systolisch,pulmonary artery systolic pressure,LOINC,8440-0,Pulmonary artery Systolic blood pressure,PAPs,325,HD-Profiel,hemodynamic profile,,,0,,,173,mmHg,mm[Hg],,,0,100,numericitems,1818402,194505,pulmonary artery systolic pressure
+6645,PAP gemiddeld,pulmonary artery mean pressure,LOINC,8414-5,Pulmonary artery Mean blood pressure,PAPm,325,HD-Profiel,hemodynamic profile,,,0,,,173,mmHg,mm[Hg],15,25,0,80,numericitems,1819309,194406,pulmonary artery mean pressure
+6646,PAP diastolisch,pulmonary artery diastolic pressure,LOINC,8385-7,Pulmonary artery Diastolic blood pressure,PAPd,325,HD-Profiel,hemodynamic profile,,,0,,,173,mmHg,mm[Hg],,,0,100,numericitems,1811489,194246,pulmonary artery diastolic pressure
+6655,CVD,central venous pressure (CVP),LOINC,60985-9,Central venous pressure (CVP),CVD,323,HD-Bloeddrukken,hemodynamics-blood pressures,,,0,,,173,mmHg,mm[Hg],-1,40,-10,40,numericitems,483942,483940,central venous pressure (CVP)
+6656,Cardiac Output,cardiac output,LOINC,8741-1,Left ventricular Cardiac output,CO,325,HD-Profiel,hemodynamic profile,,,0,,,26,l/min,L/min,,,0,17,numericitems,52738,50371,cardiac output
+6657,PCWP wedge,pulmonary capillary wedge pressure,LOINC,75994-4,Pulmonary artery wedge pressure,PCWP,325,HD-Profiel,hemodynamic profile,,,0,,,173,mmHg,mm[Hg],,,0,40,numericitems,53751,52586,pulmonary capillary wedge pressure
+6664,ST segment analyse afleiding I,,,,,STI,328,OLGV-OUD,,,,0,,,51,mm,mm,,,,,numericitems,28316202,0,ST segment analysis lead I
+6665,ST segment analyse afleiding II,,,,,STII,328,OLGV-OUD,,,,0,,,51,mm,mm,,,,,numericitems,29972870,0,ST Segment Analysis Lead II
+6666,ST segment analyse afleiding,,,,,STIII,328,OLGV-OUD,,,,0,,,51,mm,mm,,,,,numericitems,29124627,0,ST segment analysis derivation
+6667,ST segment analyse afleiding AVR,,,,,STavr,328,OLGV-OUD,,,,0,,,51,mm,mm,,,,,numericitems,24277363,0,ST segment analysis lead AVR
+6668,ST segment analyse afleiding AVF,,,,,STavf,328,OLGV-OUD,,,,0,,,51,mm,mm,,,,,numericitems,24277363,0,ST segment analysis lead AVF
+6669,ST segment analyse afleiding AVL,,,,,STavl,328,OLGV-OUD,,,,0,,,51,mm,mm,,,,,numericitems,24277328,0,ST segment analysis lead AVL
+6670,ST segment analyse afleiding V1,,,,,STv1,328,OLGV-OUD,,,,0,,,51,mm,mm,,,,,numericitems,21016022,0,ST segment analysis lead V1
+6672,ST segment analyse afleiding V2,,,,,STv2,328,OLGV-OUD,,,,0,,,51,mm,mm,,,,,numericitems,20795846,0,ST segment analysis lead V2
+6673,ST segment analyse afleiding V3,,,,,STv3,328,OLGV-OUD,,,,0,,,51,mm,mm,,,,,numericitems,20797797,0,ST segment analysis lead V3
+6674,ST segment analyse afleiding V4,,,,,STv4,328,OLGV-OUD,,,,0,,,51,mm,mm,,,,,numericitems,20768159,0,ST segment analysis lead V4
+6675,ST segment analyse afleiding V5,,,,,STv5,328,OLGV-OUD,,,,0,,,51,mm,mm,,,,,numericitems,20734499,0,ST Segment Analysis Lead V5
+6676,ST segment analyse afleiding V6,,,,,STv6,328,OLGV-OUD,,,,0,,,51,mm,mm,,,,,numericitems,20555806,0,ST Segment Analysis Lead V6
+6678,Niet invasieve bloeddruk systolisch,non-invasive systolic arterial pressure,LOINC,76534-7,Systolic blood pressure by Noninvasive,NIBPs,323,HD-Bloeddrukken,hemodynamics-blood pressures,,,0,,,173,mmHg,mm[Hg],,,40,250,numericitems,192123,123684,non-invasive systolic arterial pressure
+6679,Niet invasieve bloeddruk gemiddeld,non-invasive mean arterial pressure,LOINC,76536-2,Mean blood pressure by Noninvasive,NIBPm,323,HD-Bloeddrukken,hemodynamics-blood pressures,,,0,,,173,mmHg,mm[Hg],,,30,150,numericitems,190760,122240,non-invasive mean arterial pressure
+6680,Niet invasieve bloeddruk diastolisch,non-invasive diastolic arterial pressure,LOINC,76535-4,Diastolic blood pressure by Noninvasive,NIBPd,323,HD-Bloeddrukken,hemodynamics-blood pressures,,,0,,,173,mmHg,mm[Hg],,,20,150,numericitems,190431,122297,non-invasive diastolic arterial pressure
+6684,Vloeistofvolume ingesteld,,,,,Vloeistofvolume ingesteld,351,CVVH-Instellingen,,,,0,,,6,ml,mL,,,,,numericitems,68150,57157,Fluid volume set
+6694,Eind exp. druk,positive end expiratory pressure measurement,LOINC,76248-4,PEEP Respiratory system --on ventilator,PEEP,586,RESP-Servo Patiëntgegevens,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,15624081,1278830,positive end expiratory pressure measurement
+6696,Maagretentie,,,,,MaagRetentie,265,Gastro-intestinaal,,,,0,,,6,ml,mL,,,,,numericitems,1,1,Stomach retention
+6698,PIP,,,,,PIP,591,RESP-Bipap Vision Patiëntgegevens,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,93,93,PIP
+6699,FiO2 %,inspired oxygen concentration setting,LOINC,19994-3,Oxygen/Inspired gas setting [Volume Fraction] Ventilator,FiO2%,329,RESP-O2aanbod,,,,0,,,191,Geen,,,,,,numericitems,91881,83474,inspired oxygen concentration setting
+6707,End tidal CO2 concentratie,end tidal carbon dioxide partial pressure,LOINC,19891-1,Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration,EtCO2,586,RESP-Servo Patiëntgegevens,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,10327178,666550,end tidal carbon dioxide partial pressure
+6709,Saturatie (Monitor),oxygen saturation SpO2,LOINC,59408-5,Oxygen saturation in Arterial blood by Pulse oximetry,Saturatie Monitor,586,RESP-Servo Patiëntgegevens,,,,0,,,0,None,,,,,,numericitems,36411768,2076750,oxygen saturation SpO2
+6710,Compliance,,,,,Compliance,331,ZZ-OUD-Resp-PatientGeg.,,,,0,,,0,None,,,,,,numericitems,53850,50114,Compliance
+6949,Cortisol,,,,,Cortisol,272,Lab overig bloed OLGV,,,,0,,,56,µmol,umol,,,,,numericitems,3,3,Cortisol
+7056,T4,,,,,T4,272,Lab overig bloed OLGV,,,,0,,,44,nmol/l,nmol/L,60,140,,,numericitems,1,1,T4
+7079,Vrij T4,,,,,FT4,272,Lab overig bloed OLGV,,,,0,,,98,pmol/l,pmol/L,10,23,,,numericitems,1,1,Free T4
+7666,Arteriele druk,CRRT access pressure,,,,PA,350,CVVH-Gegevens,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,82927,73188,CRRT access pressure
+7667,Pre Filter PBE,CRRT pre-filter pressure / pre-blood entry pressure,,,,PBE,350,CVVH-Gegevens,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,82909,73178,CRRT pre-filter pressure / pre-blood entry pressure
+7668,Veneuze druk braun,CRRT return pressure,,,,PV,350,CVVH-Gegevens,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,82914,73172,CRRT return pressure
+7671,Negatieve filterdruk,CRRT ultrafiltration pressure,,,,PD2,350,CVVH-Gegevens,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,82539,72838,CRRT ultrafiltration pressure
+7726,Ademfrequentie Spontaan,respiratory rate spontaneous,LOINC,19839-0,Breath rate spontaneous --on ventilator,AF Spontaan,331,ZZ-OUD-Resp-PatientGeg.,,,,0,,,0,None,,,,,,numericitems,44843,40932,respiratory rate spontaneous
+7905,TempVerwarmer ingesteld,,,,,TempVerwarmer ingesteld,351,CVVH-Instellingen,,,,0,,,59,°C,Cel,,,,,numericitems,68576,57651,Temp Heater set
+8080,CO2 min prod,,,,,VCO2,586,RESP-Servo Patiëntgegevens,,,,0,,,24,ml/min,mL/min,,,,,numericitems,14588991,1027610,CO2 min prod
+8121,MZD stand,,,,,MZDStand,265,Gastro-intestinaal,,,,0,,,6,ml,mL,,,,,numericitems,1,1,MZD mode
+8168,Slijmfistel periodieke productie,,,,,Slijmfistel_Periodiek,265,Gastro-intestinaal,,,,0,,,6,ml,mL,,,,,numericitems,1,1,Mucous fistula periodic production
+8463,Blaasdruk,intra-abdominal pressure,SNOMED CT,51497000,Intraabdominal pressure,Blaasdruk,426,DIVERSEN,miscellaneous,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,1652,1652,intra-abdominal pressure
+8507,SVO2,,,,,SVO2,328,OLGV-OUD,,,,0,,,0,None,,,,,,numericitems,4,4,SVO2
+8566,LeeftijdX,,,,,LeeftijdX,328,OLGV-OUD,,,,0,,,0,None,,,,,,numericitems,260,260,AgeX
+8622,PA max ingesteld,,,,,PA max ingesteld,351,CVVH-Instellingen,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,68722,57827,PA max set
+8649,IABP Systole,intra-aortic balloon pump systolic pressure,,,,IABP Systole,326,HD-IABP,hemodynamics intra-aortic balloon pump,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,84158,19984,intra-aortic balloon pump systolic pressure
+8655,IABP Augmentatie,intra-aortic balloon pump augmentation,,,,IABP Augmentatie,326,HD-IABP,hemodynamics intra-aortic balloon pump,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,84780,20560,intra-aortic balloon pump augmentation
+8658,Temp Bloed,blood temperature,LOINC,60834-9,Blood temperature,Temp Bloed,322,HD-Temperatuur,hemodynamics-temperature,,,0,,,59,°C,Cel,,,,,numericitems,1999754,196894,blood temperature
+8659,Temperatuur Perifeer 2,peripheral temperature,LOINC,61008-9,Body surface temperature,Temp Perifeer 2,322,HD-Temperatuur,hemodynamics-temperature,,,0,,,59,°C,Cel,,,,,numericitems,27999,27082,peripheral temperature
+8662,Temperatuur Perifeer 1,peripheral temperature,LOINC,61008-9,Body surface temperature,Temp Perifeer 1,322,HD-Temperatuur,hemodynamics-temperature,,,0,,,59,°C,Cel,,,,,numericitems,172138,168297,peripheral temperature
+8671,Thoraxdrain1 Stand,,,,,Th.drain1/Stand,346,VB-Thoraxdrains,,,,0,,,6,ml,mL,,,,,numericitems,222862,222862,Chest drain1 Stand
+8672,Thoraxdrain2 Stand,,,,,Th.drain2/Stand,346,VB-Thoraxdrains,,,,0,,,6,ml,mL,,,,,numericitems,37247,37247,Chest drain2 Stand
+8673,Thoraxdrain3 Stand,,,,,Th.drain3/Stand,346,VB-Thoraxdrains,,,,0,,,6,ml,mL,,,,,numericitems,6304,6304,Chest drain3 Stand
+8699,Thoraxdrain1 Productie,,,,,Th.drain1,346,VB-Thoraxdrains,,,,0,,,6,ml,mL,,,,,numericitems,207661,207661,Chest Drain1 Production
+8700,Thoraxdrain2 Productie,,,,,Th.drain2,346,VB-Thoraxdrains,,,,0,,,6,ml,mL,,,,,numericitems,33651,33651,Chest Drain2 Production
+8701,Thoraxdrain3 Productie,,,,,Th.drain3,346,VB-Thoraxdrains,,,,0,,,6,ml,mL,,,,,numericitems,5669,5669,Chest Drain3 Production
+8702,Spoeldrain In,,,,,Sp.drain/In,340,VB-Spoeldrain,,,,0,,,6,ml,mL,,,,,numericitems,465,465,Flush Drain In
+8703,Spoeldrain Uit,,,,,Sp.drain/Uit,340,VB-Spoeldrain,,,,0,,,6,ml,mL,,,,,numericitems,510,510,Rinse Drain Off
+8704,Spoeldrain PlaatsX,,,,,Sp.drain/PlaatsX,318,Deleted - Niet gebruiken,,,,0,,,6,ml,mL,,,,,numericitems,17,17,Flush drain PlaceX
+8717,Wonddrain1 Productie,,,,,Wdrain1,352,VB-Wonddrains,,,,0,,,6,ml,mL,,,,,numericitems,38861,38861,Wondrain1 Production
+8719,Wonddrain2 Productie,,,,,Wdrain2,352,VB-Wonddrains,,,,0,,,6,ml,mL,,,,,numericitems,17197,17197,Wondrain2 Production
+8720,Wonddrain3 Productie,,,,,Wdrain3,352,VB-Wonddrains,,,,0,,,6,ml,mL,,,,,numericitems,6436,6436,Wondrain3 Production
+8721,Wonddrain4 Productie,,,,,Wdrain4,352,VB-Wonddrains,,,,0,,,6,ml,mL,,,,,numericitems,1921,1921,Wondrain4 Production
+8756,Spoelmaag In,,,,,Sp.Maag/In,357,VB-Spoelmaag,,,,0,,,6,ml,mL,,,,,numericitems,2,2,Flush stomach In
+8757,Spoelmaag Uit,,,,,Sp.Maag/Uit,357,VB-Spoelmaag,,,,0,,,6,ml,mL,,,,,numericitems,11,11,Flush Stomach Out
+8760,Spoelwond In,,,,,Sp.Wond/In,359,VB-Spoelwond,,,,0,,,6,ml,mL,,,,,numericitems,396,396,Coil Wound In
+8761,Spoelwond Uit,,,,,Sp.Wond/Uit,359,VB-Spoelwond,,,,0,,,6,ml,mL,,,,,numericitems,444,444,Coil Wound Out
+8766,Spoelblaas In,,,,,Sp.Blaas/In,358,VB-SpoelBlaas,,,,0,,,6,ml,mL,,,,,numericitems,616,616,Coil Blow In
+8767,Spoelblaas Uit,,,,,Sp.Blaas/Uit,358,VB-SpoelBlaas,,,,0,,,6,ml,mL,,,,,numericitems,645,645,Purge Blow Off
+8770,Ventrikeldrain1 Uit,,,,,Ventr.drain1/Uit,353,VB-Ventrikeldrain,,,,0,,,6,ml,mL,,,,,numericitems,61096,61096,Ventricular Drain1 Off
+8772,Pericarddrain Uit,,,,,Peric.drain/Uit,360,VB-Pericarddrain,,,,0,,,6,ml,mL,,,,,numericitems,123,123,Pericardial Drain Off
+8774,Maaghevel,,,,,Maaghevel,339,VB-Tr.Digestivus,,,,0,,,6,ml,mL,,,,,numericitems,65465,65465,stomach siphon
+8777,MaagRetentieWeg,,,,,MaagRetWeg,339,VB-Tr.Digestivus,,,,0,,,6,ml,mL,,,,,numericitems,32595,32595,Gastric RetentionAway
+8779,MaagRetNietWeg,,,,,MaagRetNw,339,VB-Tr.Digestivus,,,,0,,,6,ml,mL,,,,,numericitems,78433,78433,StomachRetNot Gone
+8780,Braken,,,,,Braken,339,VB-Tr.Digestivus,,,,0,,,6,ml,mL,,,,,numericitems,4982,4982,Vomit
+8782,Sengtaken,,,,,Sengtaken,339,VB-Tr.Digestivus,,,,0,,,6,ml,mL,,,,,numericitems,47,47,Sengtaken
+8784,Jejunostoma,,,,,Jejunostoma,339,VB-Tr.Digestivus,,,,0,,,6,ml,mL,,,,,numericitems,252,252,Jejunostomy
+8786,Ileostoma,,,,,Ileostoma,339,VB-Tr.Digestivus,,,,0,,,6,ml,mL,,,,,numericitems,5441,5441,Ileostomy
+8788,Colostoma,,,,,Colostoma,339,VB-Tr.Digestivus,,,,0,,,6,ml,mL,,,,,numericitems,4096,4096,Colostomy
+8789,Ontlasting,,,,,Ontlasting,339,VB-Tr.Digestivus,,,,0,,,6,ml,mL,,,,,numericitems,127319,127319,stool
+8792,Bloedverlies,,,,,Bloedverlies,341,VB-BloedVerlies,,,,0,,,6,ml,mL,,,,,numericitems,749,749,Blood loss
+8794,UrineCAD,urine output from indwelling urinary catheter (catheter à demeure),LOINC,9187-6,Urine output,UrineCAD,337,VB-Urine,,,,0,,,6,ml,mL,,,,,numericitems,1632547,1632547,urine output from indwelling urinary catheter (catheter à demeure)
+8796,UrineSupraPubis,urine output,LOINC,9187-6,Urine output,UrineSupPub,337,VB-Urine,,,,0,,,6,ml,mL,,,,,numericitems,16184,16184,urine output
+8798,UrineSpontaan,spontaneous urine output,LOINC,9197-5,Urine output --post void,UrineSpont,337,VB-Urine,,,,0,,,6,ml,mL,,,,,numericitems,14683,14683,spontaneous urine output
+8800,UrineIncontinentie,urine output,LOINC,9187-6,Urine output,UrineInc,337,VB-Urine,,,,0,,,6,ml,mL,,,,,numericitems,2916,2916,urine output
+8803,UrineUP,urine output from urostomy (urethra praeter naturalis),LOINC,9187-6,Urine output,UrineUP,337,VB-Urine,,,,0,,,6,ml,mL,,,,,numericitems,6668,6668,urine output from urostomy (urethra praeter naturalis)
+8805,CVVH Onttrokken,CRRT net ultrafiltration,SNOMED CT,251850009,Ultrafiltrate fluid loss,CVVH-Onttrokken,347,VB-CVVH,,,,0,,,6,ml,mL,,,,,numericitems,98383,98383,CRRT net ultrafiltration
+8806,Hemodialyse onttrekken,,,,,Hemodialyse onttrekken,354,VB-Hemodialyse,,,,0,,,6,ml,mL,,,,,numericitems,312,312,Withdraw hemodialysis
+8808,Peritoneaaldialyse,,,,,Periton.dialyse,355,VB-Peritoneaaldialyse,,,,0,,,6,ml,mL,,,,,numericitems,102,102,Peritoneal dialysis
+8835,Intracraniële druk,,,,,ICP,334,NEURO-Drukken,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,895599,75261,intracranial pressure
+8841,ABP systolisch II,invasive systolic arterial pressure,LOINC,76215-3,Invasive Systolic blood pressure,ABPs II,367,HD-Overig,hemodynamics-other,,,0,,,173,mmHg,mm[Hg],,,40,250,numericitems,54602,1810,invasive systolic arterial pressure
+8842,ABP diastolisch II,invasive diastolic arterial pressure,LOINC,76213-8,Invasive Diastolic blood pressure,ABPd II,367,HD-Overig,hemodynamics-other,,,0,,,173,mmHg,mm[Hg],,,20,150,numericitems,54598,1806,invasive diastolic arterial pressure
+8843,ABP gemiddeld II,invasive mean arterial pressure,LOINC,76214-6,Invasive Mean blood pressure,ABPm II,367,HD-Overig,hemodynamics-other,,,0,,,173,mmHg,mm[Hg],,,30,250,numericitems,56028,1817,invasive mean arterial pressure
+8845,O2 l/min,oxygen flow (l/min),LOINC,19941-4,Oxygen gas flow Oxygen delivery system,O2 l/min,329,RESP-O2aanbod,,,,0,,,26,l/min,L/min,,,,,numericitems,656405,656405,oxygen flow (l/min)
+8849,Insp. Flow max,,,,,Ins.Flow max,330,ZZ-OUD-Resp-Evita Machinegegevens,,,,0,,,26,l/min,L/min,,,,,numericitems,43032,28583,Insp. flow max
+8850,Frequentie,respiratory rate setting,LOINC,19834-1,Breath rate setting Ventilator,Frequentie,330,ZZ-OUD-Resp-Evita Machinegegevens,,,,0,,,0,None,,,,,,numericitems,57008,41425,respiratory rate setting
+8851,Tidal Volume (Set),tidal volume setting,LOINC,20112-9,Tidal volume setting Ventilator,Tidal. Vol (set),330,ZZ-OUD-Resp-Evita Machinegegevens,,,,0,,,6,ml,mL,,,,,numericitems,43121,27767,tidal volume setting
+8852,P max,peak inspiratory airway pressure,LOINC,19976-0,Maximum [Pressure] Respiratory system airway opening --during inspiration on ventilator,P max,330,ZZ-OUD-Resp-Evita Machinegegevens,,,,0,,,177,mbar,mbar,,,,,numericitems,57509,50839,peak inspiratory airway pressure
+8853,Freq. IMV,respiratory rate intermittent mandatory ventilation,LOINC,19835-8,Breath rate setting Ventilator synchronized intermittent mandatory,Freq. IMV,330,ZZ-OUD-Resp-Evita Machinegegevens,,,,0,,,0,None,,,,,,numericitems,39367,11557,respiratory rate intermittent mandatory ventilation
+8854,Trigger/ASB(curve),,,,,Trigger/ASB,330,ZZ-OUD-Resp-Evita Machinegegevens,,,,0,,,177,mbar,mbar,,,,,numericitems,80976,72306,Trigger/ASB(curve)
+8856,Flow trigger ASB,,,,,Flow trigger ASB,330,ZZ-OUD-Resp-Evita Machinegegevens,,,,0,,,26,l/min,L/min,,,,,numericitems,45377,41617,Flow trigger ASB
+8857,BIPAP Hoog,,,,,BIPAP Hoog,330,ZZ-OUD-Resp-Evita Machinegegevens,,,,0,,,177,mbar,mbar,,,,,numericitems,40106,20549,BIPAP High
+8858,BIPAP Laag,,,,,BIPAP Laag,330,ZZ-OUD-Resp-Evita Machinegegevens,,,,0,,,177,mbar,mbar,,,,,numericitems,40041,20390,BIPAP Low
+8859,BIPAP T1,,,,,BIPAP T1,318,Deleted - Niet gebruiken,,,,0,,,3,sec,s,,,,,numericitems,475,431,BIPAP T1
+8860,BIPAP Laag Tijd,,,,,BIPAP Laag t,318,Deleted - Niet gebruiken,,,,0,,,3,sec,s,,,,,numericitems,475,430,BIPAP Low Time
+8861,NO,,,,,NO,330,ZZ-OUD-Resp-Evita Machinegegevens,,,,0,,,0,None,,,,,,numericitems,56,56,NO
+8862,PEEP/CPAP,positive end expiratory pressure setting/continuous positive airway pressure,LOINC,35410-0,Continuous positive airway pressure Respiratory system,PEEP/CPAP,330,ZZ-OUD-Resp-Evita Machinegegevens,,,,0,,,177,mbar,mbar,,,,,numericitems,85923,77267,positive end expiratory pressure setting/continuous positive airway pressure
+8865,ASB,,,,,ASB,330,ZZ-OUD-Resp-Evita Machinegegevens,,,,0,,,177,mbar,mbar,,,,,numericitems,74582,62477,ASB
+8868,Temperatuur Bevochtiger,,,,,Bevochtiging tmp,330,ZZ-OUD-Resp-Evita Machinegegevens,,,,0,,,59,°C,Cel,,,,,numericitems,752,752,Temperature Humidifier
+8869,O2 Volume,,,,,O2 Volume,331,ZZ-OUD-Resp-PatientGeg.,,,,0,,,0,None,,,,,,numericitems,85386,77406,O2 Volume
+8870,VE,,,,,VE,331,ZZ-OUD-Resp-PatientGeg.,,,,0,,,26,l/min,L/min,,,,,numericitems,84333,77908,VE
+8871,VTe,,,,,V_Te,331,ZZ-OUD-Resp-PatientGeg.,,,,0,,,8,l,L,,,,,numericitems,86558,78670,VTe
+8872,Tidal Volume Spirometer,tidal volume measurement,LOINC,76222-9,Tidal volume Ventilator --on ventilator,Tidal Vol. Spiro,331,ZZ-OUD-Resp-PatientGeg.,,,,0,,,6,ml,mL,,,,,numericitems,13,13,tidal volume measurement
+8873,Ademfrequentie Evita,respiratory rate setting,LOINC,19834-1,Breath rate setting Ventilator,AF Evita,331,ZZ-OUD-Resp-PatientGeg.,,,,0,,,0,None,,,,,,numericitems,85780,77570,respiratory rate setting
+8874,Ademfrequentie Monitor,respiratory rate monitor,LOINC,9279-1,Respiratory rate,Ademfreq. (Monitor),586,RESP-Servo Patiëntgegevens,,,,0,,,0,None,,,,,,numericitems,25776086,857738,respiratory rate monitor
+8875,Mv Spontaan,,,,,Mv Spontaan,331,ZZ-OUD-Resp-PatientGeg.,,,,0,,,26,l/min,L/min,,,,,numericitems,29897,28296,Mv Spontaneous
+8876,Frequentie Spontaan,respiratory rate spontaneous,LOINC,19839-0,Breath rate spontaneous --on ventilator,Freq. Spontaan,331,ZZ-OUD-Resp-PatientGeg.,,,,0,,,0,None,,,,,,numericitems,1,1,respiratory rate spontaneous
+8877,Peak druk,peak inspiratory airway pressure,LOINC,19976-0,Maximum [Pressure] Respiratory system airway opening --during inspiration on ventilator,Peak druk,331,ZZ-OUD-Resp-PatientGeg.,,,,0,,,177,mbar,mbar,,,,,numericitems,85106,76567,peak inspiratory airway pressure
+8878,Plateau druk,,,,,Plateau druk,331,ZZ-OUD-Resp-PatientGeg.,,,,0,,,177,mbar,mbar,,,,,numericitems,20958,19245,Plateau pressure
+8879,PEEP (gemeten),positive end expiratory pressure measurement,LOINC,76248-4,PEEP Respiratory system --on ventilator,PEEP (gemeten),331,ZZ-OUD-Resp-PatientGeg.,,,,0,,,177,mbar,mbar,,,,,numericitems,83693,76452,positive end expiratory pressure measurement
+8880,Weerstand,,,,,Weerstand,331,ZZ-OUD-Resp-PatientGeg.,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,53834,50140,Resistance
+8882,Intrinsic PEEP,,,,,Intrinsic PEEP,331,ZZ-OUD-Resp-PatientGeg.,,,,0,,,177,mbar,mbar,,,,,numericitems,2149,2117,Intrinsic PEEP
+8883,Airtrap,,,,,Airtrap,331,ZZ-OUD-Resp-PatientGeg.,,,,0,,,6,ml,mL,,,,,numericitems,1508,1476,Air trap
+8884,End Tidal CO2 %,end tidal carbon dioxide partial pressure,LOINC,19891-1,Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration,End Tidal CO2 %,331,ZZ-OUD-Resp-PatientGeg.,,,,0,,,0,None,,,,,,numericitems,64,58,end tidal carbon dioxide partial pressure
+8885,End Tidal CO2 mmHG,end tidal carbon dioxide partial pressure,LOINC,19891-1,Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration,End Tidal CO2,331,ZZ-OUD-Resp-PatientGeg.,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,409,402,end tidal carbon dioxide partial pressure
+8886,Beademings Temperatuur,,,,,Beadm. Temp,331,ZZ-OUD-Resp-PatientGeg.,,,,0,,,59,°C,Cel,,,,,numericitems,67,67,Ventilation Temperature
+8925,Maagzuig,,,,,Maagzuig,339,VB-Tr.Digestivus,,,,0,,,6,ml,mL,,,,,numericitems,2865,2865,Stomach suction
+8955,Cuff druk van Tube,,,,,Cuff druk Tube,333,RESP-Tube,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,41019,41019,Cuff pressure from Tube
+9356,EVD-cm boven Monroe,,,,,EVD-cm boven Monroe,428,NEURO-Algemeen,,,,0,,,50,cm,cm,,,,,numericitems,53993,53993,EVD-cm above Monroe
+9357,ELD-cm boven Monroe,,,,,ELD-cm boven Monroe,428,NEURO-Algemeen,,,,0,,,50,cm,cm,,,,,numericitems,2865,2865,ELD-cm above Monroe
+9360,Lumbaaldrain Uit,,,,,Lumb.drain/Uit,593,VB-Lumbaaldrain,,,,0,,,6,ml,mL,,,,,numericitems,6407,6407,Lumbar Drain Out
+9469,Pacemaker Frequentie,pacemaker frequency,,,,PM_Freqentie,320,HD-Hartritme,hemodynamics-heart rhythm,,,0,,,0,None,,,,,,numericitems,12969,12969,pacemaker frequency
+9470,Pacemaker Ventricle ampl.(output) ingesteld,pacemaker ventricular amplitude set,,,,PM_Ventricle ampl.(outp.) ingest.,320,HD-Hartritme,hemodynamics-heart rhythm,,,0,,,0,None,,,,,,numericitems,10791,10791,pacemaker ventricular amplitude set
+9471,Pacemaker Ventricle sense ingesteld,pacemaker ventricular sense set,,,,PM_Ventricle sense ingest.,320,HD-Hartritme,hemodynamics-heart rhythm,,,0,,,150,mV,mV,,,,,numericitems,10833,10833,pacemaker ventricular sense set
+9532,Tinspiratie,,,,,Tinsp,330,ZZ-OUD-Resp-Evita Machinegegevens,,,,0,,,0,None,,,,,,numericitems,56260,40091,Tinspiration
+9533,Texpiratie,,,,,Texp,330,ZZ-OUD-Resp-Evita Machinegegevens,,,,0,,,0,None,,,,,,numericitems,56220,39942,Texpiration
+9545,Cerebrale PaO2,,,,,Cerebrale PaO2,428,NEURO-Algemeen,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,212,212,Cerebral PaO2
+9546,Cerebrale temp.,,,,,Cerebrale temp.,428,NEURO-Algemeen,,,,0,,,59,°C,Cel,,,,,numericitems,208,208,cerebral temp.
+9554,Kopieer en plak,,,,,Kopieer en plak,627,Decubitus-DecubitusWondverzorging,,,,0,,,8,l,L,"0,26","0,46",,,numericitems,19070,19070,Copy and paste
+9564,NDT-syst.,,,,,NDT-syst.,460,VB-VAC,,,,0,,,6,ml,mL,,,,,numericitems,2261,2261,NDT System
+9583,Wonddrain1 Stand,,,,,Wdrain1/Stand,352,VB-Wonddrains,,,,0,,,6,ml,mL,,,,,numericitems,46514,46514,Wondrain1 Stand
+9584,Wonddrain2 Stand,,,,,Wdrain2/Stand,352,VB-Wonddrains,,,,0,,,6,ml,mL,,,,,numericitems,20403,20403,Wondrain2 Stand
+9585,Wonddrain3 Stand,,,,,Wdrain3/Stand,352,VB-Wonddrains,,,,0,,,6,ml,mL,,,,,numericitems,7221,7221,Wondrain3 Stand
+9587,Wonddrain4 Stand,,,,,Wdrain4/Stand,352,VB-Wonddrains,,,,0,,,6,ml,mL,,,,,numericitems,2089,2089,Wondrain4 Stand
+9609,BIPAP T1 Evita1,,,,,BIPAP T1 Evita1,330,ZZ-OUD-Resp-Evita Machinegegevens,,,,0,,,0,None,,,,,,numericitems,37997,18339,BIPAP T1 Evita1
+9611,BIPAP T2 Evita1,,,,,BIPAP T2 Evita1,330,ZZ-OUD-Resp-Evita Machinegegevens,,,,0,,,0,None,,,,,,numericitems,38011,18446,BIPAP T2 Evita1
+9619,Mv Lekkage,,,,,Mv Lekkage,331,ZZ-OUD-Resp-PatientGeg.,,,,0,,,26,l/min,L/min,,,,,numericitems,7,7,Mv Leakage
+9626,Wondlekkage,,,,,Wondlekkage,462,VB-Wondlekkage,,,,0,,,6,ml,mL,,,,,numericitems,7688,7688,Wound leakage
+9640,NO(2),,,,,NO(2),366,ZZ-OUD-Resp-Evita Machinegegevens2,,,,0,,,0,None,,,,,,numericitems,4,4,NO(2)
+9644,Temperatuur Bevochtiger(2),,,,,Bevochtiging tmp(2),366,ZZ-OUD-Resp-Evita Machinegegevens2,,,,0,,,59,°C,Cel,,,,,numericitems,2,2,Temperature Humidifier(2)
+9646,Tidal Volume (set)(2),tidal volume setting,LOINC,20112-9,Tidal volume setting Ventilator,Tidal. Vol (set)(2),366,ZZ-OUD-Resp-Evita Machinegegevens2,,,,0,,,6,ml,mL,,,,,numericitems,1,1,tidal volume setting
+9654,Ademfrequentie Spontaan(2),respiratory rate spontaneous,LOINC,19839-0,Breath rate spontaneous --on ventilator,AF Spontaan(2),464,ZZ-OUD-Resp-PatientGeg(2),,,,0,,,0,None,,,,,,numericitems,8,8,respiratory rate spontaneous
+9655,Airtrap(2),,,,,Airtrap(2),464,ZZ-OUD-Resp-PatientGeg(2),,,,0,,,6,ml,mL,,,,,numericitems,3,3,air trap(2)
+9658,End Tidal CO2% (2),end tidal carbon dioxide partial pressure,LOINC,19891-1,Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration,End Tidal CO2% (2),464,ZZ-OUD-Resp-PatientGeg(2),,,,0,,,0,None,,,,,,numericitems,15,15,end tidal carbon dioxide partial pressure
+9661,Intrinsic PEEP(2),,,,,Intrinsic PEEP(2),464,ZZ-OUD-Resp-PatientGeg(2),,,,0,,,177,mbar,mbar,,,,,numericitems,10,10,Intrinsic PEEP(2)
+9663,Mv Spontaan(2),,,,,Mv Spontaan(2),464,ZZ-OUD-Resp-PatientGeg(2),,,,0,,,26,l/min,L/min,,,,,numericitems,1,1,Mv Spontaneous(2)
+9664,O2 Volume(2),,,,,O2 Volume(2),464,ZZ-OUD-Resp-PatientGeg(2),,,,0,,,0,None,,,,,,numericitems,5,5,O2 Volume(2)
+9666,PEEP (gemeten)(2),positive end expiratory pressure measurement,LOINC,76248-4,PEEP Respiratory system --on ventilator,PEEP (gemeten)(2),464,ZZ-OUD-Resp-PatientGeg(2),,,,0,,,177,mbar,mbar,,,,,numericitems,1,1,positive end expiratory pressure measurement
+9668,VE(2),,,,,VE(2),464,ZZ-OUD-Resp-PatientGeg(2),,,,0,,,26,l/min,L/min,,,,,numericitems,1,1,PU(2)
+9669,VTe(2),,,,,VTe(2),464,ZZ-OUD-Resp-PatientGeg(2),,,,0,,,8,l,L,,,,,numericitems,1,1,FTe(2)
+10439,PatiëntLeeftijd bij opname,,,,,Leeftijd bij opname,476,Anamnese-Patientgegevens,patient data,,,0,,,37,jaar,a,,,,,numericitems,1588,1588,Patient age at admission
+10442,Gewicht bij opname,,,,,Gewichtbijopname,466,Patientenbestandparameters,,,,0,,,12,kg,kg,,,,,numericitems,1862,1862,Weight at recording
+10592,Ascitespunctie,,,,,Ascitespunctie,468,VB-Punctie,,,,0,,,6,ml,mL,,,,,numericitems,882,882,Ascites puncture
+10595,Pleurapunctie,,,,,Pleurapunctie,468,VB-Punctie,,,,0,,,6,ml,mL,,,,,numericitems,94,94,Pleural puncture
+10597,Liquorpunctie,,,,,Liquorpunctie,468,VB-Punctie,,,,0,,,6,ml,mL,,,,,numericitems,9,9,Liquid puncture
+10735,Substitutie-flow,CRRT replacement fluid rate setting,,,,Substitutie-flow,350,CVVH-Gegevens,,,,0,,,46,ml/uur,mL/h,,,,,numericitems,52526,7730,CRRT replacement fluid rate setting
+10736,Bloed-flow,CRRT blood flow,,,,Bloed-flow,350,CVVH-Gegevens,,,,0,,,24,ml/min,mL/min,,,,,numericitems,78572,68826,CRRT blood flow
+10743,Nefrodrain li Uit,urine output from left sided nephrostomy,LOINC,79549-2,Urine output measured by nephrostomy,Nefrodrain li/Uit,471,VB-Nefrodrains,,,,0,,,6,ml,mL,,,,,numericitems,3301,3301,urine output from left sided nephrostomy
+10745,Nefrodrain re Uit,urine output from right sided nephrostomy,LOINC,79549-2,Urine output measured by nephrostomy,Nefrodrain re/Uit,471,VB-Nefrodrains,,,,0,,,6,ml,mL,,,,,numericitems,4261,4261,urine output from right sided nephrostomy
+12082,HFO-Bias-flow,,,,,Bias-flow,579,RESP-HFO,,,,0,,,26,l/min,L/min,,,,,numericitems,3,3,HFO bias flow
+12083,HFO-Paw,,,,,Paw,579,RESP-HFO,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,3,3,HFO Paw
+12084,HFO-Amplitude,,,,,Amplitude,579,RESP-HFO,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,3,3,HFO Amplitude
+12085,HFO-Paw Ondergrens,,,,,Paw ondergrens,579,RESP-HFO,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,3,3,HFO-Paw Lower Limit
+12086,HFO-Paw Bovengrens,,,,,Paw bovengrens,579,RESP-HFO,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,3,3,HFO-Paw Upper Limit
+12087,Buikomvang,abdominal circumference,SNOMED CT,396552003,Abdominal circumference,Buikomvang,426,DIVERSEN,miscellaneous,,,0,,,50,cm,cm,,,,,numericitems,926,926,abdominal circumference
+12088,HFO-Inspiratietijd,,,,,HFO-inspiratietijd,579,RESP-HFO,,,,0,,,191,Geen,,,,,,numericitems,3,3,HFO Inspiration Time
+12090,HFO-Frequentie,,,,,HFO-Frequentie,579,RESP-HFO,,,,0,,,294,Hz,Hz,,,,,numericitems,3,3,HFO Frequency
+12091,CVVH-Vochtverlies stand,,,,,Vochtverlies stand,350,CVVH-Gegevens,,,,0,,,6,ml,mL,,,,,numericitems,83945,83945,CVVH-Moisture loss mode
+12106,Risicofactor Roken Aantal sig/dag,,,,,Sigaretten,473,Anamnese-Allergieen&Risicofactoren,,,,0,,,224,/dag,/d,,,,,numericitems,17946,17946,Risk factor Smoking Number of sig/day
+12107,Risiocofactor Roken Pack Years,,,,,Jaren van roken,473,Anamnese-Allergieen&Risicofactoren,,,,0,,,225,/jaar,/a,,,,,numericitems,13288,13288,Risk Factor Smoking Pack Years
+12266,Ademfreq.,respiratory rate measurement,LOINC,19840-8,Breath rate spontaneous and mechanical --on ventilator,Ademfreq.,586,RESP-Servo Patiëntgegevens,,,,0,,,15,/min,/min,,,,,numericitems,15613362,1280470,respiratory rate measurement
+12267,CO2 min prodX,,,,,EtCO2 min prodX,318,Deleted - Niet gebruiken,,,,0,,,0,None,,,,,,numericitems,2,0,CO2 minus prodX
+12270,CO2 tidal productie,,,,,VTCO2,586,RESP-Servo Patiëntgegevens,,,,0,,,6,ml,mL,,,,,numericitems,14591289,1027583,CO2 tidal production
+12273,Exp. minuut volume,expiratory minute volume,LOINC,76008-2,Expired minute Volume during Mechanical ventilation,MVe,586,RESP-Servo Patiëntgegevens,,,,0,,,26,l/min,L/min,,,,,numericitems,15623732,1279091,expiratory minute volume
+12275,Exp. tidal volume,expiratory tidal volume,LOINC,20107-9,Tidal volume expired spontaneous+mechanical Respiratory system airway --on ventilator,VTe,586,RESP-Servo Patiëntgegevens,,,,0,,,6,ml,mL,,,,,numericitems,15621567,1279056,expiratory tidal volume
+12276,Insp. Minuut volume,inspiratory minute volume,LOINC,76009-0,Inspired minute Volume during Mechanical ventilation,MVi,586,RESP-Servo Patiëntgegevens,,,,0,,,26,l/min,L/min,,,,,numericitems,15621645,1278657,inspiratory minute volume
+12277,Insp. tidal volume,inspiratory tidal volume,LOINC,20109-5,Tidal volume inspired spontaneous+mechanical Measured --on ventilator,VTi,586,RESP-Servo Patiëntgegevens,,,,0,,,6,ml,mL,,,,,numericitems,15613545,1279315,inspiratory tidal volume
+12278,Mean luchtweg druk,,,,,P mean,586,RESP-Servo Patiëntgegevens,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,15622310,1278986,Mean airway pressure
+12279,O2 concentratie,inspired oxygen concentration measurement,LOINC,19995-0,Oxygen/Inspired gas Respiratory system by O2 Analyzer --on ventilator,O2%,329,RESP-O2aanbod,,,,0,,,191,Geen,,,,,,numericitems,15645395,1274067,inspired oxygen concentration measurement
+12280,Pauze druk,,,,,P plateau,586,RESP-Servo Patiëntgegevens,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,310638,21095,Pause pressure
+12281,Piek druk,peak inspiratory airway pressure,LOINC,19976-0,Maximum [Pressure] Respiratory system airway opening --during inspiration on ventilator,P peak,586,RESP-Servo Patiëntgegevens,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,15622631,1279253,peak inspiratory airway pressure
+12282,O2 concentratie (Set),inspired oxygen concentration setting,LOINC,19994-3,Oxygen/Inspired gas setting [Volume Fraction] Ventilator,O2% (Set),587,RESP-Servo Machinegegevens,,,,0,,,191,Geen,,,,,,numericitems,15645752,1281165,inspired oxygen concentration setting
+12283,Adem Frequentie (Set),respiratory rate setting,LOINC,19834-1,Breath rate setting Ventilator,Adem. Freq,587,RESP-Servo Machinegegevens,,,,0,,,15,/min,/min,,,,,numericitems,4216281,463308,respiratory rate setting
+12284,PEEP (Set),positive end expiratory pressure setting,LOINC,20077-4,Positive end expiratory pressure setting Ventilator,PEEP (Set),587,RESP-Servo Machinegegevens,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,15646826,1282336,positive end expiratory pressure setting
+12285,PC boven PEEP (Set),pressure control above PEEP setting,LOINC,76152-8,Airway pressure delta setting Ventilator,PC boven PEEP (Set),587,RESP-Servo Machinegegevens,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,4069976,456455,pressure control above PEEP setting
+12286,PS boven PEEP (Set),pressure support above PEEP setting,LOINC,20079-0,Pressure support setting Ventilator,PS boven PEEP,587,RESP-Servo Machinegegevens,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,10799693,961936,pressure support above PEEP setting
+12287,SIMV Frequentie (Set),respiratory rate synchronized intermittent mandatory ventilation,LOINC,19835-8,Breath rate setting Ventilator synchronized intermittent mandatory,SIMV Frequentie,587,RESP-Servo Machinegegevens,,,,0,,,26,l/min,L/min,,,,,numericitems,156160,7814,respiratory rate synchronized intermittent mandatory ventilation
+12288,TriggergevoeligheidX,,,,,TriggergevoelighX,318,Deleted - Niet gebruiken,,,,0,,,191,Geen,,,,,,numericitems,101958,5,Trigger SensitivityX
+12289,Volume (Set),minute volume setting,LOINC,33425-0,Minute volume setting Ventilator,Volume (Set),587,RESP-Servo Machinegegevens,,,,0,,,26,l/min,L/min,,,,,numericitems,319307,21990,minute volume setting
+12291,Teugvolume (Set),tidal volume setting,LOINC,20112-9,Tidal volume setting Ventilator,Teugvolume,587,RESP-Servo Machinegegevens,,,,0,,,6,ml,mL,,,,,numericitems,317036,19965,tidal volume setting
+12292,Eind insp. cyclus (Set),,,,,Eind insp. cyclus,587,RESP-Servo Machinegegevens,,,,0,,,191,Geen,,,,,,numericitems,11961585,888682,End insp. cycle (Set)
+12293,Backup druk (Set),,,,,Backup druk,587,RESP-Servo Machinegegevens,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,10077007,719074,Backup Pressure (Set)
+12294,SIMV ademcyclus (Set),,,,,SIMV ademcyclus,587,RESP-Servo Machinegegevens,,,,0,,,3,sec,s,,,,,numericitems,1903857,373121,SIMV Breathing Cycle (Set)
+12295,P hoog (Set),,,,,P hoog,587,RESP-Servo Machinegegevens,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,9333,1075,P high (Set)
+12296,T hoog (Set),,,,,T hoog,587,RESP-Servo Machinegegevens,,,,0,,,3,sec,s,,,,,numericitems,9007,754,T high (Set)
+12297,T peep (Set),,,,,T peep,587,RESP-Servo Machinegegevens,,,,0,,,3,sec,s,,,,,numericitems,10221,1968,T-peep (Set)
+12298,PS boven P hoog (Set),,,,,PS boven P hoog,587,RESP-Servo Machinegegevens,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,9303,1043,PS over P high (Set)
+12300,Trigger time out (Set),,,,,Trigger time out,587,RESP-Servo Machinegegevens,,,,0,,,3,sec,s,,,,,numericitems,1019,1019,Trigger timeout (Set)
+12301,PEEP tot,,,,,PEEP tot,586,RESP-Servo Patiëntgegevens,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,7302,7302,PEEP to
+12302,Vec (Eind-expiratoire flow),,,,,Vec (Eind-expiratoire flow),586,RESP-Servo Patiëntgegevens,,,,0,,,26,l/min,L/min,,,,,numericitems,1615,1615,Vec (End Expiratory Flow)
+12303,SBI (Zwakke ademhalingsindex),,,,,SBI (Zwakke ademhalingsindex),586,RESP-Servo Patiëntgegevens,,,,0,,,191,Geen,,,,,,numericitems,10438640,796268,SBI (Weak Respiratory Index)
+12304,Triggergevoeligheid (Set),,,,,Triggergevoeligh,587,RESP-Servo Machinegegevens,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,14639,14639,Trigger Sensitivity (Set)
+12305,P Bovenste (Set),,,,,P Bovenste,587,RESP-Servo Machinegegevens,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,15643740,1277500,P Upper (Set)
+12322,Adem Frequentie (Set) (2),respiratory rate setting,LOINC,19834-1,Breath rate setting Ventilator,Adem. Freq (2),588,RESP-Servo Machinegegevens(2),,,,0,,,15,/min,/min,,,,,numericitems,69,69,respiratory rate setting
+12329,O2 concentratie (Set) (2),inspired oxygen concentration setting,LOINC,19994-3,Oxygen/Inspired gas setting [Volume Fraction] Ventilator,O2% (Set) (2),588,RESP-Servo Machinegegevens(2),,,,0,,,191,Geen,,,,,,numericitems,73,73,inspired oxygen concentration setting
+12331,P Bovenste (Set) (2),,,,,P Bovenste (Set) (2),588,RESP-Servo Machinegegevens(2),,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,5,5,P Upper (Set) (2)
+12335,PC boven PEEP (Set) (2),,,,,PC boven PEEP( Set) (2),588,RESP-Servo Machinegegevens(2),,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,69,69,PC over PEEP (Set) (2)
+12336,PEEP (Set) (2),positive end expiratory pressure setting,LOINC,20077-4,Positive end expiratory pressure setting Ventilator,PEEP (Set) (2),588,RESP-Servo Machinegegevens(2),,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,72,72,positive end expiratory pressure setting
+12337,PS boven P hoog (Set) (2),,,,,PS boven P hoog (Set) (2),588,RESP-Servo Machinegegevens(2),,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,11,11,PS over P high (Set) (2)
+12338,PS boven PEEP (Set) (2),,,,,PS boven PEEP (Set) (2),588,RESP-Servo Machinegegevens(2),,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,2,2,PS above PEEP (Set) (2)
+12342,T peep (Set) (2),,,,,T peep (Set) (2),588,RESP-Servo Machinegegevens(2),,,,0,,,3,sec,s,,,,,numericitems,2,2,T peep (Set) (2)
+12345,Triggergevoeligheid (Set) (2),,,,,Triggergevoeligheid (Set) (2),588,RESP-Servo Machinegegevens(2),,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,10,10,Trigger Sensitivity (Set) (2)
+12348,Ademfreq.(2),respiratory rate measurement,LOINC,19840-8,Breath rate spontaneous and mechanical --on ventilator,Ademfreq.(2),589,RESP-Servo Patiëntgegevens(2),,,,0,,,15,/min,/min,,,,,numericitems,52,52,respiratory rate measurement
+12350,CO2 min prod (2),,,,,VCO2 (2),589,RESP-Servo Patiëntgegevens(2),,,,0,,,24,ml/min,mL/min,,,,,numericitems,47,47,CO2 min prod (2)
+12352,CO2 tidal productie (2),,,,,VTCO2 (2),589,RESP-Servo Patiëntgegevens(2),,,,0,,,6,ml,mL,,,,,numericitems,47,47,CO2 tidal production (2)
+12354,Eind exp. druk (2),,,,,PEEP (2),589,RESP-Servo Patiëntgegevens(2),,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,51,51,End exp. pressure (2)
+12356,End tidal CO2 concentratie (2),end tidal carbon dioxide partial pressure,LOINC,19891-1,Carbon dioxide [Partial pressure] in Exhaled gas --at end expiration,EtCO2 (2),589,RESP-Servo Patiëntgegevens(2),,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,381,381,end tidal carbon dioxide partial pressure
+12357,Exp. minuut volume (2),expiratory minute volume,LOINC,76008-2,Expired minute Volume during Mechanical ventilation,MVe (2),589,RESP-Servo Patiëntgegevens(2),,,,0,,,26,l/min,L/min,,,,,numericitems,68,68,expiratory minute volume
+12358,Exp. tidal volume (2),expiratory tidal volume,LOINC,20107-9,Tidal volume expired spontaneous+mechanical Respiratory system airway --on ventilator,VTe (2),589,RESP-Servo Patiëntgegevens(2),,,,0,,,6,ml,mL,,,,,numericitems,68,68,expiratory tidal volume
+12360,Insp. tidal volume (2),inspiratory tidal volume,LOINC,20109-5,Tidal volume inspired spontaneous+mechanical Measured --on ventilator,VTi (2),589,RESP-Servo Patiëntgegevens(2),,,,0,,,6,ml,mL,,,,,numericitems,51,51,inspiratory tidal volume
+12362,Mean luchtweg druk (2),,,,,P mean (2),589,RESP-Servo Patiëntgegevens(2),,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,51,51,Mean airway pressure (2)
+12364,PEEP tot (2),,,,,PEEP tot (2),589,RESP-Servo Patiëntgegevens(2),,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,33,33,PEEP up to (2)
+12365,Piek druk (2),peak inspiratory airway pressure,LOINC,19976-0,Maximum [Pressure] Respiratory system airway opening --during inspiration on ventilator,P peak (2),589,RESP-Servo Patiëntgegevens(2),,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,54,54,peak inspiratory airway pressure
+12367,Vec (Eind-expiratoire flow) (2),,,,,Vec (Eind-expiratoire flow) (2),589,RESP-Servo Patiëntgegevens(2),,,,0,,,26,l/min,L/min,,,,,numericitems,1,1,Vec (End Expiratory Flow) (2)
+12369,SET %O2,inspired oxygen concentration setting,LOINC,19994-3,Oxygen/Inspired gas setting [Volume Fraction] Ventilator,SET %O2,590,RESP-Bipap Vision Machinegegevens,,,,0,,,191,Geen,,,,,,numericitems,373,373,inspired oxygen concentration setting
+12371,CPAP (Bipap Vision),,,,,CPAP (Bipap Vision),590,RESP-Bipap Vision Machinegegevens,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,115,115,CPAP (Bipap Vision)
+12372,Rate (Bipap Vision),,,,,Rate,591,RESP-Bipap Vision Patiëntgegevens,,,,0,,,15,/min,/min,,,,,numericitems,214,214,Rate (Bipap Vision)
+12373,Vt (Bipap Vision),,,,,Vt (Bipap Vision),591,RESP-Bipap Vision Patiëntgegevens,,,,0,,,6,ml,mL,,,,,numericitems,211,211,Vt (Bipap Vision)
+12374,MinVent,minute volume,LOINC,33425-0,Minute volume setting Ventilator,MinVent,591,RESP-Bipap Vision Patiëntgegevens,,,,0,,,26,l/min,L/min,,,,,numericitems,169,169,minute volume
+12378,IPAP,,,,,IPAP,590,RESP-Bipap Vision Machinegegevens,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,305,305,IPAP
+12379,EPAP,,,,,EPAP,590,RESP-Bipap Vision Machinegegevens,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,304,304,EPAP
+12380,IPAP Rise Time,,,,,IPAP Rise Time,590,RESP-Bipap Vision Machinegegevens,,,,0,,,3,sec,s,,,,,numericitems,50,50,IPAP Rise Time
+12381,Tinsp (Set),,,,,Tinsp (Set,590,RESP-Bipap Vision Machinegegevens,,,,0,,,3,sec,s,,,,,numericitems,74,74,Tinsp (Set)
+12382,Ti/ T tot,,,,,Ti / T tot,591,RESP-Bipap Vision Patiëntgegevens,,,,0,,,191,Geen,,,,,,numericitems,27,27,Ti/ T tot
+12383,Tot. leak,,,,,Tot. leak,591,RESP-Bipap Vision Patiëntgegevens,,,,0,,,26,l/min,L/min,,,,,numericitems,38,38,Until. leak
+12384,Pt. trig,,,,,Pt. trig,591,RESP-Bipap Vision Patiëntgegevens,,,,0,,,191,Geen,,,,,,numericitems,27,27,Pt. trig
+12385,Rate (Set),,,,,Rate (Set),590,RESP-Bipap Vision Machinegegevens,,,,0,,,15,/min,/min,,,,,numericitems,187,187,Rate (Set)
+12403,Pacemaker Atrium ampl.(output) ingesteld,pacemaker atrial amplitude set,,,,PM_Atrium ampl.(outp.) ingest.,320,HD-Hartritme,hemodynamics-heart rhythm,,,0,,,0,None,,,,,,numericitems,1255,1255,pacemaker atrial amplitude set
+12404,Pacemaker Atrium sense ingesteld,pacemaker atrial sense set,,,,PM_Atrium sense ingest.,320,HD-Hartritme,hemodynamics-heart rhythm,,,0,,,150,mV,mV,,,,,numericitems,1102,1102,pacemaker atrial sense set
+12432,VCO2-Metabole meting,,,,,VCO2-Metabole meting,598,Metabole-metingen,,,,0,,,24,ml/min,mL/min,,,,,numericitems,1543,1543,VCO2 Metabolic measurement
+12433,VO2-Metabole meting,,,,,VO2-Metabole meting,598,Metabole-metingen,,,,0,,,24,ml/min,mL/min,,,,,numericitems,1544,1544,VO2 Metabolic measurement
+12435,Energy Expenditure,,,,,REE,598,Metabole-metingen,,,,0,,,297,kcal/24-uur,kcal/(24.h),,,,,numericitems,1548,1548,Energy Expenditure
+12436,BMR-gemeten,,,,,BMR-gemeten,598,Metabole-metingen,,,,0,,,36,kcal,kcal,,,,,numericitems,33,33,BMR measured
+12440,IABP HF,intra-aortic balloon pump heart rate,,,,IABP HF,326,HD-IABP,hemodynamics intra-aortic balloon pump,,,0,,,15,/min,/min,,,,,numericitems,83321,19090,intra-aortic balloon pump heart rate
+12441,IABP Mean Sys. Blood Pressure,intra-aortic balloon pump systolic pressure,,,,IABP Mean Sys. Blood Pressure,326,HD-IABP,hemodynamics intra-aortic balloon pump,,,0,,,298,mmHG/lsb.,mm[Hg],,,,,numericitems,82687,18461,intra-aortic balloon pump systolic pressure
+12442,IABP Mean Dia. Blood Pressure,intra-aortic balloon pump diastolic pressure,,,,IABP Mean Dia. Blood Pressure,326,HD-IABP,hemodynamics intra-aortic balloon pump,,,0,,,298,mmHG/lsb.,mm[Hg],,,,,numericitems,82682,18452,intra-aortic balloon pump diastolic pressure
+12443,IABP Mean Blood Pressure,intra-aortic balloon pump mean pressure,,,,IABP Mean Blood Pressure,326,HD-IABP,hemodynamics intra-aortic balloon pump,,,0,,,298,mmHG/lsb.,mm[Hg],,,,,numericitems,82978,18741,intra-aortic balloon pump mean pressure
+12444,Bloedflow ingesteld,CRRT blood flow setting,,,,Bloedflow ingesteld,351,CVVH-Instellingen,,,,0,,,24,ml/min,mL/min,,,,,numericitems,69828,59142,CRRT blood flow setting
+12445,PA min ingesteld,,,,,PA min ingesteld,351,CVVH-Instellingen,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,68717,57816,PA min set
+12446,PBE max ingesteld,,,,,PBE max ingesteld,351,CVVH-Instellingen,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,68690,57796,PBE max set
+12447,PD1 max ingesteld,,,,,PD1 max ingesteld,351,CVVH-Instellingen,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,68177,57289,PD1 max set
+12448,PD2 min ingesteld,,,,,PD2 min ingesteld,351,CVVH-Instellingen,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,68501,57569,PD2 min set
+12449,PFD max ingesteld,,,,,PFD max ingesteld,351,CVVH-Instellingen,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,68610,57658,PFD max set
+12450,PV venster,,,,,PV venster,351,CVVH-Instellingen,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,68676,57700,PV window
+12451,Substitutie vloeistof volume ingesteld,CRRT replacement fluid rate setting,,,,Substitutie vloeistof volume ingesteld,351,CVVH-Instellingen,,,,0,,,6,ml,mL,,,,,numericitems,67952,57152,CRRT replacement fluid rate setting
+12452,Substitutieflow ingesteld,CRRT replacement fluid rate setting,,,,Substitutieflow ingesteld,351,CVVH-Instellingen,,,,0,,,46,ml/uur,mL/h,,,,,numericitems,68896,58329,CRRT replacement fluid rate setting
+12453,TMP max ingesteld,,,,,TMP max ingesteld,351,CVVH-Instellingen,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,68507,57597,TMP max set
+12454,Vochtverlies ingesteld,,,,,Vochtverlies ingesteld,351,CVVH-Instellingen,,,,0,,,46,ml/uur,mL/h,,,,,numericitems,69427,58993,Fluid loss set
+12455,PD1,,,,,PD1,350,CVVH-Gegevens,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,66517,0,PD1
+12456,PFD,,,,,PFD,350,CVVH-Gegevens,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,70732,60917,PDF
+12458,TempVerwarmer,,,,,TempVerwarmer,350,CVVH-Gegevens,,,,0,,,59,°C,Cel,,,,,numericitems,66552,0,Temp Heater
+12459,TMP,CRRT transmembrane pressure,,,,TMP,350,CVVH-Gegevens,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,70867,61091,CRRT transmembrane pressure
+12460,Bloedflow,,,,,Bloedflow,282,CVVH-Afspraken,,,,0,,,24,ml/min,mL/min,,,,,numericitems,10374,10374,Blood flow
+12461,Substitutieflow,,,,,Substitutieflow,282,CVVH-Afspraken,,,,0,,,46,ml/uur,mL/h,,,,,numericitems,10374,10374,Substitution flow
+12463,Onttrekken,,,,,Onttrekken,282,CVVH-Afspraken,,,,0,,,46,ml/uur,mL/h,,,,,numericitems,10374,10374,Withdraw
+12503,Thoraxdrain4 Productie,,,,,Th.drain4,346,VB-Thoraxdrains,,,,0,,,6,ml,mL,,,,,numericitems,1015,1015,Chest Drain4 Production
+12504,Thoraxdrain5 Productie,,,,,Th.drain5,346,VB-Thoraxdrains,,,,0,,,6,ml,mL,,,,,numericitems,244,244,Chest Drain5 Production
+12506,Thoraxdrain6 Productie,,,,,Th.drain6,346,VB-Thoraxdrains,,,,0,,,6,ml,mL,,,,,numericitems,67,67,Chest Drain6 Production
+12507,Thoraxdrain4 Stand,,,,,Th.drain4/Stand,346,VB-Thoraxdrains,,,,0,,,6,ml,mL,,,,,numericitems,1087,1087,Chest drain4 Stand
+12508,Thoraxdrain5 Stand,,,,,Th.drain5/Stand,346,VB-Thoraxdrains,,,,0,,,6,ml,mL,,,,,numericitems,264,264,Chest drain5 Stand
+12509,Thoraxdrain6 Stand,,,,,Th.drain6/Stand,346,VB-Thoraxdrains,,,,0,,,6,ml,mL,,,,,numericitems,80,80,Chest drain6 Stand
+12533,NDT-syst. Stand,,,,,NDT/Stand,460,VB-VAC,,,,0,,,6,ml,mL,,,,,numericitems,2474,2474,NDT System Stand
+12534,SvO2 Vigilance,,,,,SvO2 Vigilance,608,CCO-Vigilance,,,,0,,,191,Geen,,,,,,numericitems,323,323,SvO2 Vigilance
+12553,Fistel,,,,,Fistel,611,VB-Fistel,,,,0,,,6,ml,mL,,,,,numericitems,604,604,Fistula
+12558,NIV Backup RR (Set),,,,,NIV Backup RR (Set),612,RESP-Servo NIV Machinegegevens,,,,0,,,15,/min,/min,,,,,numericitems,6266044,109598,NIV Backup RR (Set)
+12559,NIV Backup Ti (Set),,,,,NIV Backup Ti (Set),612,RESP-Servo NIV Machinegegevens,,,,0,,,3,sec,s,,,,,numericitems,6265836,109382,NIV Backup Ti (Set)
+12561,Cdyn,,,,,Cdyn,586,RESP-Servo Patiëntgegevens,,,,0,,,164,ml/cmH2O,mL/cm[H2O],,,,,numericitems,15079526,1125508,Cdyn
+12563,Ri,,,,,Ri,586,RESP-Servo Patiëntgegevens,,,,0,,,300,cmH20/l/s,cm[H2O]/L/s,,,,,numericitems,1999,38,Ri
+12564,Re,,,,,Re,586,RESP-Servo Patiëntgegevens,,,,0,,,300,cmH20/l/s,cm[H2O]/L/s,,,,,numericitems,2213,252,Re
+12567,WOBv,,,,,WOBv,586,RESP-Servo Patiëntgegevens,,,,0,,,301,J/l,J/L,,,,,numericitems,15095994,1119760,WOBv
+12570,Cstat,,,,,Cstat,586,RESP-Servo Patiëntgegevens,,,,0,,,164,ml/cmH2O,mL/cm[H2O],,,,,numericitems,2554,595,Cstat
+12571,Elastance,,,,,Elastance,586,RESP-Servo Patiëntgegevens,,,,0,,,302,cmH2O/l,cm[H2O]/mL,,,,,numericitems,311,311,Elastance
+12572,NIV leakage fraction nieuw,,,,,NIV leakage fraction nieuw,586,RESP-Servo Patiëntgegevens,,,,0,,,191,Geen,,,,,,numericitems,1426,571,NIV leakage fraction new
+12573,Insp. Time (sec) nieuw,,,,,"Ti (Set,sec) nieuw",587,RESP-Servo Machinegegevens,,,,0,,,3,sec,s,,,,,numericitems,5264142,428182,Insp. Time (sec) new
+12574,Pause Time (sec) nieuw,,,,,T pauze (sec) nieuw,587,RESP-Servo Machinegegevens,,,,0,,,3,sec,s,,,,,numericitems,315074,17989,Pause Time (sec) new
+12576,"Insp. Rise time (Set, sec) nieuw",,,,,"Insp. stijgtijd (Set, sec) nieuw",587,RESP-Servo Machinegegevens,,,,0,,,3,sec,s,,,,,numericitems,15484021,1140506,"Insp. Rise time (Set, sec) new"
+12577,Ademfreq. Spontaan nieuw,respiratory rate spontaneous,LOINC,19839-0,Breath rate spontaneous --on ventilator,Ademfreq. Spontaan nieuw,586,RESP-Servo Patiëntgegevens,,,,0,,,15,/min,/min,,,,,numericitems,330,330,respiratory rate spontaneous
+12578,MVe Spontaan nieuw,,,,,MVe Spontaan nieuw,586,RESP-Servo Patiëntgegevens,,,,0,,,26,l/min,L/min,,,,,numericitems,13989941,845365,Mve Spontaneously new
+12580,Galdrain Uit,,,,,Galdrain/Uit,613,VB-Galdrain,,,,0,,,6,ml,mL,,,,,numericitems,2651,2651,Galdrain Out
+12648,Schouder Li-abductie(°),,,,,Nee-> Li-Abductie(°),605,FYSIO-Functiestoornissen,,,,0,,,204,°,deg,0,90,,,numericitems,4,4,Shoulder Li Abduction(°)
+12649,Schouder Re-abductie(°),,,,,Nee-> Re-Abductie(°),605,FYSIO-Functiestoornissen,,,,0,,,204,°,deg,0,90,,,numericitems,4,4,Shoulder Re-abduction(°)
+12650,Schouder Li-exorotatie(°),,,,,Nee-> Li-exorotatie(°),605,FYSIO-Functiestoornissen,,,,0,,,204,°,deg,0,45,,,numericitems,8,8,Shoulder Li External Rotation(°)
+12651,Schouder Re-exorotatie(°),,,,,Nee->Re-exorotatie(°),605,FYSIO-Functiestoornissen,,,,0,,,204,°,deg,,,,,numericitems,6,6,Shoulder External Rotation(°)
+12654,Elleboog Li flexie(°),,,,,Nee-> Li flexie(°),605,FYSIO-Functiestoornissen,,,,0,,,204,°,deg,0,140,,,numericitems,2,2,Elbow Li flexion(°)
+12655,Elleboog Re flexie(°),,,,,Nee->Re flexie(°),605,FYSIO-Functiestoornissen,,,,0,,,204,°,deg,0,140,,,numericitems,2,2,Elbow Reflexion(°)
+12658,Heup Li flexie(°),,,,,Nee->Li  flexie(°),605,FYSIO-Functiestoornissen,,,,0,,,204,°,deg,0,120,,,numericitems,3,3,Hip Li flexion(°)
+12662,Enkel Li dorsaalflexie(°),,,,,Nee->Li dorsaalflexie(°),605,FYSIO-Functiestoornissen,,,,0,,,204,°,deg,0,30,,,numericitems,22,22,Ankle Li dorsiflexion(°)
+12663,Enkel Re dorsaalflexie(°),,,,,Nee->Re dorsaalflexie(°),605,FYSIO-Functiestoornissen,,,,0,,,204,°,deg,,,,,numericitems,20,20,Ankle Re Dorsiflexion(°)
+12671,Knie Li extensie HHD,,,,,Li extensie HHD (N),605,FYSIO-Functiestoornissen,,,,0,,,191,Geen,,,,,,numericitems,11,11,Knee Li extension HHD
+12672,Knie Re extensie HHD,,,,,Re extensie HHD (N),605,FYSIO-Functiestoornissen,,,,0,,,191,Geen,,,,,,numericitems,11,11,Knee Re extension HHD
+12673,Enkel Li dorsaalflexie HHD,,,,,Li dorsaalflexie HHD (N),605,FYSIO-Functiestoornissen,,,,0,,,191,Geen,,,,,,numericitems,11,11,Ankle Li dorsiflexion HHD
+12674,Enkel Re dorsaalflexie HHD,,,,,Re dorsaalflexie HHD (N),605,FYSIO-Functiestoornissen,,,,0,,,191,Geen,,,,,,numericitems,11,11,Ankle Re dorsiflexion HHD
+12675,Hand Li knijpkracht HHD,,,,,Li knijpkracht HHD (N),605,FYSIO-Functiestoornissen,,,,0,,,191,Geen,,,,,,numericitems,11,11,Hand Li squeeze force HHD
+12676,Hand Re knijpkracht HHD,,,,,Re knijpkracht HHD (N),605,FYSIO-Functiestoornissen,,,,0,,,191,Geen,,,,,,numericitems,11,11,Hand Re Grip Force HHD
+12683,Ti (sec) nieuw,,,,,Ti (sec) nieuw,586,RESP-Servo Patiëntgegevens,,,,0,,,3,sec,s,,,,,numericitems,4581263,372807,Ti (sec) new
+12684,"Insp. Rise time (Set, %) nieuw",,,,,"Insp. stijgtijd (Set, %) nieuw",587,RESP-Servo Machinegegevens,,,,0,,,191,Geen,,,,,,numericitems,9401836,1059891,"Insp. Rise time (Set, %) new"
+12773,Ventrikeldrain1 Stand,,,,,Ventr.drain1/Stand,353,VB-Ventrikeldrain,,,,0,,,6,ml,mL,,,,,numericitems,139,139,Ventricular drain1 Stand
+12774,Lumbaaldrain Stand,,,,,Lumb.drain/Stand,593,VB-Lumbaaldrain,,,,0,,,6,ml,mL,,,,,numericitems,104,104,Lumbar Drain Stand
+12775,Pericarddrain Stand,,,,,Peric.drain/Stand,360,VB-Pericarddrain,,,,0,,,6,ml,mL,,,,,numericitems,128,128,Pericardial Drain Stand
+12776,Nefrodrain li Stand,,,,,Nefrodrain li/Stand,471,VB-Nefrodrains,,,,0,,,6,ml,mL,,,,,numericitems,511,511,Nephrodrain left Stand
+12777,Nefrodrain re Stand,,,,,Nefrodrain re/Stand,471,VB-Nefrodrains,,,,0,,,6,ml,mL,,,,,numericitems,344,344,Nephrodrain re Stand
+12778,Galdrain Stand,,,,,Galdrain/Stand,613,VB-Galdrain,,,,0,,,6,ml,mL,,,,,numericitems,2471,2471,Galdrain Stand
+12792,Kolven,,,,,Kolven,624,VB-Kolven,,,,0,,,6,ml,mL,,,,,numericitems,133,133,Flasks
+12804,Barometer druk,,,,,Barometer druk,587,RESP-Servo Machinegegevens,,,,0,,,177,mbar,mbar,,,,,numericitems,15407880,51,Barometric pressure
+12805,EtCO2 (%),,,,,EtCO2 (%),586,RESP-Servo Patiëntgegevens,,,,0,,,191,Geen,,,,,,numericitems,14868918,37,EtCO2 (%)
+13030,Spinaaldrain Stand,,,,,Spinaaldrain/Stand,634,VB-Spinaaldrain,,,,0,,,6,ml,mL,,,,,numericitems,23,23,Spinal Drain Stand
+13031,Spinaaldrain Uit,,,,,Spinaaldrain/Uit,634,VB-Spinaaldrain,,,,0,,,6,ml,mL,,,,,numericitems,91,91,Spinal Drain Out
+13058,Temp Rectaal,rectal temperature,LOINC,8332-9,Rectal temperature,Temp Rectaal,322,HD-Temperatuur,hemodynamics-temperature,,,0,,,59,°C,Cel,,,,,numericitems,387259,34195,rectal temperature
+13059,Temp Lies,groin temperature,SNOMED CT,415929009,Groin temperature,Temp Lies,322,HD-Temperatuur,hemodynamics-temperature,,,0,,,59,°C,Cel,,,,,numericitems,89321,89321,groin temperature
+13060,Temp Axillair,axillary temperature,LOINC,8328-7,Axillary temperature,Temp Axillair,322,HD-Temperatuur,hemodynamics-temperature,,,0,,,59,°C,Cel,,,,,numericitems,202198,202198,axillary temperature
+13061,Temp Oraal,oral temperature,LOINC,8331-1,Oral temperature,Temp Oraal,322,HD-Temperatuur,hemodynamics-temperature,,,0,,,59,°C,Cel,,,,,numericitems,546,546,oral temperature
+13062,Temp Oor,tympanic temperature,LOINC,76011-6,Ear temperature,Temp Oor,322,HD-Temperatuur,hemodynamics-temperature,,,0,,,59,°C,Cel,,,,,numericitems,52540,51052,tympanic temperature
+13063,Temp Huid,skin temperature,LOINC,39106-0,Temperature of Skin,Temp Huid,322,HD-Temperatuur,hemodynamics-temperature,,,0,,,59,°C,Cel,,,,,numericitems,1948535,34859,skin temperature
+13067,A_Temperatuur,,,,,A_Temperatuur,635,APACHE-II,,,,0,,,59,°C,Cel,,,,,numericitems,200,200,A_Temperature
+13068,A_Serum_Natrium,,,,,A_Serum_Natrium,635,APACHE-II,,,,0,,,97,mmol/l,mmol/L,136,146,,,numericitems,47,47,A_Serum_Sodium
+13069,A_Serum_Kreatinine,,,,,A_Serum_Kreatinine,635,APACHE-II,,,,0,,,99,µmol/l,umol/L,,,,,numericitems,154,154,A_Serum_Creatinine
+13070,A_Serum_Kalium,,,,,A_Serum_Kalium,635,APACHE-II,,,,0,,,97,mmol/l,mmol/L,"3,5","4,5",,,numericitems,36,36,A_Serum_Potassium
+13073,A_Leucocyten,,,,,A_Leucocyten,635,APACHE-II,,,,0,,,101,10^9/l,10*9/L,,,,,numericitems,117,117,A_Leucocytes
+13074,A_Hematocriet(%),,,,,A_Hematocriet(%),635,APACHE-II,,,,0,,,191,Geen,,,,,,numericitems,40,40,A_Hematocrit(%)
+13075,A_Hartfrequentie,,,,,A_Hartfrequentie,635,APACHE-II,,,,0,,,15,/min,/min,,,,,numericitems,56,56,A_Heart rate
+13076,A_FiO2,,,,,A_FiO2,635,APACHE-II,,,,0,,,191,Geen,,0,4,,,numericitems,10817,10817,A_FiO2
+13080,A_Arteriële_PH,,,,,A_Arteriële_PH,635,APACHE-II,,,,0,,,191,Geen,,,,,,numericitems,138,138,A_Arterial_PH
+13081,A_Apache_Score,,,,,A_Apache_Score,635,APACHE-II,,,,0,,,191,Geen,,,,,,numericitems,10094,10094,A_Apache_Score
+13092,A_Ademfrequentie,,,,,A_Ademfrequentie,635,APACHE-II,,,,0,,,15,/min,/min,,,,,numericitems,91,91,A_Respiratory rate
+13093,A_ABPm,,,,,A_ABPm,635,APACHE-II,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,82,82,A_ABPm
+13150,PiCCO CI (Cardiac Index)X,,,,,PiCCO CIX,318,Deleted - Niet gebruiken,,,,0,,,92,l/min/m2,L/min/m2,3,5,,,numericitems,2,2,PiCCO CI (Cardiac Index)X
+13151,PiCCO CO (Cardiac Output),PiCCO cardiac output,,,,PiCCO CO,652,PiCCO-plus,PiCCO-plus,,,0,,,26,l/min,L/min,,,,,numericitems,1427,1426,PiCCO cardiac output
+13152,PiCCO GEDVI (Globaal Einddiastolisch Volume Index),PiCCO global end diastolic volume index,,,,PiCCO GEDVI,652,PiCCO-plus,PiCCO-plus,,,0,,,89,ml/m2,mL/m2,680,800,,,numericitems,669,669,PiCCO global end diastolic volume index
+13153,PiCCO_EVLWI (Extravasculair longwater index),PiCCO extravascular lung water index,,,,PiCCO_EVLWI,652,PiCCO-plus,PiCCO-plus,,,0,,,170,ml/kg,mL/kg,3,7,,,numericitems,630,630,PiCCO extravascular lung water index
+13154,PiCCO SVV (Slagvolumevariatie),PiCCO stroke volume variation,,,,PiCCO SVV (%),652,PiCCO-plus,PiCCO-plus,,,0,,,191,Geen,,,10,,,numericitems,4995,4640,PiCCO stroke volume variation
+13155,PiCCO PPV (Polsdrukvariatie),PiCCO pulse pressure variation,,,,PiCCO PPV (%),652,PiCCO-plus,PiCCO-plus,,,0,,,191,Geen,,,10,,,numericitems,4988,4626,PiCCO pulse pressure variation
+13491,Bladderscan: Inhoud blaas,bladder scan: bladder volume,LOINC,15309-8,"Urinary bladder Volume by derived from height, width and length (US)",Bladderscan: Inhoud blaas,426,DIVERSEN,miscellaneous,,,0,,,6,ml,mL,,,,,numericitems,334,334,bladder scan: bladder volume
+13495,Ventrikeldrain2 Uit,,,,,Ventr.drain2/Uit,353,VB-Ventrikeldrain,,,,0,,,6,ml,mL,,,,,numericitems,1901,1901,Ventricular Drain2 Off
+13496,Ventrikeldrain2 Stand,,,,,Ventr.drain2/Stand,353,VB-Ventrikeldrain,,,,0,,,6,ml,mL,,,,,numericitems,15,15,Ventricular drain2 Stand
+13940,Intracraniële druk(2),,,,,ICP(2),334,NEURO-Drukken,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,826,826,Intracranial Pressure(2)
+13945,EVD-cm boven Monroe(2),,,,,EVD-cm boven Monroe(2),428,NEURO-Algemeen,,,,0,,,50,cm,cm,,,,,numericitems,2050,2050,EVD-cm above Monroe(2)
+13950,EVV_TotaalScore,,,,,EVV_TotaalScore,599,EVV,,,,0,,,191,Geen,,,,,,numericitems,12090,12090,EVV_TotalScore
+13952,Temp Blaas,bladder temperature,LOINC,76278-1,Bladder temperature via Foley,Temp Blaas,322,HD-Temperatuur,hemodynamics-temperature,,,0,,,59,°C,Cel,,,,,numericitems,927689,16029,bladder temperature
+14047,PiCCO Tb blood temperature,PiCCO blood temperature,,,,PiCCO Tb blood temperature,652,PiCCO-plus,PiCCO-plus,,,0,,,59,°C,Cel,25,45,,,numericitems,4733,4523,PiCCO blood temperature
+14048,PiCCO Gewicht,PiCCO weight,,,,PiCCO Gewicht,652,PiCCO-plus,PiCCO-plus,,,0,,,12,kg,kg,,,,,numericitems,4819,4544,PiCCO weight
+14050,PiCCO_BSA,PiCCO body surface area,,,,PiCCO_BSA,652,PiCCO-plus,PiCCO-plus,,,0,,,307,[0.0001] m2,1/1000.m2,,,,,numericitems,3983,0,PiCCO body surface area
+14055,PiCCO HF Hartfrequentie,PiCCO heart rate,,,,PiCCO HF Hartfrequentie,652,PiCCO-plus,PiCCO-plus,,,0,,,15,/min,/min,,,,,numericitems,4559,4330,PiCCO heart rate
+14056,PiCCO APs,PiCCO systolic arterial pressure,,,,PiCCO APs,652,PiCCO-plus,PiCCO-plus,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,4646,4412,PiCCO systolic arterial pressure
+14057,PiCCO APd,PiCCO diastolic arterial pressure,,,,PiCCO APd,652,PiCCO-plus,PiCCO-plus,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,4628,4396,PiCCO diastolic arterial pressure
+14058,PiCCO APm,PiCCO mean arterial pressure,,,,PiCCO APm,652,PiCCO-plus,PiCCO-plus,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,3970,0,PiCCO mean arterial pressure
+14060,PiCCO mean CO,PiCCO mean cardiac output,,,,PiCCO mean CO,652,PiCCO-plus,PiCCO-plus,,,0,,,26,l/min,L/min,,,,,numericitems,621,620,PiCCO mean cardiac output
+14062,PiCCO PCCO,PiCCO pulse contour cardiac output,,,,PiCCO PCCO,652,PiCCO-plus,PiCCO-plus,,,0,,,26,l/min,L/min,,,,,numericitems,4422,4161,PiCCO pulse contour cardiac output
+14064,PiCCO GEF,PiCCO global ejection fraction,,,,PiCCO GEF,652,PiCCO-plus,PiCCO-plus,,,0,,,191,Geen,,1,99,,,numericitems,4162,3889,PiCCO global ejection fraction
+14065,Beat to beat SV,PiCCO beat to beat stroke volume,,,,Beat to beat SV,652,PiCCO-plus,PiCCO-plus,,,0,,,6,ml,mL,,,,,numericitems,4392,4139,PiCCO beat to beat stroke volume
+14066,PiCCO GEDV,PiCCO global end diastolic volume,,,,PiCCO GEDV,652,PiCCO-plus,PiCCO-plus,,,0,,,6,ml,mL,,,,,numericitems,614,612,PiCCO global end diastolic volume
+14067,PiCCO mean GEDV,PiCCO mean global end diastolic volume,,,,PiCCO mean GEDV,652,PiCCO-plus,PiCCO-plus,,,0,,,6,ml,mL,,,,,numericitems,611,608,PiCCO mean global end diastolic volume
+14070,PiCCO EVLW,PiCCO extravascular lung water,,,,PiCCO EVLW,652,PiCCO-plus,PiCCO-plus,,,0,,,6,ml,mL,,,,,numericitems,606,603,PiCCO extravascular lung water
+14071,PiCCO mean EVLW,PiCCO mean extravascular lung water,,,,PiCCO mean EVLW,652,PiCCO-plus,PiCCO-plus,,,0,,,6,ml,mL,,,,,numericitems,612,609,PiCCO mean extravascular lung water
+14074,PiCCO SVRX,,,,,PiCCO SVRX,318,Deleted - Niet gebruiken,,,,0,,,1,dynes.sec.cm-5,dyn.s.cm-5,,,,,numericitems,3559,0,PiCCO SVRX
+14089,NAVA Niveau,,,,,NAVA Niveau,662,RESP-Servo NAVA Machinegegevens,,,,0,,,308,cmH2O/µV,cm[H2O]/uV,,,,,numericitems,27292,3013,NAVA Level
+14090,NAVA  Edi Trigger,,,,,NAVA  Edi Trigger,662,RESP-Servo NAVA Machinegegevens,,,,0,,,309,µV,uV,0,2,,,numericitems,26731,2452,NAVA Edit Trigger
+14091,NAVA Edi peak,,,,,NAVA Edi peak,586,RESP-Servo Patiëntgegevens,,,,0,,,309,µV,uV,,,,,numericitems,48086,8904,NAVA Edi peak
+14092,NAVA Edi min,,,,,NAVA Edi min,586,RESP-Servo Patiëntgegevens,,,,0,,,309,µV,uV,,,,,numericitems,46975,7979,NAVA Edit min
+14128,Maagzuig Stand,,,,,Maagzuig/Stand,339,VB-Tr.Digestivus,,,,0,,,6,ml,mL,,,,,numericitems,1643,1643,Stomach Suction Stand
+14428,Wonddrain5 Productie,,,,,Wdrain5,352,VB-Wonddrains,,,,0,,,6,ml,mL,,,,,numericitems,669,669,Wondrain5 Production
+14429,Wonddrain6 Productie,,,,,Wdrain6,352,VB-Wonddrains,,,,0,,,6,ml,mL,,,,,numericitems,308,308,Wondrain6 Production
+14430,Wonddrain5 Stand,,,,,Wdrain5/Stand,352,VB-Wonddrains,,,,0,,,6,ml,mL,,,,,numericitems,585,585,Wondrain5 Stand
+14431,Wonddrain6 Stand,,,,,Wdrain6/Stand,352,VB-Wonddrains,,,,0,,,6,ml,mL,,,,,numericitems,303,303,Wondrain6 Stand
+14453,Research_Apache_Score,,,,,Research_Apache_Score,671,APACHE II RESEARCH,,,,0,,,191,Geen,,,,,,numericitems,72,72,Research_Apache_Score
+14454,RA_ABPm,,,,,RA_ABPm,671,APACHE II RESEARCH,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,1,1,RA_ABPm
+14455,RA_Ademfrequentie,,,,,RA_Ademfrequentie,671,APACHE II RESEARCH,,,,0,,,15,/min,/min,,,,,numericitems,4,4,RA_Respiratory rate
+14467,RA_Arteriële_PH,,,,,RA_Arteriële_PH,671,APACHE II RESEARCH,,,,0,,,191,Geen,,,,,,numericitems,4,4,RA_Arterial_PH
+14471,RA_FiO2,,,,,RA_FiO2,671,APACHE II RESEARCH,,,,0,,,191,Geen,,0,4,,,numericitems,76,76,RA_FiO2
+14473,RA_Hematocriet(%),,,,,RA_Hematocriet(%),671,APACHE II RESEARCH,,,,0,,,191,Geen,,,,,,numericitems,2,2,RA_Hematocrit(%)
+14475,RA_Leucocyten,,,,,RA_Leucocyten,671,APACHE II RESEARCH,,,,0,,,101,10^9/l,10*9/L,,,,,numericitems,2,2,RA_Leucocytes
+14478,RA_Serum_Kalium,,,,,RA_Serum_Kalium,671,APACHE II RESEARCH,,,,0,,,97,mmol/l,mmol/L,"3,5","4,5",,,numericitems,2,2,RA_Serum_Potassium
+14479,RA_Serum_Kreatinine,,,,,RA_Serum_Kreatinine,671,APACHE II RESEARCH,,,,0,,,99,µmol/l,umol/L,,,,,numericitems,2,2,RA_Serum_Creatinine
+14480,RA_Serum_Natrium,,,,,RA_Serum_Natrium,671,APACHE II RESEARCH,,,,0,,,97,mmol/l,mmol/L,136,146,,,numericitems,2,2,RA_Serum_Sodium
+14481,RA_Temperatuur,,,,,RA_Temperatuur,671,APACHE II RESEARCH,,,,0,,,59,°C,Cel,,,,,numericitems,13,13,RA_Temperature
+14736,Streef Onderwaarde ABPm,,,,,Streef Onderwaarde ABPm,323,HD-Bloeddrukken,hemodynamics-blood pressures,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,17922,17922,Target Lower Value ABPm
+14737,Streef Onderwaarde NIBPm,,,,,Streef Onderwaarde NIBPm,323,HD-Bloeddrukken,hemodynamics-blood pressures,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,14,14,Target Lower NIBPm
+14742,Streef Onderwaarde CPP,,,,,Streef Onderwaarde CPP,334,NEURO-Drukken,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,1340,1340,Target Lower CPP
+14835,MFT_Arteriele druk,CRRT access pressure,,,,MFT_Arteriele druk,681,CVVH-MFT,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,2087832,95994,CRRT access pressure
+14836,MFT_Filtraat druk,CRRT ultrafiltration pressure,,,,MFT_Filtraat druk,681,CVVH-MFT,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,2086046,93249,CRRT ultrafiltration pressure
+14837,MFT_Veneuze druk,CRRT return pressure,,,,MFT_Veneuze druk,681,CVVH-MFT,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,2087608,95919,CRRT return pressure
+14838,MFT_TMP,CRRT transmembrane pressure,,,,MFT_TMP,681,CVVH-MFT,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,2088513,96006,CRRT transmembrane pressure
+14839,MFT_Pre-filter druk,CRRT pre-filter pressure / pre-blood entry pressure,,,,MFT_Pre-filter druk,681,CVVH-MFT,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,2085182,93255,CRRT pre-filter pressure / pre-blood entry pressure
+14840,MFT_TMP bovengrens,,,,,MFT_TMP bovengrens,681,CVVH-MFT,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,2007019,92382,MFT_TMP upper limit
+14841,MFT_Arteriele ondergrens,,,,,MFT_Arteriele ondergrens,681,CVVH-MFT,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,2007019,92434,MFT_Arterial Lower Limit
+14842,MFT_Arteriele bovengrens,,,,,MFT_Arteriele bovengrens,681,CVVH-MFT,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,2007033,92459,MFT_Arterial Upper Limit
+14843,MFT_Veneuze bovengrens,,,,,MFT_Veneuze bovengrens,681,CVVH-MFT,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,2007019,92362,MFT_Venous upper limit
+14844,MFT_Veneuze ondergrens,,,,,MFT_Veneuze ondergrens,681,CVVH-MFT,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,2007015,92316,MFT_Venous Lower Limit
+14845,MFT_TMP ondergrens,,,,,MFT_TMP ondergrens,681,CVVH-MFT,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,2007018,92414,MFT_TMP lower limit
+14848,MFT_Substituaat (ingesteld),CRRT replacement fluid rate setting,,,,MFT_Substituaat (ingesteld),681,CVVH-MFT,,,,0,,,46,ml/uur,mL/h,,,,,numericitems,1130284,81707,CRRT replacement fluid rate setting
+14849,MFT_Ultrafiltratie (ingesteld),CRRT net ultrafiltration rate,,,,MFT_Ultrafiltratie (ingesteld),681,CVVH-MFT,,,,0,,,46,ml/uur,mL/h,,,,,numericitems,1948560,94853,CRRT net ultrafiltration rate
+14850,MFT_Bloedflow (ingesteld),CRRT blood flow setting,,,,MFT_Bloedflow (ingesteld),681,CVVH-MFT,,,,0,,,24,ml/min,mL/min,,,,,numericitems,1949033,95341,CRRT blood flow setting
+14851,MFT_UF Totaal (ingesteld),CRRT net ultrafiltration volume setting,,,,MFT_UF Totaal (ingesteld),681,CVVH-MFT,,,,0,,,6,ml,mL,,,,,numericitems,1796778,87933,CRRT net ultrafiltration volume setting
+14852,MFT_Temperatuur (ingesteld),,,,,MFT_Temperatuur (ingesteld),681,CVVH-MFT,,,,0,,,59,°C,Cel,,,,,numericitems,1804527,88860,MFT_Temperature (set)
+15168,Ramsay Streefwaarde,,,,,Ramsay Streefwaarde,684,NEURO-Overig,,,,0,,,191,Geen,,,,,,numericitems,671,671,Ramsay Target Value
+15257,Cisternale drain Uit,,,,,Cisternale drain/Uit,685,VB-Cisternale drain,,,,0,,,6,ml,mL,,,,,numericitems,293,293,Cisternal drain Off
+15277,Streef Bovenwaarde ABPm,,,,,Streef Bovenwaarde ABPm,323,HD-Bloeddrukken,hemodynamics-blood pressures,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,3223,3223,Target Above Value ABPm
+15278,Streef Bovenwaarde ABPs,,,,,Streef Bovenwaarde ABPs,323,HD-Bloeddrukken,hemodynamics-blood pressures,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,6564,6564,Aim Above Value ABPs
+15279,Streef Onderwaarde ABPs,,,,,Streef Onderwaarde ABPs,323,HD-Bloeddrukken,hemodynamics-blood pressures,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,910,910,Target Lower Value ABPs
+15280,Streef Bovenwaarde NIBPm,,,,,Streef Bovenwaarde NIBPm,323,HD-Bloeddrukken,hemodynamics-blood pressures,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,1,1,Target Upper Value NIBPm
+15281,Streef Onderwaarde NIBPs,,,,,Streef Onderwaarde NIBPs,323,HD-Bloeddrukken,hemodynamics-blood pressures,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,1,1,Target Lower NIBPs
+15282,Streef Bovenwaarde NIBPs,,,,,Streef Bovenwaarde NIBPs,323,HD-Bloeddrukken,hemodynamics-blood pressures,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,1,1,Target Upper Level NIBPs
+15290,Streef Bovenwaarde ICP,,,,,Streef Bovenwaarde ICP,334,NEURO-Drukken,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,995,995,Aim Above Value ICP
+15292,Streef Vochtbalans,,,,,Streef Vochtbalans,364,VB-TOT.BALANS,,,,0,,,6,ml,mL,,,,,numericitems,24745,24745,Strive Moisture Balance
+15770,Streef Temperatuur,target temperature,,,,Streef Temperatuur,322,HD-Temperatuur,hemodynamics-temperature,,,0,,,59,°C,Cel,,,,,numericitems,5852,5852,target temperature
+16053,Ontlasting flexiseal Stand,,,,,Ontlasting flexiseal/Stand,339,VB-Tr.Digestivus,,,,0,,,6,ml,mL,,,,,numericitems,22982,22982,Stool flexiseal Stand
+16110,Temp Oesophagus,esophageal temperature,LOINC,60836-4,Esophageal temperature,Temp Oesophagus,322,HD-Temperatuur,hemodynamics-temperature,,,0,,,59,°C,Cel,,,,,numericitems,833973,46044,esophageal temperature
+16120,Reanimatie ProcessID,,,,,Reanimatie ProcessID,687,Klinische verrichting Circulatie,,,,0,,,0,None,,,,,,numericitems,273,273,CPR ProcessID
+16121,Cardioversie ProcessID,,,,,Cardioversie ProcessID,687,Klinische verrichting Circulatie,,,,0,,,0,None,,,,,,numericitems,222,222,Cardioversion ProcessID
+16122,Intubatie ProcessID,,,,,Intubatie ProcessID,688,Klinische verrichting Respiratie,,,,0,,,0,None,,,,,,numericitems,1178,1178,Intubation ProcessID
+16123,Bronchoscopie ProcessID,,,,,Bronchoscopie ProcessID,688,Klinische verrichting Respiratie,,,,0,,,0,None,,,,,,numericitems,452,452,Bronchoscopy ProcessID
+16197,Nazorg Gewicht voor opname,,,,,Nazorg Gewicht voor opname,690,Nazorg-poli_Status,,,,0,,,12,kg,kg,,,,,numericitems,66,66,Aftercare Weight before admission
+16198,Nazorg Gewicht bij polibezoek,,,,,Nazorg Gewicht bij polibezoek,690,Nazorg-poli_Status,,,,0,,,12,kg,kg,,,,,numericitems,64,64,Aftercare Weight at outpatient visit
+16239,Zephyros Ppeak,peak inspiratory airway pressure,LOINC,19976-0,Maximum [Pressure] Respiratory system airway opening --during inspiration on ventilator,Zephyros Ppeak,694,RESP-Zephyros Patiëntgegevens,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,64,64,peak inspiratory airway pressure
+16240,Zephyros Pmin,,,,,Zephyros Pmin,694,RESP-Zephyros Patiëntgegevens,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,45,45,Zephyros Pmin
+16241,Zephyros Frequentie,respiratory rate setting,LOINC,19834-1,Breath rate setting Ventilator,Zephyros Frequentie,694,RESP-Zephyros Patiëntgegevens,,,,0,,,15,/min,/min,,,,,numericitems,62,62,respiratory rate setting
+16243,Zephyros Vte,,,,,Zephyros Vte,694,RESP-Zephyros Patiëntgegevens,,,,0,,,6,ml,mL,,,,,numericitems,68,68,Zephyros Vte
+16244,Zephyros Mve,,,,,Zephyros Mve,694,RESP-Zephyros Patiëntgegevens,,,,0,,,8,l,L,,,,,numericitems,70,70,Zephyros Mve
+16245,Zephyros O2i,,,,,Zephyros O2i,694,RESP-Zephyros Patiëntgegevens,,,,0,,,191,Geen,,,,,,numericitems,52,52,Zephyros O2i
+16246,Zephyros FiO2,inspired oxygen concentration setting,LOINC,19994-3,Oxygen/Inspired gas setting [Volume Fraction] Ventilator,Zephyros FiO2,693,RESP-Zephyros Machinegegevens,,,,0,,,191,Geen,,,,,,numericitems,239,239,inspired oxygen concentration setting
+16248,Zephyros  Freq,respiratory rate setting,LOINC,19834-1,Breath rate setting Ventilator,Zephyros  Freq,693,RESP-Zephyros Machinegegevens,,,,0,,,15,/min,/min,,,,,numericitems,83,83,respiratory rate setting
+16249,Zephyros P.Insp,,,,,Zephyros P.Insp,693,RESP-Zephyros Machinegegevens,,,,0,,,322,+PEEP,cm[H2O]{above_PEEP},,,,,numericitems,63,63,Zephyros P.Insp
+16250,Zephyros PEEP,positive end expiratory pressure setting,LOINC,20077-4,Positive end expiratory pressure setting Ventilator,Zephyros PEEP,693,RESP-Zephyros Machinegegevens,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,241,241,positive end expiratory pressure setting
+16251,Zephyros P-psv,,,,,Zephyros P-psv,693,RESP-Zephyros Machinegegevens,,,,0,,,322,+PEEP,cm[H2O]{above_PEEP},,,,,numericitems,192,192,Zephyros P-psv
+16332,Intubatie KlinischEventID,,,,,Intubatie KlinischEventID,688,Klinische verrichting Respiratie,,,,0,,,0,None,,,,,,numericitems,2009,2009,Intubation ClinicalEventID
+16333,Intubatie Tube PendingOrderID,,,,,Intubatie Tube PendingOrderID,688,Klinische verrichting Respiratie,,,,0,,,0,None,,,,,,numericitems,1966,1966,Intubation Tube PendingOrderID
+16375,Tracheotomie ProcessID,,,,,Tracheotomie ProcessID,688,Klinische verrichting Respiratie,,,,0,,,0,None,,,,,,numericitems,274,274,Tracheotomy ProcessID
+16376,Tracheotomie Tracheostoma PendingOrderID,,,,,Tracheotomie Tracheostoma PendingOrderID,688,Klinische verrichting Respiratie,,,,0,,,0,None,,,,,,numericitems,494,494,Tracheotomy Tracheostomy PendingOrderID
+16379,Tracheotomie KlinischEventID,,,,,Tracheotomie KlinischEventID,688,Klinische verrichting Respiratie,,,,0,,,0,None,,,,,,numericitems,499,499,Tracheotomy ClinicalEventID
+16382,Thoraxdrain Thoraxdrain PendingOrderID,,,,,Thoraxdrain Thoraxdrain PendingOrderID,695,Klinische verrichting Thoraxdrain,,,,0,,,0,None,,,,,,numericitems,434,434,Chest Drain Thorax Drain PendingOrderID
+16383,Thoraxdrain ProcessID,,,,,Thoraxdrain ProcessID,695,Klinische verrichting Thoraxdrain,,,,0,,,0,None,,,,,,numericitems,243,243,Chest Drain ProcessID
+16385,Thoraxdrain KlinischEventID,,,,,Thoraxdrain KlinischEventID,695,Klinische verrichting Thoraxdrain,,,,0,,,0,None,,,,,,numericitems,439,439,Chest Drain ClinicalEventID
+16443,Veneuze lijn KlinischEventID,,,,,Veneuze lijn KlinischEventID,697,Klinische verrichting Lijnen,,,,0,,,0,None,,,,,,numericitems,3220,3220,Venous line ClinicalEventID
+16444,Veneuze lijn lijn PendingOrderID,,,,,Veneuze lijn lijn PendingOrderID,697,Klinische verrichting Lijnen,,,,0,,,0,None,,,,,,numericitems,3160,3160,Venous line line PendingOrderID
+16447,Veneuze lijn ProcessID,,,,,Veneuze lijn ProcessID,697,Klinische verrichting Lijnen,,,,0,,,0,None,,,,,,numericitems,1783,1783,Venous Line ProcessID
+16494,GRIP - Glucose Management Groepsnummer,,,,,GRIP - Glucose Management Groepsnummer,674,Glucose-Management,,,,0,,,0,None,,,,,,numericitems,19,19,GRIP - Glucose Management Group Number
+16612,MCA_ABPm,,,,,MCA_ABPm,699,APACHE II MICV,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,6,6,MCA_ABPm
+16613,MCA_Ademfrequentie,,,,,MCA_Ademfrequentie,699,APACHE II MICV,,,,0,,,15,/min,/min,,,,,numericitems,29,29,MCA_Respiratory rate
+16624,MCA_Apache_Score,,,,,MCA_Apache_Score,699,APACHE II MICV,,,,0,,,191,Geen,,,,,,numericitems,1898,1898,MCA_Apache_Score
+16625,MCA_Arteriële_PH,,,,,MCA_Arteriële_PH,699,APACHE II MICV,,,,0,,,191,Geen,,,,,,numericitems,313,313,MCA_Arterial_PH
+16629,MCA_FiO2,,,,,MCA_FiO2,699,APACHE II MICV,,,,0,,,191,Geen,,0,4,,,numericitems,1951,1951,MCA_FiO2
+16631,MCA_Hematocriet(%),,,,,MCA_Hematocriet(%),699,APACHE II MICV,,,,0,,,191,Geen,,,,,,numericitems,41,41,MCA_Hematocrit(%)
+16633,MCA_Leucocyten,,,,,MCA_Leucocyten,699,APACHE II MICV,,,,0,,,101,10^9/l,10*9/L,,,,,numericitems,49,49,MCA_Leucocytes
+16636,MCA_Serum_Kalium,,,,,MCA_Serum_Kalium,699,APACHE II MICV,,,,0,,,97,mmol/l,mmol/L,"3,5","4,5",,,numericitems,49,49,MCA_Serum_Potassium
+16637,MCA_Serum_Kreatinine,,,,,MCA_Serum_Kreatinine,699,APACHE II MICV,,,,0,,,99,µmol/l,umol/L,,,,,numericitems,55,55,MCA_Serum_Creatinine
+16638,MCA_Serum_Natrium,,,,,MCA_Serum_Natrium,699,APACHE II MICV,,,,0,,,97,mmol/l,mmol/L,136,146,,,numericitems,43,43,MCA_Serum_Sodium
+16639,MCA_Temperatuur,,,,,MCA_Temperatuur,699,APACHE II MICV,,,,0,,,59,°C,Cel,,,,,numericitems,21,21,MCA_Temperature
+16686,Peritoneaal druk,peritoneal pressure,SNOMED CT,51497000,Intraabdominal pressure,Peritoneaal druk,426,DIVERSEN,miscellaneous,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,209,209,peritoneal pressure
+16691,Fistel Stand,,,,,Fistel/Stand,611,VB-Fistel,,,,0,,,6,ml,mL,,,,,numericitems,373,373,Fistula Stand
+16800,GRIP - BtnAcceptGripAdvicePressed,,,,,GRIP - BtnAcceptGripAdvicePressed,674,Glucose-Management,,,,0,,,0,None,,,,,,numericitems,65377,65377,GRIP - BtnAcceptGripAdvicePressed
+16801,GRIP - BtnNotAcceptGripAdvicePressed,,,,,GRIP - BtnNotAcceptGripAdvicePressed,674,Glucose-Management,,,,0,,,0,None,,,,,,numericitems,2823,2823,GRIP - BtnNotAcceptGripAdvicePressed
+16802,GRIP - InsulinAdviceRate,,,,,GRIP - InsulinAdviceRate,674,Glucose-Management,,,,0,,,46,ml/uur,mL/h,,,,,numericitems,87788,87788,GRIP - InsulinAdviceRate
+16805,GRIP - InsulinActualRate,,,,,GRIP - InsulinActualRate,674,Glucose-Management,,,,0,,,46,ml/uur,mL/h,,,,,numericitems,85285,85285,GRIP - Insulin Actual Rate
+16808,GRIP - GlucLastValue,,,,,GRIP - GlucLastValue,674,Glucose-Management,,,,0,,,97,mmol/l,mmol/L,,,,,numericitems,90443,90443,GRIP - GlucLastValue
+16809,GRIP - GRIPactivated,,,,,GRIP - GRIPactivated,674,Glucose-Management,,,,0,,,0,None,,,,,,numericitems,94735,94735,GRIP - GRIP activated
+16813,GRIP - InsulinResistance,,,,,GRIP - InsulinResistance,674,Glucose-Management,,,,0,,,0,None,,,,,,numericitems,2559,2559,GRIP - Insulin Resistance
+16814,GRIP - InitialAdviceBeforeRestrictions,,,,,GRIP - InitialAdviceBeforeRestrictions,674,Glucose-Management,,,,0,,,0,None,,,,,,numericitems,2559,2559,GRIP - InitialAdviceBeforeRestrictions
+16815,GRIP - InitialAdviceAfterRestrictions,,,,,GRIP - InitialAdviceAfterRestrictions,674,Glucose-Management,,,,0,,,0,None,,,,,,numericitems,2559,2559,GRIP - InitialAdviceAfterRestrictions
+16818,GRIP - AVGInsuline4Hours,,,,,GRIP - AVGInsuline4Hours,674,Glucose-Management,,,,0,,,46,ml/uur,mL/h,,,,,numericitems,91082,91082,GRIP - AVGInsulin4Hours
+16819,GRIP - CurrentIntake,,,,,GRIP - CurrentIntake,674,Glucose-Management,,,,0,,,46,ml/uur,mL/h,,,,,numericitems,88849,88849,GRIP - CurrentIntake
+16820,GRIP - OldIntake,,,,,GRIP - OldIntake,674,Glucose-Management,,,,0,,,46,ml/uur,mL/h,,,,,numericitems,88851,88851,GRIP - Old Intake
+16821,GRIP - RelativeGlucoseAfterFilter,,,,,GRIP - RelativeGlucoseAfterFilter,674,Glucose-Management,,,,0,,,0,None,,,,,,numericitems,88845,88845,GRIP - RelativeGlucoseAfterFilter
+16822,GRIP - Gluc4HoursAgo,,,,,GRIP - Gluc4HoursAgo,674,Glucose-Management,,,,0,,,97,mmol/l,mmol/L,,,,,numericitems,88843,88843,GRIP - Gluc4HoursAgo
+16823,GRIP - pumpdifferenceBeforeFilter,,,,,GRIP - pumpdifferenceBeforeFilter,674,Glucose-Management,,,,0,,,0,None,,,,,,numericitems,88841,88841,GRIP - pumpdifferenceBeforeFilter
+16824,GRIP - pumpdifferenceAfterFilter,,,,,GRIP - pumpdifferenceAfterFilter,674,Glucose-Management,,,,0,,,0,None,,,,,,numericitems,88840,88840,GRIP - pumpdifferenceAfterFilter
+16825,GRIP - InsulinAdviceBeforeRestrictions,,,,,GRIP - InsulinAdviceBeforeRestrictions,674,Glucose-Management,,,,0,,,0,None,,,,,,numericitems,88839,88839,GRIP - InsulinAdviceBeforeRestrictions
+16826,GRIP - InsulinAdviceAfterRestrictions,,,,,GRIP - InsulinAdviceAfterRestrictions,674,Glucose-Management,,,,0,,,0,None,,,,,,numericitems,88838,88838,GRIP - InsulinAdviceAfterRestrictions
+16835,Streef Onderwaarde pO2,,,,,Streef Onderwaarde pO2,701,RESP-Acceptatiewaarden,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,64,64,Target Lower pO2
+16837,Streef Onderwaarde pCO2,,,,,Streef Onderwaarde pCO2,701,RESP-Acceptatiewaarden,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,890,890,Target Lower value pCO2
+16838,Streef Bovenwaarde pCO2,,,,,Streef Bovenwaarde pCO2,701,RESP-Acceptatiewaarden,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,1394,1394,Target Upper value pCO2
+16847,Streef Onderwaarde AF,,,,,Streef Onderwaarde AF,701,RESP-Acceptatiewaarden,,,,0,,,15,/min,/min,,,,,numericitems,137,137,Aim Undervalue AF
+16848,Streef Bovenwaarde AF,,,,,Streef Bovenwaarde AF,701,RESP-Acceptatiewaarden,,,,0,,,15,/min,/min,,,,,numericitems,206,206,Aim Above Value AF
+16858,Maaghevel Stand,,,,,Maaghevel/Stand,339,VB-Tr.Digestivus,,,,0,,,6,ml,mL,,,,,numericitems,27310,27310,Stomach Level Stand
+18618,MC NAS score,medium care nursing activity score,,,,MC NAS score,708,NAS score,,,,0,,,191,Geen,,,,,,numericitems,34620,34620,medium care nursing activity score
+18621,MC NAS Item 1 score,,,,,MC NAS Item 1 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,34685,34685,MC NAS Item 1 rating
+18622,MC NAS Item 2 score,,,,,MC NAS Item 2 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,31848,31848,MC NAS Item 2 rating
+18623,MC NAS Item 3 score,,,,,MC NAS Item 3 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,27522,27522,MC NAS Item 3 rating
+18624,MC NAS Item 4 score,,,,,MC NAS Item 4 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,34682,34682,MC NAS Item 4 rating
+18625,MC NAS Item 5 score,,,,,MC NAS Item 5 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,7747,7747,MC NAS Item 5 rating
+18626,MC NAS Item 6 score,,,,,MC NAS Item 6 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,34682,34682,MC NAS Item 6 rating
+18627,MC NAS Item 7 score,,,,,MC NAS Item 7 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,34682,34682,MC NAS Item 7 rating
+18628,MC NAS Item 8 score,,,,,MC NAS Item 8 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,34675,34675,MC NAS Item 8 rating
+18629,MC NAS Item 9 score,,,,,MC NAS Item 9 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,17806,17806,MC NAS Item 9 rating
+18630,MC NAS Item 10 score,,,,,MC NAS Item 10 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,5641,5641,MC NAS Item 10 rating
+18631,MC NAS Item 11 score,,,,,MC NAS Item 11 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,3068,3068,MC NAS Item 11 rating
+18632,MC NAS Item 12 score,,,,,MC NAS Item 12 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,2186,2186,MC NAS Item 12 rating
+18633,MC NAS Item 13 score,,,,,MC NAS Item 13 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,72,72,MC NAS Item 13 rating
+18634,MC NAS Item 14 score,,,,,MC NAS Item 14 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,229,229,MC NAS Item 14 rating
+18635,MC NAS Item 15 score,,,,,MC NAS Item 15 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,14,14,MC NAS Item 15 rating
+18636,MC NAS Item 16 score,,,,,MC NAS Item 16 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,10,10,MC NAS Item 16 rating
+18637,MC NAS Item 17 score,,,,,MC NAS Item 17 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,1739,1739,MC NAS Item 17 rating
+18638,MC NAS Item 18 score,,,,,MC NAS Item 18 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,232,232,MC NAS Item 18 rating
+18639,MC NAS Item 19 score,,,,,MC NAS Item 19 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,6011,6011,MC NAS Item 19 rating
+18640,MC NAS Item 20 score,,,,,MC NAS Item 20 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,710,710,MC NAS Item 20 rating
+18641,MC NAS Item 21 score,,,,,MC NAS Item 21 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,16138,16138,MC NAS Item 21 rating
+18642,MC NAS Item 22 score,,,,,MC NAS Item 22 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,30,30,MC NAS Item 22 rating
+18643,MC NAS Item 23 score,,,,,MC NAS Item 23 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,1337,1337,MC NAS Item 23 rating
+18816,IC NAS Item 1 score,,,,,IC NAS Item 1 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,72258,72258,IC NAS Item 1 rating
+18817,IC NAS Item 10 score,,,,,IC NAS Item 10 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,45223,45223,IC NAS Item 10 rating
+18818,IC NAS Item 11 score,,,,,IC NAS Item 11 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,14978,14978,IC NAS Item 11 rating
+18819,IC NAS Item 12 score,,,,,IC NAS Item 12 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,27645,27645,IC NAS Item 12 rating
+18820,IC NAS Item 13 score,,,,,IC NAS Item 13 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,542,542,IC NAS Item 13 rating
+18821,IC NAS Item 14 score,,,,,IC NAS Item 14 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,5949,5949,IC NAS Item 14 rating
+18822,IC NAS Item 15 score,,,,,IC NAS Item 15 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,354,354,IC NAS Item 15 rating
+18823,IC NAS Item 16 score,,,,,IC NAS Item 16 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,5442,5442,IC NAS Item 16 rating
+18824,IC NAS Item 17 score,,,,,IC NAS Item 17 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,3885,3885,IC NAS Item 17 rating
+18825,IC NAS Item 18 score,,,,,IC NAS Item 18 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,1523,1523,IC NAS Item 18 rating
+18826,IC NAS Item 19 score,,,,,IC NAS Item 19 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,41313,41313,IC NAS Item 19 rating
+18827,IC NAS Item 2 score,,,,,IC NAS Item 2 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,72247,72247,IC NAS Item 2 rating
+18828,IC NAS Item 20 score,,,,,IC NAS Item 20 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,1864,1864,IC NAS Item 20 rating
+18829,IC NAS Item 21 score,,,,,IC NAS Item 21 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,34167,34167,IC NAS Item 21 rating
+18830,IC NAS Item 22 score,,,,,IC NAS Item 22 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,838,838,IC NAS Item 22 rating
+18831,IC NAS Item 23 score,,,,,IC NAS Item 23 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,1398,1398,IC NAS Item 23 rating
+18832,IC NAS Item 3 score,,,,,IC NAS Item 3 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,69045,69045,IC NAS Item 3 rating
+18833,IC NAS Item 4 score,,,,,IC NAS Item 4 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,72256,72256,IC NAS Item 4 rating
+18834,IC NAS Item 5 score,,,,,IC NAS Item 5 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,21135,21135,IC NAS Item 5 rating
+18835,IC NAS Item 6 score,,,,,IC NAS Item 6 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,72254,72254,IC NAS Item 6 rating
+18836,IC NAS Item 7 score,,,,,IC NAS Item 7 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,72252,72252,IC NAS Item 7 rating
+18837,IC NAS Item 8 score,,,,,IC NAS Item 8 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,72251,72251,IC NAS Item 8 rating
+18838,IC NAS Item 9 score,,,,,IC NAS Item 9 score,708,NAS score,,,,0,,,0,None,,,,,,numericitems,46176,46176,IC NAS Item 9 rating
+18843,IC NAS score,intensive care nursing activity score,,,,IC NAS score,708,NAS score,,,,0,,,191,Geen,,,,,,numericitems,72018,72018,intensive care nursing activity score
+19227,DOS score,,,,,DOS score,672,Delier-Overig,,,,0,,,191,Geen,,,,,,numericitems,17163,17163,DOS rating
+19234,Fysio BBS stand score,,,,,Fysio BBS stand score,713,Fysio-Berg Balans Score,,,,0,,,191,Geen,,0,4,,,numericitems,844,844,Physio BBS booth score
+19236,Fysio BBS zit score,,,,,Fysio BBS zit score,713,Fysio-Berg Balans Score,,,,0,,,191,Geen,,0,4,,,numericitems,844,844,Physio BBS sitting score
+19238,Fysio BBS zit-stand score,,,,,Fysio BBS zit-stand score,713,Fysio-Berg Balans Score,,,,0,,,191,Geen,,0,4,,,numericitems,844,844,Physio BBS sit-stand score
+19244,Fysio Coöperatie Totaal,,,,,Fysio Coöperatie Totaal,714,Fysio-Coöperatietest S5Q,,,,0,,,191,Geen,,0,5,,,numericitems,3391,3391,Physio Cooperative Total
+19245,FAC score,,,,,FAC score,715,Fysio-Lopen/Verplaatsen,,,,0,,,191,Geen,,,,,,numericitems,628,628,FAC rating
+19262,MRC Sum Score total,,,,,MRC Sum Score total,716,Fysio-MRC Sum Score,,,,0,,,191,Geen,,0,60,,,numericitems,2500,2500,MRC Sum Score total
+19264,Fysio Mobiliteit Elleboog flexie extensie links 1,,,,,Fysio Mobiliteit Elleboog flexie extensie links 1,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,165,,,numericitems,1989,1989,Physio Mobility Elbow flexion extension left 1
+19265,Fysio Mobiliteit Elleboog flexie extensie links 2 ,,,,,Fysio Mobiliteit Elleboog flexie extensie links 2 ,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,165,,,numericitems,1992,1992,Physio Mobility Elbow flexion extension left 2
+19266,Fysio Mobiliteit Elleboog flexie extensie rechts 1,,,,,Fysio Mobiliteit Elleboog flexie extensie rechts 1,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,165,,,numericitems,1992,1992,Physio Mobility Elbow flexion extension right 1
+19267,Fysio Mobiliteit Elleboog flexie extensie rechts 2,,,,,Fysio Mobiliteit Elleboog flexie extensie rechts 2,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,165,,,numericitems,1992,1992,Physio Mobility Elbow flexion extension right 2
+19268,Fysio Mobiliteit Elleboog flexie extensie links 3 ,,,,,Fysio Mobiliteit Elleboog flexie extensie links 3 ,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,5,,,numericitems,1989,1989,Physio Mobility Elbow flexion extension left 3
+19269,Fysio Mobiliteit Elleboog flexie extensie rechts 3,,,,,Fysio Mobiliteit Elleboog flexie extensie rechts 3,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,5,,,numericitems,1992,1992,Physio Mobility Elbow flexion extension right 3
+19270,Fysio Mobiliteit Elleboog supinatie pron links 1 ,,,,,Fysio Mobiliteit Elleboog supinatie pron links 1 ,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,90,,,numericitems,1989,1989,Physio Mobility Elbow supination pron left 1
+19271,Fysio Mobiliteit Elleboog supinatie pron links 2 ,,,,,Fysio Mobiliteit Elleboog supinatie pron links 2,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,90,,,numericitems,1992,1992,Physio Mobility Elbow supination pron left 2
+19272,Fysio Mobiliteit Elleboog supinatie pron links 3,,,,,Fysio Mobiliteit Elleboog supinatie pron links 3,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,90,,,numericitems,1989,1989,Physio Mobility Elbow supination pron left 3
+19273,Fysio Mobiliteit Elleboog supinatie pron rechts 1,,,,,Fysio Mobiliteit Elleboog supinatie pron rechts 1,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,90,,,numericitems,1992,1992,Physio Mobility Elbow supination pron right 1
+19274,Fysio Mobiliteit Elleboog supinatie pron rechts 2 ,,,,,Fysio Mobiliteit Elleboog supinatie pron rechts 2 ,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,90,,,numericitems,1992,1992,Physio Mobility Elbow supination pron right 2
+19275,Fysio Mobiliteit Elleboog supinatie pron rechts 3 ,,,,,Fysio Mobiliteit Elleboog supinatie pron rechts 3,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,90,,,numericitems,1992,1992,Physio Mobility Elbow supination pron right 3
+19276,Fysio Mobiliteit Enkel dorsaal plantair  links 1  ,,,,,Fysio Mobiliteit Enkel dorsaal plantair  links 1 ,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,30,,,numericitems,1992,1992,Physio Mobility Ankle dorsal plantar left 1
+19277,Fysio Mobiliteit Enkel dorsaal plantair  links 2,,,,,Fysio Mobiliteit Enkel dorsaal plantair  links 2,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,30,,,numericitems,1994,1994,Physio Mobility Ankle dorsal plantar left 2
+19278,Fysio Mobiliteit Enkel dorsaal plantair  rechts 1 ,,,,,Fysio Mobiliteit Enkel dorsaal plantair  rechts 1 ,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,30,,,numericitems,1990,1990,Physio Mobility Ankle dorsal plantar right 1
+19279,Fysio Mobiliteit Enkel dorsaal plantair  rechts 2,,,,,Fysio Mobiliteit Enkel dorsaal plantair  rechts 2 ,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,30,,,numericitems,1992,1992,Physio Mobility Ankle dorsal plantar right 2
+19280,Fysio Mobiliteit Enkel eversie inversie links 1,,,,,Fysio Mobiliteit Enkel eversie inversie links 1,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,30,,,numericitems,1978,1978,Physio Mobility Ankle eversion left inversion 1
+19281,Fysio Mobiliteit Enkel eversie inversie links 2,,,,,Fysio Mobiliteit Enkel eversie inversie links 2,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,30,,,numericitems,1992,1992,Physio Mobility Ankle eversion left inversion 2
+19282,Fysio Mobiliteit Enkel dorsaal plantair  links 3 ,,,,,Fysio Mobiliteit Enkel dorsaal plantair  links 3 ,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,50,,,numericitems,1992,1992,Physio Mobility Ankle dorsal plantar left 3
+19283,Fysio Mobiliteit Enkel dorsaal plantair  rechts 3,,,,,Fysio Mobiliteit Enkel dorsaal plantair  rechts 3,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,50,,,numericitems,1990,1990,Physio Mobility Ankle dorsal plantar right 3
+19284,Fysio Mobiliteit Enkel eversie inversie links 3 ,,,,,Fysio Mobiliteit Enkel eversie inversie links 3 ,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,60,,,numericitems,1978,1978,Physio Mobility Ankle eversion left inversion 3
+19285,Fysio Mobiliteit Enkel eversie inversie rechts 3,,,,,Fysio Mobiliteit Enkel eversie inversie rechts 3,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,60,,,numericitems,1983,1983,Physio Mobility Ankle eversion right inversion 3
+19286,Fysio Mobiliteit Enkel eversie inversie rechts 1 ,,,,,Fysio Mobiliteit Enkel eversie inversie rechts 1 ,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,30,,,numericitems,1983,1983,Physio Mobility Ankle eversion right inversion 1
+19287,Fysio Mobiliteit Enkel eversie inversie rechts 2,,,,,Fysio Mobiliteit Enkel eversie inversie rechts 2,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,30,,,numericitems,1990,1990,Physio Mobility Ankle eversion right inversion 2
+19292,Fysio Mobiliteit Heup ab adductie links 1 ,,,,,Fysio Mobiliteit Heup ab adductie links 1 ,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,60,,,numericitems,1988,1988,Physio Mobility Hip ab adduction left 1
+19293,Fysio Mobiliteit Heup ab adductie links 2,,,,,Fysio Mobiliteit Heup ab adductie links 2,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,60,,,numericitems,1990,1990,Physio Mobility Hip ab adduction left 2
+19294,Fysio Mobiliteit Heup ab adductie rechts 1,,,,,Fysio Mobiliteit Heup ab adductie rechts 1,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,60,,,numericitems,1988,1988,Physio Mobility Hip ab adduction right 1
+19295,Fysio Mobiliteit Heup ab adductie rechts 2,,,,,Fysio Mobiliteit Heup ab adductie rechts 2,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,60,,,numericitems,1990,1990,Physio Mobility Hip ab adduction right 2
+19296,Fysio Mobiliteit Heup exo endorotatie links 1,,,,,Fysio Mobiliteit Heup exo endorotatie links 1,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,60,,,numericitems,1988,1988,Physio Mobility Hip exo internal rotation left 1
+19297,Fysio Mobiliteit Heup exo endorotatie links 2,,,,,Fysio Mobiliteit Heup exo endorotatie links 2,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,60,,,numericitems,1990,1990,Physio Mobility Hip exo internal rotation left 2
+19298,Fysio Mobiliteit Heup exo endorotatie links 3,,,,,Fysio Mobiliteit Heup exo endorotatie links 3,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,60,,,numericitems,1988,1988,Physio Mobility Hip exo internal rotation left 3
+19299,Fysio Mobiliteit Heup exo endorotatie rechts 1,,,,,Fysio Mobiliteit Heup exo endorotatie rechts 1,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,60,,,numericitems,1988,1988,Physio Mobility Hip exo internal rotation right 1
+19300,Fysio Mobiliteit Heup exo endorotatie rechts 2,,,,,Fysio Mobiliteit Heup exo endorotatie rechts 2,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,60,,,numericitems,1990,1990,Physio Mobility Hip exo internal rotation right 2
+19301,Fysio Mobiliteit Heup exo endorotatie rechts 3,,,,,Fysio Mobiliteit Heup exo endorotatie rechts 3,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,60,,,numericitems,1988,1988,Physio Mobility Hip exo internal rotation right 3
+19302,Fysio Mobiliteit Heup ab adductie links 3 ,,,,,Fysio Mobiliteit Heup ab adductie links 3 ,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,30,,,numericitems,1988,1988,Physio Mobility Hip ab adduction left 3
+19303,Fysio Mobiliteit Heup ab adductie rechts 3,,,,,Fysio Mobiliteit Heup ab adductie rechts 3,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,30,,,numericitems,1988,1988,Physio Mobility Hip ab adduction right 3
+19304,Fysio Mobiliteit Heup flexie extensie links 1 ,,,,,Fysio Mobiliteit Heup flexie extensie links 1 ,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,135,,,numericitems,1982,1982,Physio Mobility Hip flexion extension left 1
+19305,Fysio Mobiliteit Heup flexie extensie links 2,,,,,Fysio Mobiliteit Heup flexie extensie links 2,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,135,,,numericitems,1990,1990,Physio Mobility Hip flexion extension left 2
+19306,Fysio Mobiliteit Heup flexie extensie rechts 1,,,,,Fysio Mobiliteit Heup flexie extensie rechts 1,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,135,,,numericitems,1988,1988,Physio Mobility Hip flexion extension right 1
+19307,Fysio Mobiliteit Heup flexie extensie rechts 2,,,,,Fysio Mobiliteit Heup flexie extensie rechts 2,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,135,,,numericitems,1990,1990,Physio Mobility Hip flexion extension right 2
+19308,Fysio Mobiliteit Heup flexie extensie links 3 ,,,,,Fysio Mobiliteit Heup flexie extensie links 3 ,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,10,,,numericitems,1988,1988,Physio Mobility Hip flexion extension left 3
+19309,Fysio Mobiliteit Heup flexie extensie rechts 3,,,,,Fysio Mobiliteit Heup flexie extensie rechts 3,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,10,,,numericitems,1988,1988,Physio Mobility Hip flexion extension right 3
+19310,Fysio Mobiliteit Knie flexie extensie links 1 ,,,,,Fysio Mobiliteit Knie flexie extensie links 1 ,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,145,,,numericitems,1985,1985,Physio Mobility Knee flexion extension left 1
+19311,Fysio Mobiliteit Knie flexie extensie links 2,,,,,Fysio Mobiliteit Knie flexie extensie links 2,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,145,,,numericitems,1992,1992,Physio Mobility Knee flexion extension left 2
+19312,Fysio Mobiliteit Knie flexie extensie rechts 1,,,,,Fysio Mobiliteit Knie flexie extensie rechts 1,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,145,,,numericitems,1988,1988,Physio Mobility Knee flexion extension right 1
+19313,Fysio Mobiliteit Knie flexie extensie rechts 2,,,,,Fysio Mobiliteit Knie flexie extensie rechts 2,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,145,,,numericitems,1992,1992,Physio Mobility Knee flexion extension right 2
+19314,Fysio Mobiliteit Knie flexie extensie links 3 ,,,,,Fysio Mobiliteit Knie flexie extensie links 3 ,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,5,,,numericitems,1987,1987,Physio Mobility Knee flexion extension left 3
+19315,Fysio Mobiliteit Knie flexie extensie rechts 3,,,,,Fysio Mobiliteit Knie flexie extensie rechts 3,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,5,,,numericitems,1987,1987,Physio Mobility Knee flexion extension right 3
+19317,Fysio Mobiliteit Pols flexie extensie links 1 ,,,,,Fysio Mobiliteit Pols flexie extensie links 1 ,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,70,,,numericitems,1986,1986,Physio Mobility Wrist flexion extension left 1
+19318,Fysio Mobiliteit Pols flexie extensie links 2,,,,,Fysio Mobiliteit Pols flexie extensie links 2,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,70,,,numericitems,1992,1992,Physio Mobility Wrist flexion extension left 2
+19319,Fysio Mobiliteit Pols flexie extensie rechts 1,,,,,Fysio Mobiliteit Pols flexie extensie rechts 1,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,70,,,numericitems,1989,1989,Physio Mobility Wrist flexion extension right 1
+19320,Fysio Mobiliteit Pols flexie extensie rechts 2,,,,,Fysio Mobiliteit Pols flexie extensie rechts 2,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,70,,,numericitems,1992,1992,Physio Mobility Wrist flexion extension right 2
+19321,Fysio Mobiliteit Pols flexie extensie links 3 ,,,,,Fysio Mobiliteit Pols flexie extensie links 3 ,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,90,,,numericitems,1986,1986,Physio Mobility Wrist flexion extension left 3
+19322,Fysio Mobiliteit Pols flexie extensie rechts 3,,,,,Fysio Mobiliteit Pols flexie extensie rechts 3,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,90,,,numericitems,1989,1989,Physio Mobility Wrist flexion extension right 3
+19323,Fysio Mobiliteit Pols radiair ulnair links 1 ,,,,,Fysio Mobiliteit Pols radiair ulnair links 1 ,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,30,,,numericitems,1989,1989,Physio Mobility Wrist radial ulnar left 1
+19324,Fysio Mobiliteit Pols radiair ulnair links 2,,,,,Fysio Mobiliteit Pols radiair ulnair links 2,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,30,,,numericitems,1992,1992,Physio Mobility Wrist radial ulnar left 2
+19325,Fysio Mobiliteit Pols radiair ulnair links 3,,,,,Fysio Mobiliteit Pols radiair ulnair links 3,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,30,,,numericitems,1989,1989,Physio Mobility Wrist radial ulnar left 3
+19326,Fysio Mobiliteit Pols radiair ulnair rechts 1,,,,,Fysio Mobiliteit Pols radiair ulnair rechts 1,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,30,,,numericitems,1989,1989,Physio Mobility Wrist radial ulnar right 1
+19327,Fysio Mobiliteit Pols radiair ulnair rechts 2,,,,,Fysio Mobiliteit Pols radiair ulnair rechts 2,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,30,,,numericitems,1992,1992,Physio Mobility Wrist radial ulnar right 2
+19328,Fysio Mobiliteit Pols radiair ulnair rechts 3,,,,,Fysio Mobiliteit Pols radiair ulnair rechts 3,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,30,,,numericitems,1989,1989,Physio Mobility Wrist radial ulnar right 3
+19329,Fysio Mobiliteit Schouder ab adductie links 1 ,,,,,Fysio Mobiliteit Schouder ab adductie links 1 ,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,160,,,numericitems,1990,1990,Physio Mobility Shoulder ab adduction left 1
+19330,Fysio Mobiliteit Schouder ab adductie links 2,,,,,Fysio Mobiliteit Schouder ab adductie links 2,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,160,,,numericitems,1993,1993,Physio Mobility Shoulder ab adduction left 2
+19331,Fysio Mobiliteit Schouder ab adductie rechts 1,,,,,Fysio Mobiliteit Schouder ab adductie rechts 1,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,160,,,numericitems,1993,1993,Physio Mobility Shoulder ab adduction right 1
+19332,Fysio Mobiliteit Schouder ab adductie rechts 2,,,,,Fysio Mobiliteit Schouder ab adductie rechts 2,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,160,,,numericitems,1993,1993,Physio Mobility Shoulder ab adduction right 2
+19333,Fysio Mobiliteit Schouder ab adductie links 3 ,,,,,Fysio Mobiliteit Schouder ab adductie links 3 ,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,20,,,numericitems,1990,1990,Physio Mobility Shoulder ab adduction left 3
+19334,Fysio Mobiliteit Schouder ab adductie rechts 3,,,,,Fysio Mobiliteit Schouder ab adductie rechts 3,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,20,,,numericitems,1993,1993,Physio Mobility Shoulder ab adduction right 3
+19335,Fysio Mobiliteit Schouder exo endorotatie links 1 ,,,,,Fysio Mobiliteit Schouder exo endorotatie links 1 ,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,90,,,numericitems,1989,1989,Physio Mobility Shoulder exo internal rotation left 1
+19336,Fysio Mobiliteit Schouder exo endorotatie links 2,,,,,Fysio Mobiliteit Schouder exo endorotatie links 2,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,90,,,numericitems,1992,1992,Physio Mobility Shoulder exo internal rotation left 2
+19337,Fysio Mobiliteit Schouder exo endorotatie links 3,,,,,Fysio Mobiliteit Schouder exo endorotatie links 3,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,90,,,numericitems,1989,1989,Physio Mobility Shoulder exo internal rotation left 3
+19338,Fysio Mobiliteit Schouder exo endorotatie rechts 1,,,,,Fysio Mobiliteit Schouder exo endorotatie rechts 1,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,90,,,numericitems,1992,1992,Physio Mobility Shoulder exo internal rotation right 1
+19339,Fysio Mobiliteit Schouder exo endorotatie rechts 2,,,,,Fysio Mobiliteit Schouder exo endorotatie rechts 2,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,90,,,numericitems,1992,1992,Physio Mobility Shoulder exo internal rotation right 2
+19340,Fysio Mobiliteit Schouder exo endorotatie rechts 3,,,,,Fysio Mobiliteit Schouder exo endorotatie rechts 3,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,90,,,numericitems,1992,1992,Physio Mobility Shoulder exo internal rotation right 3
+19341,Fysio Mobiliteit Schouder flexie extensie links 1 ,,,,,Fysio Mobiliteit Schouder flexie extensie links 1 ,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,165,,,numericitems,1990,1990,Physio Mobility Shoulder flexion extension left 1
+19342,Fysio Mobiliteit Schouder flexie extensie links 2,,,,,Fysio Mobiliteit Schouder flexie extensie links 2,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,165,,,numericitems,1993,1993,Physio Mobility Shoulder flexion extension left 2
+19343,Fysio Mobiliteit Schouder flexie extensie rechts1,,,,,Fysio Mobiliteit Schouder flexie extensie rechts1,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,165,,,numericitems,2003,2003,Physio Mobility Shoulder flexion extension right1
+19344,Fysio Mobiliteit Schouder flexie extensie rechts 2,,,,,Fysio Mobiliteit Schouder flexie extensie rechts 2,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,165,,,numericitems,1993,1993,Physio Mobility Shoulder flexion extension right 2
+19345,Fysio Mobiliteit Schouder flexie extensie links 3 ,,,,,Fysio Mobiliteit Schouder flexie extensie links 3 ,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,35,,,numericitems,1990,1990,Physio Mobility Shoulder flexion left extension 3
+19346,Fysio Mobiliteit Schouder flexie extensie rechts 3,,,,,Fysio Mobiliteit Schouder flexie extensie rechts 3,718,Fysio-Mobiliteit en Spierkracht,,,,0,,,204,°,deg,0,35,,,numericitems,1993,1993,Physio Mobility Shoulder flexion extension right 3
+19358,Intacraniële druk,Intracranial pressure (ICP),LOINC,60956-0,Intracranial pressure (ICP),ICP (waterkolom),334,NEURO-Drukken,,,,0,,,175,cmH2O,cm[H2O],,,,,numericitems,2917,2917,Intracranial pressure (ICP)
+19361,Pacemaker Atrium ampl.(output) gemeten,pacemaker atrial amplitude threshold measured,,,,PM_Atrium ampl.(outp.) gemeten,320,HD-Hartritme,hemodynamics-heart rhythm,,,0,,,0,None,,,,,,numericitems,120,120,pacemaker atrial amplitude threshold measured
+19362,Pacemaker Atrium sense gemeten,pacemaker atrial sense threshold measured,,,,PM_Atrium sense gemeten,320,HD-Hartritme,hemodynamics-heart rhythm,,,0,,,150,mV,mV,,,,,numericitems,60,60,pacemaker atrial sense threshold measured
+19363,Pacemaker Ventricle ampl.(output) gemeten,pacemaker ventricular amplitude threshold measured,,,,PM_Ventricle ampl.(outp.)gemeten,320,HD-Hartritme,hemodynamics-heart rhythm,,,0,,,0,None,,,,,,numericitems,1251,1251,pacemaker ventricular amplitude threshold measured
+19364,Pacemaker Ventricle sense gemeten,pacemaker ventricular sense threshold measured,,,,PM_Ventricle sense gemeten,320,HD-Hartritme,hemodynamics-heart rhythm,,,0,,,150,mV,mV,,,,,numericitems,1074,1074,pacemaker ventricular sense threshold measured
+19455,Autodetubatie - Sedatie uit uren,,,,,Autodetubatie - Sedatie uit uren,720,RESP-Autodetubatie,,,,0,,,5,uur,h,,,,,numericitems,117,117,Autodetubation - Sedation from hours
+19499,NICE Apache II Score,,,,,NICE Apache II Score,635,APACHE-II,,,,0,,,191,Geen,,,,,,numericitems,2393,2393,NICE Apache II Score
+19500,NICE Apache IV Score,,,,,NICE Apache IV Score,727,Apache IV,,,,0,,,191,Geen,,,,,,numericitems,2163,2163,NICE Apache IV Score
+19503,NICE SAPS II Score,,,,,NICE SAPS II Score,721,SAPS II score,,,,0,,,0,None,,,,,,numericitems,2047,2047,NICE SAPS II Score
+19609,BPS score,,,,,BPS score,425,SCORE,,,,0,,,191,Geen,,,,,,numericitems,76906,76906,BPS rating
+19611,Streef SpO2,,,,,Streef SpO2,701,RESP-Acceptatiewaarden,,,,0,,,0,None,,,,,,numericitems,7755,7755,Aim SpO2
+19618,Streef waarde APTT onderwaarde,,,,,Streef waarde APTT onderwaarde,723,Medisch dashboard en statusvoering,,,,0,,,3,sec,s,,,,,numericitems,2947,2947,Target value APTT lower value
+19619,Streef waarde APTT bovenwaarde,,,,,Streef waarde APTT bovenwaarde,723,Medisch dashboard en statusvoering,,,,0,,,3,sec,s,,,,,numericitems,2942,2942,Target value APTT upper value
+19708,Echografie ICARUS KlinischEventID,,,,,Echografie ICARUS KlinischEventID,726,Echografie ICARUS,,,,0,,,0,None,,,,,,numericitems,383,383,Ultrasound ICARUS ClinicalEventID
+19721,ICARUS LV fractional shortening in PLAX,,,,,ICARUS LV fractional shortening in PLAX,726,Echografie ICARUS,,,,0,,,191,Geen,,,,,,numericitems,292,292,ICARUS LV fractional shortening in PLAX
+19750,NICE Apache III Score,,,,,NICE Apache III Score,728,Apache III,,,,0,,,191,Geen,,,,,,numericitems,818,818,NICE Apache III Score
+19921,UrineSplint Li,urine output from left sided ureteral splint,LOINC,9187-6,Urine output,UrineSplint Li,337,VB-Urine,,,,0,,,6,ml,mL,,,,,numericitems,503,503,urine output from left sided ureteral splint
+19922,UrineSplint Re,urine output from right sided ureteral splint,LOINC,9187-6,Urine output,UrineSplint Re,337,VB-Urine,,,,0,,,6,ml,mL,,,,,numericitems,810,810,urine output from right sided ureteral splint
+19943,Phase angle,,,,,Phase angle,730,Bio-impedantie,,,,0,,,204,°,deg,5,9,,,numericitems,729,729,phase angle
+19944,Reactance (Xc),,,,,Reactance (Xc),730,Bio-impedantie,,,,0,,,339,Ohm,Ohm,,,,,numericitems,733,733,Reactance (Xc)
+19945,Resistance (R),,,,,Resistance (R),730,Bio-impedantie,,,,0,,,339,Ohm,Ohm,,,,,numericitems,734,734,Resistance (R)
+20018,Streef Thrombo's onderwaarde,,,,,Streef Thrombo's onderwaarde,723,Medisch dashboard en statusvoering,,,,0,,,101,10^9/l,10*9/L,,,,,numericitems,340,340,Pursue Thrombo's net worth
+20019,Streef Hb onderwaarde,,,,,Streef Hb onderwaarde,723,Medisch dashboard en statusvoering,,,,0,,,97,mmol/l,mmol/L,,,,,numericitems,3978,3978,Aim for Hb lower value
+20072,Teruggave galvocht,,,,,Teruggave galvocht,426,DIVERSEN,miscellaneous,,,0,,,6,ml,mL,,,,,numericitems,3,3,Return bile fluid
+20076,MFT_Substitutievolume_totaal,,,,,MFT_Substitutievolume_totaal,681,CVVH-MFT,,,,0,,,8,l,L,,,,,numericitems,764289,11355,MFT_Substitution volume_total
+20077,MFT_Substitutievolume_huidig,,,,,MFT_Substitutievolume_huidig,681,CVVH-MFT,,,,0,,,8,l,L,,,,,numericitems,764241,11354,MFT_Substitution Volume_Current
+20078,MFT_Filtraatvolume_huidig,CRRT net ultrafiltration volume current,,,,MFT_Filtraatvolume_huidig,681,CVVH-MFT,,,,0,,,8,l,L,,,,,numericitems,1664478,24934,CRRT net ultrafiltration volume current
+20079,MFT_Filtraatvolume_totaal,CRRT net ultrafiltration volume total,,,,MFT_Filtraatvolume_totaal,681,CVVH-MFT,,,,0,,,8,l,L,,,,,numericitems,1664541,24943,CRRT net ultrafiltration volume total
+20080,MFT_Behandelingsduur,,,,,MFT_Behandelingsduur,681,CVVH-MFT,,,,0,,,5,uur,h,,,,,numericitems,1664550,24908,MFT_Treatment Duration
+20081,Gemeten gewicht,measured weight,LOINC,3141-9,Body weight Measured,Gemeten gewicht,476,Anamnese-Patientgegevens,patient data,,,0,,,12,kg,kg,,,,,numericitems,4224,4224,measured weight
+20134,Breathing FiO2(%),,,,,Breathing FiO2(%),733,Transport Registratie,,,,0,,,0,None,,,,,,numericitems,14,14,Breathing FiO2(%)
+20156,SNAQ score,,,,,SNAQ score,734,Voeding-SNAQ,,,,0,,,0,None,,0,2,,,numericitems,176,176,SNAQ score
+20340,MFT_FilterLooptijd,CRRT filter session time,,,,MFT_FilterLooptijd,681,CVVH-MFT,,,,0,,,5,uur,h,,,,,numericitems,1164528,19043,CRRT filter session time
+20347,"Epileptisch insult (duur, minuten)",,,,,"Epileptisch insult (duur, minuten)",684,NEURO-Overig,,,,0,,,4,min,min,,,,,numericitems,7,7,"Epileptic seizure (duration, minutes)"
+20403,PrinterNOx Flow,,,,,PrinterNOx Flow,736,RESP-PrinterNOx,,,,0,,,26,l/min,L/min,,,,,numericitems,67,67,Printer NOx Flow
+20404,PrinterNOx NO,,,,,PrinterNOx NO,736,RESP-PrinterNOx,,,,0,,,31,ppm,[ppm],,,,,numericitems,64,64,Printer NOx NO
+20405,PrinterNOx NO2,,,,,PrinterNOx NO2,736,RESP-PrinterNOx,,,,0,,,31,ppm,[ppm],,,,,numericitems,64,64,Printer NOx NO2
+20537,CVVH behandel afspraken APTT (bloed),,,,,CVVH behandel afspraken APTT (bloed),742,CVVH-Afspraken_Nieuw,,,,0,,,3,sec,s,,,,,numericitems,534,534,CVVH treatment appointments APTT (blood)
+20538,CVVH behandel afspraken Bloedflow,,,,,CVVH behandel afspraken Bloedflow,742,CVVH-Afspraken_Nieuw,,,,0,,,24,ml/min,mL/min,,,,,numericitems,543,543,CVVH treatment appointments Blood flow
+20539,CVVH behandel afspraken Ca-ion (7.4) (bloed),,,,,CVVH behandel afspraken Ca-ion (7.4) (bloed),742,CVVH-Afspraken_Nieuw,,,,0,,,97,mmol/l,mmol/L,,,,,numericitems,551,551,CVVH treatment appointments Ca-ion (7.4) (blood)
+20543,CVVH behandel afspraken Onttrekken,,,,,CVVH behandel afspraken Onttrekken,742,CVVH-Afspraken_Nieuw,,,,0,,,46,ml/uur,mL/h,,,,,numericitems,533,533,CVVH treatment appointments Withdraw
+20544,CVVH behandel afspraken PostDilutie Volume,,,,,CVVH behandel afspraken PostDilutie Volume,742,CVVH-Afspraken_Nieuw,,,,0,,,6,ml,mL,,,,,numericitems,491,491,CVVH Treatment Appointments PostDilution Volume
+20547,CVVH behandel afspraken PreDilutie Volume,,,,,CVVH behandel afspraken PreDilutie Volume,742,CVVH-Afspraken_Nieuw,,,,0,,,6,ml,mL,,,,,numericitems,542,542,CVVH treatment appointments PreDilution Volume
+20631,RRI (Renal Resistive Index),,,,,RRI (Renal Resistive Index),730,Bio-impedantie,,,,0,,,191,Geen,,,,,,numericitems,15,15,RRI (Renal Resistive Index)
+20648,ECMO - Bloedflow,,,,,ECMO - Bloedflow,745,ECMO,,,,0,,,26,l/min,L/min,,,,,numericitems,484,484,ECMO - Blood Flow
+20649,ECMO - Pomp rotaties (RPM),,,,,ECMO - Pomp rotaties (RPM),745,ECMO,,,,0,,,15,/min,/min,,,,,numericitems,482,482,ECMO - Pump Rotations (RPM)
+20650,ECMO - Part,,,,,ECMO - Part,745,ECMO,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,478,478,ECMO - Part
+20651,ECMO - Pven,,,,,ECMO - Pven,745,ECMO,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,477,477,ECMO - Pven
+20652,ECMO - Pint,,,,,ECMO - Pint,745,ECMO,,,,0,,,173,mmHg,mm[Hg],,,,,numericitems,476,476,ECMO - Pint
+20654,ECMO - Tart,,,,,ECMO - Tart,745,ECMO,,,,0,,,59,°C,Cel,,,,,numericitems,475,475,ECMO - Tart
+20655,ECMO - Tven,,,,,ECMO - Tven,745,ECMO,,,,0,,,59,°C,Cel,,,,,numericitems,465,465,ECMO - Tven
+20656,ECMO - FiO2,,,,,ECMO - FiO2,745,ECMO,,,,0,,,191,Geen,,,,,,numericitems,478,478,ECMO - FiO2
+20657,ECMO - Gasflow,,,,,ECMO - Gasflow,745,ECMO,,,,0,,,26,l/min,L/min,,,,,numericitems,476,476,ECMO - Gas flow
+20658,ECMO - Veneuze saturatie,,,,,ECMO - Veneuze saturatie,745,ECMO,,,,0,,,191,Geen,,,,,,numericitems,478,478,ECMO - Venous saturation
+20659,ECMO - Hb (g/dl),,,,,ECMO - Hb (g/dl),745,ECMO,,,,0,,,61,g/dl,"g/dL,",,,,,numericitems,469,469,ECMO - Hb (g/dl)
+20661,ECMO - Ht,,,,,ECMO - Ht,745,ECMO,,,,0,,,191,Geen,,,,,,numericitems,457,457,ECMO - Ht
+20672,Aantal prikpogingen,,,,,Aantal prikpogingen,664,P_Globaal,,,,0,,,171,Aantal,{#},,,,,numericitems,666,666,Number of puncture attempts
+20706,MFT_Predilutievolume_huidig,CRRT prefilter replacement fluid volume current,,,,MFT_Predilutievolume_huidig,681,CVVH-MFT,,,,0,,,8,l,L,,,,,numericitems,906298,13477,CRRT prefilter replacement fluid volume current
+20707,MFT_Predilutievolume_totaal,CRRT prefilter replacement fluid volume total,,,,MFT_Predilutievolume_totaal,681,CVVH-MFT,,,,0,,,8,l,L,,,,,numericitems,906320,13484,CRRT prefilter replacement fluid volume total
+20708,MFT_Postdilutievolume_huidig,CRRT postfilter replacement fluid volume current,,,,MFT_Postdilutievolume_huidig,681,CVVH-MFT,,,,0,,,8,l,L,,,,,numericitems,900237,13579,CRRT postfilter replacement fluid volume current
+20709,MFT_Postdilutievolume_totaal,CRRT postfilter replacement fluid volume total,,,,MFT_Postdilutievolume_totaal,681,CVVH-MFT,,,,0,,,8,l,L,,,,,numericitems,900252,13584,CRRT postfilter replacement fluid volume total
+20710,MFT_Predilutieflow (ingesteld),CRRT prefilter replacement fluid rate setting,,,,MFT_Predilutieflow (ingesteld),681,CVVH-MFT,,,,0,,,46,ml/uur,mL/h,,,,,numericitems,829771,13605,CRRT prefilter replacement fluid rate setting
+20716,MFT_Postdilutieflow (ingesteld),CRRT postfilter replacement fluid rate setting,,,,MFT_Postdilutieflow (ingesteld),681,CVVH-MFT,,,,0,,,46,ml/uur,mL/h,,,,,numericitems,818547,13588,CRRT postfilter replacement fluid rate setting
+20926,CVDm-gekoppeld,,,,,CVDm-gekoppeld,323,HD-Bloeddrukken,hemodynamics-blood pressures,,,0,,,173,mmHg,mm[Hg],-1,40,,,numericitems,4961791,33686,CVDm-coupled
+20951,Stroke Volume Variation,stroke volume variation,SNOMED CT,733502006,Stroke volume variation,SVV,325,HD-Profiel,hemodynamic profile,,,0,,,0,None,,,,,,numericitems,183959,3066,stroke volume variation
+20952,ExtraVasculair Lung Water Index,extravascular lung water index,,,,EVLWI,325,HD-Profiel,hemodynamic profile,,,0,,,170,ml/kg,mL/kg,,,,,numericitems,684,476,extravascular lung water index
+20953,Global End Diastolic Volume Index,global end dastolic volume index,,,,GEDVI,325,HD-Profiel,hemodynamic profile,,,0,,,89,ml/m2,mL/m2,,,,,numericitems,685,480,global end dastolic volume index
+20955,CCO,continous cardiac output,LOINC,76519-8,Left ventricular Cardiac output by Continuous,CCO,325,HD-Profiel,hemodynamic profile,,,0,,,26,l/min,L/min,,,0,17,numericitems,187823,3049,continous cardiac output
+20956,CCI,continous cardiac index,,,,CCI,325,HD-Profiel,hemodynamic profile,,,0,,,92,l/min/m2,L/min/m2,,,,,numericitems,186859,3039,continous cardiac index
+20957,ITBVI,intrathoracic blood volume index,,,,ITBVI,325,HD-Profiel,hemodynamic profile,,,0,,,89,ml/m2,mL/m2,,,,,numericitems,685,480,intrathoracic blood volume index
+20958,Voedingsanamnese anamnestisch gewicht,,,,,Voedingsanamnese anamnestisch gewicht,734,Voeding-SNAQ,,,,0,,,12,kg,kg,,,,,numericitems,41,41,Nutritional history anamnestic weight
+21181,Pacemaker AV delay,pacemaker atrio-ventricular delay,,,,PM_AV delay,320,HD-Hartritme,hemodynamics-heart rhythm,,,0,,,2,msec,ms,,,,,numericitems,351,351,pacemaker atrio-ventricular delay

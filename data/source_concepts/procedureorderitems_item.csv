@@ -1,0 +1,429 @@
+source_concept_id,source_concept,ordercategoryid,ordercategoryname,count,source_concept_en
+7921,ECG,81,Opdr. Circulatie,14480,ECG
+7922,X-Thorax,82,Opdr. Respiratie,11028,Chest X-ray
+7928,Uitzuigen,82,Opdr. Respiratie,1527,Suction
+7949,Filter CVVH wisselen,105,Opdr. CVVH,1376,Change filter CVVH
+8002,Beademingsslangen  vervangen,90,Opdr. Lijnen/Catheter/Drains,2688,Replace breathing tubes
+8029,CTScan,103,Opdr. Radiologie,89,CT-scan
+8030,PleuraSpoelen,89,Opdr. Overig,29,PleuraRinse
+8094,Vancomycinespiegel afnemen,73,Opdr. Laboratorium afname,2676,Decrease vancomycin level
+8097,Sputumkweek afnemen,74,Opdr. Kweken afnemen,10397,Take a sputum culture
+8101,Digoxinespiegel afnemen,73,Opdr. Laboratorium afname,155,Decrease digoxin level
+8109,Decubitus controle,101,Opdr. Huid,1117,Pressure ulcer control
+8131,Familie gesprek,86,Opdr. Psycho-sociaal,6429,Family conversation
+8177,Buikwond spoelen,101,Opdr. Huid,936,Rinse abdominal wound
+8228,Patiënt wegen,89,Opdr. Overig,3373,Weigh the patient
+8269,Infuus verschonen,90,Opdr. Lijnen/Catheter/Drains,16,Change IV
+8418,Urinekweek afnemen,74,Opdr. Kweken afnemen,504,Take a urine culture
+8477,Afnemen vpk anamnse,89,Opdr. Overig,17,Taking a primary care history
+8490,Maagsonde vervangen,90,Opdr. Lijnen/Catheter/Drains,1266,Replace gastric tube
+8491,CAD vervangen,90,Opdr. Lijnen/Catheter/Drains,124,CAD replaced
+8502,Cardiac Output meten,81,Opdr. Circulatie,189,Measure cardiac output
+8503,Neuro controles,83,Opdr. Neurologisch,31725,Neuro controls
+8538,X-Buikoverzicht,103,Opdr. Radiologie,96,X-Abdomen overview
+8540,CT scan abdomen,103,Opdr. Radiologie,73,CT scan abdomen
+8542,CT scan brein,83,Opdr. Neurologisch,110,CT scan brain
+8543,CT scan thorax,82,Opdr. Respiratie,72,CT scan thorax
+8544,Cortisol afnemen,73,Opdr. Laboratorium afname,1397,Decrease cortisol
+8545,Temperatuur opnemen,81,Opdr. Circulatie,221,Take temperature
+8548,Schrijven VPK ontslagrapport,89,Opdr. Overig,32,Writing VPK dismissal report
+8588,MRSA kweken afnemen,74,Opdr. Kweken afnemen,71,Collect MRSA cultures
+8617,Aderlaten,89,Opdr. Overig,8,Bloodletting
+9183,Verwijderen Lijn/Catheter/Drain,90,Opdr. Lijnen/Catheter/Drains,482,Remove Line/Catheter/Drain
+9189,Bloedkweken afnemen,74,Opdr. Kweken afnemen,5439,Take blood cultures
+9190,Cathetertipkweek afnemen,74,Opdr. Kweken afnemen,645,Collect catheter tip culture
+9191,Drainvochtkweek afnemen,74,Opdr. Kweken afnemen,205,Take a drain culture
+9192,Faeceskweek afnemen,74,Opdr. Kweken afnemen,782,Take a stool culture
+9193,X-Kweek nader te bepalen,74,Opdr. Kweken afnemen,706,X-Breeding to be determined later
+9194,Liquorkweek afnemen,74,Opdr. Kweken afnemen,1084,Take liquor culture
+9195,Neuskweek afnemen,74,Opdr. Kweken afnemen,56,Take a nasal culture
+9197,Perineumkweek afnemen,74,Opdr. Kweken afnemen,6,Take a perineal culture
+9198,Rectumkweek afnemen,74,Opdr. Kweken afnemen,25,Take a rectal culture
+9200,Wondkweek afnemen,74,Opdr. Kweken afnemen,318,Take wound cultures
+9202,Ascitesvochtkweek afnemen,74,Opdr. Kweken afnemen,43,Take an ascitic fluid culture
+9203,Keelkweek afnemen,74,Opdr. Kweken afnemen,90,Take a throat culture
+9204,SDD-kweken afnemen,74,Opdr. Kweken afnemen,10483,Take SDD cultures
+9205,Legionella sneltest (urine),74,Opdr. Kweken afnemen,195,Legionella rapid test (urine)
+9206,Amikacinespiegel afnemen,73,Opdr. Laboratorium afname,25,Decrease Amikacin levels
+9207,X-Lab nader te bepalen,73,Opdr. Laboratorium afname,20860,X-Lab TBD
+9208,Depakinespiegel afnemen,73,Opdr. Laboratorium afname,133,Decrease the pakine level
+9209,Diphantoïnespiegel afnemen,73,Opdr. Laboratorium afname,211,Diphantoin levels decrease
+9211,Flucytoïnespiegel afnemen,73,Opdr. Laboratorium afname,3,Decrease flucytoin level
+9212,Gentamycinespiegel afnemen,73,Opdr. Laboratorium afname,275,Decrease gentamicin levels
+9213,Theophyllinespiegel afnemen,73,Opdr. Laboratorium afname,16,Decrease theophylline level
+9214,Tobramycinespiegel afnemen,73,Opdr. Laboratorium afname,430,Tobramycin levels decrease
+9216,Pentobarbitalspiegel afnemen,73,Opdr. Laboratorium afname,20,Decrease pentobarbital level
+9217,Ancotilspiegel afnemen,73,Opdr. Laboratorium afname,5,Decrease ancotil level
+9218,Overige labafname's,73,Opdr. Laboratorium afname,5327,Other lab tests
+9222,Kruisproef afnemen,73,Opdr. Laboratorium afname,361,Conduct a cross match
+9224,PT/CT afnemen,73,Opdr. Laboratorium afname,25637,Administer PT/CT
+9231,6D Dagelijks Standaard,73,Opdr. Laboratorium afname,1928,6D Daily Standard
+9247,EEG,83,Opdr. Neurologisch,74,EEC
+9248,EMG,83,Opdr. Neurologisch,11,EMG
+9249,BAL,82,Opdr. Respiratie,19,BALL
+9250,CVVH-lab. afnemen,73,Opdr. Laboratorium afname,12651,CVVH lab. to decrease
+9251,Colonscopie,84,Opdr. Gastro-Intestinaal,53,Colonoscopy
+9252,Bronchoscopie.,82,Opdr. Respiratie,68,Bronchoscopy.
+9253,Gastroscopie,84,Opdr. Gastro-Intestinaal,149,Gastroscopy
+9255,Transoesofageale echocardiografie (TEE),81,Opdr. Circulatie,129,Transesophageal echocardiography (TEE)
+9256,Transthoracale echocardiografie (TTE) oud,81,Opdr. Circulatie,4,Transthoracic echocardiography (TTE) old
+9257,Echo-Bovenbuik,103,Opdr. Radiologie,113,Ultrasound-Upper abdomen
+9259,24-uurs urine sparen,73,Opdr. Laboratorium afname,514,24-hour urine saving
+9260,Lumbaal Punctie (LP),83,Opdr. Neurologisch,55,Lumbar Puncture (LP)
+9261,Blaasdruk meten,85,Opdr. Urologisch,580,Measure bladder pressure
+9262,Beenmerg punctie,89,Opdr. Overig,7,Bone marrow puncture
+9263,Botboring,89,Opdr. Overig,2,Bone drilling
+9265,6D Lab. Langeligger (Di + Vr),73,Opdr. Laboratorium afname,164,6D Lab. Long beam (Tue + Fri)
+9266,6D Lab. Spoedpatiënt,73,Opdr. Laboratorium afname,79,6D Lab. Emergency patient
+9267,Lab. CCH-VAT  T = 2,73,Opdr. Laboratorium afname,8108,Lab. CCH-VAT T = 2
+9268,Lab. CCH-VAT   T = 6,73,Opdr. Laboratorium afname,7983,Lab. CCH-VAT T = 6
+9269,Lab. CCH-VAT  T = 0,73,Opdr. Laboratorium afname,8331,Lab. CCH-VAT T = 0
+9270,Bloedgas afnemen,73,Opdr. Laboratorium afname,29209,Take blood gas
+9275,Filter beademing verwisselen,90,Opdr. Lijnen/Catheter/Drains,16,Change ventilation filter
+9276,Slangen beademingscircuit vervangen,90,Opdr. Lijnen/Catheter/Drains,3,Replace breathing circuit hoses
+9278,Sponsje kunstneus verschonen,90,Opdr. Lijnen/Catheter/Drains,73,Changing an artificial nose sponge
+9279,Sponsje spreekcanule verschonen,90,Opdr. Lijnen/Catheter/Drains,739,Change the speaking cannula sponge
+9280,Tracheacanule verzorgen,90,Opdr. Lijnen/Catheter/Drains,14738,Caring for tracheostomy tube
+9281,Stoma plak/zak verschonen,90,Opdr. Lijnen/Catheter/Drains,1560,Changing the stoma pad/bag
+9282,Urimeter verschonen,90,Opdr. Lijnen/Catheter/Drains,1066,Change urimeter
+9285,Catheterzak verwisselen,90,Opdr. Lijnen/Catheter/Drains,20,Change catheter bag
+9286,Arterielijn verschonen,90,Opdr. Lijnen/Catheter/Drains,48,Change artery line
+9287,Drukzak vernieuwen,90,Opdr. Lijnen/Catheter/Drains,69453,Renew pressure bag
+9288,Lijnen verschonen,90,Opdr. Lijnen/Catheter/Drains,14789,Changing lines
+9289,Tubefixatie verschonen,90,Opdr. Lijnen/Catheter/Drains,8659,Changing tube fixation
+9290,24 uurs Gesloten uitzuigsysteem verschonen,90,Opdr. Lijnen/Catheter/Drains,243,24 hour Closed suction system change
+9291,Sondevoedingsysteem verschonen,90,Opdr. Lijnen/Catheter/Drains,26884,Change tube feeding system
+9292,Swan Ganz wisselen,90,Opdr. Lijnen/Catheter/Drains,17,Swan Ganz change
+9293,Centrale lijn wisselen,90,Opdr. Lijnen/Catheter/Drains,102,Switch central line
+9294,Vernevelset verschonen,90,Opdr. Lijnen/Catheter/Drains,39,Change the nebulizer kit
+9296,Dialyse lijn wisselen,90,Opdr. Lijnen/Catheter/Drains,18,Change dialysis line
+9297,Maagzuigdrainage verschonen,90,Opdr. Lijnen/Catheter/Drains,12,Change gastric drainage
+9298,Parenterale infuuslijn verschonen,90,Opdr. Lijnen/Catheter/Drains,38,Change parenteral infusion line
+9299,Faecescollecterzak verschonen,90,Opdr. Lijnen/Catheter/Drains,27,Change faeces collection bag
+9300,Drainzakje(s) wond verschonen,90,Opdr. Lijnen/Catheter/Drains,367,Change wound drainage bag(s).
+9301,Consult Neuroloog,83,Opdr. Neurologisch,43,Consult Neurologist
+9302,Consult Cardioloog,81,Opdr. Circulatie,13,Consult Cardiologist
+9303,Consult KNO-arts,89,Opdr. Overig,63,Consult ENT doctor
+9304,Consult Algemeen Chirurg,89,Opdr. Overig,56,Consult General Surgeon
+9305,Consult Cardiochirurg,81,Opdr. Circulatie,3,Consult Cardio Surgeon
+9306,Consult Neurochirurg,83,Opdr. Neurologisch,49,Consult Neurosurgeon
+9307,Consult Gastro-enteroloog,84,Opdr. Gastro-Intestinaal,24,Consult Gastroenterologist
+9308,Consult Psychiater,86,Opdr. Psycho-sociaal,84,Consult Psychiatrist
+9309,Consult Longarts,82,Opdr. Respiratie,5,Consult Pulmonologist
+9310,Consult Traumatoloog,87,Opdr. Houding & Beweging,40,Consult Traumatologist
+9311,Consult Vaatchirurg,81,Opdr. Circulatie,3,Consultation Vascular Surgeon
+9312,Consult Orthopedisch chirurg,87,Opdr. Houding & Beweging,2,Consultation Orthopedic surgeon
+9313,Consult Diëtiste,84,Opdr. Gastro-Intestinaal,71,Consult Dietitian
+9314,Consult Fysiotherapie,87,Opdr. Houding & Beweging,554,Physiotherapy consultation
+9316,Consult Dermatoloog,101,Opdr. Huid,81,Consult Dermatologist
+9317,Consult Oogarts,89,Opdr. Overig,14,Consult Ophthalmologist
+9318,Consult Uroloog,85,Opdr. Urologisch,14,Consult Urologist
+9319,Consult Gynaecoloog,89,Opdr. Overig,73,Consult Gynecologist
+9320,Consult Kaakchirurg,89,Opdr. Overig,9,Consultation Oral Surgeon
+9321,Consult Nefroloog,85,Opdr. Urologisch,2,Consult Nephrologist
+9324,Cuffdruk meten,82,Opdr. Respiratie,34389,Measure cuff pressure
+9326,Bronchiaal toilet geven,82,Opdr. Respiratie,1803,Give bronchial toilet
+9329,Catheteriseren,85,Opdr. Urologisch,615,Catheterization
+9330,Ontcuffen,82,Opdr. Respiratie,573,Uncuffing
+9332,Wondverzorging,101,Opdr. Huid,18481,Wound care
+9335,Balloneren (Bronchiaal toilet),82,Opdr. Respiratie,1904,Ballooning (Bronchial toilet)
+9336,X-Opdracht nader te bepalen,89,Opdr. Overig,24769,X-Assignment to be determined later
+9337,Maagretentie bepalen,84,Opdr. Gastro-Intestinaal,8826,Determining gastric retention
+9338,Mondverzorging,104,Opdr. Verzorging,3530,Oral care
+9339,Oogverzorging,104,Opdr. Verzorging,389,Eye care
+9340,Duodenumsonde doorspuiten,84,Opdr. Gastro-Intestinaal,1223,Flush duodenal tube
+9341,Hechtingen-verwijderen,89,Opdr. Overig,35,Removing stitches
+9343,Jejunumfistel doorspuiten,84,Opdr. Gastro-Intestinaal,760,Inject jejunal fistula
+9344,Pacemaker Ventr.drempelen (Output),81,Opdr. Circulatie,846,Pacemaker Vent Thresholds (Output)
+9345,Pulsaties controleren,81,Opdr. Circulatie,3435,Check pulsations
+9346,Sinusspoeling,89,Opdr. Overig,16,Sinus rinse
+9352,Infuussysteem TPV verschonen,90,Opdr. Lijnen/Catheter/Drains,696,Change the TPV infusion system
+9353,Maagsonde verwisselen,90,Opdr. Lijnen/Catheter/Drains,1,Change gastric tube
+9354,CAD (Silicone) vervangen,90,Opdr. Lijnen/Catheter/Drains,33,Replace CAD (Silicone).
+9363,Transthoracale echocardiografie (TTE),81,Opdr. Circulatie,219,Transthoracic echocardiography (TTE)
+9364,X-Opdr.Circulatie,81,Opdr. Circulatie,9111,X-Job Circulation
+9365,X-Opdr. gastro-Intestinaal,84,Opdr. Gastro-Intestinaal,8354,X-Order gastrointestinal
+9366,X-Opdr. Houding & Beweging,87,Opdr. Houding & Beweging,18180,X-Order Posture & Movement
+9367,X-Opdr. Huid nader te bepalen,101,Opdr. Huid,2152,X-Order Skin to be determined
+9368,X-opdr. Neurologisch,83,Opdr. Neurologisch,5708,X command Neurological
+9369,X-Opdr. Infectie,88,Opdr. Infectie,1601,X-Order Infection
+9370,X-Opdr. Psycho-sociaal,86,Opdr. Psycho-sociaal,14076,X-Order Psycho-social
+9371,X-OPDR.Radiologie,103,Opdr. Radiologie,311,X-OBDR.Radiology
+9372,X-Sinus,103,Opdr. Radiologie,274,X-Sine
+9375,Haren wassen,104,Opdr. Verzorging,162,Washing hair
+9376,X-Lijnen/Catheter/Drains,90,Opdr. Lijnen/Catheter/Drains,3630,X-Lines/Catheter/Drains
+9377,X-opdracht Respiratie,82,Opdr. Respiratie,13102,X command Respiration
+9378,X-Opdracht Urologisch,85,Opdr. Urologisch,1721,X-Assignment Urological
+9389,Consult Decubitus vpk,101,Opdr. Huid,421,Consult Decubitus vpk
+9390,Consult Ergotherapie,87,Opdr. Houding & Beweging,168,Occupational therapy consultation
+9391,Geestelijk verzorger inschakelen,86,Opdr. Psycho-sociaal,110,Engage a spiritual counselor
+9392,Consult Logopedie,83,Opdr. Neurologisch,138,Speech therapy consultation
+9393,Consult Mondhygiënist(e),89,Opdr. Overig,15,Consult Dental Hygienist
+9394,Pijnteam inschakelen,89,Opdr. Overig,19,Call in pain team
+9395,Voedingsteam inschakelen,84,Opdr. Gastro-Intestinaal,59,Engage nutrition team
+9396,Consult Psycholoog,86,Opdr. Psycho-sociaal,17,Consult Psychologist
+9397,Ziekenhuishygiënist(e) inschakelen,89,Opdr. Overig,1,Call in a hospital hygienist
+9398,Tolk (doventolk) inschakelen,89,Opdr. Overig,4,Call in an interpreter (deaf interpreter).
+9413,Resetten CVVH,105,Opdr. CVVH,7795,Reset CVVH
+9423,Beademingsafspraken,82,Opdr. Respiratie,4631,Ventilation appointments
+9427,ADL schema opstellen,104,Opdr. Verzorging,84,Draw up ADL schedule
+9428,ADL hulpmiddelen aanbieden,104,Opdr. Verzorging,212,Offer ADL aids
+9429,Anamnese afnemen,104,Opdr. Verzorging,2491,Take anamnesis
+9432,Bewustzijn controle,83,Opdr. Neurologisch,266,Consciousness control
+9433,Blaastraining geven,85,Opdr. Urologisch,82,Provide bladder training
+9434,Buikomvang meten,89,Opdr. Overig,119,Measure waist circumference
+9435,CPAP masker geven,82,Opdr. Respiratie,314,Give CPAP mask
+9438,Dec. VPK inschakelen,101,Opdr. Huid,42,Dec. Enable VPK
+9439,Decubitusstadium bepalen,101,Opdr. Huid,28,Determine pressure ulcer stage
+9440,Eten bestellen keuken,89,Opdr. Overig,56,Order food from kitchen
+9442,Eénmalig catheteriseren,85,Opdr. Urologisch,269,Catheterization once
+9443,Blaas spoelen,85,Opdr. Urologisch,1994,Bladder flushing
+9444,X-Thorax 6.00u,103,Opdr. Radiologie,28586,Chest X-ray 6:00 am
+9445,ECG 6.00u,81,Opdr. Circulatie,35104,ECG 6:00 am
+9446,Lab. dgs Standaard 6.00u,73,Opdr. Laboratorium afname,64720,Lab. Days Standard 6:00 am
+9447,Bloedgas afn. 6.00u,73,Opdr. Laboratorium afname,4509,Blood gas den. 6:00 am
+9449,Opdr.\Proc. Stoppen,111,1. Stoppen/Wijzigen,38539,Assignment\Proc. Fuses
+9450,Opdr.\Proc Hervatten,111,1. Stoppen/Wijzigen,1483,Command\Proc Resume
+9451,Opdr.\Proc. Tijdelijk stoppen,111,1. Stoppen/Wijzigen,2730,Assignment\Proc. Stop temporarily
+9452,Opdr.\Proc. wijzigen,111,1. Stoppen/Wijzigen,66407,Assignment\Proc. modify
+9462,Herstart protocol lijnen verschonen,90,Opdr. Lijnen/Catheter/Drains,24,Restart protocol to change lines
+9466,.CVVH starten,105,Opdr. CVVH,873,Start .CVVH
+9467,CVVH anti-coagulantia starten,105,Opdr. CVVH,520,Initiate CVVH anticoagulants
+9473,CVVH stoppen,105,Opdr. CVVH,56,Stop CVVH
+9476,Intuberen,82,Opdr. Respiratie,162,Intubate
+9479,TED kousen aan,87,Opdr. Houding & Beweging,1071,TED stockings
+9480,Synacthentest uitvoeren,89,Opdr. Overig,668,Perform synacthen test
+9483,Haemodynamisch profiel,81,Opdr. Circulatie,2266,Haemodynamic profile
+9484,Extuberen,82,Opdr. Respiratie,510,Extubate
+9486,Doorzuchten/Hoesten stimuleren,82,Opdr. Respiratie,368,Stimulate sighing/coughing
+9487,EVD verbinden insteekplaats,104,Opdr. Verzorging,92,EVD connect plug-in
+9488,Fixeren handen (polsbanden),87,Opdr. Houding & Beweging,248,Fixing hands (wristbands)
+9489,Fixeren met onrustband + hekken,87,Opdr. Houding & Beweging,68,Fix with rest strap + fences
+9490,Fractuur fixeren bij draaien,87,Opdr. Houding & Beweging,271,Fix fracture when turning
+9493,Intrinsic PEEP en Airtrap bepalen,82,Opdr. Respiratie,101,Determining Intrinsic PEEP and Airtrap
+9496,Kinnebak geven,82,Opdr. Respiratie,2,Give chin
+9497,Zuurstofkapje geven,82,Opdr. Respiratie,32,Provide oxygen hood
+9498,Diep nasaal zuurstof geven,82,Opdr. Respiratie,7,Give deep nasal oxygen
+9500,Liquor labwaarts,73,Opdr. Laboratorium afname,1965,Liquor labward
+9501,Water voor O2 verschonen,90,Opdr. Lijnen/Catheter/Drains,13,Change water for O2
+9502,Blaasspuit vernieuwen,90,Opdr. Lijnen/Catheter/Drains,6,Renew blow syringe
+9503,Maaghevelzak vernieuwen,90,Opdr. Lijnen/Catheter/Drains,44,Renew gastric siphon bag
+9504,Sterielwaterfles vernieuwen,90,Opdr. Lijnen/Catheter/Drains,35,Renew sterile water bottle
+9505,Pall+Antivirusfilter+Swivel,90,Opdr. Lijnen/Catheter/Drains,47,Pall+Antivirus Filter+Swivel
+9507,Monddouche geven,104,Opdr. Verzorging,815,Give oral irrigator
+9509,Maaghevel inbrengen,84,Opdr. Gastro-Intestinaal,196,Insert gastric siphon
+9510,Maagsonde inbrengen,84,Opdr. Gastro-Intestinaal,552,Insert stomach tube
+9511,Maagzuigdrainage geven,84,Opdr. Gastro-Intestinaal,81,Give gastric suction drainage
+9512,Mobiliseren schema,87,Opdr. Houding & Beweging,4670,Mobilize schedule
+9515,Nasaal toilet geven,82,Opdr. Respiratie,173,Give nasal toilet
+9516,Neusbril geven,82,Opdr. Respiratie,80,Give nasal cannula
+9517,Ogen afplakken,104,Opdr. Verzorging,55,Tape up eyes
+9522,Hechtingen verwijderen,101,Opdr. Huid,613,Removing stitches
+9525,Reinigen fixatuur externe,89,Opdr. Overig,915,Cleaning external fixation
+9526,Sonde oraal geven,84,Opdr. Gastro-Intestinaal,39,Give tube orally
+9528,Supra Pubische catheter spoelen,85,Opdr. Urologisch,198,Supra Pubic catheter flushing
+9530,Uritip geven,85,Opdr. Urologisch,26,Give Uri tip
+9540,Cuffdruk meten 8.00 uur,82,Opdr. Respiratie,23046,Measure cuff pressure 8:00 am
+9547,Glucose afnemen,73,Opdr. Laboratorium afname,73418,Decrease glucose
+9567,AP verzorging,84,Opdr. Gastro-Intestinaal,270,AP care
+9579,SDD-Protocol starten,88,Opdr. Infectie,386,Start SDD Protocol
+9581,Laktaat afnemen,73,Opdr. Laboratorium afname,471,Remove lactate
+9588,Thoraxdrain op waterslot,90,Opdr. Lijnen/Catheter/Drains,173,Chest drain on water seal
+9589,Thoraxdrain afklemmen,90,Opdr. Lijnen/Catheter/Drains,234,Clamp chest tube
+9592,Thoraxdrain zuigen,90,Opdr. Lijnen/Catheter/Drains,126,Chest tube suction
+9598,VAP-registratie,88,Opdr. Infectie,488,VAP registration
+9600,Drukverband aanleggen,81,Opdr. Circulatie,48,Apply a pressure bandage
+9603,Cytologie bepalen,73,Opdr. Laboratorium afname,5,Determine cytology
+9605,IABP flush,81,Opdr. Circulatie,8442,IABP flush
+9606,MDO bespreking,86,Opdr. Psycho-sociaal,290,MDO discussion
+9613,Hotline gebruiken,81,Opdr. Circulatie,10,Use hotline
+10429,Kalibratie capnograaf,82,Opdr. Respiratie,3667,Calibration capnograph
+10431,IABP pulsaties,81,Opdr. Circulatie,11001,IABP pulsations
+10432,IABP Cath. & Insteekopening controle,81,Opdr. Circulatie,10611,IABP Cath. & Insertion opening control
+10434,IABP drukzak verwisselen,81,Opdr. Circulatie,605,Change IABP pressure bag
+10435,7D Lab. Dagelijks klein,73,Opdr. Laboratorium afname,331,7D Lab. Everyday small
+10436,7D Lab. Maandag & Donderdag,73,Opdr. Laboratorium afname,94,7D Lab. Monday thursday
+10437,7D Lab. Opname standaard,73,Opdr. Laboratorium afname,134,7D Lab. Recording standard
+10438,7D Lab. opname groot,73,Opdr. Laboratorium afname,320,7D Lab. recording large
+10580,7D Lab. Dagelijks 6.00 u,73,Opdr. Laboratorium afname,6795,7D Lab. Daily 6:00 am
+10591,Kunstneuzen starten,82,Opdr. Respiratie,1897,Start artificial noses
+10605,HI-schema T=0,73,Opdr. Laboratorium afname,2122,HI scheme T=0
+10606,HI-schema T=6,73,Opdr. Laboratorium afname,2210,HI scheme T=6
+10607,HI-schema D=1,73,Opdr. Laboratorium afname,274,HI scheme D=1
+10608,HI-schema D=2,73,Opdr. Laboratorium afname,48,HI scheme D=2
+10609,HI-schema D=4,73,Opdr. Laboratorium afname,67,HI scheme D=4
+10611,HI-schema starten,81,Opdr. Circulatie,211,Start HI schedule
+10614,Spuitpomp < 2.0 ml/uur verschonen,90,Opdr. Lijnen/Catheter/Drains,679,Change syringe pump < 2.0 ml/hour
+10616,Boussignac,82,Opdr. Respiratie,17,Boussignac
+10617,Capnografie gebruiken,82,Opdr. Respiratie,89,Using capnography
+10621,Contactisolatie  verplegen,88,Opdr. Infectie,164,Nursing contact isolation
+10733,Jejunumsonde doorspuiten,84,Opdr. Gastro-Intestinaal,320,Inject jejunal tube
+10737,Vochtbalans afsluiten_OLD_1,89,Opdr. Overig,2330,Close moisture balance_OLD_1
+10742,X-Opdr. CVVH,105,Opdr. CVVH,1179,X-Order CVVH
+10748,Controle fundus hoogte,89,Opdr. Overig,58,Check fundus height
+10749,Controle vloeien,89,Opdr. Overig,113,Control flow
+10752,Bloed afnemen,73,Opdr. Laboratorium afname,13966,Taking blood
+10753,Lab. Koortsonderzoek 9.00 uur,73,Opdr. Laboratorium afname,198,Lab. Fever examination 9:00 am
+10762,PEG-sonde doorspuiten,84,Opdr. Gastro-Intestinaal,1189,Inject PEG tube
+10764,Familieformulier afgeven,86,Opdr. Psycho-sociaal,2918,Submit family form
+12134,Zinkspiegel afnemen,73,Opdr. Laboratorium afname,153,Decrease zinc levels
+12135,Sintrommitis laten afspreken,89,Opdr. Overig,1904,Have sintrommitis arranged
+12136,Marcoumar afspreken,89,Opdr. Overig,21,Make an appointment with Marcoumar
+12263,Been zwachtelen,104,Opdr. Verzorging,361,Leg bandaging
+12264,Zwachtels verwijderen,104,Opdr. Verzorging,201,Remove bandages
+12265,Pacemaker drempelen,81,Opdr. Circulatie,2673,Pacemaker thresholds
+12368,Verpl. overzicht bijwerken,89,Opdr. Overig,39819,Move update overview
+12377,X-opdracht verzorging,104,Opdr. Verzorging,24504,X-order care
+12392,HI-schema T=12,73,Opdr. Laboratorium afname,1949,HI scheme T=12
+12393,HI-schema T=18,73,Opdr. Laboratorium afname,1722,HI schedule T=18
+12394,HI-schema T=24,73,Opdr. Laboratorium afname,1473,HI scheme T=24
+12395,HI-schema T=36,73,Opdr. Laboratorium afname,1238,HI scheme T=36
+12409,Citraat-CVVH T= 0,73,Opdr. Laboratorium afname,37,Citrate-CVVH T= 0
+12410,Citraat-CVVH T= 10 min,73,Opdr. Laboratorium afname,30,Citrate-CVVH T= 10 min
+12411,Citraat-CVVH T= 60 min,73,Opdr. Laboratorium afname,29,Citrate-CVVH T= 60 min
+12412,Citraat-CVVH T= 180 min,73,Opdr. Laboratorium afname,28,Citrate-CVVH T= 180 min
+12413,Citraat-CVVH T = 720 min,73,Opdr. Laboratorium afname,11,Citrate-CVVH T = 720 min
+12414,Citraat-CVVH urine 24 uur,73,Opdr. Laboratorium afname,29,Citrate-CVVH urine 24 hours
+12415,Citraat-CVVH urine 48 uur,73,Opdr. Laboratorium afname,18,Citrate-CVVH urine 48 hours
+12416,Citraat-CVVH urine 72 uur,73,Opdr. Laboratorium afname,14,Citrate-CVVH urine 72 hours
+12417,Hypothermie reanimatie T = 0,73,Opdr. Laboratorium afname,30,Hypothermia resuscitation T = 0
+12418,Hypothermie reanimatie T = 2,73,Opdr. Laboratorium afname,22,Hypothermia resuscitation T = 2
+12419,Hypothermie reanimatie T = 26,73,Opdr. Laboratorium afname,18,Hypothermia resuscitation T = 26
+12420,Hypothermie reanimatie T = 72,73,Opdr. Laboratorium afname,13,Hypothermia resuscitation T = 72
+12421,Start Opdrachtenset Hypothermie reanismatie SET2,89,Opdr. Overig,42,Start Assignment set Hypothermia resuscitation SET2
+12428,Protocol lab. afname,73,Opdr. Laboratorium afname,1150,Protocol lab. decrease
+12437,Scoreformulier invullen,89,Opdr. Overig,1072,Complete score form
+12439,Attentie/Herinnering,89,Opdr. Overig,4286,Attention/Reminder
+12473,Neus spoelen,104,Opdr. Verzorging,14533,Rinse nose
+12474,Research generiek,89,Opdr. Overig,13539,Research generic
+12493,Binnencanule schoonmaken,90,Opdr. Lijnen/Catheter/Drains,15834,Clean the inner cannula
+12537,Drain spoelen,90,Opdr. Lijnen/Catheter/Drains,3814,Drain flushing
+12631,Lithiumspiegel afnemen,73,Opdr. Laboratorium afname,30,Decrease lithium level
+12686,Nieuwe TPV,90,Opdr. Lijnen/Catheter/Drains,4047,New TPV
+12688,Drukverband verwijderen,81,Opdr. Circulatie,231,Remove pressure bandage
+12758,"Venflon doorspuiten NaCL0,9%",90,Opdr. Lijnen/Catheter/Drains,25121,Venflon spray NaCL0.9%
+12760,VAP-scoreformulier invullen,89,Opdr. Overig,13127,Complete the VAP score form
+12770,Wondinspectie,101,Opdr. Huid,1477,Wound inspection
+12771,Wisselligging,87,Opdr. Houding & Beweging,173160,Changing position
+12779,Urine afnemen,73,Opdr. Laboratorium afname,2243,Collect urine
+12780,24-uurs urine afsluiten,85,Opdr. Urologisch,173,24-hour urine closure
+12781,Ontlasting afnemen,73,Opdr. Laboratorium afname,22,Remove stools
+12785,CPAP geven,82,Opdr. Respiratie,6937,Give CPAP
+12799,PET scan,103,Opdr. Radiologie,22,PET scan
+12802,Draaien  als boomstam,87,Opdr. Houding & Beweging,2223,Turning like a tree trunk
+12838,Hielbogen,101,Opdr. Huid,37267,Heel arches
+12839,Hielen vrijleggen,101,Opdr. Huid,106055,Expose heels
+12896,Decubitus score,101,Opdr. Huid,107911,Pressure ulcer score
+12897,Dec. wondverzorging Achterhoofd,101,Opdr. Huid,13,Dec. wound care Occipital
+12900,Dec. wondverzorging Anders,101,Opdr. Huid,358,Dec. wound care Other
+12903,Dec. wondverzorging Elleboog Re,101,Opdr. Huid,33,Dec. wound care Elbow Re
+12904,Dec. wondverzorging Enkel Li,101,Opdr. Huid,10,Dec. wound care Single Li
+12905,Dec. wondverzorging Enkel Re,101,Opdr. Huid,36,Dec. wound care Single Re
+12906,Dec. wondverzorging Heup Li,101,Opdr. Huid,29,Dec. wound care Hip Li
+12908,Dec. wondverzorging Hiel Li,101,Opdr. Huid,24,Dec. wound care Hiel Li
+12910,Dec. wondverzorging Knie Li,101,Opdr. Huid,9,Dec. wound care Knie Li
+12913,Dec. wondverzorging Oor Li,101,Opdr. Huid,7,Dec. wound care Oor Li
+12914,Dec. wondverzorging Oor Re,101,Opdr. Huid,17,Dec. wound care Ear Re
+12917,Dec. wondverzorging Stuit,101,Opdr. Huid,429,Dec. wound care Stuit
+12920,Dec. wondverzorging Tenen Li,101,Opdr. Huid,32,Dec. wound care Tenen Li
+12921,Dec. wondverzorging Tenen Re,101,Opdr. Huid,21,Dec. wound care Toes Re
+12925,Wedge-druk meten,81,Opdr. Circulatie,11,Measuring wedge pressure
+12926,Sildenafil-spiegel afnemen,73,Opdr. Laboratorium afname,8,Decrease sildenafil level
+12928,Urine sparen,73,Opdr. Laboratorium afname,378,Save urine
+12929,Faeces verzamelen,73,Opdr. Laboratorium afname,341,Collect feces
+12939,Lauwwater klysma geven,84,Opdr. Gastro-Intestinaal,230,Give lukewarm water enema
+12954,CVVH-citraat lab. afnemen,73,Opdr. Laboratorium afname,12302,CVVH Citrate Lab. to decrease
+12955,CVVH-citraat Calciumpomp starten,105,Opdr. CVVH,692,CVVH citrate Start calcium pump
+12980,Wondverz. Operatie & Trauma(1),101,Opdr. Huid,1227,Wound care Surgery & Trauma(1)
+12981,Wondverz. Operatie & Trauma(2),101,Opdr. Huid,66,Wound care Surgery & Trauma(2)
+12983,Wondverz. Dermatologisch & Endogeen(1),101,Opdr. Huid,381,Wound care Dermatological & Endogenous(1)
+12984,Wondverz. Dermatologisch & Endogeen(2),101,Opdr. Huid,47,Wound care Dermatological & Endogenous(2)
+12985,Wondverz. Dermatologisch & Endogeen(3),101,Opdr. Huid,3,Wound care Dermatological & Endogenous(3)
+12986,Wondverz  Verbranding/Bevriezing/Etsing/Straling1,101,Opdr. Huid,38,Wound care Burning/Freezing/Etching/Radiation1
+12988,Wondverz. Verbranding/Bevriezing/Etsing/Straling3,101,Opdr. Huid,2,Wound care Combustion/Freezing/Etching/Radiation3
+12989,Consult Wondverpleegkundige,101,Opdr. Huid,238,Consult Wound Nurse
+12991,SIG lab afnemen,73,Opdr. Laboratorium afname,3,Take SIG lab
+13011,X-Opdr. Voeding,116,Opdr. Voeding,3833,X-Order Power supply
+13021,Gantt-lijst controle,89,Opdr. Overig,244028,Gantt list control
+13024,SDD Inventarisatiekweken afnemen,74,Opdr. Kweken afnemen,3101,SDD Take inventory cultures
+13053,72 uurs Gesloten uitzuigsysteem verschonen,90,Opdr. Lijnen/Catheter/Drains,835,72 hours Change closed suction system
+13158,Schildklierfunctie,73,Opdr. Laboratorium afname,483,Thyroid function
+13494,X-Thorax 8.00u,73,Opdr. Laboratorium afname,13554,Chest X-ray 8:00 am
+13849,Propofol infuuslijn verschonen,90,Opdr. Lijnen/Catheter/Drains,5303,Change propofol infusion line
+13932,Filter expiratie cassette verwisselen,90,Opdr. Lijnen/Catheter/Drains,29685,Change exhalation filter cassette
+13954,VVA-score invullen,89,Opdr. Overig,2238,Enter VVA score
+14136,Consult Revalidatie arts,87,Opdr. Houding & Beweging,32,Consult Rehabilitation doctor
+14208,Voriconazol spiegel afnemen,73,Opdr. Laboratorium afname,154,Decrease voriconazole level
+14217,Bladderscan,85,Opdr. Urologisch,441,Bladder scan
+14537,Decubitus-wondverzorging,101,Opdr. Huid,1573,Pressure ulcer wound care
+14610,Score bepalen en registreren,89,Opdr. Overig,328,Determine and register score
+14689,Start realiteitsoriëntatie,89,Opdr. Overig,110,Start reality orientation
+14690,Dagprogramma,89,Opdr. Overig,2418,Day program
+14692,Ramsay score bepalen,89,Opdr. Overig,31,Determine Ramsay score
+15140,VAS score bepalen,83,Opdr. Neurologisch,17667,Determine VAS score
+15141,VVA toewijzen,89,Opdr. Overig,108,Assign VVA
+15166,DOS-score invullen,89,Opdr. Overig,12497,Enter DOS score
+15173,Sondepleister verschonen,104,Opdr. Verzorging,3242,Change probe patch
+15274,2D Lab. NCH Dagelijks 6.00u,73,Opdr. Laboratorium afname,1680,2D Lab. NCH Daily 6am
+15275,2D Lab. HLK Dagelijks 6.00u,73,Opdr. Laboratorium afname,4965,2D Lab. HLK Daily 6am
+15276,2D Lab. Uitgebreid Dagelijks 6.00u,73,Opdr. Laboratorium afname,484,2D Lab. Extensive Daily 6:00 am
+15283,Verpl. beloop bijwerken,89,Opdr. Overig,8179,Move update course
+15776,NDT-systeem verschonen,90,Opdr. Lijnen/Catheter/Drains,285,Change NDT system
+16051,Lab. Nabepalen,73,Opdr. Laboratorium afname,493,Lab. Determination
+16089,Cardioversie 100 J,81,Opdr. Circulatie,118,Cardioversion 100 J
+16090,Cardioversie 150 J,81,Opdr. Circulatie,10,Cardioversion 150 J
+16091,Cardioversie 200 J,81,Opdr. Circulatie,22,Cardioversion 200 J
+16093,Defibrillatie 360 J,81,Opdr. Circulatie,13,Defibrillation 360 J
+16094,Cardioversie 50 J,81,Opdr. Circulatie,108,Cardioversion 50 J
+16164,Cardioversie 360 J,81,Opdr. Circulatie,11,Cardioversion 360 J
+16165,Pre-cordiale stomp,81,Opdr. Circulatie,3,Precordial stump
+16340,CAD silicone ballon legen,90,Opdr. Lijnen/Catheter/Drains,13,Deflating CAD silicone balloon
+16359,MRI scan,103,Opdr. Radiologie,32,MRI scan
+16451,Spreekklep geven,82,Opdr. Respiratie,646,Give a talking valve
+16678,Weekend medicatie bestellen,89,Opdr. Overig,4410,Order weekend medication
+16679,Defibrillatie 200 J,81,Opdr. Circulatie,163,Defibrillation 200 J
+16680,Cardioversie 70 J,81,Opdr. Circulatie,15,Cardioversion 70 J
+16684,Cardioversie x J,81,Opdr. Circulatie,72,Cardioversion x J
+16852,CPAP filter verschonen,90,Opdr. Lijnen/Catheter/Drains,133,Change CPAP filter
+16902,IABP check drukzak,81,Opdr. Circulatie,638,IABP check pressure bag
+16906,PURsonde vervangen,90,Opdr. Lijnen/Catheter/Drains,280,Replace PUR probe
+16918,Controle positie substitutielijn (predilutie),105,Opdr. CVVH,5265,Control position substitution line (predilution)
+16943,Pleurapunctie diagnostisch,82,Opdr. Respiratie,26,Pleural puncture diagnostic
+16944,Pleurapunctie therapeutisch,82,Opdr. Respiratie,53,Pleural puncture therapeutic
+16945,Laryngoscopie (In)direct,82,Opdr. Respiratie,62,Laryngoscopy (In)direct
+19146,Familiegesprek plannen,86,Opdr. Psycho-sociaal,1404,Schedule a family meeting
+19357,Defibrillatie x J,81,Opdr. Circulatie,33,Defibrillation x J
+19605,MDO bespreking plannen,86,Opdr. Psycho-sociaal,2,Plan MDO discussion
+19661,Pijnscore bepalen,83,Opdr. Neurologisch,88461,Determine pain score
+19663,Research Neuskweek COUrSe,74,Opdr. Kweken afnemen,1450,Research Nasal Culture COURSe
+19664,Research Sputumkweek COUrSe,74,Opdr. Kweken afnemen,1315,Research Sputum Culture COURSe
+19736,RASS score bepalen,83,Opdr. Neurologisch,51,Determine RASS score
+19737,EMV score bepalen,83,Opdr. Neurologisch,1437,Determine EMV score
+19889,TR-band controle,81,Opdr. Circulatie,296,TR band control
+20071,Flexiseal spoelen,84,Opdr. Gastro-Intestinaal,4010,Flexiseal coils
+20157,SNAQ score bepalen,116,Opdr. Voeding,161,Determine SNAQ score
+20161,Transport incidenten formulier invullen,89,Opdr. Overig,59,Complete transport incident form
+20196,Matras wisselen,101,Opdr. Huid,10,Change mattress
+20255,Lengte meten  m.b.v. meetlint,89,Opdr. Overig,1108,Measure length using measuring tape
+20271,Spuitpomp en Infuus controle op datum en tijd,90,Opdr. Lijnen/Catheter/Drains,13942,Syringe pump and infusion control by date and time
+20285,Wassen met Hibiscrub,104,Opdr. Verzorging,490,Wash with Hibiscrub
+20286,Passport  preoperatief invullen,89,Opdr. Overig,64,Complete the passport preoperatively
+20287,Preoperatief antistolling stoppen,89,Opdr. Overig,46,Stop anticoagulation preoperatively
+20288,Preoperatief kruisbloed afnemen,89,Opdr. Overig,92,Preoperative cross blood collection
+20289,Preoperatief nuchterbeleid,89,Opdr. Overig,112,Preoperative fasting policy
+20359,CAM-ICU score bepalen,83,Opdr. Neurologisch,18391,Determine CAM-ICU score
+20393,Opnieuw profiel monitor en alarmen instellen,89,Opdr. Overig,47013,Re-profile monitor and set alarms
+20711,Citraatslot verversen,105,Opdr. CVVH,95,Refresh citrate lock
+20712,Vervangen binnencanule Portex Blue Line Ultra,82,Opdr. Respiratie,31,Replacing Portex Blue Line Ultra inner cannula
+20713,Verschonen tracheacanule fixatie-bandje,82,Opdr. Respiratie,65,Change tracheostomy tube fixation strap
+20714,Wisselligging buikligging,82,Opdr. Respiratie,121,Alternating prone position
+20717,Huid neus checken op decubitus bij NIV,82,Opdr. Respiratie,21,Check the skin of the nose for pressure ulcers at NIV
+20747,CAD met temperatuur-sensor,89,Opdr. Overig,15,CAD with temperature sensor
+21080,TED kousen uit,87,Opdr. Houding & Beweging,144,TED stockings off
+21105,ECMO Time OUT (check),81,Opdr. Circulatie,11,ECMO Time OUT (check)
+21108,ECMO - aPTT controle,73,Opdr. Laboratorium afname,10,ECMO - aPTT control
+21111,Kalibratie PiCCO,81,Opdr. Circulatie,502,Calibration PiCCO
+21179,Pacemaker batterij wisselen,81,Opdr. Circulatie,14,Change pacemaker battery
+21193,Controle nabloeden,81,Opdr. Circulatie,66,Bleeding control
+21228,"Wisselen  waterfles,maaghevelspuit ,vernevelse",89,Opdr. Overig,1580,"Change water bottle, gastric siphon syringe, nebulizer"
+21240,Nulmeting mobilisatie,89,Opdr. Overig,924,Baseline measurement of mobilization

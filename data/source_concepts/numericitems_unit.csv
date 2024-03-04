@@ -1,0 +1,108 @@
+source_concept_id,source_concept,ucum_code,count,concept_id,concept_name
+0,None,,64697146,,
+1,dynes.sec.cm-5,dyn.s.cm-5,3559,,
+2,msec,ms,351,9593,millisecond
+3,sec,s,34052656,8555,second
+4,min,min,63,8550,minute
+5,uur,h,2829643,8505,hour
+6,ml,mL,51146175,8587,milliliter
+8,l,L,8583866,8519,liter
+9,g,g,9,8504,gram
+12,kg,kg,16444,9529,kilogram
+15,/min,/min,63917967,8541,per minute
+24,ml/min,mL/min,16700735,8795,milliliter per minute
+26,l/min,L/min,46828019,8698,liter per minute
+31,ppm,[ppm],128,9387,parts per million
+36,kcal,kcal,33,710194,kilocalorie
+37,jaar,a,1588,9448,year
+41,µg/l,ug/L,87260,8748,microgram per liter
+44,nmol/l,nmol/L,3783,8736,nanomole per liter
+46,ml/uur,mL/h,5381147,44777613,milliliter per hour
+50,cm,cm,59842,8582,centimeter
+51,mm,mm,284914054,8588,millimeter
+53,10^12/l,10*12/L,12739,8734,trillion per liter
+55,fl,fL,8183,8583,femtoliter
+56,µmol,umol,8636,9667,micromole
+59,°C,Cel,8594395,586323,degree Celsius
+61,g/dl,"g/dL,",498,,
+62,g/l,g/L,123213,8636,gram per liter
+63,mg/l,mg/L,93287,8751,milligram per liter
+64,mg/dl,mg/dL,2,8840,milligram per deciliter
+66,ng/ml,ng/mL,625,8842,nanogram per milliliter
+88,ml/dl,mL/dL,341318,9570,milliliter per deciliter
+89,ml/m2,mL/m2,2039,,
+92,l/min/m2,L/min/m2,186861,32710,liter per minute per square meter
+96,mol/l,mol/L,4,9586,mole per liter
+97,mmol/l,mmol/L,6971289,8753,millimole per liter
+98,pmol/l,pmol/L,13841,8729,picomole per liter
+99,µmol/l,umol/L,264312,8749,micromole per liter
+101,10^9/l,10*9/L,499328,9444,billion per liter
+150,mV,mV,13069,720843,millivolt
+152,kPa,kPa,18856,44777602,kilopascal
+157,µmol/24uur,umol/(24.h),64,8907,micromole per 24 hours
+161,mm/uur,mm/h,18632,8752,millimeter per hour
+164,ml/cmH2O,mL/cm[H2O],15082080,,
+165,amol,amol,7959,710189,attomole
+170,ml/kg,mL/kg,1314,9571,milliliter per kilogram
+171,Aantal,{#},666,,
+173,mmHg,mm[Hg],148100661,8876,millimeter mercury column
+175,cmH2O,cm[H2O],103556786,44777590,centimeter watercolumn
+177,mbar,mbar,15978934,720858,millibar
+183,E/l,U/L,491765,,
+186,IE/l,[IU]/L,14537,,
+187,IE/ml,[IU]/mL,776,,
+191,Geen,,81567918,,
+192,mosmol/kg,mosm/kg,7812,8862,milliosmole per kilogram
+196,/3 µl,{cells}/(3.ul),6138,,
+197,/µl,/uL,4801,8647,per microliter
+198,kE/l,kU/L,30,,
+200,10^6,10*6,2,8549,million
+201,10^8,10*8,18,9443,hundred million
+202,mE/l,mU/L,11992,,
+203,ng/l,ng/L,9914,8725,nanogram per liter
+204,°,deg,505633,9484,degree
+205,INR,{INR},193690,,
+206,mmol/mol,mmol/mol,201,9579,millimole per mole
+207,ng/ml/uur,ng/mL/h,1,9020,nanogram per milliliter and hour
+209,nmol/24uur,nmol/(24.h),21,44777627,nanomole per 24 hours
+210,o/oo,[ppth],1243,9154,parts per thousand
+211,E/ml,U/mL,177,,
+212,µl,uL,14,9665,microliter
+214,x TOT,{fraction},4328,720868,fraction
+215,kopie/ml,{copies}/mL,55,8799,copies per milliliter
+218,10^4/kg,10*4/kg,1,,
+219,10^6/kg,10*6/kg,32,720842,million per kilogram
+220,10^7/kg,10*7/kg,32,,
+221,g/24uur,g/(24.h),416,8807,gram per 24 hours
+224,/dag,/d,17946,,
+225,/jaar,/a,13288,,
+231,/veld,{cells}/[HPF],903,8889,cells per high power field
+232,BE,[beth'U],8,9161,Bethesda unit
+233,mmol/cel,mmol/L{RBCs},7871,,
+294,Hz,Hz,3,9521,Hertz
+296,%Blast +,%{positive},8,9231,percent positive
+297,kcal/24-uur,kcal/(24.h),1548,710212,kilocalorie per 24 hours
+298,mmHG/lsb.,mm[Hg],248347,8876,millimeter mercury column
+300,cmH20/l/s,cm[H2O]/L/s,4212,,
+301,J/l,J/L,15095994,,
+302,cmH2O/l,cm[H2O]/mL,311,,
+304,kcal/kg,kcal/kg,6,710251,kilocalorie per kilogram
+307,[0.0001] m2,1/1000.m2,3983,,
+308,cmH2O/µV,cm[H2O]/uV,27292,,
+309,µV,uV,121792,,
+311,ml/min/1.73m2,mL/min/{1.73_m2},128371,,
+312,µg/g,ug/g,12,8720,microgram per gram
+313,/100 leuc,/100{WBCs},4747,,
+315,pmol/RBC,pmol/{RBC},10,,
+316,mmol/24uur,mmol/(24.h),1515,8910,millimole per 24 hours
+322,+PEEP,cm[H2O]{above_PEEP},255,,
+323,µmol/10^11 PLT,umol/10*11{Platelets},42,,
+325,mg/24uur,mg/(24.h),30,8909,milligram per 24 hours
+326,nmol/10^9 PLT,nmol/10*9{Platelets},9,,
+329,%neg,%{negative},19,,
+331,mg/g,mg/g,3,8723,milligram per gram
+334,µg.uur/l,ug.h/L,8,,
+335,mg.uur/l,mg.h/L,2,,
+336,µg/mmol,ug/mmol,1,32408,microgram per millimole
+339,Ohm,Ohm,1467,9618,ohm
+340,% I.S.,%{IS},3,,

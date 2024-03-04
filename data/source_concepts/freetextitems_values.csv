@@ -1,0 +1,566 @@
+source_concept,count,source_concept_en
+(Cel)cilinders?,125,(Cell) cylinders?
+(Controle) leukemie,11,(Control) leukemia
+(Controle) leukemie (AML),1,(Control) leukemia (AML)
++,8621,+
+++,3352,++
++++,4775,+++
+<1:100,1,<1:100
+<1:20,3,<1:20
+<1:40,63,<1:40
+<1:80,2,<1:80
+<10,14,<10
+<1000,5,<1000
+<5,37,<5
+<500,41,<500
+> 20,2,>20
+>=1:320,11,>=1:320
+>100,3,>100
+>1000,3,>1000
+>1000.0,5,>1000.0
+>100000,4,>100000
+>20,1023,>20
+>200000,1,>200000
+>500,1,>500
+>60,93,>60
+0,12,0
+0-10,30,0-10
+0-10%,3,0-10%
+0-5,2737,0-5
+0.3,1,0.3
+1,1,1
+1 leucocilinder gezien,1,Seen 1 leuco cylinder
+"1,025",1,"1,025"
+1.020,1,"1,020"
+1:160,7,1:160
+1:2,1,1:2
+1:4,1,1:4
+1:40,24,1:40
+1:64,1,1:64
+1:8,1,1:8
+1:80,26,1:80
+10-20,579,10-20
+10.7,1,10.7
+100,2,100
+100%,11,100%
+1000,1,1000
+106.5,1,106.5
+107.2,1,107.2
+107.8,1,107.8
+11,2,11
+1100,2,1100
+1200,2,1200
+12000,1,12000
+122 ug/ml Dabigatran gemeten,1,122 ug/ml Dabigatran measured
+125,1,125
+13,1,13
+13.5,1,13.5
+1300,2,1300
+13000,1,13000
+14,1,14
+14.0,1,14.0
+1400,3,1400
+145.5,1,145.5
+15,1,15
+16.2,1,16.2
+16.7,1,16.7
+1600,1,1600
+166.9,1,166.9
+1700,2,1700
+17000,1,17000
+175.2,1,175.2
+18.0,1,18.0
+1800,3,1800
+18000,1,18000
+182,1,182
+184.1,2,184.1
+2-CA-FOS,2,2-CA-FOS
+2-WEKEN,4,2 WEEKS
+20-40,40,20-40
+200 cellen geteld,1,200 cells counted
+"200 cellen geteld, relatief veel macrofagen",1,"200 cells counted, relatively many macrophages"
+"200 cellen geteld, toename macrofagen",1,"200 cells counted, increase in macrophages"
+2000,2,2000
+20659 P,1,20659 P
+2100,2,2100
+21224 P,1,21224 P
+21281 M,1,21281 M
+21393 P,1,21393 P
+21436 M,1,21436 M
+21603 M,1,21603 M
+21651 P,1,21651 P
+219,1,219
+22.4,1,22.4
+2200,1,2200
+22000000,1,22000000
+22513 M,1,22513 M
+22587 P,1,22587 P
+22708 P,1,22708 P
+22842 M,1,22842 M
+2300,1,2300
+23228 P,1,23228 P
+23427 P,1,23427 P
+23981 M,1,23981 M
+24,1,24
+"24-uurs urine niet geschikt voor de aangevraagde bepalingen, graag feces insturen!!",1,"24-hour urine not suitable for the requested determinations, please submit feces!!"
+24116 P,1,24116 P
+24139 P,1,24139 P
+24216 M,1,24216 M
+24285 P,1,24285 P
+24721 M,1,24721 M
+24727 P,1,24727 P
+24886 P,1,24886 P
+25033 P,1,25033 P
+251.0,1,251.0
+252.0,1,252.0
+25224 M,1,25224 M
+25230 P,2,25230 P
+25398 P,2,25398 P
+25547 P,1,25547 P
+25577 P,1,25577 P
+25578 M,1,25578 M
+25634 P,1,25634 P
+25635 M,1,25635 M
+25834 M,1,25834 M
+25860 P,1,25860 P
+25951 P,1,25951 P
+25973 M,1,25973 M
+26000,1,26000
+26362 P,1,26362 P
+26690 M,1,26690 M
+26845 P,1,26845 P
+2700,1,2700
+27000,1,27000
+27392 P,1,27392 P
+27555 M,1,27555 M
+27748 P,1,27748 P
+28,1,28
+2800,2,2800
+28188 P,1,28188 P
+28308 P,1,28308 P
+28509 P,1,28509 P
+28993 M,1,28993 M
+29025 P,1,29025 P
+29102 P,2,29102 P
+29104 M,1,29104 M
+292 ug/ml Dabigatran,1,292 µg/ml Dabigatran
+29330 P,1,29330 P
+29354 P,1,29354 P
+29520 P,1,29520 P
+3,1,3
+3 zakken,1,3 pockets
+3000,2,3000
+31228 P,1,31228 P
+3400,1,3400
+346.2,1,346.2
+350.9,1,350.9
+37000,1,37000
+40-60,73,40-60
+400.6,1,400.6
+40000,1,40000
+417.3,1,417.3
+4200,1,4200
+4300,1,4300
+43000,1,43000
+4500,1,4500
+4800,1,4800
+49000,1,49000
+496.8,1,496.8
+5-10,1066,5-10
+50-60,1,50-60
+500,1,500
+520,2,520
+528,1,528
+54.0,1,54.0
+5500,1,5500
+560,1,560
+60-70,1,60-70
+600,1,600
+60000,1,60000
+6000000,1,6000000
+61000,1,61000
+62000,1,62000
+64.6,1,64.6
+650,1,650
+66.7,1,66.7
+660,2,660
+6700,1,6700
+670000,1,670000
+684,1,684
+690,1,690
+7.50,1,7.50
+717.6,1,717.6
+7200,1,7200
+76.6,1,76.6
+77.8,1,77.8
+7800,1,7800
+79,1,79
+79000,1,79000
+800,2,800
+8100,1,8100
+870,1,870
+8700,1,8700
+90-100,4,90-100
+90-100%,5,90-100%
+91.2,1,91.2
+910,1,910
+960,1,960
+afw,1,dev
+afwijkend,3,Divergent
+aids en verdere motivatie niet te lezen,1,AIDS and further motivation not to read
+Allo DLI,4,Hello DLI
+AMC,1,AMC
+AML,1,AML
+AMORF,592,AMORPH
+analyse,1,analysis
+analyse trombocytopenie HITT?,1,analysis of thrombocytopenia HITT?
+ANISO+,4478,ANISO+
+ANISO++,434,ANISO++
+ANISO+++,13,ANISO+++
+Apotheek,211,Pharmacy
+APTT verlengd op basis van LAC. Herhalen na minimaal 12 weken ter bevestiging,1,APTT extended based on LAC. Repeat after at least 12 weeks for confirmation
+Aspecifiek,2,Non-specific
+Auto LF,2,Car LF
+Bepaling weg en alternatieve bep./grp toevoegen,5,Remove provision and add alternative provision/group
+bepalingen moeten op serum(stolbuis) i.o.m. AM/AIOS xx-xx-xx,1,determinations must be made on serum (coagulation tube) i.o.m. AM/AIOS xx-xx-xx
+Bewaard,210,Saved
+blasten,1,blast
+Blasten?,1,Blast?
+blasten???,1,blast???
+ca-199,1,ca-199
+celcilinders?,2,cell cylinders?
+"Cilinders, leuco's?",2,"Cylinders, leucos?"
+CLB,21,CLB
+controle leukemie,1,control leukemia
+controle leukemnie,1,control leukemia
+Controle Lymfoom,1,Control Lymphoma
+CREME,1,CREAM
+Diff afname door derden,4,Diff purchase by third parties
+Diff bij merg,70,Diff at marrow
+Directe Coombs is niet volgens de juiste procedure te bepalen vanwege de sterke koude antistoffen. Ery's bij 37graden gewassen IgG= negatief,1,Direct Coombs cannot be determined according to the correct procedure because of the strong cold antibodies. Ery's at 37 degrees washed IgG = negative
+dry tap,1,dry tap
+"dry tap, in deppraparaten voornamelijk blastaire cellen gezien",1,"dry tap, mainly blastic cells are seen in blotting specimens"
+dubieus,1,dubious
+Dubieus,129,Dubious
+dyserythropoïese,3,dyserythropoiesis
+dysgranulopoïese,4,dysgranulopoiesis
+dysmegakaryopoïese,7,dysmegakaryopoiesis
+"dysmegakaryopoïese, ook micro megakaryocyten",5,"dysmegakaryopoiesis, also micro megakaryocytes"
+Dysmorfe ery's?,195,Dysmorphic erys?
+ECHIN+,398,ECHIN+
+ECHIN++,95,ECHIN++
+ECHIN+++,22,ECHIN+++
+eosinofilie,1,eosinophilia
+eosinofilie??? (zie aanvraag),1,eosinophilia??? (see request)
+EPIT.CYL,2,EPIT.CYL
+ery's aanwezig maar niet te bepalen ivm te veel leucos en gist,1,ery's present but cannot be determined due to too much leucos and yeast
+ERY.CYL,6,ERY.CYL
+faecale verontreiniging???,1,fecal pollution???
+fecale verontreiniging?,2,fecal contamination?
+FRAGM+,129,FRAGM+
+FRAGM++,21,FRAGM++
+FRAGM+++,3,FRAGM+++
+fragmentocyten ?,1,fragmentocytes ?
+Fragmentocyten?,133,Fragmentocytes?
+fragmentocyten?? i.v.m. thrombopenie,1,fragmentocytes?? i.v. thrombopenia
+ft4599,1,ft4599
+ft4709,1,ft4709
+ft4717,1,ft4717
+ft4719,1,ft4719
+ft4899,1,ft4899
+ft5045,1,ft5045
+ft5067,1,ft5067
+ft5160,1,ft5160
+ft5173,1,ft5173
+ft5304,1,ft5304
+ft5305,1,ft5305
+ft5307,1,ft5307
+ft5412,1,ft5412
+ft5445,1,ft5445
+ft5450,1,ft5450
+ft5554,1,ft5554
+ft5567,1,ft5567
+ft5726,1,ft5726
+ft5902,1,ft5902
+ft5976,1,ft5976
+ft5979,1,ft5979
+ft6031,1,ft6031
+ft6098,1,ft6098
+ft6308,1,ft6308
+ft6332,1,ft6332
+ft6391,1,ft6391
+ft6406,1,ft6406
+ft6544,1,ft6544
+ft6549,1,ft6549
+ft6551,1,ft6551
+ft6608,1,ft6608
+ft6635,1,ft6635
+ft6677,1,ft6677
+ft6741,1,ft6741
+ft6742,1,ft6742
+geen,1,no
+Geen,1,No
+GEEN-AFW,6,NO-DEV
+geen afwijking,2,no deviation
+Geen basofiele puncetering in ery's waargenomen,1,No basophilic punctation in erys observed
+Geen bijzonderheden,94,Nothing unusual
+Geen Byz,299,No Byz
+Geen cilinders waargenomen.,6,No cylinders observed.
+Geen ery's waargenomen.,2,No erys observed.
+geen fragmentocyten gezien,1,no fragmentocytes seen
+geen fragmentocyten gezien.,1,no fragmentocytes seen.
+geen fragmentocyten waargenomen,6,no fragmentocytes observed
+geen fragmentocyten waargenomen.,2,no fragmentocytes observed.
+Geen fragmentocyten waargenomen.,1,No fragmentocytes observed.
+Geen LAC aantoonbaar.,3,No LAC demonstrable.
+geen materiaal ontvangen,1,no material received
+"geen materiaal ontvangen,materiaal zonder naam ontvangen",1,"no material received, material without name received"
+Geen materiaal ontvangen.,12,No material received.
+Geen naam op materiaal,1,No name on material
+geen naam op potje,1,no name on the jar
+geen vezels waargenomen in wondvocht.,1,no fibers observed in wound fluid.
+Geen Vezels waargenomen!,1,No Fibers Detected!
+gezien grampreparaat materiaal ongeschikt voor kweek,4,considering gram preparation material unsuitable for culture
+GJO,58,GJO
+goed,14,Good
+Goed,36,Good
+GPA,1,G.P.A
+Gramnegatieve staven en Grampositieve kokken verdacht voor streptokokken.,1,Gram-negative rods and Gram-positive cocci are suspicious for streptococci.
+Grampositieve kokken verdacht voor Staphylokokken en Grampositieve kokken verdacht voor Streptokokken,1,Gram-positive cocci suspicious for Staphylococci and Gram-positive cocci suspicious for Streptococci
+"Grampositieve kokken, verdacht voor Stafylokokken en Grampositieve staven",1,"Gram-positive cocci, suspicious for Staphylococci and Gram-positive rods"
+"Grampositieve kokken, vv Stafylokokken en Gramnegatieve staven",2,"Gram-positive cocci, vv Staphylococci and Gram-negative rods"
+Hemol.,4,Hemol.
+Hemolyse,1,Hemolysis
+hemolytisch auto-imuun anemie,1,hemolytic autoimmune anemia
+Heterozyg.,2,Heterozyg.
+hoge leuco,1,high leuco
+HYAL.CYL,430,HYAL.CYL
+HYPER+,1,HYPER+
+HYPO+,137,HYPO+
+HYPO++,30,HYPO++
+immuungecompr. bij chemotherapie,1,immunocomp. in chemotherapy
+In dif myelocyten. Vg mantelcellymfoom,1,In dif myelocytes. Vg mantle cell lymphoma
+Inhoud verwijderd,3732,Content removed
+iom 5C afgekeurd,1,rejected by 5C
+iom hematoloog,1,iom hematologist
+IOM VP afgekeurd,1,IOM VP rejected
+"IRGA-set te lang buiten de stoof, wordt MA xx-xx-xx opnieuw ingestuurd.",1,"IRGA set left out of the oven for too long, MA xx-xx-xx will be re-sent."
+ivm hoog eo's bij HA,1,due to high eo's at HA
+ivm leuco's > 50,1,due to leucos > 50
+ivm mogelijke donatieprocedure,1,regarding possible donation procedure
+Klasse 0,1,Class 0
+"kleine vlokjes met weinig cellen, toename mestcellen",1,"small flakes with few cells, increase in mast cells"
+Klin.Imm,4,Klin.Imm
+KORR.CYL,400,KORR.CYL
+LAC aantoonbaar. Herhalen na minimaal 12 weken ter bevestiging,3,LAC demonstrably. Repeat after at least 12 weeks for confirmation
+"Lagdurige leukocytose, aspect witte reeks?",1,"Long-term leukocytosis, white series aspect?"
+LEUC.CYL,12,LEUC.CYL
+leucocytose,1,leucocytosis
+"leucocytose 43,9 onbegrepen pulm zwak waarbij reanimatie setting neurologisch e,m,v onverklaarbaar",1,leucocytosis 43.9 unexplained pulm weak with resuscitation setting neurological and inexplicable
+leucocytose prognose,1,leukocytosis prognosis
+lichte dyserythropoïese,1,mild dyserythropoiesis
+lichte dysmegakaryopoïese,2,mild dysmegakaryopoiesis
+linksverschuiving,1,left shift
+longoedeem,1,pulmonary edema
+lood intox?,1,lead intox?
+LUMC,5,LUMC
+MAKRO+,19,MAKRO+
+MAKRO++,2,MAKRO++
+MASSAGE,1,MASSAGE
+Materiaal lekkend uit potjes en besmeurd ontvangen,1,Material leaking from jars and received stained
+materiaal niet onderzocht,2,material not examined
+materiaal zonder naam ontvangen,1,received material without a name
+Materiaal zonder naam ontvangen!!,1,Received material without name!!
+matig,19,mediocre
+Matig,11,Mediocre
+MATIG,2,MEDIOCRE
+megaloblastoïd,1,megaloblastoid
+"MF, blasten, fragmentocyten?",1,"MF, blasts, fragmentocytes?"
+MIKRO+,24,MIKRO+
+MIKRO++,5,MIKRO++
+MMI,70,MMI
+MRS,1,MRS
+MWO,19,MWO
+myelocyten? recidief CMML?,1,myelocytes? recurrence CMML?
+N.v.t,265,N/A
+n.v.t.,9,n/a
+N.V.T.,99,N/A
+nadere analyse gewenst,1,further analysis is required
+NEG.,6,NEG.
+negatief,1,negative
+Negatief,34074,Negative
+NEGATIEF,17253,NEGATIVE
+nierdonatie,1,kidney donation
+Niet afg,20,Not shown
+Niet afgenomen door afd/arts,15,Not administered by dept/doctor
+niet gezien,4,not seen
+Niet gezien,52,Not seen
+Niet interpreteerbaar,1,Not interpretable
+Niet interpreteerbaar.,509,Not interpretable.
+Niet te,4,Not too
+niet te beoordelen,53,not judgeable
+Niet te beoordelen,25,Not judgeable
+Niet te beoordelen enkel echinocyten,1,"Cannot be assessed, only echinocytes"
+niet te beoordelen ivm doornappels,1,Cannot be judged due to datura
+Niet te beoordelen ivm doornappels,1,Cannot be assessed due to datura
+Niet te lezen motivatie,1,Motivation that cannot be read
+Niet waargenomen,1,Not observed
+normaal,61,normal
+Normaal,95,Normal
+NORMAAL,4,NORMAL
+ntb,1,tbd
+nvt,1,n/a
+onbegrepen leukocytose,1,unexplained leukocytosis
+onbegrepen linksverschuiving,1,misunderstood left shift
+onbekend,774,unknown
+onder microscoop: zeer veel bacterien en zeer veel faeces vezels gezien,1,under microscope: a lot of bacteria and a lot of fecal fibers seen
+onrijp verschoven,9,shifted immature
+onverdund,1,undiluted
+opgeslagen,3366,stored
+opleving AML,1,revival of AML
+opm,130,note
+Opm,2,Note
+opm.,8,note
+OVALO+,94,OVALO+
+OVALO++,10,OVALO++
+OVALO+++,2,OVALO+++
+OXALAAT,77,OXALATE
+Pat. is nuchter,31,Pat. is sober
+Pat.is niet nuchter,140,Pat isn't sober
+patient knapt niet op,1,patient does not recover
+PCR geremd.,1,PCR inhibited.
+"PH = 5,0",1,PH = 5.0
+pH = 8,1,pH = 8
+ph =8,1,pH =8
+pH in drainvocht 8,2,pH in drain fluid 8
+ph= 7.65 in maagzuur,1,pH= 7.65 in stomach acid
+pH=7.96,1,pH=7.96
+PHU,1,PHU
+"poly-AHG/anti-IgG=zwak positief,anti-IgA/IgM/C3c/C3d=negatief",1,"poly-AHG/anti-IgG=weak positive, anti-IgA/IgM/C3c/C3d=negative"
+"poly-AHG=positief, anti-IgG=zwak positief, anti-IgA/IgM/C3c/C3d=negatief",1,"poly-AHG=positive, anti-IgG=weak positive, anti-IgA/IgM/C3c/C3d=negative"
+Poly AHG = negatief,30,Poly AHG = negative
+"Poly AHG = negatief , Anti-IgG, IgA, IgM, C3c en C3d = negatief",1,"Poly AHG = negative, Anti-IgG, IgA, IgM, C3c and C3d = negative"
+"Poly AHG = negatief , Anti-IgG, IgA, IgM, C3c en C3d = negatief , IgG1/IgG3 = negatief",1,"Poly AHG = negative, Anti-IgG, IgA, IgM, C3c and C3d = negative, IgG1/IgG3 = negative"
+"Poly AHG = negatief Anti-IgG, IgA, IgM, C3c en C3d = negatief",4,"Poly AHG = negative Anti-IgG, IgA, IgM, C3c and C3d = negative"
+"Poly AHG = negatief. Anti-IgG, IgA, IgM, C3c en C3d = negatief",1,"Poly AHG = negative. Anti-IgG, IgA, IgM, C3c and C3d = negative"
+"Poly AHG = pos, IgG/IgA/IgM en C3c = neg, C3d = sterk Positief",1,"Poly AHG = pos, IgG/IgA/IgM and C3c = neg, C3d = strong Positive"
+poly AHG = pos; IgG en IgA en IgM = neg; C3c = neg; C3d = pos; IgG1 en IgG3 = Negatief,1,poly AHG = pos; IgG and IgA and IgM = neg; C3c = neg; C3d = pos; IgG1 and IgG3 = Negative
+"Poly AHG = Positief, IgG,C3d=positief , IgA,IgM,IgG1,IgG3=negatief",1,"Poly AHG = Positive, IgG,C3d=positive, IgA,IgM,IgG1,IgG3=negative"
+"Poly AHG = sterk positief. Anti-IgG = sterk positief, anti-IgA, IgM en complement = negatief. Anti-IgG1 1:1 = positief, 1:100 = negatief, Anti-IgG3 = negatief, totaal anti-IgG = sterk positief.",1,"Poly AHG = strongly positive. Anti-IgG = strongly positive, anti-IgA, IgM and complement = negative. Anti-IgG1 1:1 = positive, 1:100 = negative, Anti-IgG3 = negative, total anti-IgG = strongly positive."
+"Poly AHG = sterk positief. Anti-IgG = sterk positief, anti-IgA, IgM, C3c en C3d = negatief. Anti-IgG1 1:1 = sterk positief, anti-IgG 1:100 = negatief, anti-IgG3 1:1 en 1:100 = negatief en totaal anti-IgG 1:10 = positief.",1,"Poly AHG = strongly positive. Anti-IgG = strongly positive, anti-IgA, IgM, C3c and C3d = negative. Anti-IgG1 1:1 = strongly positive, anti-IgG 1:100 = negative, anti-IgG3 1:1 and 1:100 = negative and total anti-IgG 1:10 = positive."
+"Poly AHG = zw +; Anti-IgG = zw +; IgA, IgM, C3c en C3d = negatief",1,"Poly AHG = zw +; Anti-IgG = zw +; IgA, IgM, C3c and C3d = negative"
+"Poly AHG = Zw+. IgG = Zw+. IgG1 en IgG3 = neg. IgA, IgM, C3c en C3d = neg.",1,"Poly AHG = Zw+. IgG = Zw+. IgG1 and IgG3 = neg. IgA, IgM, C3c and C3d = neg."
+Poly AHG = zwak positief,10,Poly AHG = weak positive
+Poly AHG = zwak positief IgG/IgA/IgM/C3c/C3d/IgG1 en IgG3 negatief,1,Poly AHG = weak positive IgG/IgA/IgM/C3c/C3d/IgG1 and negative IgG3
+"Poly AHG en IgG positief, IgA/IgM/C3c/C3d/IgG1 en IgG3=negatief",1,"Poly AHG and IgG positive, IgA/IgM/C3c/C3d/IgG1 and IgG3=negative"
+"poly AHG sterk pos; IgG-,IgM- en C3d-sterk pos; IgG3=sterk Positief",1,"poly AHG strong pos; IgG, IgM and C3d strong pos; IgG3=strong Positive"
+"Poly AHG, anti-IgG = zwak positief, IgA, IgM, C3c en C3d = negatief",1,"Poly AHG, anti-IgG = weak positive, IgA, IgM, C3c and C3d = negative"
+"Poly AHG, IgG, IgG1 = sterk positief; C3d = positief; IgA, IgM, C3c = negatief.",1,"Poly AHG, IgG, IgG1 = strongly positive; C3d = positive; IgA, IgM, C3c = negative."
+"poly AHG= sterk positief. Anti- IgG, -IgA, -IgM= negatief., Anti-C3c= zwak positief. Anti- C3d= sterk positief.",1,"poly AHG= strongly positive. Anti-IgG, -IgA, -IgM= negative., Anti-C3c= weakly positive. Anti-C3d= strongly positive."
+"Poly AHG=negatief. Anti-IgG, IgA, IgM, C3c en C3d = negatief",1,"Poly AHG=negative. Anti-IgG, IgA, IgM, C3c and C3d = negative"
+"Poly AHG=sterk pos; IgG= sterk pos; IgA, IgM, anti-C3c en anti-C3d=neg; IgG1=sterk pos; IgG3=neg.",1,"Poly AHG=strong pos; IgG= strong pos; IgA, IgM, anti-C3c and anti-C3d=neg; IgG1=strong pos; IgG3=neg."
+POLY+,205,POLY+
+POLY++,13,POLY++
+pos bij 1.0 mg/ml,4,pos at 1.0 mg/ml
+pos bij 1.0 ug/ml,9,pos at 1.0 ug/ml
+positef,1,positive
+positief,7,positive
+Positief,2777,Positive
+POSITIEF,265,POSITIVE
+"potje met materiaal ontvangen op xx-xx-xx , materiaal lijkt op sputum, contact met de afdeling gezocht, maar er viel niet te achterhalen wat er afgenomen is.",2,"jar with material received on xx-xx-xx, material resembles sputum, contacted the department, but it was not possible to find out what was taken."
+pre allo tx,1,pre allo tx
+Pre allo TX,1,Pre allo TX
+Report,1,Report
+Ribotype anders dan 027,28,Ribotype other than 027
+S.M. = 1.013,1,S.M. = 1.013
+sepsis eci,2,sepsis eci
+SFERO+,25,SFERO+
+SFERO++,4,SFERO++
+sic,1,sic
+SIC,2,SIC
+sikkelcelanemie?,1,sickle cell anemia?
+slecht,2,bad
+Slecht,7,Bad
+"slecht, veel kapot",1,"bad, much broken"
+Spoor,772,Track
+SPOOR,1997,TRACK
+stafylokokken en streptokokken,1,staphylococci and streptococci
+Stafylokokken en Streptokokken,1,Staphylococci and Streptococci
+Sterk positief,6,Strongly positive
+stomatocyten +,1,stomatocytes +
+stomatocyten ++,3,stomatocytes ++
+stomatocyten +++,2,stomatocytes +++
+Stomatocyten: 2+,2,Stomatocytes: 2+
+studie,1,study
+T.W.M,24,T.W.M
+T.W.M.,20,T.W.M.
+TARGET+,172,TARGET+
+TARGET2+,46,TARGET2+
+TARGET3+,1,TARGET3+
+te weini,3,too little
+te weinig,45,too few
+Te weinig ery's voor diff.,10,Too few ery's for diff.
+Te weinig ery's voor differentiatie,51,Too few erys for differentiation
+te weinig erythrocyten voor differentatie,26,too few erythrocytes for differentiation
+TEAR+,49,TEAR+
+TEAR++,3,TEAR++
+ter uitsluiting agranulocytose,2,to rule out agranulocytosis
+TeWeinig,42,Too few
+TEWEINIG,3,TOO FEW
+TNO,1,TNO
+toename mestcellen,1,increase in mast cells
+TRI.FOSF,31,TRI.FOSF
+trombopenie,1,thrombocytopenia
+trombopenie???,1,thrombocytopenia???
+TTP? ivm wisselende thrombo,1,TTP? due to varying thrombo
+uitrijping of nog promyelocyten?,1,maturation or still promyelocytes?
+URAAT,58,URAT
+Urine te oud,1,Urine too old
+vanwege afwijkende bloedwaarden.,1,due to abnormal blood values.
+veel,13,a lot of
+Veel,3475,A lot of
+VEEL,89,A LOT OF
+veel doornappels (artefact??),1,many daturas (artifact??)
+"veel, ook macrotrombocyten",2,"many, including macrothrombocytes"
+"Veel, waaronder groepjes",1,"Many, including groups"
+verd lymfoom,1,verd lymphoma
+verdenking ML,1,suspicion ML
+Verkeerd,11,Wrong
+Verkeerd geidentificeerd materiaal,5,Misidentified material
+"Verlengde PT obv FII, FVII en FX tekort. Vit.K deficientie. Geen LAC aantoonbaar",1,"Extended PT based on FII, FVII and FX deficit. Vit.K deficiency. No LAC demonstrable"
+Vervalt,587,Lapses
+Vervalt i.v.m. verlengde APTT,9,Expired due to extended APTT
+VERVOLGEN EO,1,CONTINUED EO
+Verzond.,5205,Sent.
+verzonden,29,sent
+vezels,1,fibres
+vezels in urine,1,fiber in urine
+vol,5,full
+Vol,228,Full
+VOL,254,FULL
+Voldoend,22,Sufficient
+voldoende,24,Enough
+volgt,14822,follows
+Voor sel,5,For sel
+vraagstelling: fragmentocyten?,1,question: fragmentocytes?
+vve,2,vve
+WAS-CYL,14,WAS-CYL
+Weinig,2939,Few
+WEINIG,5055,FEW
+xx-xx-xx iom Aios MMI kweek niet nodig,1,xx-xx-xx iom Aios MMI breeding not necessary
+"xx-xx-xx iom Aios MMI niet doen, kweek is reeds uitgevoerd op serum.",1,"xx-xx-xx iom Aios MMI do not do, culture has already been performed on serum."
+xx-xx-xx iom VPK opnieuw afnemen virusstok is verlopen,2,xx-xx-xx iom VPK retake virus stick has expired
+xx-xx-xx iom VPK wordt nieuwe kweek afgenomen. Materiaal zonder patiensticker ontvangen,1,xx-xx-xx new culture is taken in accordance with VPK. Received material without patient sticker
+ZEER-VEE,818,VERY-LIVESTOCK
+Zeer veel,679,A lot
+ZIE-OPM,1637,SEE-NOTE
+zie aanvraag form,1,see application form
+Zie brief,12,See letter
+Zie immuunfixatie.,3,See immune fixation.
+zie opm,6,see note
+zie opm.,55,see note
+Zie opm.,156,See note.
+zie opm:,12,see note:
+zie rapport Sanquin,4,see Sanquin report
+ZieBrief,2,SeeLetter
+zwak positief,1,weakly positive

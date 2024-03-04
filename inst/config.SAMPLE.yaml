@@ -1,0 +1,257 @@
+# The amstel package REQUIRES a working database management system and a valid
+# configuration for accessing the following databases:
+# - amsterdamumcdb: the source database
+# - cdm: the target database.
+# - results: storage for the OHDSI Achilles data characterization reports
+# - temp: temporary storage for the OHDSI WebAPI
+
+# Please note that the database account requires sufficient read/write
+# permissions to perform the ETL, write results and for temp storage
+
+# Optionally, you can modify the following sections, if needed.
+# - repository (location of the cloned GitHub repostory)
+# - data (folders containing required data, by default relative to
+#   the repository)
+# - logging
+
+databases:
+  amsterdamumcdb:
+    # dbms: specifies the database management system to use. Currently OHDSI/DatabaseConnector supports:
+    # "oracle", "hive", "postgresql", "redshift",
+    # "sql server", "pdw", "netezza", "impala", "bigquery",
+    # "sqlite", "sqlite extended", "spark", "snowflake", "synapse",
+    # "duckdb"
+    #
+    # Default:
+    # dbms: postgresql
+    dbms: postgresql
+
+    # user: specifies the username of the account that has permissions to access the database
+    #
+    # Default:
+    # user: postgres
+    user: postgres
+
+    # password: specifies the password of the account that has permissions to access the database
+    #
+    # Default:
+    # password: postgres
+    password: postgres
+
+    # server: specifies the hostname or IP address of the database server. For postgresql this should
+    # include the database e.g. localhost/my_database
+    #
+    # Default:
+    # server: localhost/postgres
+    server: localhost/postgres
+
+    # port number the database server listens to
+    #
+    # Default:
+    # port: 5432
+    port: 5432
+
+    # default schema
+    #
+    # Default:
+    # schema: amsterdamumcdb
+    schema: amsterdamumcdb
+
+  cdm:
+    # dbms: specifies the database management system to use. Currently OHDSI/DatabaseConnector supports:
+    # "oracle", "hive", "postgresql", "redshift",
+    # "sql server", "pdw", "netezza", "impala", "bigquery",
+    # "sqlite", "sqlite extended", "spark", "snowflake", "synapse",
+    # "duckdb"
+    #
+    # Default:
+    # dbms: postgresql
+    dbms: postgresql
+
+    # user: specifies the username of the account that has permissions to access the database
+    #
+    # Default:
+    # user: postgres
+    user: postgres
+
+    # password: specifies the password of the account that has permissions to access the database
+    #
+    # Default:
+    # password: postgres
+    password: postgres
+
+    # server: specifies the hostname or IP address of the database server. For postgresql this should
+    # include the database e.g. localhost/my_database
+    #
+    # Default:
+    # server: localhost/postgres
+    server: localhost/postgres
+
+    # port number the database server listens to
+    #
+    # Default:
+    # port: 5432
+    port: 5432
+
+    # default schema
+    #
+    # Default:
+    # schema: cdm_54
+    schema: cdm_54
+
+  results:
+    # dbms: specifies the database management system to use. Currently OHDSI/DatabaseConnector supports:
+    # "oracle", "hive", "postgresql", "redshift",
+    # "sql server", "pdw", "netezza", "impala", "bigquery",
+    # "sqlite", "sqlite extended", "spark", "snowflake", "synapse",
+    # "duckdb"
+    #
+    # Default:
+    # dbms: postgresql
+    dbms: postgresql
+
+    # user: specifies the username of the account that has permissions to access the database
+    #
+    # Default:
+    # user: postgres
+    user: postgres
+
+    # password: specifies the password of the account that has permissions to access the database
+    #
+    # Default:
+    # password: postgres
+    password: postgres
+
+    # server: specifies the hostname or IP address of the database server. For postgresql this should
+    # include the database e.g. localhost/my_database
+    #
+    # Default:
+    # server: localhost/postgres
+    server: localhost/postgres
+
+    # port number the database server listens to
+    #
+    # Default:
+    # port: 5432
+    port: 5432
+
+    # default schema
+    #
+    # Default:
+    # schema: cdm_results
+    schema: cdm_results
+
+  temp:
+    # dbms: specifies the database management system to use. Currently OHDSI/DatabaseConnector supports:
+    # "oracle", "hive", "postgresql", "redshift",
+    # "sql server", "pdw", "netezza", "impala", "bigquery",
+    # "sqlite", "sqlite extended", "spark", "snowflake", "synapse",
+    # "duckdb"
+    #
+    # Default:
+    # dbms: postgresql
+    dbms: postgresql
+
+    # user: specifies the username of the account that has permissions to access the database
+    #
+    # Default:
+    # user: postgres
+    user: postgres
+
+    # password: specifies the password of the account that has permissions to access the database
+    #
+    # Default:
+    # password: postgres
+    password: postgres
+
+    # server: specifies the hostname or IP address of the database server. For postgresql this should
+    # include the database e.g. localhost/my_database
+    #
+    # Default:
+    # server: localhost/postgres
+    server: localhost/postgres
+
+    # port number the database server listens to
+    #
+    # Default:
+    # port: 5432
+    port: 5432
+
+    # default schema
+    #
+    # Default:
+    # schema: cdm_temp
+    schema: cdm_temp
+
+repository:
+  # the path to the cloned AmsterdamUMCdb GitHub repository. The default value
+  # assumes the commands will be run from within the cloned repository.
+  # However, you may choose to set this path to an absolute path on your
+  # file system.
+  #
+  # Default:
+  # path: .
+  path: .
+
+data:
+  # jdbc_drivers: specifies the path to the JDBC drivers.
+  #
+  # Default:
+  # jdbc_jar_folder: ./data/jdbc_drivers
+  jdbc_jar_folder: ./data/jdbc_drivers
+
+  # vocabulary: specifies the path to the vocabularies downloaded from Athena
+  #
+  # Default:
+  # vocabulary: ./data/vocabulary
+  vocabulary: ./data/vocabulary
+
+  # source_concepts: specifies the path to lists of source concepts
+  # ('vocabularies') extracted from the AmsterdamUMCdb tables
+  #
+  # Default:
+  # source_concepts: ./data/source_concepts
+  source_concepts: ./data/source_concepts
+
+  # mappings: specifies the Usagi created files containing mappings between
+  # source concepts and CDM Standard Concepts.
+  #
+  # Default:
+  # mappings: ./data/mappings
+  mappings: ./data/mappings
+
+  # dqd: specifies the Data Quality Dashboard output folder
+  #
+  # Default:
+  # dqd: ./data/dqd
+  dqd: ./data/dqd
+
+  # achilles: specifies the Achilles output folder
+  #
+  # Default:
+  # achilles: ./data/achilles
+  achilles: ./data/achilles
+
+  # logs: specifies the log folder
+  #
+  # Default:
+  # logs: ./logs
+  logs: ./logs
+
+logging:
+  # log level: Defines the threshold for outputting information to the log
+  # Either "DEBUG", "INFO", "WARN", "ERROR", or "FATAL".
+  #
+  # Default:
+  # log_level: INFO
+  log_level: DEBUG
+
+metadata:
+  cdm_version: 5.4
+  cdm_source_name: Amsterdam University Medical Centers Database v1.0.2
+  cdm_source_abbreviation: AmsterdamUMCdb v1.0.2
+  cdm_holder: Amsterdam UMC
+  source_description: AmsterdamUMCdb is the first freely accessible European intensive care database. It is endorsed by the European Society of Intensive Care Medicine (ESICM) and its Data Science Section. It contains de-identified health data related to tens of thousands of intensive care unit admissions, including demographics, vital signs, laboratory tests and medications.
+  source_documentation_reference: https://github.com/AmsterdamUMC/AmsterdamUMCdb
+  cdm_etl_reference: https://github.com/AmsterdamUMC/AMSTEL
+  source_release_date: 2020-02-29

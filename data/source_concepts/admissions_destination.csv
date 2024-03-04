@@ -1,0 +1,45 @@
+source_concept_id,source_concept,count,count_validated,itemid,item,abbreviation,category,islabresult,valueid,source_concept_en
+10472-1,.Vul in,15,15,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,1,.Fill in
+10472-2,Afdeling ander ziekenhuis,562,562,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,2,Department of another hospital
+10472-3,Anders,284,284,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,3,Otherwise
+10472-4,CCU/ICU ander ziekenhuis,272,272,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,4,CCU/ICU other hospital
+10472-5,Huis,354,354,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,5,House
+10472-6,Mortuarium met obductie,578,578,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,6,Mortuary with autopsy
+10472-7,Mortuarium zonder obductie,1891,1891,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,7,Mortuary without autopsy
+10472-8,VU afdeling ICVC,130,130,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,8,VU department ICVC
+10472-9,VU afdeling ICAR,552,552,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,9,VU department ICAR
+10472-10,VU afdeling ICVI,144,144,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,10,VU department ICVI
+10472-12,VU afdeling INEO,1,1,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,12,VU department INEO
+10472-13,VU afdeling ISNY,5,5,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,13,VU department ISNY
+10472-14,VU afdeling SCAR,360,360,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,14,VU SCAR department
+10472-15,VU afdeling SCCH,6272,6272,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,15,VU department SCCH
+10472-16,VU afdeling MICV,1526,1526,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,16,VU department MICV
+10472-17,VU afdeling SNCH,1,1,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,17,VU department SNCH
+10472-18,VU afdeling VCAR,3,3,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,18,VU VCAR department
+10472-19,VU afdeling VCCH,1362,1362,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,19,VU department VCCH
+10472-20,VU afdeling VEKV,25,25,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,20,VU VEKV department
+10472-21,VU afdeling VGAS,1,1,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,21,VU VGAS department
+10472-22,VU afdeling VGYN,168,168,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,22,VU VGYN department
+10472-23,VU afdeling VHEM,140,140,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,23,VU VHEM department
+10472-25,VU afdeling VHON,1498,1498,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,25,VU VHON department
+10472-26,VU afdeling VINW,41,41,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,26,VU VINW department
+10472-27,VU afdeling VKCH,1,1,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,27,VU department VKCH
+10472-29,VU afdeling VKNO,393,393,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,29,VU VKNO department
+10472-31,VU afdeling VLON,571,571,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,31,VU VLON department
+10472-32,VU afdeling VNCH,232,232,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,32,VU VNCH department
+10472-33,VU afdeling VNEU,717,717,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,33,VU UNEU department
+10472-35,VU afdeling VOBS,33,33,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,35,VU department VOBS
+10472-36,VU afdeling VONI,112,112,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,36,VU department VONI
+10472-37,VU afdeling VOOG,6,6,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,37,VU department VOG
+10472-38,VU afdeling VORT,17,17,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,38,VU department VORT
+10472-40,VU afdeling VTRA,970,970,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,40,VU department VTRA
+10472-41,VU afdeling VVAT,1733,1733,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,41,VU department VVAT
+10472-42,VU afdeling VVER,3,3,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,42,VU VVER department
+10472-44,VU afdeling DUHP,1,1,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,44,VU department DUHP
+10472-45,VU afdeling VNCO,1928,1928,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,45,VU VNCO department
+10472-46,VU afdeling VIG1,532,532,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,46,VU department VIG1
+10472-47,VU afdeling VIG2,451,451,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,47,VU department VIG2
+10472-48,VU afdeling VTRF,18,18,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,48,VU department VTRF
+10472-49,VU afdeling VKKB_,1,1,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,49,VU department VKKB_
+10472-50,VU afdeling VKKC ,5,5,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,50,VU VKKC department
+10472-51,VU afdeling VMPU,206,206,10472,Ontslagbestemming,Ontslagbestemming,Patientenbestandparameters,0,51,VU department VMPU

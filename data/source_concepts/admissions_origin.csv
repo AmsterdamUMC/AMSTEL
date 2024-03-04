@@ -1,0 +1,17 @@
+source_concept,count,source_concept_en
+Special/Medium care zelfde ziekenhuis,193,Special/Medium care same hospital
+,14075,
+"Andere locatie zelfde ziekenhuis, transport per ambulance",5,"Different location same hospital, transport by ambulance"
+Verpleegafdeling ander ziekenhuis,91,Nursing ward of another hospital
+Verpleegafdeling zelfde ziekenhuis,5027,Nursing department of the same hospital
+Operatiekamer vanaf Eerste Hulp afdeling zelfde ziekenhuis,2,Operating room from the emergency department of the same hospital
+Recovery zelfde ziekenhuis (alleen bij niet geplande IC-opname),217,Recovery same hospital (only in case of unplanned ICU admission)
+Special/Medium care ander ziekenhuis,19,Special/Medium care other hospital
+CCU/IC ander ziekenhuis,239,CCU/IC other hospital
+Anders,53,Otherwise
+Eerste Hulp afdeling ander ziekenhuis,132,First Aid department of another hospital
+CCU/IC zelfde ziekenhuis,296,CCU/IC same hospital
+Huis,85,House
+Recovery ander ziekenhuis,6,Recovery other hospital
+Operatiekamer vanaf verpleegafdeling zelfde ziekenhuis,5,Operating room from the nursing ward of the same hospital
+Eerste Hulp afdeling zelfde ziekenhuis,2661,First Aid department same hospital

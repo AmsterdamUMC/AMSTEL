@@ -1,0 +1,39 @@
+source_concept_id,source_concept,itemid,item,count,source_concept_en
+11646-0,0,11646,Afname (bloed),1,0
+11646-Afname verkeerde buis door afd/arts,Afname verkeerde buis door afd/arts,11646,Afname (bloed),2,Wrong tube taken by department/doctor
+11646-art.,art.,11646,Afname (bloed),1,art.
+11646-Art.,Art.,11646,Afname (bloed),242585,Art.
+11646-ART.,ART.,11646,Afname (bloed),247754,ART.
+11646-Cap.,Cap.,11646,Afname (bloed),79,Cap.
+11646-CAP.,CAP.,11646,Afname (bloed),164,CAP.
+11646-Geen materiaal ontvangen.,Geen materiaal ontvangen.,11646,Afname (bloed),8,No material received.
+11646-Gem. ven.,Gem. ven.,11646,Afname (bloed),3556,Avg. ven.
+11646-gem.ven,gem.ven,11646,Afname (bloed),2,avg.ven
+11646-GEM.VEN.,GEM.VEN.,11646,Afname (bloed),5020,GEM.VEN.
+11646-gestold,gestold,11646,Afname (bloed),1,solidified
+11646-Gestold,Gestold,11646,Afname (bloed),140,Solidified
+11646-Inhoud verwijderd,Inhoud verwijderd,11646,Afname (bloed),161,Content removed
+11646-M.B.O.,M.B.O.,11646,Afname (bloed),3,MBO.
+11646-MBO,MBO,11646,Afname (bloed),8,MBO
+11646-mislukt,mislukt,11646,Afname (bloed),1,failed
+11646-Niet afg,Niet afg,11646,Afname (bloed),21,Not shown
+11646-Niet afgenomen door afd/arts,Niet afgenomen door afd/arts,11646,Afname (bloed),99,Not administered by dept/doctor
+11646-Niet te beoordelen,Niet te beoordelen,11646,Afname (bloed),1,Not judgeable
+11646-T.W.M,T.W.M,11646,Afname (bloed),41,T.W.M
+11646-T.W.M.,T.W.M.,11646,Afname (bloed),39,T.W.M.
+11646-Ven.,Ven.,11646,Afname (bloed),7319,Ven.
+11646-VEN.,VEN.,11646,Afname (bloed),3373,VEN.
+11646-Veneus,Veneus,11646,Afname (bloed),2,Venous
+11646-veneus / gemengd veneus,veneus / gemengd veneus,11646,Afname (bloed),1,venous / mixed venous
+11646-Verkeerd geidentificeerd materiaal,Verkeerd geidentificeerd materiaal,11646,Afname (bloed),6,Misidentified material
+11646-vervalt,vervalt,11646,Afname (bloed),2,lapses
+11646-Vervalt,Vervalt,11646,Afname (bloed),1456,Lapses
+11646-Vocht thoraxdrain,Vocht thoraxdrain,11646,Afname (bloed),1,Fluid chest tube
+11646-volgt,volgt,11646,Afname (bloed),2496,follows
+11646-ZIE-OPM,ZIE-OPM,11646,Afname (bloed),812,SEE-NOTE
+11646-Zie opm.,Zie opm.,11646,Afname (bloed),75,See note.
+7432-1,Arterieel,7432,Afnameplaats,24403,Arterial
+7432-2,Centrale lijn,7432,Afnameplaats,143,Central line
+7432-3,PAP,7432,Afnameplaats,335,DAD
+7432-4,Perifeer veneus,7432,Afnameplaats,12,Peripheral venous
+7432-5,Overig,7432,Afnameplaats,10,Other

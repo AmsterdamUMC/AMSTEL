@@ -1,0 +1,206 @@
+source_concept_id,source_concept,count,source_concept_en
+13422,Trauma catheter Jugularis,433,Trauma catheter Jugularis
+9437,ICP- acceptatiewaarden,62,ICP acceptance values
+21091,ECMO canule arterieel,2,ECMO cannula arterial
+9400,Wonddrain 2,2387,Wound drain 2
+9166,Trilumen Jugularis,10578,Trilumen Jugularis
+10761,Sengstaken,9,Sengstaken
+21093,Bypass canule (art femoralis),1,Bypass cannula (art femoralis)
+9541,Pacemakerdraden,2452,Pacemaker leads
+15143,X-Proces Voeding,110,X-Process Power Supply
+9162,Dialyselijn Jugularis,520,Jugularis dialysis line
+9481,Tractie,29,Traction
+18737,Pacedraden via Swan Ganz,5,Pacing wires via Swan Ganz
+12936,Streef PT/CT,558,Pursue PT/CT
+15869,Druppel/Contactisolatie,47,Drop/Contact Isolation
+7926,Mobiliseren,313,Mobilize
+10618,Xx-Niet meer gebruikenTracheostoma (Bivona)(= Proces Tracheostoma),1,Xx-Do not use anymoreTracheostomy (Bivona)(= Process Tracheostomy)
+9180,Epiduraal catheter,704,Epidural catheter
+9422,Perifeer infuus,39480,Peripheral drip
+9595,Enkel lumen Jugularis,44,Single lumen Jugularis
+9524,Plat liggend verplegen,59,Nursing lying flat
+13035,Spinaaldrain,37,Spinal drain
+12579,Galdrain,102,Galdrain
+12465,CVVH,5355,CVVH
+9164,IABP femoralis,89,IABP femoralis
+12399,Duo lumen Femoralis,14,Duo lumen Femoralis
+18806,Alleen bestraald bloed geven,7,Only give irradiated blood
+18741,Gips,64,Cast
+9406,Spoeldrain 1,125,Rinse drain 1
+19734,Harde halskraag,112,Hard collar
+9495,Strikte isolatie 1,58,Strict isolation 1
+15868,Druppelisolatie,28,Drip insulation
+13810,Fixatuur externe bekken,46,External pelvic fixation
+9601,Drukverband,551,Compression bandage
+9613,Hotline gebruiken,22,Use hotline
+14834,Hypothermie koelfase,155,Hypothermia cooling phase
+12539,Arteriële sheet,463,Arterial sheet
+13005,Rectum Canule,95,Rectal Cannula
+19652,Fixatuur externe bovenarm rechts,1,Fixture external upper arm right
+12427,Spoeldrain 2,7,Rinse drain 2
+9594,Enkel lumen Femoralis,31,Single lumen Femoralis
+12540,Veneuze sheet,206,Venous sheet
+14953,Hypothermie onderhoud- & opwarmfase,6,Hypothermia maintenance & warm-up phase
+15787,Dubbelloops Stoma,9,Double loop stoma
+19888,TR-band,102,TR band
+12634,Tube,15040,Tube
+9412,Urostoma,154,Urostomy
+9401,Wonddrain 3,524,Wound drain 3
+9380,X-Proces Gastro-Intestinaal,260,X-Process Gastrointestinal
+9325,Weanen,374,Weanen
+9323,Wisselligging geven,76,Provide change of location
+9414,Roteren bed,18,Rotate bed
+9625,PCA-pomp,320,PCA pump
+16358,Botnaald,108,Bone needle
+9454,Hoofdsteun max. 30 graden,45,Headrest max. 30 degrees
+16910,ICD,32,ICD
+13806,Fixatuur externe bovenbeen links,21,Fixature external upper leg left
+9168,Quad lumen Femoralis,917,Quad lumen Femoralis
+15171,Aërogene isolatie 1,19,Aerogenic insulation 1
+9387,X-Proces Respiratie,310,X-Process Respiration
+9160,Arterielijn Femoralis,1260,Femoral artery line
+9182,Cisternale drain,12,Cisternal drain
+9384,X-Proces Neurologisch,265,X-Process Neurological
+9383,X-Proces Infectie,26,X-Process Infection
+9523,Hechtingen,102,Stitches
+9430,Anti-trendelenburg,7,Anti-Trendelenburg
+9457,Niet uitzuigen,10,Do not suction
+15147,Dieet - Gemalen eten,49,Diet - Ground food
+15144,Dieet - 40cc/uur,207,Diet - 40cc/hour
+15738,Spreekklep,435,Speaking valve
+15870,Beschermende isolatie,14,Protective insulation
+9514,Niet nasaal uitzuigen,248,Do not suction nasally
+19986,Contactisolatie 1 extra maatregelen,62,Contact isolation 1 additional measures
+10730,Jejuno-stoma,171,Jejunostomy
+9188,X-Proces Lijnen/Catheter/Drain,591,X-Process Lines/Catheter/Drain
+10740,Beademen non-invasief,1783,Non-invasive ventilation
+9185,Sideport,139,Sideport
+19651,Fixatuur externe bovenarm links,2,Fixture external upper arm left
+15793,Faeces collector,516,Faeces collector
+9373,Niets per os,946,Nothing per os
+21187,Enkel-Lumen Perifeer centrale catheter (PICC),4,Single-Lumen Peripheral Central Catheter (PICC)
+13423,Trauma catheter Subclavia,42,Subclavian trauma catheter
+10428,Xx-Niet meer gebruiken(Microsonde=Proces Sonde),131,Xx-Do not use again(Microprobe=Process Probe)
+9410,Koelen patiënt (Actief),1251,Patient cooling (Active)
+9544,NDT-systeem,258,NDT system
+13173,Fixatie (fixeren),1777,Fixation (fixing)
+9521,Opwarmen (Passief uitwendig),281,Warming up (Passive external)
+9538,Xx-Niet meer gebruiken PEG-sonde(=Proces Sonde),21,Xx-Do not use PEG probe again (=Process probe)
+15146,Dieet - Dik vloeibaar,614,Diet - Thick liquid
+20664,ECMO,2,ECMO
+7927,Buikligging,668,Prone position
+14759,Angioseal,56,Angioseal
+13445,Blaasspoelcatheter,46,Bladder irrigation catheter
+9173,Swan Ganz Femoralis,211,Swan Ganz Femoralis
+21092,ECMO canule veneus,2,ECMO cannula venous
+16362,24 uurs urine sparen,288,24 hour urine saving
+9159,Arterielijn Radialis,22483,Radial artery line
+9388,X-Proces Urologisch,179,X-Process Urological
+9492,Contactisolatie 1,427,Contact insulation 1
+9485,Dieet,36,Diet
+16352,Peritoneaal catheter,24,Peritoneal catheter
+9187,Pacemaker extern,1824,Pacemaker external
+9477,Opwarmen (Actief inwendig),173,Warming up (Active internally)
+9349,Niet meer gebruiken Diepte Tube,2059,Do not use Depth Tube anymore
+18718,Plasmaferese,23,Plasmapheresis
+21056,PiCCO arterielijn brachialis (22 cm),6,PiCCO brachial artery line (22 cm)
+15718,PCEA,685,PCEA
+9482,Halfzittende houding toepassen,21,Apply a semi-sitting position
+9402,Wonddrain 4,123,Wound drain 4
+15145,Dieet - Streng vloeibaar,541,Diet - Strict liquid
+12585,Thoraxdrain 6,3,Chest drain 6
+10727,Xx-Niet meer gebruiken!(Jejunumsonde= Proces Sonde),34,Xx-Do not use again! (Jejunum probe = Process probe)
+9455,Benen niet belasten,7,Do not put any strain on your legs
+13807,Fixatuur externe bovenbeen rechts,16,Fixture external thigh right
+19649,Fixatuur externe onderarm links,3,Left external forearm fixation
+9513,Beademingsslangen niet ontkoppelen,3,Do not disconnect breathing hoses
+9436,CPP streefwaarden,166,CPP target values
+9186,Arterielijn Brachialis,1580,Brachial artery line
+9614,Sheet Swan Ganz,3529,Sheet Swan Ganz
+9407,Ventrikeldrain,370,Ventricular drain
+9177,Xx-Niet meer gebruiken Tracheostoma (Shiley)(= Proces Tracheostoma),53,Xx-Do not use anymore Tracheostomy (Shiley)(= Process Tracheostomy)
+9519,Ophoesten stimuleren,5,Stimulate coughing
+9518,Ondersteunen bij hoesten,9,Support for coughing
+18955,Nasaal airway,78,Nasal airway
+9167,Trilumen Subclavia,2086,Trilumen Subclavian
+9671,CPAP,2953,CPAP
+9405,Thoraxdrain 3,139,Chest drain 3
+13809,Fixatuur externe onderbeen rechts,30,Fixture external lower leg right
+9327,Streefwaarden drukken,1568,Print target values
+9494,MRSA verpleging,7,MRSA nursing
+9453,Trendelenburg,3,Trendelenburg
+13811,Fixatuur externe hoofd/hals (Halo-frame),50,External head/neck fixation (Halo frame)
+9181,Caminodrain,354,Caminodrain
+9520,Opwarmen (Actief uitwendig),4798,Warming up (Active external)
+9431,Arm in draagband,7,Arm in sling
+10619,Arterielijn Ulnaris,73,Ulnar artery line
+12632,Zuigsysteem,25,Suction system
+21188,Duo-Lumen Perifeer centrale catheter (PICC),11,Duo-Lumen Peripheral Central Catheter (PICC)
+15717,PCIA,755,PCIA
+9163,Dialyselijn Subclavia,304,Subclavian dialysis line
+9537,Xx-Niet meer gebruiken (Duodenumsonde=Proces Sonde),255,Xx-Do not use again (Duodenum probe=Process probe)
+9415,Urine-Catheter (CAD),21339,Urinary Catheter (CAD)
+9448,Kunstneuzen,1040,Artificial noses
+18742,Spalk,122,Splint
+9174,Swan Ganz Jugularis,6670,Swan Ganz Jugularis
+13099,Arterielijn Axillaris,46,Axillary artery line
+9184,Lumbaaldrain,99,Lumbar drain
+12635,Tracheostoma,1940,Tracheostomy
+16354,Neustampon (bellocq en/of vaseline gaas),25,Nasal tampon (bellocq and/or Vaseline gauze)
+9350,Niet meer gebruiken Maat Tube,2031,Do not use again Size Tube
+18740,Botlap verwijderd,117,Bone flap removed
+9348,Niet meer gebruiken Plaats Tube,1956,Do not use again. Insert Tube
+13808,Fixatuur externe onderbeen links,27,Left external lower leg fixation
+9574,Maagzuig-drainage,309,Gastric suction drainage
+9161,Dialyselijn Femoralis,1090,Dialysis line Femoralis
+9417,Sonde,24139,Probe
+10731,Colo-stoma,364,Colostomy
+9441,Draaien als boomstam,392,Turning like a tree trunk
+9381,X-Proces Houding & Beweging,492,X-Process Posture & Movement
+9176,Xx-Niet meer gebruiken Miditracheotomie(= Proces Tracheostoma),1,Xx-Do not use again Miditracheotomy (= Process Tracheostomy)
+9531,Vocht beperking,154,Moisture restriction
+10430,IABP,442,IABP
+16363,Hemodialyse,58,Hemodialysis
+15867,TED-kousen,894,TED stockings
+9404,Thoraxdrain 2,1323,Chest drain 2
+9527,Stabiele zijligging toepassen,1,Apply a stable side position
+9499,Koelen patiënt (Passief),12,Cooling patient (Passive)
+9478,Streef Ramsay,85,Strive Ramsay
+9171,Xx-Niet meer gebruiken Tracheostoma (Portex) (= Proces Tracheostoma),76,Xx-Do not use anymore Tracheostomy (Portex) (= Process Tracheostomy)
+9169,Quad lumen Subclavia,1137,Quad lumen Subclavian artery
+9175,Swan Ganz Subclavia,370,Swan Ganz Subclavian
+13009,Parenchymdrain,24,Parenchyma drain
+12583,Thoraxdrain 4,17,Chest tube 4
+9456,Niet balloneren,10,Don't balloon
+12401,Duo lumen Subclavia,30,Duo lumen Subclavian
+9379,X-Proces Circulatie,195,X-Process Circulation
+9596,Enkel lumen Subclavia,90,Single subclavian lumen
+12139,Neo-pneumocatheter (Vietnam-drain),12,Neopneumocatheter (Vietnam drain)
+9403,Thoraxdrain 1,9942,Chest drain 1
+15148,Dieet - Gewoon eten,1947,Diet - Just eat
+9382,X-Proces Huid,214,X-Process Skin
+9328,Beademen,18471,Breathing
+12584,Thoraxdrain 5,8,Chest drain 5
+18736,Shunt,142,Shunt
+10732,Ileo-stoma,209,Ileo stoma
+9385,X-Proces Overig,436,X-Process Other
+13483,PAC-PiCCO monitoring,157,PAC-PiCCO monitoring
+9426,ADL-zelfst.heid aanleren,5,Teaching ADL independence
+9399,Wonddrain 1,5813,Wound drain 1
+9575,Toegestaan orale vochttoediening,29,Allowed oral fluid administration
+10612,Advies Houding&Beweging,216,Posture&Movement Advice
+19360,Pacemaker intern,72,Pacemaker internally
+9170,Quad lumen Jugularis,1572,Quad Lumen Jugularis
+10620,Arterielijn Dorsalis Pedis,359,Dorsalis Pedis artery line
+15170,Contactisolatie 2,586,Contact insulation 2
+12400,Duo lumen Jugularis,38,Duo lumen Jugularis
+9493,Intrinsic PEEP en Airtrap bepalen,101,Determining Intrinsic PEEP and Airtrap
+9386,X-Proces Psycho-sociaal,220,X-Process Psycho-social
+20259,Contactisolatie plus,6,Contact insulation plus
+15603,Flexiseal,676,Flexiseal
+9374,Nuchter houden,440,Keep sober
+9419,Xx-Niet meer gebruiken Maag-hevel,1972,Xx-Do not use again Gastric siphon
+9165,Trilumen Femoralis,1463,Trilumen Femoralis
+13421,Trauma catheter Femoralis,49,Femoral trauma catheter
+9411,Suprapubis catheter,346,Suprapubic catheter
+21057,PiCCO arterielijn femoralis (20 cm) ,25,PiCCO femoral artery line (20 cm)

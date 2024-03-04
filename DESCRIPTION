@@ -1,0 +1,33 @@
+Package: amstel
+Title: AmsterdamUMCdb extracting, transforming and loading (ETL) into the OMOP Common Data Model
+Version: 0.9.0.0000
+Authors@R: 
+    person("Thoral", "Patrick", , "patrick@gaiascientific.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-6140-7195"))
+Description: Performs conversion of the AmsterdamUMCdb to the OMOP Common Data Model
+   Contains the ETL Description, ETL Code and mapping documents. Named after the famous river
+   flowing through the city of Amsterdam.
+Organization: Amsterdam UMC
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: 
+    DatabaseConnector,
+    DataQualityDashboard,
+    DBI,
+    dbplyr,
+    dplyr,
+    googleLanguageR,
+    httr,
+    jsonlite,
+    log4r,
+    pkgload,
+    rappdirs,
+    readr,
+    RPostgres,
+    SqlRender,
+    yaml
