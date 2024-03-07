@@ -46,5 +46,12 @@ Imports:
     stringr,
     tibble,
     yaml
+Remotes: 
+    OHDSI/Achilles,
+    OHDSI/CommonDataModel,
+    OHDSI/DatabaseConnector,
+    OHDSI/DataQualityDashboard,
+    OHDSI/ParallelLogger,
+    OHDSI/SqlRender
 License: MIT + file LICENSE
 URL: https://amsterdamumc.github.io/AMSTEL/
