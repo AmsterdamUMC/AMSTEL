@@ -79,4 +79,7 @@ errorReportSql.txt
 
 # PyCharm IDE settings
 .idea/
+
+# pkgdown GitHub Actions integration
 docs
+!/.github/*/*
