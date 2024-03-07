@@ -40,9 +40,6 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
-# pkgdown site
-docs/
-
 # translation temp files
 po/*~
 
@@ -79,7 +76,3 @@ errorReportSql.txt
 
 # PyCharm IDE settings
 .idea/
-
-# pkgdown GitHub Actions integration
-docs
-!/.github/*/*

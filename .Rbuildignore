@@ -1,3 +1,5 @@
+^renv$
+^renv\.lock$
 ^amstel\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
