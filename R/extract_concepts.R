@@ -4,21 +4,27 @@
 #' English using the Google Translate Cloud API for matching using OHDSI Usagi.
 #' Exports the tibble to the `source_concepts` folder.
 #'
-#' @param concepts tibble containing concepts (column name: "source_concept")
-#'   and the number of occurrences in the database (column name: "count") of
-#'   those concepts.
-#' @param concept_group name this group of concepts should be called for
-#'   extracting
+#' @param concepts
+#' tibble containing concepts (column name: "source_concept") and the number
+#' of occurrences in the database (column name: "count") of those concepts.
+#' @param concept_group
+#' Name this group of concepts should be called for extracting
+#' @param force
+#' Forces overwriting an existing concept list. Default: FALSE.
 #'
 #' @return tibble containing concepts and their translation
 #' @export
 #'
-#' @examples
+#' @examplesIf has_adb_environment()
 #' library(dplyr)
-#' conn <- amstel::connect()
+#' conn <- amstel::connect("amsterdamumcdb")
 #' admissions <- tbl(conn, "admissions")
-#' concepts <- admissions %>% group_by(source_concept=origin) %>% summarise(count=n()) %>% collect()
-#' extract_concepts(concepts, "admitted_from")
+#' concepts <- admissions %>%
+#'   group_by(source_concept=origin) %>%
+#'   summarise(count=n()) %>%
+#'   collect()
+#' concepts <- extract_concepts(concepts, "admissions_origin")
+#' concepts
 extract_concepts <- function(concepts, concept_group, force=FALSE) {
   concepts <- amstel::translate_concepts(concepts)
   concepts <- amstel::save_concepts(concepts, concept_group, force)
@@ -37,19 +43,20 @@ extract_concepts <- function(concepts, concept_group, force=FALSE) {
 #' @return tibble containing concepts and their translation
 #' @export
 #'
-#' @examples
-#' #' library(dplyr)
-#' conn <- amstel::connect()
+#' @examples has_adb_environment()
+#' library(dplyr)
+#' conn <- amstel::connect("amsterdamumcdb")
 #' admissions <- tbl(conn, "admissions")
 #' concepts <- admissions %>% group_by(source_concept=origin) %>% summarise(count=n()) %>% collect()
 #' concepts <- translate_concepts(concepts)
+#' concepts
 translate_concepts <- function(concepts) {
   # authenticate with Google Translate Cloud API
   amstel::cloud_auth()
 
   # ungroup tibble (if applicable) to allow assigning translated column to
   # new column
-  concepts <- concepts %>% ungroup()
+  concepts <- concepts %>% dplyr::ungroup()
 
   # translate the column
   translation <- amstel::translate(concepts$source_concept)
@@ -71,11 +78,16 @@ translate_concepts <- function(concepts) {
 #' @return (unmodified) tibble containing the concepts
 #' @export
 #'
-#' @examples
-#' conn <- amstel::connect()
+#' @examplesIf has_adb_environment()
+#' library(dplyr)
+#' conn <- amstel::connect("amsterdamumcdb")
 #' admissions <- tbl(conn, "admissions")
-#' concepts <- admissions %>% group_by(source_concept=origin) %>% summarise(count=n()) %>% collect()
-#' concepts <- save_concepts(concepts, "admissions_source")
+#' concepts <- admissions %>%
+#'   group_by(source_concept=origin) %>%
+#'   summarise(count=n()) %>%
+#'   collect()
+#' concepts <- save_concepts(concepts, "admissions_origin")
+#' concepts
 save_concepts <- function(concepts, concept_group, force = FALSE) {
   SOURCE_CONCEPTS_FOLDER = amstel_env$config$data$source_concepts
 
@@ -130,6 +142,7 @@ save_concepts <- function(concepts, concept_group, force = FALSE) {
 #'
 #' @examples
 #' providers <- load_concepts("providers")
+#' providers
 load_concepts <- function(concept_group) {
   SOURCE_CONCEPTS_FOLDER = amstel_env$config$data$source_concepts
 
@@ -171,6 +184,7 @@ load_concepts <- function(concept_group) {
 #'
 #' @examples
 #' providers <- load_usagi_concepts("providers")
+#' providers
 load_usagi_concepts <- function(concept_group) {
   MAPPINGS_FOLDER = amstel_env$config$data$mappings
 
@@ -212,7 +226,8 @@ load_usagi_concepts <- function(concept_group) {
 #' @export
 #'
 #' @examples
-#' numericitems_other <- swap_usagi_counts("numericitems_other")
+#' swapped <- swap_usagi_counts("numericitems_other")
+#' swapped
 swap_usagi_counts <- function(concept_group) {
   usagi_mappings <- load_usagi_concepts(concept_group)
 
@@ -221,16 +236,16 @@ swap_usagi_counts <- function(concept_group) {
     values_count <- usagi_mappings$sourceFrequency
 
     usagi_mappings <- usagi_mappings %>%
-      rename(`ADD_INFO:count` = `ADD_INFO:count_validated`) %>%
-      mutate(
+      dplyr::rename(`ADD_INFO:count` = .data$`ADD_INFO:count_validated`) %>%
+      dplyr::mutate(
         sourceFrequency = values_count_validated,
         `ADD_INFO:count` = values_count)
   } else if("ADD_INFO:count" %in% colnames(usagi_mappings)) {
     values_count_validated <- usagi_mappings$sourceFrequency
     values_count <- usagi_mappings$`ADD_INFO:count`
     usagi_mappings <- usagi_mappings %>%
-      rename(`ADD_INFO:count_validated` = `ADD_INFO:count`) %>%
-      mutate(
+      dplyr::rename(`ADD_INFO:count_validated` = .data$`ADD_INFO:count`) %>%
+      dplyr::mutate(
         sourceFrequency = values_count,
         `ADD_INFO:count_validated` = values_count_validated)
   }
@@ -257,6 +272,6 @@ swap_usagi_counts <- function(concept_group) {
       }
     }
   )
-  # return usagi mappings
+  # return swapped usagi mappings
   return(usagi_mappings)
 }

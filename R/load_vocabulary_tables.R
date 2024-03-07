@@ -116,6 +116,7 @@ load_vocabulary_tables <-
       log_info(" - deleting all records from table")
       sql <- "DELETE FROM @table_name;"
       DatabaseConnector::renderTranslateExecuteSql(
+        progressBar = interactive(),
         connection = conn,
         sql = sql,
         table_name = paste0(cdm_schema, ".", server_table_name)
@@ -167,13 +168,13 @@ load_vocabulary_tables <-
           else {
             suppressWarnings({
               DatabaseConnector::insertTable(
+                progressBar = interactive(),
                 connection = conn,
                 tableName = paste0(cdm_schema, ".", server_table_name),
                 data = chunk,
                 dropTableIfExists = FALSE,
                 createTable = FALSE,
-                bulkLoad = FALSE,
-                progressBar = TRUE
+                bulkLoad = FALSE
               )
             })
           }

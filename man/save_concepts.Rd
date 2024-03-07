@@ -20,8 +20,15 @@ save_concepts(concepts, concept_group, force = FALSE)
 Saves the concepts list into the source_concepts folder
 }
 \examples{
-conn <- amstel::connect()
+\dontshow{if (has_adb_environment()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+library(dplyr)
+conn <- amstel::connect("amsterdamumcdb")
 admissions <- tbl(conn, "admissions")
-concepts <- admissions \%>\% group_by(source_concept=origin) \%>\% summarise(count=n()) \%>\% collect()
-concepts <- save_concepts(concepts, "admissions_source")
+concepts <- admissions \%>\%
+  group_by(source_concept=origin) \%>\%
+  summarise(count=n()) \%>\%
+  collect()
+concepts <- save_concepts(concepts, "admissions_origin")
+concepts
+\dontshow{\}) # examplesIf}
 }

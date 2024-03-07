@@ -1,6 +1,6 @@
 test_that("Source concept extraction", {
   library(dplyr)
-  con <- amstel::connect()
+  con <- amstel::connect("amsterdamumcdb")
   admissions <- tbl(con, "admissions")
 
   concepts <- admissions %>%
@@ -8,7 +8,7 @@ test_that("Source concept extraction", {
     summarise(count=n()) %>%
     collect()
 
-  concepts_extract <- extract_concepts(concepts, "admitted_from")
+  concepts_extract <- extract_concepts(concepts, "admissions_origin")
 
   # verify that the new tibble contains these three columns
   expect_equal(

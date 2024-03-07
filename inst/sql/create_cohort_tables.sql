@@ -1,5 +1,11 @@
--- DataQualityDashboard currently REQUIRES cohort_definition in the results schema even though WebAPI
--- does not save the results there
+-- DataQualityDashboard currently REQUIRES cohort_definition in the results
+-- schema even though WebAPI does not save the results there
+CREATE TABLE IF NOT EXISTS @cdm_results_schema.cohort (
+			cohort_definition_id integer NOT NULL,
+			subject_id integer NOT NULL,
+			cohort_start_date date NOT NULL,
+			cohort_end_date date NOT NULL );
+
 CREATE TABLE IF NOT EXISTS @cdm_results_schema.cohort_definition (
 			cohort_definition_id integer NOT NULL,
 			cohort_definition_name varchar(255) NOT NULL,

@@ -6,6 +6,6 @@ test_that("get_configuration works", {
   }
   else {
     config <- get_config()
-    expect_equal(length(config$postgres), 5)
+    expect_equal(length(config$databases), 4)
   }
 })

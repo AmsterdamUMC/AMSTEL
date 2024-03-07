@@ -1,0 +1,71 @@
+# This `local_vocabulary.yaml` file contains the definitions for creating the
+# source_to_concept_map table from the OHDSI Usagi mapping files.
+#
+# Unfortunately, the current CDM does not contain a standardized way to store
+# the additional mapping types (e.g. MAPS_TO, MAPS_TO_VALUE, MAPS_TO_TYPE)
+# in one of the standard tables.
+
+admissions_gender:
+  MAPS_TO: AUMC Gender
+
+admissions_origin:
+  MAPS_TO: AUMC Origin
+
+admissions_destination:
+  MAPS_TO: AUMC Destination
+
+admissions_specialty:
+  MAPS_TO: AUMC Specialty
+
+drugitems_administeredunit:
+  MAPS_TO: AUMC Unit
+
+drugitems_item:
+  MAPS_TO: AUMC Drug
+  MAPS_TO_VALUE: AUMC Drug Quantity
+  MAPS_TO_TYPE: AUMC Drug Route
+
+drugitems_ordercategory:
+  MAPS_TO: AUMC Route
+
+freetextitems_item:
+  MAPS_TO: AUMC Text
+
+freetextitems_value:
+  MAPS_TO: AUMC Text Value
+
+listitems_item:
+  MAPS_TO: AUMC List
+
+listitems_value:
+  MAPS_TO: AUMC List Value
+
+numericitems_lab:
+  MAPS_TO: AUMC Laboratory
+
+numericitems_other:
+  MAPS_TO: AUMC Numeric
+
+numericitems_tag:
+  MAPS_TO: AUMC Tag
+
+numericitems_unit:
+  MAPS_TO: AUMC Unit
+
+procedureorderitems_item:
+  MAPS_TO: AUMC Procedure Order
+  MAPS_TO_TYPE: AUMC Qualifier
+
+processitems_item:
+  MAPS_TO: AUMC Process
+  MAPS_TO_VALUE: AUMC Anatomic Site
+  MAPS_TO_NUMBER: AUMC Quantity
+
+providers:
+  MAPS_TO: AUMC Provider
+
+reason_for_admission:
+  MAPS_TO: AUMC Diagnosis
+
+specimen_source:
+  MAPS_TO: AUMC Specimen Source

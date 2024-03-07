@@ -1,3 +1,7 @@
+#' @param cascade
+#' Automatically drop objects that depend on the table including other tables,
+#' and in turn all objects that depend on those objects. Default: FALSE.
+#'
 #' @title Drop CDM Data Tables.
 #'
 #' @description This function drops CDM tables, excluding the vocabulary tables.
@@ -64,6 +68,7 @@ drop_data_tables <- function(cascade = FALSE)
           sep = "")
 
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema

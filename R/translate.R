@@ -35,7 +35,8 @@ translate <- function(text, source="nl", target = "en") {
   # remove translated entries when original concept was NA (incorrectly
   # translated to 'AFTER')
   translated_text <- translated_text %>%
-    dplyr::mutate(translatedText = ifelse(is.na(text), NA, translatedText))
+    dplyr::mutate(translatedText = ifelse(
+      is.na(text), NA, .data$translatedText))
 
   return(translated_text)
 }

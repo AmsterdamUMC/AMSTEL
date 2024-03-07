@@ -18,5 +18,6 @@ correct sorting in OHDSI Usagi. This is mainly used to help prioritizing
 mapping to (manually) validated values vs not-validated (device) data.
 }
 \examples{
-numericitems_other <- swap_usagi_counts("numericitems_other")
+swapped <- swap_usagi_counts("numericitems_other")
+swapped
 }

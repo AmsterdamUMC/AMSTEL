@@ -17,5 +17,5 @@ in the \code{cdm} section to create the indices for the tables of the
 Common Data Model.
 
 This function assumes \code{amstel::create_cdm_tables()} and
-\code{amstel::load_cdm_clinical_data()} has been run successfully.
+\code{amstel::load_cdm_clinical_data()} have been run successfully.
 }

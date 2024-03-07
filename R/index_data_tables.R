@@ -10,24 +10,22 @@
 #' Common Data Model.
 #'
 #' This function assumes `amstel::create_cdm_tables()` and
-#' `amstel::load_cdm_clinical_data()` has been run successfully.
+#' `amstel::load_cdm_clinical_data()` have been run successfully.
 #'
 #'@export
-
 index_data_tables <- function() {
+  log_info("Creating Indices on CDM clinical data tables...")
 
-    log_info("Creating Indices on CDM clinical data tables...")
+  connection_details <- get_connection_details("cdm")
+  conn <- DatabaseConnector::connect(connection_details)
+  on.exit(DatabaseConnector::disconnect(conn))
 
-    connection_details <- get_connection_details("cdm")
-    conn <- DatabaseConnector::connect(connection_details)
-    on.exit(DatabaseConnector::disconnect(conn))
-
-    sql <- load_sql('index_data_tables.sql')
-    DatabaseConnector::renderTranslateExecuteSql(
-        connection = conn,
-        sql = sql,
-        cdmDatabaseSchema = amstel_env$config$databases$cdm$schema
-    )
-    log_info("Indices creation for clinical data tables Complete.")
-
+  sql <- load_sql('index_data_tables.sql')
+  DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
+    connection = conn,
+    sql = sql,
+    cdmDatabaseSchema = amstel_env$config$databases$cdm$schema
+  )
+  log_info("Indices creation for clinical data tables Complete.")
 }

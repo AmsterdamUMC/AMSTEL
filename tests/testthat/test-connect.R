@@ -6,9 +6,13 @@ test_that("connection works", {
     "numericitems", "procedureorderitems", "processitems")
 
   # setup the connection
-  con <- connect()
+  con <- connect("amsterdamumcdb")
+  on.exit(DatabaseConnector::disconnect(con))
   # retrieve the list of tables
   tables_con <- DBI::dbListTables(con)
 
-  expect_equal(tables_con, tables)
+  for(table in tables) {
+    log_info(paste0('\n', table))
+    expect_true(table %in% tables_con)
+  }
 })

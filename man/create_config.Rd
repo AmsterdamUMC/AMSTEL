@@ -6,6 +6,11 @@
 \usage{
 create_config(is_missing = FALSE)
 }
+\arguments{
+\item{is_missing}{Used internally to change the message based on if configuration file
+is missing during initialization.
+Default: FALSE.}
+}
 \description{
 Creates the \code{config.yaml} configuration file in the default OS-defined
 user configuration folder for setting up access to the databases and files

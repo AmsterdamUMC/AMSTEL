@@ -16,7 +16,12 @@ String server table name
 }
 \description{
 Since some DBMS are case-sensitive use the names of the tables currently
+stored in the database to prevent creating new ones with a different case
 }
 \examples{
+\dontshow{if (has_cdm_environment()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+conn <- connect("cdm")
 table <- get_server_tablename("PROCEDURE_OCCURRENCE", conn)
+table
+\dontshow{\}) # examplesIf}
 }

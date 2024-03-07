@@ -6,6 +6,9 @@
 \usage{
 alter_system_settings(defaults = FALSE)
 }
+\arguments{
+\item{defaults}{Determines to apply default or optimized PostgreSQL settings. Default: FALSE}
+}
 \description{
 This function alters the PostgreSQL settings to reduce house
 keeping while bulk inserting records.

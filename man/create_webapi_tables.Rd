@@ -12,8 +12,7 @@ This function creates the required OHDSI WebAPI tables.
 \details{
 This function requires a configured \code{config.yaml} file created using
 \code{amstel::create_config()}. It will use the connection configuration specified
-in the \code{cdm} section to create WebAPI tables.
-}
-\examples{
-create_webapi_tables()
+in the \code{results} section to create WebAPI tables. WebAPI requires that
+\code{amstel::etl()} (or the ETL background script) and \code{amstel::achilles()}
+have already been run.
 }

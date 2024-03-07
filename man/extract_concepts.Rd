@@ -7,12 +7,12 @@
 extract_concepts(concepts, concept_group, force = FALSE)
 }
 \arguments{
-\item{concepts}{tibble containing concepts (column name: "source_concept")
-and the number of occurrences in the database (column name: "count") of
-those concepts.}
+\item{concepts}{tibble containing concepts (column name: "source_concept") and the number
+of occurrences in the database (column name: "count") of those concepts.}
 
-\item{concept_group}{name this group of concepts should be called for
-extracting}
+\item{concept_group}{Name this group of concepts should be called for extracting}
+
+\item{force}{Forces overwriting an existing concept list. Default: FALSE.}
 }
 \value{
 tibble containing concepts and their translation
@@ -23,9 +23,15 @@ English using the Google Translate Cloud API for matching using OHDSI Usagi.
 Exports the tibble to the \code{source_concepts} folder.
 }
 \examples{
+\dontshow{if (has_adb_environment()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
 library(dplyr)
-conn <- amstel::connect()
+conn <- amstel::connect("amsterdamumcdb")
 admissions <- tbl(conn, "admissions")
-concepts <- admissions \%>\% group_by(source_concept=origin) \%>\% summarise(count=n()) \%>\% collect()
-extract_concepts(concepts, "admitted_from")
+concepts <- admissions \%>\%
+  group_by(source_concept=origin) \%>\%
+  summarise(count=n()) \%>\%
+  collect()
+concepts <- extract_concepts(concepts, "admissions_origin")
+concepts
+\dontshow{\}) # examplesIf}
 }

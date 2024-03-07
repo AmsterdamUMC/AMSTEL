@@ -9,13 +9,19 @@ create_cohort_tables()
 \description{
 This function creates the Common Data Model Cohort tables, than can be used
 to define cohorts based on criteria using standard concepts. An example cohort
-has been created to select patients receiving mechanical ventilation
+has been created to select patients receiving mechanical ventilation.
 }
 \details{
 This function requires a configured \code{config.yaml} file created using
-\code{amstel::create_config()}. It will use the connection configuration specified
-in the \code{cdm} section to create WebAPI tables.
+\code{amstel::create_config()}. It will use the connection configuration
+specified in the \code{cdm} section to create the cohort tables.
+In addition, the CDM schema needs to be populated
+with CDM data and vocabulary tables.
 }
 \examples{
+\dontshow{if (has_example_environment()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+create_cdm_tables()
+create_vocabulary_tables()
 create_cohort_tables()
+\dontshow{\}) # examplesIf}
 }

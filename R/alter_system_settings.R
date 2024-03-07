@@ -1,3 +1,6 @@
+#' @param defaults
+#' Determines to apply default or optimized PostgreSQL settings. Default: FALSE
+#'
 #' @title Alters PostgreSQL System settings.
 #'
 #' @description This function alters the PostgreSQL settings to reduce house
@@ -26,8 +29,9 @@ alter_system_settings <- function(defaults = FALSE) {
 
   sql <- load_sql(sql_file)
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
-    sql = sql
+    sql = sql,
   )
 
   log_info("Please restart the server for the settings to take effect.")

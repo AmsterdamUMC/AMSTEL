@@ -4,7 +4,10 @@
 #' Connects to the AmsterdamUMCdb or CDM database based on `config.yaml` in
 #' the user config folder.
 #'
-#' @param database Database to use, either 'amsterdamumcdb'  or 'cdm'.
+#' @param database Database to use, either "amsterdamumcdb",  "cdm", "results",
+#' or "temp".
+#' Default: "cdm"
+#'
 #' @param default_schema Default schema to use as the search path. By default,
 #' this will be set to the value of `schema` in the configuration section
 #' of `database`
@@ -14,7 +17,8 @@
 #'
 #' @examples
 #' conn <- connect()
-connect <- function(database, default_schema = "") {
+#' conn <- connect("amsterdamumcdb")
+connect <- function(database = "cdm", default_schema = "") {
   connection_details <- get_connection_details(database)
   conn <- DatabaseConnector::connect(connection_details)
 
@@ -24,9 +28,10 @@ connect <- function(database, default_schema = "") {
     default_schema else amstel_env$config$database[[database]]$schema
 
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
-    schema = schema
+    schema = schema,
   )
   return(conn)
 }
@@ -35,7 +40,7 @@ connect <- function(database, default_schema = "") {
 #'
 #' @description
 #' Since some DBMS are case-sensitive use the names of the tables currently
-#  created in the database to prevent creating new ones with a different case
+#' stored in the database to prevent creating new ones with a different case
 #'
 #' @param tablename Name of the table to check
 #' @param conn DatabaseConnector Connection object
@@ -43,8 +48,10 @@ connect <- function(database, default_schema = "") {
 #' @return String server table name
 #' @export
 #'
-#' @examples
+#' @examplesIf has_cdm_environment()
+#' conn <- connect("cdm")
 #' table <- get_server_tablename("PROCEDURE_OCCURRENCE", conn)
+#' table
 get_server_tablename <- function(tablename, conn) {
   server_tables <- DBI::dbListTables(conn)
   server_tablename <- server_tables[

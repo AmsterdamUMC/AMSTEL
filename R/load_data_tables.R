@@ -28,6 +28,7 @@ load_data_tables <- function() {
   log_info("Dropping tables before bulk loading")
   sql <- load_sql('drop_index_data_tables.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql
   )
@@ -37,6 +38,7 @@ load_data_tables <- function() {
   log_info("- CDM_SOURCE")
   sql <- load_sql('insert_cdm_source.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema,
@@ -58,6 +60,7 @@ load_data_tables <- function() {
   log_info("- admission_scalar (intermediate table)")
   sql <- load_sql('create_admissions_scalar.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema,
@@ -68,6 +71,7 @@ load_data_tables <- function() {
   log_info("- PERSON")
   sql <- load_sql('insert_person.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema
@@ -77,6 +81,7 @@ load_data_tables <- function() {
   log_info("- DEATH")
   sql <- load_sql('insert_death.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema
@@ -86,6 +91,7 @@ load_data_tables <- function() {
   log_info("- CARE_SITE")
   sql <- load_sql('insert_care_site.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema
@@ -95,6 +101,7 @@ load_data_tables <- function() {
   log_info("- LOCATION")
   sql <- load_sql('insert_location.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema
@@ -104,6 +111,7 @@ load_data_tables <- function() {
   log_info("- PROVIDER")
   sql <- load_sql('insert_provider.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema
@@ -113,6 +121,7 @@ load_data_tables <- function() {
   log_info("- VISIT_OCCURRENCE")
   sql <- load_sql('insert_visit_occurrence.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema
@@ -123,6 +132,7 @@ load_data_tables <- function() {
   log_info("- OBSERVATION_PERIOD")
   sql <- load_sql('insert_observation_period.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema
@@ -132,6 +142,7 @@ load_data_tables <- function() {
   log_info("- stem_table (intermediate table)")
   sql <- load_sql('create_stem_table.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema
@@ -141,6 +152,7 @@ load_data_tables <- function() {
   log_info("- reason for admission -> stem_table")
   sql <- load_sql('insert_stem_table_from_reason_for_admission.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema,
@@ -151,6 +163,7 @@ load_data_tables <- function() {
   log_info("- admissions -> stem_table")
   sql <- load_sql('insert_stem_table_from_admissions.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema
@@ -160,6 +173,7 @@ load_data_tables <- function() {
   log_info("- drugitems -> stem_table")
   sql <- load_sql('insert_stem_table_from_drugitems.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema,
@@ -171,6 +185,7 @@ load_data_tables <- function() {
   log_info("- fluidin -> stem_table")
   sql <- load_sql('insert_stem_table_from_fluidin.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema
@@ -180,6 +195,7 @@ load_data_tables <- function() {
   log_info("- specimen source -> stem_table")
   sql <- load_sql('insert_stem_table_from_specimen_source.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema,
@@ -190,6 +206,7 @@ load_data_tables <- function() {
   log_info("- freetextitems -> stem_table")
   sql <- load_sql('insert_stem_table_from_freetextitems.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema,
@@ -200,6 +217,7 @@ load_data_tables <- function() {
   log_info("- listitems -> stem_table")
   sql <- load_sql('insert_stem_table_from_listitems.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema,
@@ -210,6 +228,7 @@ load_data_tables <- function() {
   log_info("- numericitems -> stem_table")
   sql <- load_sql('insert_stem_table_from_numericitems.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema,
@@ -220,6 +239,7 @@ load_data_tables <- function() {
   log_info("- processitems -> stem_table")
   sql <- load_sql('insert_stem_table_from_processitems.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema,
@@ -230,6 +250,7 @@ load_data_tables <- function() {
   log_info("- procedureorderitems -> stem_table")
   sql <- load_sql('insert_stem_table_from_procedureorderitems.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema,
@@ -242,6 +263,7 @@ load_data_tables <- function() {
   log_info("- stem_table -> CONDITION_OCCURRENCE")
   sql <- load_sql('insert_condition_occurrence.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema
@@ -251,6 +273,7 @@ load_data_tables <- function() {
   log_info("- stem_table -> DEVICE_EXPOSURE")
   sql <- load_sql('insert_device_exposure.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema
@@ -260,6 +283,7 @@ load_data_tables <- function() {
   log_info("- stem_table -> DRUG_EXPOSURE")
   sql <- load_sql('insert_drug_exposure.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema
@@ -269,6 +293,7 @@ load_data_tables <- function() {
   log_info("- stem_table -> MEASUREMENT")
   sql <- load_sql('insert_measurement.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema
@@ -278,6 +303,7 @@ load_data_tables <- function() {
   log_info("- stem_table -> OBSERVATION")
   sql <- load_sql('insert_observation.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema
@@ -287,6 +313,7 @@ load_data_tables <- function() {
   log_info("- stem_table -> PROCEDURE_OCCURRENCE")
   sql <- load_sql('insert_procedure_occurrence.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema
@@ -296,6 +323,7 @@ load_data_tables <- function() {
   log_info("- stem_table -> SPECIMEN")
   sql <- load_sql('insert_specimen.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema
@@ -308,6 +336,7 @@ load_data_tables <- function() {
   log_info("  * CONDITION_ERA")
   sql <- load_sql('insert_condition_era.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema
@@ -317,6 +346,7 @@ load_data_tables <- function() {
   log_info("  * DRUG_ERA")
   sql <- load_sql('insert_drug_era.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema

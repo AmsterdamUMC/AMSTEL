@@ -4,10 +4,12 @@
 \alias{connect}
 \title{Connect to database}
 \usage{
-connect(database, default_schema = "")
+connect(database = "cdm", default_schema = "")
 }
 \arguments{
-\item{database}{Database to use, either 'amsterdamumcdb'  or 'cdm'.}
+\item{database}{Database to use, either "amsterdamumcdb",  "cdm", "results",
+or "temp".
+Default: "cdm"}
 
 \item{default_schema}{Default schema to use as the search path. By default,
 this will be set to the value of \code{schema} in the configuration section
@@ -22,4 +24,5 @@ the user config folder.
 }
 \examples{
 conn <- connect()
+conn <- connect("amsterdamumcdb")
 }

@@ -16,7 +16,11 @@ execute_dqd_checks <- function() {
     sql <- "CREATE SCHEMA IF NOT EXISTS @cdm_results"
     sql <- SqlRender::render(sql, cdm_results = amstel_env$config$databases$results$schema)
     sql <- SqlRender::translate(sql, targetDialect = connection_details$dbms)
-    DatabaseConnector::executeSql(conn, sql)
+    DatabaseConnector::executeSql(
+      progressBar = interactive(),
+      connection = conn,
+      sql = sql
+      )
 
     # Data Quality Dashboard Settings
     # the CDM version you are targetting. Currently supports 5.2, 5.3, and 5.4

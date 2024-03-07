@@ -1,7 +1,7 @@
 --postgresql CDM DDL Specification for OMOP Common Data Model 5.4
 
 --Clinical Data Tables
-CREATE TABLE @cdm_schema.person (
+CREATE TABLE IF NOT EXISTS @cdm_schema.person (
 			person_id integer NOT NULL,
 			gender_concept_id integer NOT NULL,
 			year_of_birth integer NOT NULL,
@@ -21,14 +21,14 @@ CREATE TABLE @cdm_schema.person (
 			ethnicity_source_value varchar(50) NULL,
 			ethnicity_source_concept_id integer NULL );
 
-CREATE TABLE @cdm_schema.observation_period (
+CREATE TABLE IF NOT EXISTS @cdm_schema.observation_period (
 			observation_period_id integer NOT NULL,
 			person_id integer NOT NULL,
 			observation_period_start_date date NOT NULL,
 			observation_period_end_date date NOT NULL,
 			period_type_concept_id integer NOT NULL );
 
-CREATE TABLE @cdm_schema.visit_occurrence (
+CREATE TABLE IF NOT EXISTS @cdm_schema.visit_occurrence (
 			visit_occurrence_id integer NOT NULL,
 			person_id integer NOT NULL,
 			visit_concept_id integer NOT NULL,
@@ -47,7 +47,7 @@ CREATE TABLE @cdm_schema.visit_occurrence (
 			discharged_to_source_value varchar(50) NULL,
 			preceding_visit_occurrence_id integer NULL );
 
-CREATE TABLE @cdm_schema.visit_detail (
+CREATE TABLE IF NOT EXISTS @cdm_schema.visit_detail (
 			visit_detail_id integer NOT NULL,
 			person_id integer NOT NULL,
 			visit_detail_concept_id integer NOT NULL,
@@ -68,7 +68,7 @@ CREATE TABLE @cdm_schema.visit_detail (
 			parent_visit_detail_id integer NULL,
 			visit_occurrence_id integer NOT NULL );
 
-CREATE TABLE @cdm_schema.condition_occurrence (
+CREATE TABLE IF NOT EXISTS @cdm_schema.condition_occurrence (
 			condition_occurrence_id integer NOT NULL,
 			person_id integer NOT NULL,
 			condition_concept_id integer NOT NULL,
@@ -86,7 +86,7 @@ CREATE TABLE @cdm_schema.condition_occurrence (
 			condition_source_concept_id integer NULL,
 			condition_status_source_value varchar(50) NULL );
 
-CREATE TABLE @cdm_schema.drug_exposure (
+CREATE TABLE IF NOT EXISTS @cdm_schema.drug_exposure (
 			drug_exposure_id integer NOT NULL,
 			person_id integer NOT NULL,
 			drug_concept_id integer NOT NULL,
@@ -111,7 +111,7 @@ CREATE TABLE @cdm_schema.drug_exposure (
 			route_source_value varchar(50) NULL,
 			dose_unit_source_value varchar(50) NULL );
 
-CREATE TABLE @cdm_schema.procedure_occurrence (
+CREATE TABLE IF NOT EXISTS @cdm_schema.procedure_occurrence (
 			procedure_occurrence_id integer NOT NULL,
 			person_id integer NOT NULL,
 			procedure_concept_id integer NOT NULL,
@@ -129,7 +129,7 @@ CREATE TABLE @cdm_schema.procedure_occurrence (
 			procedure_source_concept_id integer NULL,
 			modifier_source_value varchar(50) NULL );
 
-CREATE TABLE @cdm_schema.device_exposure (
+CREATE TABLE IF NOT EXISTS @cdm_schema.device_exposure (
 			device_exposure_id integer NOT NULL,
 			person_id integer NOT NULL,
 			device_concept_id integer NOT NULL,
@@ -150,7 +150,7 @@ CREATE TABLE @cdm_schema.device_exposure (
 			unit_source_value varchar(50) NULL,
 			unit_source_concept_id integer NULL );
 
-CREATE TABLE @cdm_schema.measurement (
+CREATE TABLE IF NOT EXISTS @cdm_schema.measurement (
 			measurement_id integer NOT NULL,
 			person_id integer NOT NULL,
 			measurement_concept_id integer NOT NULL,
@@ -175,7 +175,7 @@ CREATE TABLE @cdm_schema.measurement (
 			measurement_event_id integer NULL,
 			meas_event_field_concept_id integer NULL );
 
-CREATE TABLE @cdm_schema.observation (
+CREATE TABLE IF NOT EXISTS @cdm_schema.observation (
 			observation_id integer NOT NULL,
 			person_id integer NOT NULL,
 			observation_concept_id integer NOT NULL,
@@ -198,7 +198,7 @@ CREATE TABLE @cdm_schema.observation (
 			observation_event_id integer NULL,
 			obs_event_field_concept_id integer NULL );
 
-CREATE TABLE @cdm_schema.death (
+CREATE TABLE IF NOT EXISTS @cdm_schema.death (
 			person_id integer NOT NULL,
 			death_date date NOT NULL,
 			death_datetime TIMESTAMP NULL,
@@ -207,7 +207,7 @@ CREATE TABLE @cdm_schema.death (
 			cause_source_value varchar(50) NULL,
 			cause_source_concept_id integer NULL );
 
-CREATE TABLE @cdm_schema.note (
+CREATE TABLE IF NOT EXISTS @cdm_schema.note (
 			note_id integer NOT NULL,
 			person_id integer NOT NULL,
 			note_date date NOT NULL,
@@ -225,7 +225,7 @@ CREATE TABLE @cdm_schema.note (
 			note_event_id integer NULL,
 			note_event_field_concept_id integer NULL );
 
-CREATE TABLE @cdm_schema.note_nlp (
+CREATE TABLE IF NOT EXISTS @cdm_schema.note_nlp (
 			note_nlp_id integer NOT NULL,
 			note_id integer NOT NULL,
 			section_concept_id integer NULL,
@@ -241,7 +241,7 @@ CREATE TABLE @cdm_schema.note_nlp (
 			term_temporal varchar(50) NULL,
 			term_modifiers varchar(2000) NULL );
 
-CREATE TABLE @cdm_schema.specimen (
+CREATE TABLE IF NOT EXISTS @cdm_schema.specimen (
 			specimen_id integer NOT NULL,
 			person_id integer NOT NULL,
 			specimen_concept_id integer NOT NULL,
@@ -258,14 +258,14 @@ CREATE TABLE @cdm_schema.specimen (
 			anatomic_site_source_value varchar(50) NULL,
 			disease_status_source_value varchar(50) NULL );
 
-CREATE TABLE @cdm_schema.fact_relationship (
+CREATE TABLE IF NOT EXISTS @cdm_schema.fact_relationship (
 			domain_concept_id_1 integer NOT NULL,
 			fact_id_1 integer NOT NULL,
 			domain_concept_id_2 integer NOT NULL,
 			fact_id_2 integer NOT NULL,
 			relationship_concept_id integer NOT NULL );
 
-CREATE TABLE @cdm_schema.location (
+CREATE TABLE IF NOT EXISTS @cdm_schema.location (
 			location_id integer NOT NULL,
 			address_1 varchar(50) NULL,
 			address_2 varchar(50) NULL,
@@ -279,7 +279,7 @@ CREATE TABLE @cdm_schema.location (
 			latitude NUMERIC NULL,
 			longitude NUMERIC NULL );
 
-CREATE TABLE @cdm_schema.care_site (
+CREATE TABLE IF NOT EXISTS @cdm_schema.care_site (
 			care_site_id integer NOT NULL,
 			care_site_name varchar(255) NULL,
 			place_of_service_concept_id integer NULL,
@@ -287,7 +287,7 @@ CREATE TABLE @cdm_schema.care_site (
 			care_site_source_value varchar(50) NULL,
 			place_of_service_source_value varchar(50) NULL );
 
-CREATE TABLE @cdm_schema.provider (
+CREATE TABLE IF NOT EXISTS @cdm_schema.provider (
 			provider_id integer NOT NULL,
 			provider_name varchar(255) NULL,
 			npi varchar(20) NULL,
@@ -302,7 +302,7 @@ CREATE TABLE @cdm_schema.provider (
 			gender_source_value varchar(50) NULL,
 			gender_source_concept_id integer NULL );
 
-CREATE TABLE @cdm_schema.payer_plan_period (
+CREATE TABLE IF NOT EXISTS @cdm_schema.payer_plan_period (
 			payer_plan_period_id integer NOT NULL,
 			person_id integer NOT NULL,
 			payer_plan_period_start_date date NOT NULL,
@@ -321,7 +321,7 @@ CREATE TABLE @cdm_schema.payer_plan_period (
 			stop_reason_source_value varchar(50) NULL,
 			stop_reason_source_concept_id integer NULL );
 
-CREATE TABLE @cdm_schema.cost (
+CREATE TABLE IF NOT EXISTS @cdm_schema.cost (
 			cost_id integer NOT NULL,
 			cost_event_id integer NOT NULL,
 			cost_domain_id varchar(20) NOT NULL,
@@ -345,7 +345,7 @@ CREATE TABLE @cdm_schema.cost (
 			drg_concept_id integer NULL,
 			drg_source_value varchar(3) NULL );
 
-CREATE TABLE @cdm_schema.drug_era (
+CREATE TABLE IF NOT EXISTS @cdm_schema.drug_era (
 			drug_era_id integer NOT NULL,
 			person_id integer NOT NULL,
 			drug_concept_id integer NOT NULL,
@@ -354,7 +354,7 @@ CREATE TABLE @cdm_schema.drug_era (
 			drug_exposure_count integer NULL,
 			gap_days integer NULL );
 
-CREATE TABLE @cdm_schema.dose_era (
+CREATE TABLE IF NOT EXISTS @cdm_schema.dose_era (
 			dose_era_id integer NOT NULL,
 			person_id integer NOT NULL,
 			drug_concept_id integer NOT NULL,
@@ -363,7 +363,7 @@ CREATE TABLE @cdm_schema.dose_era (
 			dose_era_start_date date NOT NULL,
 			dose_era_end_date date NOT NULL );
 
-CREATE TABLE @cdm_schema.condition_era (
+CREATE TABLE IF NOT EXISTS @cdm_schema.condition_era (
 			condition_era_id integer NOT NULL,
 			person_id integer NOT NULL,
 			condition_concept_id integer NOT NULL,
@@ -371,7 +371,7 @@ CREATE TABLE @cdm_schema.condition_era (
 			condition_era_end_date date NOT NULL,
 			condition_occurrence_count integer NULL );
 
-CREATE TABLE @cdm_schema.episode (
+CREATE TABLE IF NOT EXISTS @cdm_schema.episode (
 			episode_id integer NOT NULL,
 			person_id integer NOT NULL,
 			episode_concept_id integer NOT NULL,
@@ -386,12 +386,12 @@ CREATE TABLE @cdm_schema.episode (
 			episode_source_value varchar(50) NULL,
 			episode_source_concept_id integer NULL );
 
-CREATE TABLE @cdm_schema.episode_event (
+CREATE TABLE IF NOT EXISTS @cdm_schema.episode_event (
 			episode_id integer NOT NULL,
 			event_id integer NOT NULL,
 			episode_event_field_concept_id integer NOT NULL );
 
-CREATE TABLE @cdm_schema.metadata (
+CREATE TABLE IF NOT EXISTS @cdm_schema.metadata (
 			metadata_id integer NOT NULL,
 			metadata_concept_id integer NOT NULL,
 			metadata_type_concept_id integer NOT NULL,
@@ -402,7 +402,7 @@ CREATE TABLE @cdm_schema.metadata (
 			metadata_date date NULL,
 			metadata_datetime TIMESTAMP NULL );
 
-CREATE TABLE @cdm_schema.cdm_source (
+CREATE TABLE IF NOT EXISTS @cdm_schema.cdm_source (
 			cdm_source_name varchar(255) NOT NULL,
 			cdm_source_abbreviation varchar(25) NOT NULL,
 			cdm_holder varchar(255) NOT NULL,
@@ -415,13 +415,13 @@ CREATE TABLE @cdm_schema.cdm_source (
 			cdm_version_concept_id integer NOT NULL,
 			vocabulary_version varchar(20) NOT NULL );
 
-CREATE TABLE @cdm_schema.cohort (
+CREATE TABLE IF NOT EXISTS @cdm_schema.cohort (
 			cohort_definition_id integer NOT NULL,
 			subject_id integer NOT NULL,
 			cohort_start_date date NOT NULL,
 			cohort_end_date date NOT NULL );
 
-CREATE TABLE @cdm_schema.cohort_definition (
+CREATE TABLE IF NOT EXISTS @cdm_schema.cohort_definition (
 			cohort_definition_id integer NOT NULL,
 			cohort_definition_name varchar(255) NOT NULL,
 			cohort_definition_description TEXT NULL,

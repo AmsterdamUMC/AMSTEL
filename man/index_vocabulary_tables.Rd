@@ -19,5 +19,5 @@ the AmsterdamUMCdb tables, it helps when these (static) tables have already
 been indexed.
 
 This function assumes \code{amstel::create_cdm_tables()} and
-\code{amstel::load_vocabulary_tables()} has been run successfully.
+\code{amstel::load_vocabulary_tables()} have been run successfully.
 }

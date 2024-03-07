@@ -19,4 +19,5 @@ folder.
 }
 \examples{
 providers <- load_usagi_concepts("providers")
+providers
 }

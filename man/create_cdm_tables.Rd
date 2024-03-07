@@ -4,7 +4,13 @@
 \alias{create_cdm_tables}
 \title{Create Common Data Model tables}
 \usage{
-create_cdm_tables()
+create_cdm_tables(use_cdm_package = FALSE)
+}
+\arguments{
+\item{use_cdm_package}{Specifies whether the OHDSI CommonDataModel::executeDdl function will be used
+to execute the DDL (Data Definition Language) or the internal functions that
+use SQL code that that allow conditional creation of the tables.
+Default: FALSE}
 }
 \description{
 This function creates the required CDM tables using the \code{executeDdl} function
@@ -13,9 +19,12 @@ from the \code{OHDSI/CommonDataModel} package.
 \details{
 This function requires a configured \code{config.yaml} file created using
 \code{amstel::create_config()}. It will use the connection configuration specified
-in the \code{cdm} section to create the Common Data Model tables using the
-\code{executeDdl} function from the \code{OHDSI/CommonDataModel} package.
+in the \code{cdm} section to create the Common Data Model tables using either the
+\code{amstel::create_data_tables} and \code{amstel::create_vocabulary_tables} functions
+or the \code{executeDdl} function from the \code{OHDSI/CommonDataModel} package.
 }
 \examples{
+\dontshow{if (has_example_environment()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
 create_cdm_tables()
+\dontshow{\}) # examplesIf}
 }

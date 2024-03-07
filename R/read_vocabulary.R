@@ -13,6 +13,7 @@
 #'
 #' @examples
 #' concept <- read_vocabulary("concept")
+#' concept
 read_vocabulary <- function(vocabulary) {
   vocabulary_path <- amstel_env$config$data$vocabulary
 

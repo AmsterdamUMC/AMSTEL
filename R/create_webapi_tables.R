@@ -6,12 +6,11 @@
 #' @details
 #' This function requires a configured `config.yaml` file created using
 #' `amstel::create_config()`. It will use the connection configuration specified
-#' in the `cdm` section to create WebAPI tables.
+#' in the `results` section to create WebAPI tables. WebAPI requires that
+#' `amstel::etl()` (or the ETL background script) and `amstel::achilles()`
+#' have already been run.
 #'
 #' @export
-#'
-#' @examples
-#' create_webapi_tables()
 create_webapi_tables <- function() {
   connection_details <- get_connection_details("cdm")
   conn <- DatabaseConnector::connect(connection_details)
@@ -20,6 +19,7 @@ create_webapi_tables <- function() {
   log_info("Creating WebAPI tables...")
   sql <- load_sql('create_webapi_tables.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema,
@@ -29,6 +29,7 @@ create_webapi_tables <- function() {
   log_info("Creating Count tables...")
   sql <- load_sql('create_concept_count_tables.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema,
@@ -49,6 +50,7 @@ create_webapi_tables <- function() {
   )
 
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_source_name = amstel_env$config$metadata$cdm_source_name,
@@ -65,6 +67,7 @@ create_webapi_tables <- function() {
   log_info("Dropping WebAPI cache tables...")
   sql <- load_sql('drop_webapi_cache.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql
   )

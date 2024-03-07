@@ -1,3 +1,8 @@
+#' @importFrom stats filter
+#' @importFrom utils tail
+#' @importFrom magrittr %>%
+#' @importFrom rlang .data
+
 # wrappers for logging different levels
 log_debug <- function(message, ...) {
   logger <- amstel_env$logger

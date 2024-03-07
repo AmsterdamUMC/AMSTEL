@@ -6,6 +6,10 @@
 \usage{
 drop_data_tables(cascade = FALSE)
 }
+\arguments{
+\item{cascade}{Automatically drop objects that depend on the table including other tables,
+and in turn all objects that depend on those objects. Default: FALSE.}
+}
 \description{
 This function drops CDM tables, excluding the vocabulary tables.
 }

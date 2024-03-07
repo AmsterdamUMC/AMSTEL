@@ -28,7 +28,11 @@ create_cdm_indices <- function() {
 
     index_ddl <- SqlRender::readSql(paste0(tempdir(), "/", index_sql_file))
     conn <- DatabaseConnector::connect(connection_details)
-    DatabaseConnector::executeSql(conn, index_ddl)
+    DatabaseConnector::executeSql(
+      progressBar = interactive(),
+      connection = conn,
+      sql = index_ddl
+      )
     log_info("Index Creation Complete.")
 
 }

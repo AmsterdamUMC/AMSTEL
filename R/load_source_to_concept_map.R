@@ -1,5 +1,3 @@
-library(dplyr)
-
 #' @title Load source_to_concept_map table from Usagi mapping Files.
 #'
 #' @description This function loads the source_to_concept_map table using the mapping
@@ -14,8 +12,11 @@ library(dplyr)
 #' This function assumes `amstel::create_cdm_tables()` and
 #' `amstel::load_vocabulary_tables()` have already been run.
 #'
+#' @examples
+#' stcm <- load_source_to_concept_map()
+#' stcm
 #'
-#'@export
+#' @export
 load_source_to_concept_map <- function() {
   log_info("Loading source_to_concept_map table...")
   connection_details <- get_connection_details("cdm")
@@ -28,6 +29,7 @@ load_source_to_concept_map <- function() {
   log_info(paste0("Deleting all records from table: ", stcm_table_name))
   sql <- "TRUNCATE @table_name;"
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     table_name = paste0(cdm_schema, ".", stcm_table_name)
@@ -39,9 +41,10 @@ load_source_to_concept_map <- function() {
   sql <- "SELECT concept_id, vocabulary_id FROM @table_name;"
   concept_table_name <- get_server_tablename('concept', conn)
   concept <- DatabaseConnector::renderTranslateQuerySql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
-    table_name = paste0(cdm_schema, ".", concept_table_name)
+    table_name = paste0(cdm_schema, ".", concept_table_name),
   )
   # convert column names to lower case
   names(concept) <- tolower(names(concept))
@@ -62,7 +65,7 @@ load_source_to_concept_map <- function() {
 
     if (vocabulary == 'admissions_destination') {
       concepts <- load_usagi_concepts("listitems_value")
-      concepts <- concepts %>% filter(`ADD_INFO:itemid` == 10472)
+      concepts <- concepts %>% dplyr::filter(.data$`ADD_INFO:itemid` == 10472)
     }
     else {
       concepts <- load_usagi_concepts(vocabulary)
@@ -82,36 +85,36 @@ load_source_to_concept_map <- function() {
       log_info(paste0("  * '", voc_id, "' for ", mapping_type, " mapping"))
 
       concepts_by_mapping_type <- concepts %>%
-        filter(mappingStatus == 'APPROVED',
-               mappingType == mapping_type,
-               !is.na(sourceCode))
+        dplyr::filter(.data$mappingStatus == 'APPROVED',
+                      .data$mappingType == mapping_type,
+                      !is.na(.data$sourceCode))
 
       if (nrow(concepts_by_mapping_type) == 0) next
 
       source_to_concept_map <- concepts_by_mapping_type %>%
-        left_join(concept, by=join_by(conceptId == concept_id)) %>%
-        mutate(
+        dplyr::left_join(concept, by=c("conceptId" = "concept_id")) %>%
+        dplyr::mutate(
           sourceCode = stringr::str_trunc(
-            as.character(sourceCode), 50, "right", ellipsis = ''), # max length = 50
+            as.character(.data$sourceCode), 50, "right", ellipsis = ''), # max length = 50
           source_concept_id = 0,
           source_vocabulary_id = voc_id,
-          source_code_description = case_when(
-            !is.na(`ADD_INFO:source_concept`) ~ `ADD_INFO:source_concept`,
-            .default = sourceCode),
+          source_code_description = dplyr::case_when(
+            !is.na(.data$`ADD_INFO:source_concept`) ~ .data$`ADD_INFO:source_concept`,
+            .default = .data$sourceCode),
           valid_start_date = as.Date('1970-01-01'),
           valid_end_date = as.Date('2099-12-31'),
           invalid_reason = NA
         ) %>%
-        select(
-          source_code = sourceCode,
-          source_concept_id,
-          source_vocabulary_id,
-          source_code_description,
-          target_concept_id = conceptId,
-          target_vocabulary_id = vocabulary_id,
-          valid_start_date,
-          valid_end_date,
-          invalid_reason
+        dplyr::select(
+          source_code = .data$sourceCode,
+          .data$source_concept_id,
+          .data$source_vocabulary_id,
+          .data$source_code_description,
+          target_concept_id = .data$conceptId,
+          target_vocabulary_id = .data$vocabulary_id,
+          .data$valid_start_date,
+          .data$valid_end_date,
+          .data$invalid_reason
         )
 
       # wrap the data frame in a list to add as a single element
@@ -120,7 +123,7 @@ load_source_to_concept_map <- function() {
 
   }
 
-  source_to_concept_map <- bind_rows(maps_list)
+  source_to_concept_map <- dplyr::bind_rows(maps_list)
 
   # The SOURCE_TO_CONCEPT_MAP table currently does not support mapping a
   # single source_code to multiple target concepts while assigning
@@ -154,13 +157,13 @@ load_source_to_concept_map <- function() {
   log_info(paste0("Loading mapping records into table: ", stcm_table_name))
   suppressWarnings({
     DatabaseConnector::insertTable(
+      progressBar = interactive(),
       connection = conn,
       tableName = paste0(cdm_schema, ".", stcm_table_name),
       data = source_to_concept_map,
       dropTableIfExists = FALSE,
       createTable = FALSE,
-      bulkLoad = FALSE,
-      progressBar = TRUE
+      bulkLoad = FALSE
     )
   })
 

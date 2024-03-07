@@ -1,14 +1,19 @@
 Package: amstel
 Title: AmsterdamUMCdb extracting, transforming and loading (ETL) into the OMOP Common Data Model
 Version: 0.9.0.0000
-Authors@R: 
-    person("Thoral", "Patrick", , "patrick@gaiascientific.com", role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0001-6140-7195"))
+Authors@R: c(
+  person(given = "Patrick", family = "Thoral", email="p.thoral@amsterdamumc.nl", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-6140-7195")),
+  person(given = "Paul", family = "Elbers", email="p.elbers@amsterdamumc.nl", role=c("aut"), comment = c(ORCID = "0000-0003-0447-6893")),
+  person("Amsterdam UMC", role = c("aut")),
+  person("Amsterdam Medical Data Science", role = c("aut")),
+  person("Stichting LaLa", role = c("aut")),
+  person("Gaia Scientific", role = c("aut")),
+  person("EHDEN Foundation", role = ("fnd"))
+  )
 Description: Performs conversion of the AmsterdamUMCdb to the OMOP Common Data Model
    Contains the ETL Description, ETL Code and mapping documents. Named after the famous river
    flowing through the city of Amsterdam.
 Organization: Amsterdam UMC
-License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
@@ -16,18 +21,30 @@ Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Imports: 
+    Achilles,
+    CommonDataModel,
+    data.table,
     DatabaseConnector,
     DataQualityDashboard,
     DBI,
     dbplyr,
+    devtools,
     dplyr,
     googleLanguageR,
     httr,
     jsonlite,
     log4r,
+    magrittr,
+    ParallelLogger,
     pkgload,
     rappdirs,
     readr,
+    rlang,
     RPostgres,
+    rstudioapi,
     SqlRender,
+    stringr,
+    tibble,
     yaml
+License: MIT + file LICENSE
+URL: https://amsterdamumc.github.io/AMSTEL/

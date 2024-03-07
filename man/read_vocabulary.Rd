@@ -20,4 +20,5 @@ available csv files in that folder.
 }
 \examples{
 concept <- read_vocabulary("concept")
+concept
 }

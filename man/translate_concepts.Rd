@@ -19,9 +19,11 @@ Translates column_name into English using the Google Translate Cloud API for
 matching using OHDSI Usagi.
 }
 \examples{
-#' library(dplyr)
-conn <- amstel::connect()
+has_adb_environment()
+library(dplyr)
+conn <- amstel::connect("amsterdamumcdb")
 admissions <- tbl(conn, "admissions")
 concepts <- admissions \%>\% group_by(source_concept=origin) \%>\% summarise(count=n()) \%>\% collect()
 concepts <- translate_concepts(concepts)
+concepts
 }

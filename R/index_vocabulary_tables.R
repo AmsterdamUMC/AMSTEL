@@ -12,24 +12,22 @@
 #' been indexed.
 #'
 #' This function assumes `amstel::create_cdm_tables()` and
-#' `amstel::load_vocabulary_tables()` has been run successfully.
+#' `amstel::load_vocabulary_tables()` have been run successfully.
 #'
 #'@export
-
 index_vocabulary_tables <- function() {
+  log_info("Creating Primary Keys and Indices on CDM vocabulary tables...")
 
-    log_info("Creating Primary Keys and Indices on CDM vocabulary tables...")
+  connection_details <- get_connection_details("cdm")
+  conn <- DatabaseConnector::connect(connection_details)
+  on.exit(DatabaseConnector::disconnect(conn))
 
-    connection_details <- get_connection_details("cdm")
-    conn <- DatabaseConnector::connect(connection_details)
-    on.exit(DatabaseConnector::disconnect(conn))
-
-    sql <- load_sql('index_vocabulary_tables.sql')
-    DatabaseConnector::renderTranslateExecuteSql(
-        connection = conn,
-        sql = sql,
-        cdmDatabaseSchema = amstel_env$config$databases$cdm$schema
-    )
-    log_info("Primary Keys and Indices creation for vocabulary tables Complete.")
-
+  sql <- load_sql('index_vocabulary_tables.sql')
+  DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
+    connection = conn,
+    sql = sql,
+    cdmDatabaseSchema = amstel_env$config$databases$cdm$schema
+  )
+  log_info("Primary Keys and Indices creation for vocabulary tables Complete.")
 }

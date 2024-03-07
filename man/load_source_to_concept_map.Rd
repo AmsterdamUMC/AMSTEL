@@ -17,5 +17,10 @@ in the \code{cdm} section to load the source_to_concept tables in the CDM by rea
 Usagi csv files in the \code{mappings} folder.
 
 This function assumes \code{amstel::create_cdm_tables()} and
-\code{amstel::load_vocabulary_tables()} has already been run.
+\code{amstel::load_vocabulary_tables()} have already been run.
+}
+\examples{
+stcm <- load_source_to_concept_map()
+stcm
+
 }

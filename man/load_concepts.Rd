@@ -17,4 +17,5 @@ Reads a (previously generated) concept list by based on the concept group name
 }
 \examples{
 providers <- load_concepts("providers")
+providers
 }

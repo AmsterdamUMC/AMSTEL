@@ -2,3 +2,12 @@
 ^\.Rproj\.user$
 ^LICENSE\.md$
 ^data$
+^ddl$
+^img$
+^logs$
+^DevelopPackage\.R$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^.*errorReportSql\.txt$
+^\.github$

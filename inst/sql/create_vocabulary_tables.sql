@@ -1,6 +1,6 @@
 --postgresql CDM DDL Specification for OMOP Common Data Model 5.4
 --Vocabulary tables
-CREATE TABLE @cdm_schema.concept (
+CREATE TABLE IF NOT EXISTS @cdm_schema.concept (
 			concept_id integer NOT NULL,
 			concept_name varchar(255) NOT NULL,
 			domain_id varchar(20) NOT NULL,
@@ -12,24 +12,24 @@ CREATE TABLE @cdm_schema.concept (
 			valid_end_date date NOT NULL,
 			invalid_reason varchar(1) NULL );
 
-CREATE TABLE @cdm_schema.vocabulary (
+CREATE TABLE IF NOT EXISTS @cdm_schema.vocabulary (
 			vocabulary_id varchar(20) NOT NULL,
 			vocabulary_name varchar(255) NOT NULL,
 			vocabulary_reference varchar(255) NULL,
 			vocabulary_version varchar(255) NULL,
 			vocabulary_concept_id integer NOT NULL );
 
-CREATE TABLE @cdm_schema.domain (
+CREATE TABLE IF NOT EXISTS @cdm_schema.domain (
 			domain_id varchar(20) NOT NULL,
 			domain_name varchar(255) NOT NULL,
 			domain_concept_id integer NOT NULL );
 
-CREATE TABLE @cdm_schema.concept_class (
+CREATE TABLE IF NOT EXISTS @cdm_schema.concept_class (
 			concept_class_id varchar(20) NOT NULL,
 			concept_class_name varchar(255) NOT NULL,
 			concept_class_concept_id integer NOT NULL );
 
-CREATE TABLE @cdm_schema.concept_relationship (
+CREATE TABLE IF NOT EXISTS @cdm_schema.concept_relationship (
 			concept_id_1 integer NOT NULL,
 			concept_id_2 integer NOT NULL,
 			relationship_id varchar(20) NOT NULL,
@@ -37,7 +37,7 @@ CREATE TABLE @cdm_schema.concept_relationship (
 			valid_end_date date NOT NULL,
 			invalid_reason varchar(1) NULL );
 
-CREATE TABLE @cdm_schema.relationship (
+CREATE TABLE IF NOT EXISTS @cdm_schema.relationship (
 			relationship_id varchar(20) NOT NULL,
 			relationship_name varchar(255) NOT NULL,
 			is_hierarchical varchar(1) NOT NULL,
@@ -45,18 +45,18 @@ CREATE TABLE @cdm_schema.relationship (
 			reverse_relationship_id varchar(20) NOT NULL,
 			relationship_concept_id integer NOT NULL );
 
-CREATE TABLE @cdm_schema.concept_synonym (
+CREATE TABLE IF NOT EXISTS @cdm_schema.concept_synonym (
 			concept_id integer NOT NULL,
 			concept_synonym_name varchar(1000) NOT NULL,
 			language_concept_id integer NOT NULL );
 
-CREATE TABLE @cdm_schema.concept_ancestor (
+CREATE TABLE IF NOT EXISTS @cdm_schema.concept_ancestor (
 			ancestor_concept_id integer NOT NULL,
 			descendant_concept_id integer NOT NULL,
 			min_levels_of_separation integer NOT NULL,
 			max_levels_of_separation integer NOT NULL );
 
-CREATE TABLE @cdm_schema.source_to_concept_map (
+CREATE TABLE IF NOT EXISTS @cdm_schema.source_to_concept_map (
 			source_code varchar(50) NOT NULL,
 			source_concept_id integer NOT NULL,
 			source_vocabulary_id varchar(20) NOT NULL,
@@ -67,7 +67,7 @@ CREATE TABLE @cdm_schema.source_to_concept_map (
 			valid_end_date date NOT NULL,
 			invalid_reason varchar(1) NULL );
 
-CREATE TABLE @cdm_schema.drug_strength (
+CREATE TABLE IF NOT EXISTS @cdm_schema.drug_strength (
 			drug_concept_id integer NOT NULL,
 			ingredient_concept_id integer NOT NULL,
 			amount_value NUMERIC NULL,

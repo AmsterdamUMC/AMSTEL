@@ -11,7 +11,7 @@
 #'
 #' @export
 #'
-#' @examples
+#' @examplesIf has_example_environment()
 #' create_vocabulary_tables()
 create_vocabulary_tables <- function() {
   connection_details <- get_connection_details("cdm")
@@ -20,9 +20,9 @@ create_vocabulary_tables <- function() {
 
   sql <- load_sql('create_vocabulary_tables.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
-    cdm_schema = amstel_env$config$databases$cdm$schema,
-    cdm_results_schema = amstel_env$config$databases$results$schema
+    cdm_schema = amstel_env$config$databases$cdm$schema
   )
 }

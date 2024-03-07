@@ -12,7 +12,7 @@
 #'
 #' @export
 #'
-#' @examples
+#' @examplesIf has_example_environment()
 #' create_data_tables()
 create_data_tables <- function() {
   connection_details <- get_connection_details("cdm")
@@ -21,6 +21,7 @@ create_data_tables <- function() {
 
   sql <- load_sql('create_data_tables.sql')
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = amstel_env$config$databases$cdm$schema

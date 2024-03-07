@@ -7,9 +7,6 @@
 #' indexing the data tables, creating example cohort tables and
 #' running the DataQualityDashboard checks and Achilles aggregation.
 #'
-#' The ETL for AmsterdamUMCdb is based on the excellent and well-documented
-#' ETL of the Sythea project available at: https://github.com/OHDSI/ETL-Synthea
-#'
 #' @param vocabulary
 #' Determines whether the vocabulary tables should be processed. Since the
 #' vocabularies will not change often, testing run time can be reduced by
@@ -33,23 +30,23 @@
 #' reduce testing run time.
 #' Default: TRUE
 #'
-#'
 #' @details
 #' This function requires a configured `config.yaml` file created using
 #' `amstel::create_config()`.
 #'
-#' @export
+#' The ETL for AmsterdamUMCdb is based on the excellent and well-documented
+#' ETL of the Sythea project available at: https://github.com/OHDSI/ETL-Synthea.
+
 #'
-#' @examples
-#' etl()
+#' @export
 etl <- function(vocabulary = TRUE, mappings = TRUE,
                 achilles = TRUE, dqd = TRUE) {
-  # create CDM data tables
+  # Create CDM data tables
   drop_data_tables()
   create_data_tables()
 
   if (vocabulary == TRUE) {
-    # create CDM vocabulary tables
+    # Create CDM vocabulary tables
     drop_vocabulary_tables()
     create_vocabulary_tables()
 
@@ -68,20 +65,20 @@ etl <- function(vocabulary = TRUE, mappings = TRUE,
   # Load the clinical data into the CDM
   load_data_tables()
 
-  # Index the CDM to improve query improvement
+  # Index the CDM to improve query performance
   index_data_tables()
 
   # Create example AmsterdamUMCdb cohort tables (mechanical ventilation)
-  amstel::create_cohort_tables()
+  create_cohort_tables()
 
   # Runs OHDSI Data Quality Dashboard data quality checks
   if (dqd == TRUE) {
-    amstel::execute_dqd_checks()
+    execute_dqd_checks()
   }
 
   # Runs OHDSI Achilles database characterization
   if (achilles == TRUE) {
-    amstel::achilles()
+    achilles()
   }
 
 }

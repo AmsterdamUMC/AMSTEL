@@ -4,12 +4,16 @@
 \alias{etl}
 \title{Runs the main ETL steps for converting AmsterdamUMCdb to the OMOP CDM}
 \usage{
-etl(vocabulary = TRUE, achilles = TRUE, dqd = TRUE)
+etl(vocabulary = TRUE, mappings = TRUE, achilles = TRUE, dqd = TRUE)
 }
 \arguments{
 \item{vocabulary}{Determines whether the vocabulary tables should be processed. Since the
 vocabularies will not change often, testing run time can be reduced by
 ignoring these tables.
+Default: TRUE}
+
+\item{mappings}{Determines whether the source to concept mappings will be generated using
+the mappings files created with OHDSI Usagi.
 Default: TRUE}
 
 \item{achilles}{Determines whether OHDSI Achilles should be run after loading the data in
@@ -28,14 +32,11 @@ loading the vocabulary tables, indexing those tables,
 loading the source_to_concept_map, loading the data tables,
 indexing the data tables, creating example cohort tables and
 running the DataQualityDashboard checks and Achilles aggregation.
-
-The ETL for AmsterdamUMCdb is based on the excellent and well-documented
-ETL of the Sythea project available at: https://github.com/OHDSI/ETL-Synthea
 }
 \details{
 This function requires a configured \code{config.yaml} file created using
 \code{amstel::create_config()}.
-}
-\examples{
-etl()
+
+The ETL for AmsterdamUMCdb is based on the excellent and well-documented
+ETL of the Sythea project available at: https://github.com/OHDSI/ETL-Synthea.
 }

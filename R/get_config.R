@@ -43,6 +43,10 @@ get_base_path <- function(path) {
            `repository/path` section in the `config.yaml` file.")
     }
   }
+  # get home directory for tilde `collapsing`
+  home <- path.expand('~')
+  base_path <- sub(home, '~', base_path)
+
   return(base_path)
 }
 
@@ -51,7 +55,8 @@ get_pkg_info <- function() {
   CONFIG_FILE <- "config.yaml"
 
   # package info based on DESCRIPTION file
-  description_pkg = system.file("DESCRIPTION", package=pkgload::pkg_name())
+  # description_pkg = system.file("DESCRIPTION", package=pkgload::pkg_name("."))
+  description_pkg = system.file("DESCRIPTION", package='amstel')
   description <- read.dcf(description_pkg, fields = c("Package", "Organization"))
   package <- description[[1,"Package"]]
   organization <- description[[1,"Organization"]]
@@ -120,6 +125,11 @@ verify_config <- function(config) {
         "from the repository, or set the `repository/path` section in the ",
         "`config.yaml` file to an absolute path on your file system."))
 
+    # to prevent unneeded user names in logging or output
+    # collapse home directory to `~` if applicable
+    # get home directory for tilde `collapsing`
+    home <- path.expand('~')
+    abs_path <- sub(home, '~', abs_path)
     config$data[element] <- abs_path
   }
   return(config)

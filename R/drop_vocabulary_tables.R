@@ -43,6 +43,7 @@ drop_vocabulary_tables <- function(cascade = FALSE) {
           sep = "")
 
   DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
     connection = conn,
     sql = sql,
     cdm_schema = cdm_schema

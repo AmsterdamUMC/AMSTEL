@@ -5,6 +5,11 @@
 #' user configuration folder for setting up access to the databases and files
 #  used during the ETL process.
 #'
+#' @param is_missing
+#' Used internally to change the message based on if configuration file
+#' is missing during initialization.
+#' Default: FALSE.
+#'
 #' @export
 #'
 #' @examples
@@ -51,6 +56,8 @@ create_config <- function(is_missing = FALSE) {
   }
 
   # open the file an RStudio tab or window
-  message("Opening configuration file in RStudio...")
-  res_nav <- rstudioapi::navigateToFile(pkg_info$config_filepath)
+  if(interactive()) {
+    message("Opening configuration file in RStudio...")
+    res_nav <- rstudioapi::navigateToFile(pkg_info$config_filepath)
+  }
 }

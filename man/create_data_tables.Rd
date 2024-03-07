@@ -17,5 +17,7 @@ This function requires a configured \code{config.yaml} file created using
 in the \code{cdm} section to create WebAPI tables.
 }
 \examples{
-create_webapi_tables()
+\dontshow{if (has_example_environment()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+create_data_tables()
+\dontshow{\}) # examplesIf}
 }

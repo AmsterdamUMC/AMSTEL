@@ -1,0 +1,14 @@
+url: https://amsterdamumc.github.io/AMSTEL/
+template:
+  bootstrap: 5
+  theme: arrow-dark
+  bslib:
+    fg: "#ffffff"
+    bg: "#300a24"
+    primary: "#26a269"
+    secondary: "#222222"
+    tertiary: "#12488b"
+    pkgdown-nav-height: 100px
+navbar:
+  bg: secondary
+  type: dark
