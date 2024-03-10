@@ -89,7 +89,7 @@ SELECT
 
     n.item AS source_value,
 
-    0 AS source_concept_id,
+    NULL AS source_concept_id,
 
     -- tag: With the exception of '<' and '>' (and 'NUL' or '') the tag denotes
     -- a free text comment result in addition to the numeric value, however
@@ -113,7 +113,7 @@ SELECT
     -- CONCAT_WS('\ncomment: ', value, comment) AS value_source_value,
     n.value AS value_source_value,
 
-    0 AS unit_source_concept_id,
+    NULL AS unit_source_concept_id,
     n.unit AS unit_source_value,
 
     NULL AS verbatim_end_date,

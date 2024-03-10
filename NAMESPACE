@@ -2,6 +2,7 @@
 
 export(achilles)
 export(alter_system_settings)
+export(cdm_inspection)
 export(cloud_auth)
 export(connect)
 export(create_cdm_indices)

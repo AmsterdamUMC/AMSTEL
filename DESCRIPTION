@@ -22,6 +22,7 @@ Suggests:
 Config/testthat/edition: 3
 Imports: 
     Achilles,
+    CdmInspection,
     CommonDataModel,
     data.table,
     DatabaseConnector,
@@ -52,6 +53,7 @@ Remotes:
     OHDSI/DatabaseConnector,
     OHDSI/DataQualityDashboard,
     OHDSI/ParallelLogger,
-    OHDSI/SqlRender
+    OHDSI/SqlRender,
+    EHDEN/CdmInspection
 License: MIT + file LICENSE
 URL: https://amsterdamumc.github.io/AMSTEL/

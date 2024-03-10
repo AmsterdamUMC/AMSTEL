@@ -216,7 +216,7 @@ test_that("ETL validation", {
   # runs the ETL but without re-creating the vocabularies,
   # running Achilles or DataQualityDashboard
   etl(vocabulary = FALSE, mappings = FALSE,
-      achilles = FALSE, dqd = FALSE)
+      achilles = FALSE, dqd = TRUE)
 
   # Run checks based on records created by ETL
   log_info("Checking output...")

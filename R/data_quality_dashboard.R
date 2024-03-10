@@ -1,3 +1,13 @@
+#' @param custom_control
+#' Specifies whether to apply the customized control files (thresholds)
+#' for AmsterdamUMCdb
+#' Default: TRUE
+#'
+#' @param check_names
+#' Vector (`c()`) of data quality checks to run. Names can be found at:
+#' https://github.com/OHDSI/DataQualityDashboard/blob/main/inst/csv/OMOP_CDMv5.4_Check_Descriptions.csv
+#' Default: c()
+#'
 #' @title Evaluate Data Quality of AmsterdamUMCdb OMOP CDM after ETL.
 #'
 #' @description This function runs the tests of the OHDSI Data Quality
@@ -5,14 +15,14 @@
 #' Based on: https://ohdsi.github.io/DataQualityDashboard/articles/DataQualityDashboard.html
 #'
 #'@export
-execute_dqd_checks <- function() {
+execute_dqd_checks <- function(custom_control = TRUE, check_names = c(), sql_only = FALSE) {
 
     log_info("Running Data Quality Dashboard quality checks...")
     connection_details <- get_connection_details("cdm")
     conn <- DatabaseConnector::connect(connection_details)
     on.exit(DatabaseConnector::disconnect(conn))
 
-    # creates test schema if it does not exist
+    # creates results schema if it does not exist
     sql <- "CREATE SCHEMA IF NOT EXISTS @cdm_results"
     sql <- SqlRender::render(sql, cdm_results = amstel_env$config$databases$results$schema)
     sql <- SqlRender::translate(sql, targetDialect = connection_details$dbms)
@@ -38,8 +48,12 @@ execute_dqd_checks <- function() {
     # determine how many threads (concurrent SQL sessions) to use
     num_threads <- 1
 
-    # output folder (set in config.yaml)
-    output_folder <- amstel_env$config$data$dqd
+    # output folder (set in config.yaml), modify for sql_only mode
+    if(sql_only == TRUE) {
+      output_folder <- file.path(amstel_env$config$data$dqd, "sql")
+    } else {
+      output_folder <- amstel_env$config$data$dqd
+    }
 
     # logging type
     # set to TRUE if you want to see activity written to the console
@@ -65,6 +79,24 @@ execute_dqd_checks <- function() {
                          "CONCEPT_RELATIONSHIP", "CONCEPT_CLASS",
                          "CONCEPT_SYNONYM", "RELATIONSHIP", "DOMAIN")
 
+
+    # apply custom control files:
+    # https://github.com/OHDSI/DataQualityDashboard/raw/main/inst/doc/Thresholds.pdf
+    if(custom_control == TRUE) {
+      dqd_folder <- file.path(amstel_env$config$data$dqd)
+      table_check_threshold <- file.path(dqd_folder,
+                                         "OMOP_CDMv5.4_Table_Level.csv")
+      field_check_threshold <- file.path(dqd_folder,
+                                        "OMOP_CDMv5.4_Field_Level.csv")
+      concept_check_threshold <- file.path(dqd_folder,
+                                           "OMOP_CDMv5.4_Concept_Level.csv")
+    }
+    else {
+      table_check_threshold <- "default"
+      field_check_threshold <- "default"
+      concept_check_threshold <- "default"
+    }
+
     # run the job
     DataQualityDashboard::executeDqChecks(
       connectionDetails = connection_details,
@@ -79,7 +111,17 @@ execute_dqd_checks <- function() {
       writeTableName = write_table_name,
       checkLevels = check_levels,
       tablesToExclude = tables_to_exclude,
-      checkNames = check_names
+      checkNames = check_names,
+
+      # create only queries (e.g. for debugging the ETL) when set to TRUE
+      sqlOnly = sql_only,
+
+      # create queries that INSERT result in the table when set to FALSE
+      sqlOnlyIncrementalInsert = FALSE,
+
+      tableCheckThresholdLoc = table_check_threshold,
+      fieldCheckThresholdLoc = field_check_threshold,
+      conceptCheckThresholdLoc = concept_check_threshold
     )
 
     log_info("Data Quality Dashboard checks: complete.")

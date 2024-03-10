@@ -396,5 +396,38 @@ Navigate to http://localhost/atlas.
 You should now have a running instance of ATLAS and should be able to browse aggregated data and perform analyses.
 
 
+# DataQualityDashboard Thresholds
+* Development only*
+While the default DQD thresholds have been chosen by OHDSI community experts, they may not be appropriate for the source database. To change, these threshold, 
+
+1. clone the repository:
+
+```bash
+git clone https://github.com/OHDSI/DataQualityDashboard.git
+```
+
+2. copy the CDM v5.4 control files to the `dqd` folder of the AMSTEL repository, e.g.:
+
+```bash
+cp DataQualityDashboard/inst/csv/OMOP_CDMv5.4* AMSTEL/data/dqd
+```
+
+# CdmInspection
+*Development only*
+[OHDSI CdmInspection](https://github.com/EHDEN/CdmInspection) is an R 
+R Package to support quality control inspection of an OMOP-CDM instance.
+
+## Installation
+1. Install libcairo
+```bash
+sudo apt-get install libcairo2-dev
+```
+
+From an R console, run:
+```r
+remotes::install_github("EHDEN/CdmInspection")
+```
+
+
 # Trivia:
 AMSTEL: an anagram of AMS (Amsterdam) ETL (Extract, Transform, and Load), named after the river flowing through the city of Amsterdam

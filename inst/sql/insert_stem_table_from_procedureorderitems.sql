@@ -80,7 +80,7 @@ SELECT
 
     po.item AS source_value,
 
-    0 AS source_concept_id,
+    NULL AS source_concept_id,
 
     NULL AS value_as_number,
     NULL AS value_as_string,

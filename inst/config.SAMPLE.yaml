@@ -232,6 +232,12 @@ data:
   # achilles: ./data/achilles
   achilles: ./data/achilles
 
+  # cdm_inspection: specifies the CdmInspection output folder
+  #
+  # Default:
+  # cdm_inspection: ./data/cdm_inspection
+  cdm_inspection: ./data/cdm_inspection
+
   # logs: specifies the log folder
   #
   # Default:
@@ -246,6 +252,14 @@ logging:
   # log_level: INFO
   log_level: DEBUG
 
+webapi:
+  # url: specifies the url for accessing the OHDSI WebAPI server running on
+  # Apache Tomcat
+  #
+  # Default:
+  # url: http://localhost:8080/WebAPI
+  url: http://localhost:8080/WebAPI
+
 metadata:
   cdm_version: 5.4
   cdm_source_name: Amsterdam University Medical Centers Database v1.0.2
@@ -255,3 +269,5 @@ metadata:
   source_documentation_reference: https://github.com/AmsterdamUMC/AmsterdamUMCdb
   cdm_etl_reference: https://github.com/AmsterdamUMC/AMSTEL
   source_release_date: 2020-02-29
+  cdm_inspection_authors: P.J. Thoral, P.W.G. Elbers, T. Taveira-Gomes
+  cdm_certified_sme: MTG Research and Development Lab LDA

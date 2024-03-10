@@ -48,6 +48,7 @@ load_data_tables <- function() {
     source_description = amstel_env$config$metadata$source_description,
     source_documentation_reference = amstel_env$config$metadata$source_documentation_reference,
     cdm_etl_reference = amstel_env$config$metadata$cdm_etl_reference,
+    cdm_version = amstel_env$config$metadata$cdm_version,
     source_release_date = amstel_env$config$metadata$source_release_date
   )
 

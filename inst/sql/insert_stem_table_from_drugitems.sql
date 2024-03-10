@@ -236,7 +236,7 @@ SELECT
     NULL AS visit_detail_id,
 
     LEFT(d.item,50) AS source_value,
-    0 AS source_concept_id,
+    NULL AS source_concept_id,
 
     -- stores fluidin value in value_as_number field to allow creating fluidin
     -- records in MEASUREMENT (or OBSERVATION) as bulk insert

@@ -22,7 +22,7 @@ SELECT
     '@cdm_etl_reference',
     CAST( '@source_release_date' AS DATE),
     CURRENT_DATE,
-    'CDM v5.4.0',
+    '@cdm_version', --without 'CDM'
     756265, --CDM 5.4 from SELECT * FROM @cdm_schema.concept WHERE vocabulary_id = 'CDM' AND concept_class_id = 'CDM'
     vocabulary_version
     FROM @cdm_schema.vocabulary
