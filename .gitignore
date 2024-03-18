@@ -40,10 +40,6 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
-# pkgdown site
-# DO NOT IGNORE: to allow pushing local pkgdown build
-# docs/
-
 # translation temp files
 po/*~
 
@@ -66,6 +62,11 @@ data/*/*
 !data/usagi/*
 !data/dqd/*.csv
 !data/*/README.md
+
+# pkgdown site
+# DO NOT IGNORE: to allow pushing local pkgdown build
+!docs/*
+!docs/*/*
 
 # Always include files in the R package inst folder that will be installed in the top-level folder
 !/inst/*
