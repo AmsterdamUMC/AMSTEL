@@ -4,6 +4,8 @@
 #' @export
 cdm_inspection <- function() {
 
+  log_info("Running CdmInspection...")
+
   connection_details <- get_connection_details("cdm")
   cdm_schema <- amstel_env$config$databases$cdm$schema
   results_schema <- amstel_env$config$databases$results$schema
@@ -35,6 +37,8 @@ cdm_inspection <- function() {
     outputFolder = output_folder,
     verboseMode = verbose_mode
   )
+
+  log_info("Generating CdmInspection report...")
 
   CdmInspection::generateResultsDocument(
     results = results,

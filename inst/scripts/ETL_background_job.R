@@ -7,34 +7,40 @@
 # calling `amstel::etl()` but allows the end-user to see the progress of the
 # steps in the Background Jobs panel by using 'Code Section'
 
-# Create 'fresh' CDM data tables ####
+# Create 'fresh' CDM data tables ----
 amstel::drop_data_tables()
 amstel::create_data_tables()
 
-# Create 'fresh' CDM vocabulary tables ####
-amstel::drop_vocabulary_tables()
-amstel::create_vocabulary_tables()
+# Create 'fresh' CDM vocabulary tables ----
+# amstel::drop_vocabulary_tables()
+# amstel::create_vocabulary_tables()
 
-# Load the vocabulary csv files into the CDM ####
-amstel::load_vocabulary_tables()
+# Load the vocabulary csv files into the CDM ----
+# amstel::load_vocabulary_tables()
 
-# Index vocabularies to improve query performance ####
-amstel::index_vocabulary_tables()
+# Index vocabularies to improve query performance ----
+# amstel::index_vocabulary_tables()
 
-# Load the source_to_concept_map into the CDM ####
+# Load the source_to_concept_map into the CDM ----
 amstel::load_source_to_concept_map()
 
-# Load the clinical data into the CDM ####
+# Load the clinical data into the CDM ----
 amstel::load_data_tables()
 
-# Index the CDM to improve query performance ####
+# Index the CDM to improve query performance ----
 amstel::index_data_tables()
 
-# Create example AmsterdamUMCdb cohort tables (mechanical ventilation) ####
+# correct data issues
+amstel::apply_corrections()
+
+# Create example AmsterdamUMCdb cohort tables (mechanical ventilation) ----
 amstel::create_cohort_tables()
 
-# Runs OHDSI Data Quality Dashboard data quality checks ####
+# Runs OHDSI Data Quality Dashboard data quality checks ----
 amstel::execute_dqd_checks()
 
-# Runs OHDSI Achilles database characterization ####
+# Runs OHDSI Achilles database characterization ----
 amstel::achilles()
+
+# Runs OHDSI CDM Inspection package for submission ----
+amstel::cdm_inspection()

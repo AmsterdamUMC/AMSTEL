@@ -58,7 +58,12 @@ INSERT INTO @cdm_schema.stem_table
     event_field_concept_id
 )
 SELECT
-    21 AS domain_id, -- Measurement (21)
+    -- Most of the records are either Measurement or Observation.
+    -- Default to Observation (27), since this table allows concepts of any type
+    -- except those with Concepts in the Condition, Procedure, Drug,
+    -- Measurement, or Device domains, that should be inserted into the
+    -- corresponding tables
+    COALESCE(domain.domain_concept_id, 27) AS domain_id,
 
     -- NULL AS id,
 
@@ -143,6 +148,13 @@ LEFT JOIN @cdm_schema.admissions_scalar a ON
 LEFT JOIN @cdm_schema.source_to_concept_map stcm_textitem ON
   stcm_textitem.source_code = CAST(ft.itemid AS VARCHAR) AND
   stcm_textitem.source_vocabulary_id = 'AUMC Text'
+
+LEFT JOIN @cdm_schema.concept c ON
+  stcm_textitem.target_concept_id = c.concept_id AND
+  NOT stcm_textitem.target_concept_id = 0
+
+LEFT JOIN @cdm_schema.domain domain ON
+  c.domain_id = domain.domain_id
 
 LEFT JOIN @cdm_schema.source_to_concept_map stcm_textvalue ON
   stcm_textvalue.source_code = ft.value AND

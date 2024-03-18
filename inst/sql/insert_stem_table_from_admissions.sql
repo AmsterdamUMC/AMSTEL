@@ -79,7 +79,7 @@ SELECT
     NULL AS value_as_concept_id,
     9529 AS unit_concept_id, --kilogram
     a.weightgroup AS value_source_value,
-    NULL AS unit_source_concept_id,
+    9529 AS unit_source_concept_id, --kilogram
     'kg' AS unit_source_value,
     NULL AS verbatim_end_date,
     NULL AS days_supply,
@@ -193,7 +193,7 @@ SELECT
     NULL AS value_as_concept_id,
     8582 AS unit_concept_id, --centimeter
     a.heightgroup AS value_source_value,
-    NULL AS unit_source_concept_id,
+    8582 AS unit_source_concept_id, --centimeter
     'cm' AS unit_source_value,
     NULL AS verbatim_end_date,
     NULL AS days_supply,

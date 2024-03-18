@@ -41,7 +41,8 @@ vignettes/*.pdf
 .Renviron
 
 # pkgdown site
-docs/
+# DO NOT IGNORE: to allow pushing local pkgdown build
+# docs/
 
 # translation temp files
 po/*~

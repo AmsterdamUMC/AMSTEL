@@ -58,8 +58,11 @@ INSERT INTO @cdm_schema.stem_table
 )
 SELECT
     -- Most of the records are either Measurement or Observation.
-    -- Default to Measurement (21).
-    COALESCE(domain.domain_concept_id, 21) AS domain_id,
+    -- Default to Observation (27), since this table allows concepts of any type
+    -- except those with Concepts in the Condition, Procedure, Drug,
+    -- Measurement, or Device domains, that should be inserted into the
+    -- corresponding tables
+    COALESCE(domain.domain_concept_id, 27) AS domain_id,
 
     -- id,
     a.patientid AS person_id,
@@ -107,13 +110,26 @@ SELECT
     NULL AS value_as_string,
     NULL AS value_as_concept_id,
 
-    stcm_unit.target_concept_id AS unit_concept_id,
+    -- uses either the manually added unit based on the concept or the default
+    -- based on the unit originally specified in the record
+    COALESCE(
+      stcm_numeric_unit.target_concept_id,
+      stcm_unit.target_concept_id
+      ) AS unit_concept_id,
 
     -- comments will not fit varchar(50) limitation:
     -- CONCAT_WS('\ncomment: ', value, comment) AS value_source_value,
     n.value AS value_source_value,
 
-    NULL AS unit_source_concept_id,
+    -- To allow future ETLs to handle conversion to a 'standardized unit',
+    -- put the original (mapped) unit here:
+    -- https://github.com/OHDSI/CommonDataModel/issues/259
+    -- uses either the manually added unit based on the concept or the default
+    -- based on the unit originally specified in the record
+    COALESCE(
+      stcm_numeric_unit.target_concept_id,
+      stcm_unit.target_concept_id
+      ) AS unit_source_concept_id,
     n.unit AS unit_source_value,
 
     NULL AS verbatim_end_date,
@@ -166,7 +182,7 @@ LEFT JOIN @cdm_schema.admissions_scalar a ON
 
 LEFT JOIN @cdm_schema.source_to_concept_map stcm_num ON
   stcm_num.source_code = CAST(n.itemid AS VARCHAR) AND
-  stcm_num.source_vocabulary_id = 'AUMC Numeric'
+  stcm_num.source_vocabulary_id in ('AUMC Numeric', 'AUMC Laboratory')
 
 LEFT JOIN @cdm_schema.concept c ON
   stcm_num.target_concept_id = c.concept_id AND
@@ -174,6 +190,14 @@ LEFT JOIN @cdm_schema.concept c ON
 
 LEFT JOIN @cdm_schema.domain domain ON
   c.domain_id = domain.domain_id
+
+-- Some concepts lacked a valid unit, that during mapping with Usagi
+-- have been added. To force these units in the record, thus ignoring the
+-- orignal unit, we will join the current concept with these 'corrected' units
+-- and COALESCE the values above.
+LEFT JOIN @cdm_schema.source_to_concept_map stcm_numeric_unit ON
+  stcm_numeric_unit.source_code = CAST(n.itemid AS VARCHAR) AND
+  stcm_numeric_unit.source_vocabulary_id = 'AUMC Numeric Unit'
 
 LEFT JOIN @cdm_schema.source_to_concept_map stcm_unit ON
   stcm_unit.source_code = CAST(n.unitid AS VARCHAR) AND

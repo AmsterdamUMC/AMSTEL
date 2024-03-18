@@ -183,11 +183,12 @@ FROM @ams_schema.listitems l
 LEFT JOIN @cdm_schema.admissions_scalar a ON
     l.admissionid = a.admissionid
 
-LEFT JOIN @cdm_schema.source_to_concept_map stcm_diag ON
+-- INNER JOIN to only include mapped concepts (conditions)
+INNER JOIN @cdm_schema.source_to_concept_map stcm_diag ON
   stcm_diag.source_code = CONCAT(l.itemid, '-', l.valueid) AND
   stcm_diag.source_vocabulary_id = 'AUMC Diagnosis'
 
-LEFT JOIN @cdm_schema.concept c ON
+INNER JOIN @cdm_schema.concept c ON
   stcm_diag.target_concept_id = c.concept_id AND
   NOT stcm_diag.target_concept_id = 0
 

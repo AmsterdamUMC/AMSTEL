@@ -2,11 +2,18 @@
 % Please edit documentation in R/data_quality_dashboard.R
 \name{data_quality_dashboard}
 \alias{data_quality_dashboard}
-\title{Shows the OHDSI Data Quality Dashboard with the most recents results}
+\title{Shows the OHDSI Data Quality Dashboard}
 \usage{
-data_quality_dashboard()
+data_quality_dashboard(json_file = "")
+}
+\arguments{
+\item{json_file}{Specifies the json file to use in \verb{./data/dqd/}. By default, the most
+recent results file will be used. Default: ""}
 }
 \description{
-Shows the log created while executing
-DataQualityDashboard::executeDqChecks()
+Shows DataQualityDashboard with results creating using
+\code{amstel::execute_dqd_checks}.
+}
+\details{
+Runs \code{DataQualityDashboard::viewDqDashboard()} to show the results.
 }

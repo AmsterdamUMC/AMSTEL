@@ -434,7 +434,7 @@ MEASUREMENT,MEASUREMENT_CONCEPT_ID,4152194,Systolic blood pressure,,,,,,,,,,,,,,
 MEASUREMENT,MEASUREMENT_CONCEPT_ID,37393840,Haematocrit,,,,,,,,,,,,,,,,,,,,,,,"44777604,8523,8554,-1",5,Approved UNIT_CONCEPT_IDs for the given MEASUREMENT_CONCEPT_ID
 MEASUREMENT,MEASUREMENT_CONCEPT_ID,3000593,Cobalamin (Vitamin B12) [Mass/volume] in Serum or Plasma,,,,,,,,,,,,,,,,,,,,,,,8845,5,Approved UNIT_CONCEPT_IDs for the given MEASUREMENT_CONCEPT_ID
 MEASUREMENT,MEASUREMENT_CONCEPT_ID,3002888,Erythrocyte distribution width [Entitic volume],,,,,,,,,,,,,,,,,,,,,,,8583,5,Approved UNIT_CONCEPT_IDs for the given MEASUREMENT_CONCEPT_ID
-MEASUREMENT,MEASUREMENT_CONCEPT_ID,3010910,Erythrocytes [#/volume] in Body fluid,,,,,,,,,,,,,,,,,,,,,,,"8647,8785,8815,8931",5,Approved UNIT_CONCEPT_IDs for the given MEASUREMENT_CONCEPT_ID
+MEASUREMENT,MEASUREMENT_CONCEPT_ID,3010910,Erythrocytes [#/volume] in Body fluid,,,,,,,,,,,,,,,,,,,,,,,"8647,8785,8815,8931,8734",5,Approved UNIT_CONCEPT_IDs for the given MEASUREMENT_CONCEPT_ID
 MEASUREMENT,MEASUREMENT_CONCEPT_ID,3013290,Carbon dioxide [Partial pressure] in Blood,,,,,,,,,,,,,,,,,,,,,,,8876,5,Approved UNIT_CONCEPT_IDs for the given MEASUREMENT_CONCEPT_ID
 MEASUREMENT,MEASUREMENT_CONCEPT_ID,3027970,Globulin [Mass/volume] in Serum by calculation,,,,,,,,,,,,,,,,,,,,,,,"8636,8713,8950",5,Approved UNIT_CONCEPT_IDs for the given MEASUREMENT_CONCEPT_ID
 MEASUREMENT,MEASUREMENT_CONCEPT_ID,4239408,Heart rate,,,,,,,,,,,,,,,,,,,,,,,"8483,8541,8581",5,Approved UNIT_CONCEPT_IDs for the given MEASUREMENT_CONCEPT_ID
@@ -452,7 +452,7 @@ MEASUREMENT,MEASUREMENT_CONCEPT_ID,4008265,Total cholesterol measurement,,,,,,,,
 MEASUREMENT,MEASUREMENT_CONCEPT_ID,36303797,"Glomerular filtration rate/1.73 sq M.predicted among non-blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI)",,,,,,,,,,,,,,,,,,,,,,,"720870,8795",5,Approved UNIT_CONCEPT_IDs for the given MEASUREMENT_CONCEPT_ID
 MEASUREMENT,MEASUREMENT_CONCEPT_ID,37398460,Serum alkaline phosphatase level,,,,,,,,,,,,,,,,,,,,,,,"32995,8645,8923",5,Approved UNIT_CONCEPT_IDs for the given MEASUREMENT_CONCEPT_ID
 MEASUREMENT,MEASUREMENT_CONCEPT_ID,3013682,Urea nitrogen [Mass/volume] in Serum or Plasma,,,,,,,,,,,,,,,,,,,,,,,8840,5,Approved UNIT_CONCEPT_IDs for the given MEASUREMENT_CONCEPT_ID
-MEASUREMENT,MEASUREMENT_CONCEPT_ID,3026361,Erythrocytes [#/volume] in Blood,,,,,,,,,,,,,,,,,,,,,,,"32706,8785,8815,8931",5,Approved UNIT_CONCEPT_IDs for the given MEASUREMENT_CONCEPT_ID
+MEASUREMENT,MEASUREMENT_CONCEPT_ID,3026361,Erythrocytes [#/volume] in Blood,,,,,,,,,,,,,,,,,,,,,,,"32706,8785,8815,8931,8734",5,Approved UNIT_CONCEPT_IDs for the given MEASUREMENT_CONCEPT_ID
 MEASUREMENT,MEASUREMENT_CONCEPT_ID,3027018,Heart rate,,,,,,,,,,,,,,,,,,,,,,,"8483,8541,-1",5,Approved UNIT_CONCEPT_IDs for the given MEASUREMENT_CONCEPT_ID
 MEASUREMENT,MEASUREMENT_CONCEPT_ID,4013965,"Oxygen saturation measurement, arterial",,,,,,,,,,,,,,,,,,,,,,,8554,5,Approved UNIT_CONCEPT_IDs for the given MEASUREMENT_CONCEPT_ID
 MEASUREMENT,MEASUREMENT_CONCEPT_ID,3013429,Basophils [#/volume] in Blood by Automated count,,,,,,,,,,,,,,,,,,,,,,,"8784,8816,8848,8961,9436,9444",5,Approved UNIT_CONCEPT_IDs for the given MEASUREMENT_CONCEPT_ID
@@ -514,7 +514,7 @@ MEASUREMENT,MEASUREMENT_CONCEPT_ID,3035124,Erythrocytes [#/area] in Urine sedime
 MEASUREMENT,MEASUREMENT_CONCEPT_ID,3002030,Lymphocytes/100 leukocytes in Blood,,,,,,,,,,,,,,,,,,,,,,,"8554,8848",5,Approved UNIT_CONCEPT_IDs for the given MEASUREMENT_CONCEPT_ID
 MEASUREMENT,MEASUREMENT_CONCEPT_ID,3019170,Thyrotropin [Units/volume] in Serum or Plasma by Detection limit <= 0.005 mIU/L,,,,,,,,,,,,,,,,,,,,,,,"44777578,8719,8860,9040,9093,9550",5,Approved UNIT_CONCEPT_IDs for the given MEASUREMENT_CONCEPT_ID
 MEASUREMENT,MEASUREMENT_CONCEPT_ID,3020149,25-hydroxyvitamin D3 [Mass/volume] in Serum or Plasma,,,,,,,,,,,,,,,,,,,,,,,8842,5,Approved UNIT_CONCEPT_IDs for the given MEASUREMENT_CONCEPT_ID
-MEASUREMENT,MEASUREMENT_CONCEPT_ID,3022174,Leukocytes [#/volume] in Body fluid,,,,,,,,,,,,,,,,,,,,,,,"8647,8784,8785,8848,8961",5,Approved UNIT_CONCEPT_IDs for the given MEASUREMENT_CONCEPT_ID
+MEASUREMENT,MEASUREMENT_CONCEPT_ID,3022174,Leukocytes [#/volume] in Body fluid,,,,,,,,,,,,,,,,,,,,,,,"8647,8784,8785,8848,8961,9444",5,Approved UNIT_CONCEPT_IDs for the given MEASUREMENT_CONCEPT_ID
 MEASUREMENT,MEASUREMENT_CONCEPT_ID,3024929,Platelets [#/volume] in Blood by Automated count,,,,,,,,,,,,,,,,,,,,,,,"8816,8848,8961,9436,9444",5,Approved UNIT_CONCEPT_IDs for the given MEASUREMENT_CONCEPT_ID
 MEASUREMENT,MEASUREMENT_CONCEPT_ID,3049187,"Glomerular filtration rate/1.73 sq M.predicted among non-blacks [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)",,,,,,,,,,,,,,,,,,,,,,,"720870,8795",5,Approved UNIT_CONCEPT_IDs for the given MEASUREMENT_CONCEPT_ID
 MEASUREMENT,MEASUREMENT_CONCEPT_ID,37398676,Basophil count,,,,,,,,,,,,,,,,,,,,,,,8848,5,Approved UNIT_CONCEPT_IDs for the given MEASUREMENT_CONCEPT_ID

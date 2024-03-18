@@ -121,8 +121,8 @@ SELECT
     NULL AS disease_status_source_value,
     NULL AS condition_status_concept_id,
     NULL AS condition_status_source_value,
-    NULL AS qualifier_concept_id,
-    NULL AS qualifier_source_value,
+    stcm_qualifier.target_concept_id AS qualifier_concept_id,
+    stcm_qualifier.source_code_description AS qualifier_source_value,
     NULL AS event_id,
     NULL AS event_field_concept_id
 
@@ -144,7 +144,24 @@ LEFT JOIN @cdm_schema.domain domain ON
 
 LEFT JOIN @cdm_schema.source_to_concept_map stcm_value ON
   stcm_value.source_code = CONCAT(l.itemid, '-', l.valueid) AND
-  stcm_value.source_vocabulary_id = 'AUMC List Value'
+  CASE domain.domain_concept_id
+    WHEN 21 --measurement
+    --Forces the MEASUREMENT to contain only value_as_concept that are
+    --port of the 'Meas Value' domain
+    THEN stcm_value.source_vocabulary_id = 'AUMC Meas Value'
+    -- OBSERVATION is less stringent
+    ELSE stcm_value.source_vocabulary_id IN (
+      'AUMC Meas Value',
+      'AUMC Obs Value',
+      'AUMC Device',
+      'AUMC Procedure',
+      'AUMC Condition'
+    )
+  END
+
+LEFT JOIN @cdm_schema.source_to_concept_map stcm_qualifier ON
+  stcm_qualifier.source_code = CONCAT(l.itemid, '-', l.valueid) AND
+  stcm_qualifier.source_vocabulary_id = 'AUMC Qualifier'
 
 LEFT JOIN @cdm_schema.provider reg_prov ON
   reg_prov.provider_source_value = l.registeredby

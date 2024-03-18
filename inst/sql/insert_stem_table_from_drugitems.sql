@@ -154,9 +154,9 @@ stcm_drug AS (
   LEFT JOIN cte_quantity ON
   	cte_stcm.source_code = cte_quantity.source_code AND
   	cte_stcm.row_number = cte_quantity.row_number_quantity
-  LEFT JOIN cdm_54.concept c ON
+  LEFT JOIN @cdm_schema.concept c ON
   	cte_stcm.target_concept_id = c.concept_id
-  LEFT JOIN cdm_54.concept c_quant ON
+  LEFT JOIN @cdm_schema.concept c_quant ON
   	cte_quantity.target_concept_id = c_quant.concept_id
 )
 INSERT INTO @cdm_schema.stem_table
@@ -235,7 +235,10 @@ SELECT
     d.admissionid AS visit_occurrence_id,
     NULL AS visit_detail_id,
 
-    LEFT(d.item,50) AS source_value,
+    -- the drugitems -> concept mappings have been performed using a combination
+    -- of `item` and `ordercategory` to allow mapping to specific products
+    -- instead of only ingredients.
+    LEFT(CONCAT(d.item,' (', d.ordercategory,')'),50) AS source_value,
     NULL AS source_concept_id,
 
     -- stores fluidin value in value_as_number field to allow creating fluidin

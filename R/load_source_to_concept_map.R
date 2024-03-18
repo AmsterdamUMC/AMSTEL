@@ -41,7 +41,6 @@ load_source_to_concept_map <- function() {
   sql <- "SELECT concept_id, vocabulary_id FROM @table_name;"
   concept_table_name <- get_server_tablename('concept', conn)
   concept <- DatabaseConnector::renderTranslateQuerySql(
-    progressBar = interactive(),
     connection = conn,
     sql = sql,
     table_name = paste0(cdm_schema, ".", concept_table_name),
@@ -63,9 +62,39 @@ load_source_to_concept_map <- function() {
   for (vocabulary in names(local_vocabularies)) {
     log_info(paste0("- ", vocabulary))
 
+    # destination is part of list items
     if (vocabulary == 'admissions_destination') {
       concepts <- load_usagi_concepts("listitems_value")
       concepts <- concepts %>% dplyr::filter(.data$`ADD_INFO:itemid` == 10472)
+    }
+
+    # listitems values are considered a special case, since values can be
+    # considered concepts
+    else if(vocabulary == 'listitems_meas_value') {
+      concepts <- load_usagi_concepts("listitems_value")
+      concepts <- concepts %>% dplyr::filter(.data$domainId == "Meas Value")
+    }
+    else if(vocabulary == 'listitems_obs_value') {
+      # the 'AUMC Obs Value' contains every value that will not be used in
+      # another table
+      concepts <- load_usagi_concepts("listitems_value")
+      concepts <- concepts %>% dplyr::filter(! .data$domainId %in%
+                                               c("Meas Value",
+                                                 "Device",
+                                                 "Procedure",
+                                                 "Condition"))
+    }
+    else if(vocabulary == 'listitems_device') {
+      concepts <- load_usagi_concepts("listitems_value")
+      concepts <- concepts %>% dplyr::filter(.data$domainId == "Device")
+    }
+    else if(vocabulary == 'listitems_procedure') {
+      concepts <- load_usagi_concepts("listitems_value")
+      concepts <- concepts %>% dplyr::filter(.data$domainId == "Procedure")
+    }
+    else if(vocabulary == 'listitems_condition') {
+      concepts <- load_usagi_concepts("listitems_value")
+      concepts <- concepts %>% dplyr::filter(.data$domainId == "Condition")
     }
     else {
       concepts <- load_usagi_concepts(vocabulary)
@@ -106,15 +135,15 @@ load_source_to_concept_map <- function() {
           invalid_reason = NA
         ) %>%
         dplyr::select(
-          source_code = .data$sourceCode,
-          .data$source_concept_id,
-          .data$source_vocabulary_id,
-          .data$source_code_description,
-          target_concept_id = .data$conceptId,
-          target_vocabulary_id = .data$vocabulary_id,
-          .data$valid_start_date,
-          .data$valid_end_date,
-          .data$invalid_reason
+          "source_code" = "sourceCode",
+          "source_concept_id",
+          "source_vocabulary_id",
+          "source_code_description",
+          "target_concept_id" = "conceptId",
+          "target_vocabulary_id" = "vocabulary_id",
+          "valid_start_date",
+          "valid_end_date",
+          "invalid_reason"
         )
 
       # wrap the data frame in a list to add as a single element

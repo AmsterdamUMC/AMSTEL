@@ -398,7 +398,7 @@ You should now have a running instance of ATLAS and should be able to browse agg
 
 # DataQualityDashboard Thresholds
 * Development only*
-While the default DQD thresholds have been chosen by OHDSI community experts, they may not be appropriate for the source database. To change, these threshold, 
+While the default DQD thresholds have been chosen by OHDSI community experts, they may not be appropriate for the source database. To change, these thresholds, 
 
 1. clone the repository:
 
@@ -428,6 +428,25 @@ From an R console, run:
 remotes::install_github("EHDEN/CdmInspection")
 ```
 
+# Publish DQD results
+*Development only*
+
+This uses the web application that is part of the OHDSI Data Quality Dashboard Shiny to display the results, but without the R (server) dependencies.
+
+Copy the required files from the cloned repository to the `docs` folder of `AMSTEL`:
+```bash
+cp DataQualityDashboard/inst/shinyApps/www/ AMSTEL/docs/dqd -r
+```
+
+Remove the example files:
+```bash
+rm AMSTEL/docs/dqd/results*
+```
+
+Copy the most recent results file (`results<date?.json)`) to `results.json`, e.g.:
+```bash
+cp AMSTEL/data/dqd/amsterdamumcdb\ v1.0.2-20240317194413.json AMSTEL/docs/dqd/results.json
+```
 
 # Trivia:
 AMSTEL: an anagram of AMS (Amsterdam) ETL (Extract, Transform, and Load), named after the river flowing through the city of Amsterdam

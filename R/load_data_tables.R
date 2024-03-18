@@ -225,6 +225,17 @@ load_data_tables <- function() {
     ams_schema = amstel_env$config$databases$amsterdamumcdb$schema
   )
 
+  # inserts listitems values into stem_table
+  log_info("- listitems values -> stem_table")
+  sql <- load_sql('insert_stem_table_from_listitems_values.sql')
+  DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
+    connection = conn,
+    sql = sql,
+    cdm_schema = amstel_env$config$databases$cdm$schema,
+    ams_schema = amstel_env$config$databases$amsterdamumcdb$schema
+  )
+
   # inserts numericitems into stem_table
   log_info("- numericitems -> stem_table")
   sql <- load_sql('insert_stem_table_from_numericitems.sql')
