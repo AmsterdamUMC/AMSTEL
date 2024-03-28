@@ -108,12 +108,7 @@ SELECT
     NULL AS operator_concept_id,
 
     -- number of catheter lumina
-    CASE stcm_number.target_concept_id
-    	WHEN 4242377 THEN 1
-	    WHEN 4078696 THEN 2
-	    WHEN 4196930 THEN 3
-      WHEN 4247706 THEN 4
-    END AS quantity,
+    stvm_quantity.value AS quantity,
 
     NULL AS range_low,
     NULL AS range_high,
@@ -157,15 +152,15 @@ LEFT JOIN @cdm_schema.source_to_concept_map stcm_site ON
   stcm_site.source_code = CAST(p.itemid AS VARCHAR) AND
   stcm_site.source_vocabulary_id = 'AUMC Anatomic Site'
 
-LEFT JOIN @cdm_schema.source_to_concept_map stcm_number ON
-  stcm_number.source_code = CAST(p.itemid AS VARCHAR) AND
-  stcm_number.source_vocabulary_id = 'AUMC Quantity'
+LEFT JOIN @cdm_schema.source_to_value_map stvm_quantity ON
+  stvm_quantity.source_code = CAST(p.itemid AS VARCHAR) AND
+  stvm_quantity.source_vocabulary_id = 'AUMC Quantity'
 
 ORDER BY p.admissionid, p.start, p.itemid, p.stop
 ;
 
 -- create OBSERVATION records containing the anatomic site of the
--- device in DEVICE_EXPOSURE. To easiliy and efficiently link the records to
+-- device in DEVICE_EXPOSURE. To easily and efficiently link the records to
 -- allow bulk inserts, the anatomic site has been stored in the
 -- values_as_concept field.
 INSERT INTO @cdm_schema.stem_table

@@ -29,8 +29,19 @@ Development was performed on a Hyper-V based Ubuntu 22.04 LTS virtual machine (1
 
 # Install R with RStudio
 ## Install R
+The default `sudo apt install r-base` installs version 4.1.2 on Ubuntu. To install the most recent version, run these commands in the terminal (source: https://cran.r-project.org/bin/linux/ubuntu/):
 ```bash
-sudo apt-get install r-base
+# update indices
+sudo apt update -qq
+# install two helper packages we need
+sudo apt install --no-install-recommends software-properties-common dirmngr
+# add the signing key (by Michael Rutter) for these repos
+# To verify key, run gpg --show-keys /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc 
+# Fingerprint: E298A3A825C0D65DFD57CBB651716619E084DAB9
+wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
+# add the R 4.0 repo from CRAN -- adjust 'focal' to 'groovy' or 'bionic' as needed
+sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
+sudo apt install --no-install-recommends r-base
 ```
 
 ## Install RStudio server
@@ -414,7 +425,8 @@ cp DataQualityDashboard/inst/csv/OMOP_CDMv5.4* AMSTEL/data/dqd
 
 # CdmInspection
 *Development only*
-[OHDSI CdmInspection](https://github.com/EHDEN/CdmInspection) is an R 
+
+[EHDEN CdmInspection](https://github.com/EHDEN/CdmInspection) is an R 
 R Package to support quality control inspection of an OMOP-CDM instance.
 
 ## Installation
@@ -429,9 +441,10 @@ remotes::install_github("EHDEN/CdmInspection")
 ```
 
 # Publish DQD results
+
 *Development only*
 
-This uses the web application that is part of the OHDSI Data Quality Dashboard Shiny to display the results, but without the R (server) dependencies.
+This uses the web application that is part of the OHDSI Data Quality Dashboard shiny app to display the results in the GitHub pages documentation, but without the R (server) dependencies.
 
 Copy the required files from the cloned repository to the `docs` folder of `AMSTEL`:
 ```bash
@@ -443,7 +456,7 @@ Remove the example files:
 rm AMSTEL/docs/dqd/results*
 ```
 
-Copy the most recent results file (`results<date?.json)`) to `results.json`, e.g.:
+Copy the most recent results file (`amsterdamumcdb v1.0.2-<timestamp>.json)`) to `results.json`, e.g.:
 ```bash
 cp AMSTEL/data/dqd/amsterdamumcdb\ v1.0.2-20240317194413.json AMSTEL/docs/dqd/results.json
 ```

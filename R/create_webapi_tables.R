@@ -73,4 +73,7 @@ create_webapi_tables <- function() {
     connection = conn,
     sql = sql
   )
+
+  # Refreshes WebAPI with the new source
+  httr::GET("http://localhost:8080/WebAPI/source/refresh")
 }

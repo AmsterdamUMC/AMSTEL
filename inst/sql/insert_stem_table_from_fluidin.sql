@@ -94,7 +94,7 @@ SELECT
     visit_occurrence_id,
     NULL AS visit_detail_id,
 
-    LEFT(CONCAT('Fluid In: ', s.source_value),50) AS source_value,
+    LEFT(CONCAT('Fluid In: ', s.source_value), 50) AS source_value,
     NULL AS source_concept_id,
 
     -- stem_table for drug_exposure records (temporarily) stores fluidin in

@@ -81,7 +81,7 @@ SELECT
 
     NULL AS visit_detail_id,
 
-    l.value AS source_value,
+    LEFT(l.value, 50) AS source_value,
 
     NULL AS source_concept_id,
     NULL AS value_as_number,
@@ -103,7 +103,7 @@ SELECT
       (l.measuredat - a.admittedat)/1000), 'HH24:MI:SS') AS measurement_time,
 
     NULL AS operator_concept_id,
-    CAST(c_quantity.concept_name AS NUMERIC) AS quantity,
+    stvm_quantity.value as quantity,
     NULL AS range_low,
     NULL AS range_high,
     NULL AS stop_reason,
@@ -148,12 +148,9 @@ INNER JOIN @cdm_schema.concept c ON
 INNER JOIN @cdm_schema.domain domain ON
   c.domain_id = domain.domain_id
 
-LEFT JOIN @cdm_schema.source_to_concept_map stcm_quantity ON
-  stcm_quantity.source_code = CONCAT(l.itemid, '-', l.valueid) AND
-  stcm_quantity.source_vocabulary_id = 'AUMC Quantity'
-
-LEFT JOIN @cdm_schema.concept c_quantity ON
-  	stcm_quantity.target_concept_id = c_quantity.concept_id
+LEFT JOIN @cdm_schema.source_to_value_map stvm_quantity ON
+  stvm_quantity.source_code = CONCAT(l.itemid, '-', l.valueid) AND
+  stvm_quantity.source_vocabulary_id = 'AUMC Quantity'
 
 LEFT JOIN @cdm_schema.provider reg_prov ON
   reg_prov.provider_source_value = l.registeredby

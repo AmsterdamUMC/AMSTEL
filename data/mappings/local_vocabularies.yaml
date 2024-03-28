@@ -23,7 +23,6 @@ drugitems_administeredunit:
 
 drugitems_item:
   MAPS_TO: AUMC Drug
-  MAPS_TO_VALUE: AUMC Drug Quantity
   MAPS_TO_TYPE: AUMC Drug Route
 
 drugitems_ordercategory:
@@ -40,26 +39,27 @@ freetextitems_value:
 # as a DEVICE, PROCEDURE or CONDITION.
 listitems_item:
   MAPS_TO: AUMC List
+  MAPS_TO_TYPE: AUMC Qualifier
 
 # while the distinction between MEASUREMENT and OBSERVATION is largely semantic
 # the current CDM requires value_as_concept_id from the 'Meas Value' domain for
 # records in MEASUREMENT
 listitems_meas_value:
   MAPS_TO: AUMC Meas Value
+  MAPS_TO_UNIT: AUMC List Unit
 
 # all other observation in listitem can be considered either OBSERVATION,
 # DEVICE, or PROCEDURE
 listitems_obs_value:
   MAPS_TO: AUMC Obs Value
+  MAPS_TO_UNIT: AUMC List Unit
   MAPS_TO_TYPE: AUMC Qualifier
 
 listitems_device:
   MAPS_TO: AUMC Device
-  MAPS_TO_NUMBER: AUMC Quantity
 
 listitems_procedure:
   MAPS_TO: AUMC Procedure
-  MAPS_TO_NUMBER: AUMC Quantity
 
 listitems_condition:
   MAPS_TO: AUMC Condition
@@ -90,7 +90,6 @@ procedureorderitems_item:
 processitems_item:
   MAPS_TO: AUMC Process
   MAPS_TO_VALUE: AUMC Anatomic Site
-  MAPS_TO_NUMBER: AUMC Quantity
 
 providers:
   MAPS_TO: AUMC Provider

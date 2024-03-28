@@ -116,23 +116,18 @@ cte_stcm AS (
 	FROM @cdm_schema.source_to_concept_map stcm
 	WHERE stcm.source_vocabulary_id = 'AUMC Drug'
 ),
--- retrieves explicitly defined quantities from the SOURCE_TO_CONCEPT_MAP
+-- retrieves explicitly defined quantities from the SOURCE_TO_VALUE_MAP
 -- table for non-standard drugs
 cte_quantity AS (
-	SELECT ROW_NUMBER() OVER(
-		PARTITION BY q.source_code
-		ORDER BY q.valid_start_date) AS row_number_quantity,
-	q.source_code,
-	q.source_concept_id,
-	q.source_vocabulary_id,
-	q.source_code_description,
-	q.target_concept_id,
-	q.target_vocabulary_id,
-	q.valid_start_date,
-	q.valid_end_date,
-	q.invalid_reason
-	FROM @cdm_schema.source_to_concept_map q
-	WHERE q.source_vocabulary_id = 'AUMC Drug Quantity'
+  SELECT
+	  source_code,
+	  source_concept_id,
+	  source_vocabulary_id,
+	  source_code_description,
+	  value,
+	  row AS row_number_quantity
+	FROM @cdm_schema.source_to_value_map
+	WHERE source_vocabulary_id = 'AUMC Drug Quantity'
 ),
 stcm_drug AS (
   SELECT
@@ -147,8 +142,7 @@ stcm_drug AS (
   	cte_stcm.valid_start_date,
   	cte_stcm.valid_end_date,
   	cte_stcm.invalid_reason,
-  	cte_quantity.target_concept_id AS quantity_concept_id,
-  	CAST(c_quant.concept_name AS NUMERIC) AS value
+  	cte_quantity.value
 
   FROM cte_stcm
   LEFT JOIN cte_quantity ON
@@ -156,8 +150,6 @@ stcm_drug AS (
   	cte_stcm.row_number = cte_quantity.row_number_quantity
   LEFT JOIN @cdm_schema.concept c ON
   	cte_stcm.target_concept_id = c.concept_id
-  LEFT JOIN @cdm_schema.concept c_quant ON
-  	cte_quantity.target_concept_id = c_quant.concept_id
 )
 INSERT INTO @cdm_schema.stem_table
 (
@@ -238,7 +230,7 @@ SELECT
     -- the drugitems -> concept mappings have been performed using a combination
     -- of `item` and `ordercategory` to allow mapping to specific products
     -- instead of only ingredients.
-    LEFT(CONCAT(d.item,' (', d.ordercategory,')'),50) AS source_value,
+    LEFT(CONCAT(d.item,' (', d.ordercategory,')'), 50) AS source_value,
     NULL AS source_concept_id,
 
     -- stores fluidin value in value_as_number field to allow creating fluidin
@@ -357,7 +349,7 @@ SELECT
       stcm_route_specific.target_concept_id,
       stcm_route_default.target_concept_id
     ) AS route_concept_id,
-    LEFT(d.ordercategory,50) AS route_source_value,
+    LEFT(d.ordercategory, 50) AS route_source_value,
     NULL AS lot_number,
     NULL AS unique_device_id,
     NULL AS production_id,

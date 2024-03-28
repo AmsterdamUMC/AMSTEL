@@ -95,10 +95,10 @@ CREATE TABLE IF NOT EXISTS @cdm_results_schema.heracles_analysis
 	analysis_type varchar(255)
 );
 
-CREATE TABLE IF NOT EXISTS @cdm_results_schema.HERACLES_HEEL_results 
- (cohort_definition_id int, 
-  analysis_id INT, 
-  HERACLES_HEEL_warning VARCHAR(255) 
+CREATE TABLE IF NOT EXISTS @cdm_results_schema.HERACLES_HEEL_results
+ (cohort_definition_id int,
+  analysis_id INT,
+  HERACLES_HEEL_warning VARCHAR(255)
 );
 
 --HINT PARTITION(cohort_definition_id int)
@@ -2522,7 +2522,7 @@ CAST('HEALTHCARE_UTILIZATION' as VARCHAR(255)) as analysis_type
 CREATE TEMP TABLE digits
 AS
 SELECT
-digits.n  
+digits.n
 FROM
 (
        select 0 as n union all select 1 union all select 2 union all select 3 union all select 4 union all select 5 union all select 6 union all select 7 union all select 8 union all select 9
@@ -2672,30 +2672,30 @@ TRUNCATE TABLE temp_period;
 
 DROP TABLE temp_period;
 
-CREATE INDEX HRD_IDX_COHORT_DEF_ID ON @cdm_results_schema.HERACLES_RESULTS_DIST (cohort_definition_id);
+CREATE INDEX IF NOT EXISTS HRD_IDX_COHORT_DEF_ID ON @cdm_results_schema.HERACLES_RESULTS_DIST (cohort_definition_id);
 
-CREATE INDEX HRD_IDX_COHORT_ID_ANALYSIS_ID ON @cdm_results_schema.HERACLES_RESULTS_DIST (cohort_definition_id, analysis_id);
+CREATE INDEX IF NOT EXISTS HRD_IDX_COHORT_ID_ANALYSIS_ID ON @cdm_results_schema.HERACLES_RESULTS_DIST (cohort_definition_id, analysis_id);
 
-CREATE INDEX HRD_IDX_COHORT_DEF_ID_DT ON @cdm_results_schema.HERACLES_RESULTS_DIST (cohort_definition_id, last_update_time);
+CREATE INDEX IF NOT EXISTS HRD_IDX_COHORT_DEF_ID_DT ON @cdm_results_schema.HERACLES_RESULTS_DIST (cohort_definition_id, last_update_time);
 
-CREATE INDEX HRD_IDX_COHORT_ID_FIRST_RES ON @cdm_results_schema.HERACLES_RESULTS_DIST (cohort_definition_id, analysis_id, count_value, stratum_1);
+CREATE INDEX IF NOT EXISTS HRD_IDX_COHORT_ID_FIRST_RES ON @cdm_results_schema.HERACLES_RESULTS_DIST (cohort_definition_id, analysis_id, count_value, stratum_1);
 
-CREATE INDEX HR_IDX_COHORT_DEF_ID ON @cdm_results_schema.HERACLES_RESULTS (cohort_definition_id);
+CREATE INDEX IF NOT EXISTS HR_IDX_COHORT_DEF_ID ON @cdm_results_schema.HERACLES_RESULTS (cohort_definition_id);
 
-CREATE INDEX HR_IDX_COHORT_ID_ANALYSIS_ID ON @cdm_results_schema.HERACLES_RESULTS (cohort_definition_id, analysis_id);
+CREATE INDEX IF NOT EXISTS HR_IDX_COHORT_ID_ANALYSIS_ID ON @cdm_results_schema.HERACLES_RESULTS (cohort_definition_id, analysis_id);
 
-CREATE INDEX HR_IDX_COHORT_ANALYSIS_CONCEPT ON @cdm_results_schema.HERACLES_RESULTS (cohort_definition_id, analysis_id) WHERE stratum_2 <> '';
+CREATE INDEX IF NOT EXISTS HR_IDX_COHORT_ANALYSIS_CONCEPT ON @cdm_results_schema.HERACLES_RESULTS (cohort_definition_id, analysis_id) WHERE stratum_2 <> '';
 
-CREATE INDEX HR_IDX_COHORT_DEF_ID_DT ON @cdm_results_schema.HERACLES_RESULTS (cohort_definition_id, last_update_time);
+CREATE INDEX IF NOT EXISTS HR_IDX_COHORT_DEF_ID_DT ON @cdm_results_schema.HERACLES_RESULTS (cohort_definition_id, last_update_time);
 
-CREATE INDEX HR_IDX_COHORT_ID_FIRST_RES ON @cdm_results_schema.HERACLES_RESULTS (cohort_definition_id, analysis_id, count_value, stratum_1);
+CREATE INDEX IF NOT EXISTS HR_IDX_COHORT_ID_FIRST_RES ON @cdm_results_schema.HERACLES_RESULTS (cohort_definition_id, analysis_id, count_value, stratum_1);
 
-CREATE INDEX HH_IDX_COHORT_ID_ANALYSIS_ID ON @cdm_results_schema.HERACLES_HEEL_RESULTS (cohort_definition_id, analysis_id);
+CREATE INDEX IF NOT EXISTS HH_IDX_COHORT_ID_ANALYSIS_ID ON @cdm_results_schema.HERACLES_HEEL_RESULTS (cohort_definition_id, analysis_id);
 
-CREATE INDEX idx_heracles_periods_startdate ON @cdm_results_schema.heracles_periods (period_start_date);
+CREATE INDEX IF NOT EXISTS idx_heracles_periods_startdate ON @cdm_results_schema.heracles_periods (period_start_date);
 
-CREATE INDEX idx_heracles_periods_end_date ON @cdm_results_schema.heracles_periods (period_end_date);
+CREATE INDEX IF NOT EXISTS idx_heracles_periods_end_date ON @cdm_results_schema.heracles_periods (period_end_date);
 
-CREATE INDEX idx_cohort_sample_element_rank ON @cdm_results_schema.cohort_sample_element (cohort_sample_id, rank_value);
+CREATE INDEX IF NOT EXISTS idx_cohort_sample_element_rank ON @cdm_results_schema.cohort_sample_element (cohort_sample_id, rank_value);
 
-CREATE INDEX idx_pathway_events_combo_id ON @cdm_results_schema.pathway_analysis_events (combo_id);
+CREATE INDEX IF NOT EXISTS idx_pathway_events_combo_id ON @cdm_results_schema.pathway_analysis_events (combo_id);

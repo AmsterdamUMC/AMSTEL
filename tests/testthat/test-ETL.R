@@ -117,6 +117,81 @@ test_that("ETL validation", {
   add_procedureorderitems(admissionid = 1802, itemid = 13021)
   expect_procedure_occurrence(person_id = 802, procedure_concept_id = 44791813)
 
+  # some listitems contain information about the number of times a procedure has
+  # been performed. Unfortunately, we cannot directly use the valueid since
+  # this does not always correspond with the quantity. The ETL converts the
+  # text value to a numeric one.
+  declareTest(803, "procedure_occurence quantity from text value listitems")
+  add_admissions(patientid = 803, admissionid = 1803)
+  add_listitems(
+    admissionid = 1803,
+    item = "Aantal Bronchiaaltoilet",
+    itemid = 8889,
+    valueid = 8,
+    value = "8x"
+  )
+
+  expect_procedure_occurrence(
+    person_id = 803,
+    procedure_concept_id = 4239191,
+    quantity = 8,
+    procedure_source_value = "Aantal Bronchiaaltoilet",
+    modifier_source_value = "8x"
+  )
+
+  # some listitems values have been explicitly mapped to 'Performed' or
+  # 'Not Performed' and should be converted to 1 or 0 respectively.
+  declareTest(804, "procedure_occurence quantity mapped to 1")
+  add_admissions(patientid = 804, admissionid = 1804)
+
+  add_listitems(
+    admissionid = 1804,
+    item = "Mond/Keel toilet",
+    itemid = 8892,
+    value = "Gedaan",
+    valueid = 1,
+  )
+
+  expect_procedure_occurrence(
+    person_id = 804,
+    procedure_concept_id = 4301571,
+    quantity = 1,
+    procedure_source_value = "Mond/Keel toilet",
+    modifier_source_value = "Gedaan"
+  )
+
+  # procedures that were documented as not have taken place should not be
+  # inserted in the procedure_occurrence table, though they are temporarily
+  # inserted in stem_table
+  declareTest(805, "procedure_occurence ignore quantity = 0")
+  add_admissions(patientid = 805, admissionid = 1805)
+  add_listitems(
+    admissionid = 1805,
+    item = "Mond/Keel toilet",
+    itemid = 8892,
+    value = "Niet Gedaan",
+    valueid = 2,
+  )
+  expect_no_procedure_occurrence(quantity = 0)
+
+  # procedures with quantity = NULL should be inserted correctly
+  declareTest(806, "procedure_occurence allow quantity = NULL")
+  add_admissions(patientid = 806, admissionid = 1806)
+  add_listitems(
+    admissionid = 1806,
+    item = "Intubatie Techniek",
+    itemid = 14577,
+    value = "Glidescoop",
+    valueid = 2,
+  )
+  expect_procedure_occurrence(
+    procedure_concept_id = 4202832,
+    quantity = NULL,
+    procedure_source_value = "Intubatie Techniek",
+    modifier_concept_id = 40492457,
+    modifier_source_value = "Glidescoop"
+  )
+
   ### Measurement ###
   declareTest(901, "measurement person_id")
   add_admissions(patientid = 901, admissionid = 1901)
@@ -262,6 +337,94 @@ test_that("ETL validation", {
   expect_no_measurement(person_id = 1004, measurement_concept_id = 0,
                         value_as_number = 2.23, unit_concept_id = 0)
 
+  # unmapped categorical values should be NULL
+  declareTest(1005, "observation unmapped values should be NULL")
+  add_admissions(patientid = 1005, admissionid = 11005)
+  add_listitems(
+    admissionid = 11005,
+    itemid = 6658,
+    item = "IABP Frequentie",
+    valueid = 1,
+    value = "01:01"
+  )
+
+  expect_observation(
+    person_id = 1005,
+    observation_concept_id = 608009, # Device setting parameter
+    value_as_number = NULL,
+    value_as_string = "01:01",
+    value_as_concept_id = NULL,
+    observation_source_value = "IABP Frequentie",
+    value_source_value = "01:01"
+  )
+
+  declareTest(
+    1006,
+    "observation shared concepts of discharge destination should be valid"
+    )
+  add_admissions(patientid = 1006, admissionid = 11006)
+  add_listitems(
+    admissionid = 11006,
+    itemid = 10472,
+    item = "Ontslagbestemming",
+    valueid = 15,
+    value = "VU afdeling SCCH"
+  )
+  expect_observation(
+    person_id = 1006,
+    # expect 'Planned discharge destination'
+    observation_concept_id = 44810687,
+    value_as_number = NULL,
+    value_as_string = "VU afdeling SCCH",
+
+    # expect 'Inpatient Cardiac Care Facility' for value_as_concept_id
+    value_as_concept_id = 581383
+    )
+
+  # converts values of listitems with text values that represent numeric values
+  declareTest(1007, "observation numeric text value converted")
+  add_admissions(patientid = 1007, admissionid = 11007)
+  add_listitems(
+    admissionid = 11007,
+    itemid = 8691,
+    item = "Thoraxdrain1 Zuigkracht",
+    valueid = 4,
+    value = "- 20 cm H2O"
+  )
+
+  expect_observation(
+    person_id = 1007,
+    observation_concept_id = 4122997,
+    value_as_number = -20,
+    value_as_string =  "- 20 cm H2O",
+    value_as_concept_id = NULL,
+    observation_source_value = "Thoraxdrain1 Zuigkracht",
+    value_source_value = "- 20 cm H2O"
+
+  )
+
+  # qualifier mapped from MAPPED_TO_TYPE
+  declareTest(1008, "observation qualifier mapped from MAPPED_TO_TYPE")
+  add_admissions(patientid = 1008, admissionid = 11008)
+  add_listitems(
+    admissionid = 11008,
+    itemid = 6658,
+    item = "IABP Frequentie",
+    valueid = 1,
+    value = "01:01"
+  )
+
+  expect_observation(
+    person_id = 1008,
+    observation_concept_id = 608009, #	Device setting parameter
+    value_as_number = NULL,
+    value_as_string = "01:01",
+    value_as_concept_id = NULL,
+    observation_source_value = "IABP Frequentie",
+    value_source_value = "01:01",
+    qualifier_concept_id = 4044874	# Intra-aortic balloon pump	Device
+  )
+
   ### Drug_exposure ###
   declareTest(1101, "drug_exposure person_id")
   add_admissions(patientid = 1101, admissionid = 11101)
@@ -294,6 +457,67 @@ test_that("ETL validation", {
   expect_measurement(measurement_concept_id = 3037253, # fluid intake
                      value_as_number = 50)
 
+  # Selective Digestive Tract Decontamination is an almost exclusively
+  # Dutch ICU method to prevent ventilator-associated pneumonia.
+  # However since this is a combination of anti-microbials that currently does
+  # not exist as a separate concept, every SDD record will create three records
+  # of the ingredients and the associated (manually added) quantity.
+  declareTest(1105, "drug_exposure SDD")
+  add_admissions(patientid = 1105, admissionid = 11105)
+  add_drugitems(
+    admissionid = 11105,
+    ordercategoryid = 21,
+    ordercategory = "Niet iv Antimicrobiele middelen",
+    itemid = 8268,
+    item = "SDD drank (4 x dgs)",
+    isadditive = "0",
+    isconditional = "0",
+    rate = NULL,
+    rateunit = NULL,
+    rateunitid = NULL,
+    ratetimeunitid = NULL,
+    doserateperkg = 0,
+    dose = 10,
+    doseunit = "ml",
+    doserateunit = NULL,
+    doseunitid = 6,
+    doserateunitid = NULL,
+    administered = 10,
+    administeredunit = "ml",
+    administeredunitid = 6,
+    action = "Nieuwe toediening",
+    start = "16020000",
+    stop = "16080000",
+    duration = "1",
+    solutionitemid = NULL,
+    solutionitem = NULL,
+    solutionadministered = NULL,
+    solutionadministeredunit = NULL,
+    fluidin = 10,
+    iscontinuous = 0)
+
+  # tobramycine
+  expect_drug_exposure(
+    person_id = 1105,
+    drug_concept_id = 902722,
+    quantity = "80"
+    )
+
+  # colistin
+  expect_drug_exposure(
+    person_id = 1105,
+    drug_concept_id = 901845,
+    quantity = "100"
+    )
+
+
+  # amphotericine B
+  expect_drug_exposure(
+    person_id = 1105,
+    drug_concept_id = 1717240,
+    quantity = "500"
+    )
+
   ### Device_exposure ###
   declareTest(1201, "device_exposure person_id")
   add_admissions(patientid = 1201, admissionid = 11201)
@@ -304,10 +528,31 @@ test_that("ETL validation", {
   add_processitems(admissionid = 11202, itemid = 12634)
   expect_device_exposure(person_id = 1202, device_concept_id = 4097216)
 
+  # checks whether the quantity value based on the source_to_value_map
+  # table is populated correctly
+  declareTest(1203, "device_exposure quantity Trilumen Subclavia")
+  add_admissions(patientid = 1203, admissionid = 11203)
+  add_processitems(
+    admissionid = 11203,
+    itemid = 9167,
+    item = "Trilumen Subclavia",
+    start = 0,
+    stop = 54060000
+    )
+
+  expect_device_exposure(
+    person_id = 1203,
+    device_concept_id = 4179206,
+    quantity = 3,
+    device_source_value = "Trilumen Subclavia"
+  )
+
   ### Specimen ###
   declareTest(1301, "specimen person_id")
   add_admissions(patientid = 1301, admissionid = 11301)
   add_processitems(admissionid = 11301)
+  add_freetextitems(admissionid = 11301, itemid = 11646, value = 'ART.')
+  expect_specimen(person_id = 1301)
 
   declareTest(1302, "specimen mapping freetextitems ART.")
   add_admissions(patientid = 1302, admissionid = 11302)

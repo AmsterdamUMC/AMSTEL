@@ -16,7 +16,7 @@ Description: Performs conversion of the AmsterdamUMCdb to the OMOP Common Data M
 Organization: Amsterdam UMC
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
@@ -32,6 +32,7 @@ Imports:
     devtools,
     dplyr,
     googleLanguageR,
+    Hades,
     httr,
     jsonlite,
     log4r,
@@ -54,6 +55,7 @@ Remotes:
     OHDSI/DataQualityDashboard,
     OHDSI/ParallelLogger,
     OHDSI/SqlRender,
+    OHDSI/Hades,
     EHDEN/CdmInspection
 License: MIT + file LICENSE
 URL: https://amsterdamumc.github.io/AMSTEL/

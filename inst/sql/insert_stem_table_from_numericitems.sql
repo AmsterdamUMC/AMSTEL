@@ -90,7 +90,7 @@ SELECT
 
     NULL AS visit_detail_id,
 
-    n.item AS source_value,
+    LEFT(n.item, 50) AS source_value,
 
     NULL AS source_concept_id,
 
@@ -117,8 +117,9 @@ SELECT
       stcm_unit.target_concept_id
       ) AS unit_concept_id,
 
-    -- comments will not fit varchar(50) limitation:
-    -- CONCAT_WS('\ncomment: ', value, comment) AS value_source_value,
+    -- comments will not fit the current varchar(50) limitation:
+    -- CONCAT_WS('\ncomment: ', value, comment) AS value_source_value ->
+    -- only store the numeric value
     n.value AS value_source_value,
 
     -- To allow future ETLs to handle conversion to a 'standardized unit',
@@ -208,6 +209,19 @@ LEFT JOIN @cdm_schema.provider reg_prov ON
 
 LEFT JOIN @cdm_schema.provider upd_prov ON
   upd_prov.provider_source_value = n.updatedby
+
+WHERE n.itemid NOT IN (
+  6637, --Opname gewicht
+  6638, --Huidig gewicht
+  8566, --LeeftijdX
+  10439, --PatiëntLeeftijd bij opname
+  10442, --Huidig gewicht
+  14048, --PiCCO Gewicht
+  14050, --PiCCO_BSA
+  16197, --Nazorg Gewicht voor opname
+  16198, --Nazorg Gewicht bij polibezoek
+  20081 --Gemeten gewicht
+)
 
 ORDER BY n.admissionid, n.measuredat, n.itemid
 ;

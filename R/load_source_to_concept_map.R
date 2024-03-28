@@ -83,6 +83,17 @@ load_source_to_concept_map <- function() {
                                                  "Device",
                                                  "Procedure",
                                                  "Condition"))
+
+      #remove duplicates from listitems -> reason_for_admission
+      co_reason_for_admission <- load_usagi_concepts('reason_for_admission')
+      concepts <- concepts %>%
+        dplyr::filter(! .data$sourceCode %in%
+                        co_reason_for_admission$sourceCode)
+
+      #remove duplicates from listitems -> admissions_destination
+      concepts <- concepts %>%
+        dplyr::filter(! .data$`ADD_INFO:itemid` == 10472)
+
     }
     else if(vocabulary == 'listitems_device') {
       concepts <- load_usagi_concepts("listitems_value")
@@ -168,6 +179,9 @@ load_source_to_concept_map <- function() {
   # Since SQL does not have an inherent ordering and the SOURCE_TO_CONCEPT_MAP
   # does not have a unique incremental identifier, we increment the
   # `valid_start_date` to preserve order.
+  # Please note that currently storing quantities together with concepts mapping
+  # is not possible since the v5.0 29-FEB-04 since many concepts
+  # were deprecated
 
   source_to_concept_map$valid_start_date <-
     seq(as.Date('1970-01-01'),
@@ -195,6 +209,9 @@ load_source_to_concept_map <- function() {
       bulkLoad = FALSE
     )
   })
+
+  # create the source_to_value_map
+  source_to_value_map <- load_source_to_value_map()
 
   log_info("Success: source_to_concept_map loaded.")
 

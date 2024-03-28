@@ -42,5 +42,8 @@ amstel::execute_dqd_checks()
 # Runs OHDSI Achilles database characterization ----
 amstel::achilles()
 
+# Creates Web API tables ----
+amstel::create_webapi_tables()
+
 # Runs OHDSI CDM Inspection package for submission ----
 amstel::cdm_inspection()

@@ -53,9 +53,10 @@ INSERT INTO @cdm_schema.stem_table
     event_field_concept_id
 )
 SELECT
-    -- Most of the records are either Measurement or Observation.
-    -- Default to Observation (27) since a lot of listitems are
-    -- categorical observations.
+    -- Most of the records are either Measurement, Observation or
+    -- documentation of (nursing) Procedures
+    -- Default to Observation (27) for unmapped concepts since many listitems
+    -- are categorical observations.
     COALESCE(domain.domain_concept_id, 27) AS domain_id,
 
     -- id,
@@ -81,29 +82,64 @@ SELECT
 
     NULL AS visit_detail_id,
 
-    l.item AS source_value,
+    LEFT(l.item, 50) AS source_value,
 
     NULL AS source_concept_id,
-    NULL AS value_as_number,
-    NULL AS value_as_string,
 
-    stcm_value.target_concept_id AS value_as_concept_id,
-    NULL AS unit_concept_id,
-    LEFT(l.value,50) AS value_source_value,
+    CASE stcm_value.target_concept_id
+      WHEN 4035566 -- 'Text Value'
+        -- remove non-numeric characters (if applicable)
+      THEN CAST(TRIM('abcdefghijklmnopqrstuvwxyz' FROM
+          REPLACE(
+            REPLACE(LOWER(l.value), ' ', ''),'cmh2o',''
+          )
+        ) AS NUMERIC)
+      ELSE NULL
+    END AS value_as_number,
+    LEFT(l.value, 60) AS value_as_string,
+
+    CASE stcm_value.target_concept_id
+      WHEN 4035566 -- 'Text Value'
+      THEN NULL -- Do NOT put 'Text Value' concept in value_as_concept_id field
+      ELSE stcm_value.target_concept_id
+    END AS value_as_concept_id,
+    stcm_unit.target_concept_id  AS unit_concept_id,
+    LEFT(l.value, 50) AS value_source_value,
 
     NULL AS unit_source_concept_id,
     NULL AS unit_source_value,
     NULL AS verbatim_end_date,
     NULL AS days_supply,
     NULL AS dose_unit_source_value,
-    NULL AS modifier_concept_id,
-    NULL AS modifier_source_value,
+
+    -- the 'modifier' fields for PROCEDURE_OCCURENCE are very similar to the
+    -- 'qualifier' fields OBSERVATION since these fields give additional
+    -- information about the concept. The `value` of the listitem record are
+    -- used as a modifier for a number of Procedures
+    stcm_value.target_concept_id AS modifier_concept_id,
+    LEFT(l.value, 50) AS modifier_source_value,
 
     TO_CHAR(a.admissiondatetime + make_interval(secs =>
       (l.measuredat - a.admittedat)/1000), 'HH24:MI:SS') AS measurement_time,
 
     NULL AS operator_concept_id,
-    NULL AS quantity,
+
+    -- store quantity for procedures
+    CASE stcm_value.target_concept_id
+      WHEN 45884119	-- 'Not performed'
+        THEN 0
+      WHEN 45877935	-- 'Performed'
+        THEN 1
+      WHEN 4035566 -- 'Text Value'
+        -- remove non-numeric characters (if applicable)
+      THEN CAST(TRIM('abcdefghijklmnopqrstuvwxyz' FROM
+          REPLACE(
+            REPLACE(LOWER(l.value), ' ', ''),'cmh2o',''
+          )
+        ) AS NUMERIC)
+      ELSE NULL
+    END AS quantity,
+
     NULL AS range_low,
     NULL AS range_high,
     NULL AS stop_reason,
@@ -153,15 +189,24 @@ LEFT JOIN @cdm_schema.source_to_concept_map stcm_value ON
     ELSE stcm_value.source_vocabulary_id IN (
       'AUMC Meas Value',
       'AUMC Obs Value',
+      'AUMC Diagnosis',
+      'AUMC Destination',
       'AUMC Device',
       'AUMC Procedure',
       'AUMC Condition'
     )
   END
+  -- prevent unmappable values as concept (i.e. reviewed but no concept available)
+  -- from creating '0' values
+  AND NOT stcm_value.target_concept_id = 0
 
 LEFT JOIN @cdm_schema.source_to_concept_map stcm_qualifier ON
-  stcm_qualifier.source_code = CONCAT(l.itemid, '-', l.valueid) AND
+  stcm_qualifier.source_code = CAST(l.itemid AS VARCHAR) AND
   stcm_qualifier.source_vocabulary_id = 'AUMC Qualifier'
+
+LEFT JOIN @cdm_schema.source_to_concept_map stcm_unit ON
+  stcm_unit.source_code = CAST(l.itemid AS VARCHAR) AND
+  stcm_unit.source_vocabulary_id = 'AUMC List Unit'
 
 LEFT JOIN @cdm_schema.provider reg_prov ON
   reg_prov.provider_source_value = l.registeredby

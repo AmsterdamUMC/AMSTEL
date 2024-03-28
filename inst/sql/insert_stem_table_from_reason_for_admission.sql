@@ -57,8 +57,11 @@ INSERT INTO @cdm_schema.stem_table
     event_field_concept_id
 )
 SELECT
-    -- All reasons for admissions lisitems are of domain Condition
-    19 AS domain_id,
+    -- Reasons for admissions lisitems are currently of domain Condition,
+    -- Procedure, or Observation.
+    -- Interestingly, Anaphylaxis has changed from Condition to Observation
+
+    domain.domain_concept_id AS domain_id,
 
     -- id,
     a.patientid AS person_id,
@@ -68,9 +71,30 @@ SELECT
     -- Since the reason for admission is a Condition that applies to the
     -- entire ICU stay, but was often recorded near or after the end of the
     -- ICU stay, for clarity, we set the timestamp of these conditions
-    -- to the start of the ICU stay
-    DATE(a.admissiondatetime) AS start_date,
-    a.admissiondatetime AS start_datetime,
+    -- to the start of the ICU stay.
+    --
+    -- For many patients the 'reason for admission' is not really the
+    -- condition per se (e.g. 'Coronary arteriosclerosis') but the fact
+    -- that the patient underwent a specific type of surgery ('Coronary Artery
+    -- Bypass Graft') that requires the patient to be admitted to the ICU
+    -- afterwards. The reason for admission field often contained the
+    -- type of surgical procedure. To allow chronological analyses, these
+    -- procedures will be arbitrarily inserted 60 minutes before the ICU
+    -- admission
+
+    CASE domain.domain_concept_id
+      WHEN 10 -- Procedure
+        THEN DATE(a.admissiondatetime + make_interval(secs => -3600))
+      ELSE
+        DATE(a.admissiondatetime)
+    END AS start_date,
+
+    CASE domain.domain_concept_id
+      WHEN 10 -- Procedure
+        THEN a.admissiondatetime + make_interval(secs => -3600)
+      ELSE
+        a.admissiondatetime
+    END AS start_datetime,
 
     NULL AS end_date,
     NULL AS end_datetime,
@@ -102,7 +126,13 @@ SELECT
     NULL AS modifier_concept_id,
     NULL AS modifier_source_value,
 
-    TO_CHAR(a.admissiondatetime, 'HH24:MI:SS') AS measurement_time,
+    CASE domain.domain_concept_id
+      WHEN 10 -- Procedure
+        THEN TO_CHAR(a.admissiondatetime + make_interval(secs => -3600),
+        'HH24:MI:SS')
+      ELSE
+        TO_CHAR(a.admissiondatetime, 'HH24:MI:SS')
+    END AS measurement_time,
 
     NULL AS operator_concept_id,
     NULL AS quantity,
@@ -191,6 +221,9 @@ INNER JOIN @cdm_schema.source_to_concept_map stcm_diag ON
 INNER JOIN @cdm_schema.concept c ON
   stcm_diag.target_concept_id = c.concept_id AND
   NOT stcm_diag.target_concept_id = 0
+
+LEFT JOIN @cdm_schema.domain domain ON
+  c.domain_id = domain.domain_id
 
 LEFT JOIN @cdm_schema.provider reg_prov ON
   reg_prov.provider_source_value = l.registeredby
