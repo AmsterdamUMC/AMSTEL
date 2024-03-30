@@ -15,7 +15,7 @@ navbar:
   structure:
     left:  [intro, reference, dqd, articles, tutorials, news]
     right: [search, github]
-components:
+  components:
     dqd:
       text: Data Quality Dashboard
-      href: https://amsterdamumc.github.io/AMSTEL/dqd
+      href: dqd/index.html

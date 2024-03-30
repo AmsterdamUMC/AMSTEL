@@ -2,12 +2,12 @@
 % Please edit documentation in R/cdm_inspection.R
 \name{cdm_inspection}
 \alias{cdm_inspection}
-\title{Runs the CdmInspection to check the OMOP-CDM instance before submission
+\title{Runs EHDEN CdmInspection to check the OMOP-CDM instance before submission
 to EHDEN}
 \usage{
 cdm_inspection()
 }
 \description{
-Runs the CdmInspection to check the OMOP-CDM instance before submission
+Runs EHDEN CdmInspection to check the OMOP-CDM instance before submission
 to EHDEN
 }

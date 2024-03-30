@@ -238,6 +238,12 @@ data:
   # cdm_inspection: ./data/cdm_inspection
   cdm_inspection: ./data/cdm_inspection
 
+  # catalogue_export: specifies the CatalogueExport output folder
+  #
+  # Default:
+  # catalogue_export: ./data/catalogue_export
+  catalogue_export: ./data/catalogue_export
+
   # logs: specifies the log folder
   #
   # Default:

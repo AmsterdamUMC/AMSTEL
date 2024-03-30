@@ -1,16 +1,16 @@
-<img src="https://github.com/AmsterdamUMC/Amstel/blob/main/img/logo_c4i_square.png?raw=1" alt="Logo C4I" width=128px><img src="https://github.com/AmsterdamUMC/Amstel/blob/main/img/logo_amds.png?raw=1" alt="Logo AMDS" width=128px/><img src="https://github.com/AmsterdamUMC/Amstel/blob/main/img/lala.png?raw=1" alt="LaLa" width=128px/><img src="https://github.com/AmsterdamUMC/Amstel/blob/main/img/gaia.png?raw=1" alt="Gaia Scientific" width=128px/><img src="https://github.com/AmsterdamUMC/Amstel/blob/main/img/ehden.png?raw=1" alt="EHDEN Foundation" width=128px/>
+<img src="https://github.com/AmsterdamUMC/AMSTEL/blob/main/img/logo_c4i_square.png?raw=1" alt="Logo C4I" width=128px><img src="https://github.com/AmsterdamUMC/AMSTEL/blob/main/img/logo_amds.png?raw=1" alt="Logo AMDS" width=128px/><img src="https://github.com/AmsterdamUMC/AMSTEL/blob/main/img/lala.png?raw=1" alt="LaLa" width=128px/><img src="https://github.com/AmsterdamUMC/AMSTEL/blob/main/img/gaia.png?raw=1" alt="Gaia Scientific" width=128px/><img src="https://github.com/AmsterdamUMC/AMSTEL/blob/main/img/ehden.png?raw=1" alt="EHDEN Foundation" width=128px/>
 
 # AMSTEL: AmsterdamUMCdb - OMOP Common Data Model ETL
 
-The `AMSTEL` GitHub respository and `amstel` R package were developed to convert [AmsterdamUMCdb](https://www.github.com/AmsterdamUMC/AmsterdamUMCdb), the first freely accessible European intensive care database, to the [Observational Medical Outcomes Partnership  Common Data Model version 5.4](https://ohdsi.github.io/CommonDataModel/cdm54.html) (OMOP CDM 5.4) maintained by the [Observational Health Data Sciences and Informatics](https://www.ohdsi.org/) (OHDSI) community. 
+The `AMSTEL` GitHub respository and `amstel` R package were developed to convert [AmsterdamUMCdb](https://www.github.com/AmsterdamUMC/AmsterdamUMCdb), the first freely accessible European intensive care database, to the [Observational Medical Outcomes Partnership Common Data Model version 5.4](https://ohdsi.github.io/CommonDataModel/cdm54.html) (OMOP CDM 5.4) maintained by the [Observational Health Data Sciences and Informatics](https://www.ohdsi.org/) (OHDSI) community. 
 
-This repository contains a collection of resources, mainly documentation, R scripts, SQL queries and mapping files, that form the ETL (Extract, Transform, and Load) process for converting AmsterdamUMCdb to the OMOP Common Data Model.
+This repository contains a collection of resources, mainly documentation, R scripts, SQL queries and mapping files, that form the ETL (Extract, Transform, and Load) process for converting AmsterdamUMCdb to the OMOP Common Data Model. The `amstel` R package documentation, created with [`pkgdown`](https://pkgdown.r-lib.org/) is available [here](https://amsterdamumc.github.io/AMSTEL/).
 
 The ETL for AmsterdamUMCdb is based on the excellent and well-documented ETL of the Sythea project available at: https://github.com/OHDSI/ETL-Synthea.
 
 In this document we describe the steps that were taken to convert AmsterdamUMCdb to the OMOP Common Data Model. When steps are only needed to develop an ETL, and not for the actual conversion of AmsterdamUMC to the CDM, we have added the remark *Development Only*.
 
-Currently, to create an environment that contains the complete OHDSI software stack, a number of installation steps have to be taken to be able to fully utilize the data in the CDM. Since many tutorials were written for Microsoft Windows, this document explicitly contains documentation to use a full open source environment running on Ubuntu, but should equally well run on any other modern operation system.
+Currently, to create an environment that contains the complete OHDSI software stack, a number of installation steps have to be taken to be able to fully utilize the data in the CDM. Since many tutorials were written for Microsoft Windows, this document explicitly contains documentation to use a full open source environment running on Ubuntu, but should equally well run on any other modern operating system.
 
 The `AMSTEL` project is a collaboration between the Center for Critical Care Computational Intelligence of [Amsterdam UMC](https://www.amsterdamumc.nl/), [Amsterdam Medical Data Science](https://amsterdammedicaldatascience.nl/), [Stichting LaLa](http://lalacongres.eu/), [Gaia Scientific](https://www.gaiascientific.com/) and the [European Health Data & Evidence Network](https://www.ehden.eu/).
 
@@ -51,10 +51,10 @@ sudo apt-get install gdebi-core
 wget https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2023.03.0-386-amd64.deb
 sudo gdebi rstudio-server-2023.03.0-386-amd64.deb
 ```
-Alteratively, you could install R-studio Desktop, if you only intend to use R from your local machine from [here](https://posit.co/download/rstudio-desktop/).
+Alteratively, you could install R-studio Desktop if you only intend to use R from your local machine from [here](https://posit.co/download/rstudio-desktop/).
 
 # Clone the AMSTEL Github repository
-The Amstel Github respository contains mapping data and a folder structure to succcesfully combine the required data for running the ETL.
+The AMSTEL Github respository contains mapping data and a folder structure to succcesfully combine the required data for running the ETL.
 
 ## Install git
 ```bash
@@ -74,7 +74,7 @@ sudo apt install default-jdk
 This will install the default Java Development Kit
 
 # Setup a new PostgreSQL user
-If working from a (virtual) machine that differs from the  database server, you may be required to set up an new user with Superuser privileges using pgAdmin (default postgres). In addition, a standard postgreSQL setup will require adding the following line to the `pg_hba.conf` file in the root of your PostgreSQL installation path to allow your machine to connect to the databaser server:
+If working from a (virtual) machine that differs from the  database server, you may be required to set up a new user with Superuser privileges using pgAdmin (default postgres). In addition, a standard postgreSQL setup will require adding the following line to the `pg_hba.conf` file in the root of your PostgreSQL installation path to allow your machine to connect to the databaser server:
 
 ```
 # add permission to query database from OHDSI (virtual) machine
@@ -408,8 +408,10 @@ You should now have a running instance of ATLAS and should be able to browse agg
 
 
 # DataQualityDashboard Thresholds
-* Development only*
-While the default DQD thresholds have been chosen by OHDSI community experts, they may not be appropriate for the source database. To change, these thresholds, 
+
+*Development only*
+
+While the default DQD thresholds have been chosen by OHDSI community experts, they may not be appropriate for the source database. To change, these thresholds: 
 
 1. clone the repository:
 
@@ -424,6 +426,7 @@ cp DataQualityDashboard/inst/csv/OMOP_CDMv5.4* AMSTEL/data/dqd
 ```
 
 # CdmInspection
+
 *Development only*
 
 [EHDEN CdmInspection](https://github.com/EHDEN/CdmInspection) is an R 
@@ -440,11 +443,11 @@ From an R console, run:
 remotes::install_github("EHDEN/CdmInspection")
 ```
 
-# Publish DQD results
+# Publish DataQualityDashboard results
 
 *Development only*
 
-This uses the web application that is part of the OHDSI Data Quality Dashboard shiny app to display the results in the GitHub pages documentation, but without the R (server) dependencies.
+This uses the web application that is part of the OHDSI Data Quality Dashboard shiny app to display the results in the GitHub pages documentation, but without the R (server) dependencies. The most recent published OHDSI DataQualityDashboard results can be found [here](https://amsterdamumc.github.io/AMSTEL/dqd/index.html).
 
 Copy the required files from the cloned repository to the `docs` folder of `AMSTEL`:
 ```bash
@@ -461,5 +464,16 @@ Copy the most recent results file (`amsterdamumcdb v1.0.2-<timestamp>.json)`) to
 cp AMSTEL/data/dqd/amsterdamumcdb\ v1.0.2-20240317194413.json AMSTEL/docs/dqd/results.json
 ```
 
-# Trivia:
+# Run catalogueExport
+
+*Development only*
+
+The [EHDEN CatalogueExport](https://github.com/EHDEN/CatalogueExport) exports the data from the OMOP-CDM that is necessary for the EHDEN Database Catalogue available at https://portal.ehden.eu/.
+
+From an R console, run:
+```r
+remotes::install_github("EHDEN/CatalogueExport")
+```
+
+# Trivia
 AMSTEL: an anagram of AMS (Amsterdam) ETL (Extract, Transform, and Load), named after the river flowing through the city of Amsterdam

@@ -13,6 +13,9 @@
     <loc>https://amsterdamumc.github.io/AMSTEL/authors.html</loc>
   </url>
   <url>
+    <loc>https://amsterdamumc.github.io/AMSTEL/dqd/index.html</loc>
+  </url>
+  <url>
     <loc>https://amsterdamumc.github.io/AMSTEL/index.html</loc>
   </url>
   <url>
@@ -23,6 +26,15 @@
   </url>
   <url>
     <loc>https://amsterdamumc.github.io/AMSTEL/reference/alter_system_settings.html</loc>
+  </url>
+  <url>
+    <loc>https://amsterdamumc.github.io/AMSTEL/reference/apply_corrections.html</loc>
+  </url>
+  <url>
+    <loc>https://amsterdamumc.github.io/AMSTEL/reference/catalogue_export.html</loc>
+  </url>
+  <url>
+    <loc>https://amsterdamumc.github.io/AMSTEL/reference/cdm_inspection.html</loc>
   </url>
   <url>
     <loc>https://amsterdamumc.github.io/AMSTEL/reference/cloud_auth.html</loc>
@@ -109,10 +121,16 @@
     <loc>https://amsterdamumc.github.io/AMSTEL/reference/load_source_to_concept_map.html</loc>
   </url>
   <url>
+    <loc>https://amsterdamumc.github.io/AMSTEL/reference/load_source_to_value_map.html</loc>
+  </url>
+  <url>
     <loc>https://amsterdamumc.github.io/AMSTEL/reference/load_usagi_concepts.html</loc>
   </url>
   <url>
     <loc>https://amsterdamumc.github.io/AMSTEL/reference/load_vocabulary_tables.html</loc>
+  </url>
+  <url>
+    <loc>https://amsterdamumc.github.io/AMSTEL/reference/migrate_source_to_value_map.html</loc>
   </url>
   <url>
     <loc>https://amsterdamumc.github.io/AMSTEL/reference/read_vocabulary.html</loc>

@@ -12,14 +12,14 @@ amstel::drop_data_tables()
 amstel::create_data_tables()
 
 # Create 'fresh' CDM vocabulary tables ----
-# amstel::drop_vocabulary_tables()
-# amstel::create_vocabulary_tables()
+amstel::drop_vocabulary_tables()
+amstel::create_vocabulary_tables()
 
 # Load the vocabulary csv files into the CDM ----
-# amstel::load_vocabulary_tables()
+amstel::load_vocabulary_tables()
 
 # Index vocabularies to improve query performance ----
-# amstel::index_vocabulary_tables()
+amstel::index_vocabulary_tables()
 
 # Load the source_to_concept_map into the CDM ----
 amstel::load_source_to_concept_map()
@@ -45,5 +45,10 @@ amstel::achilles()
 # Creates Web API tables ----
 amstel::create_webapi_tables()
 
-# Runs OHDSI CDM Inspection package for submission ----
-amstel::cdm_inspection()
+# Development Only:
+# Runs OHDSI CDMInspection package for submission ----
+# amstel::cdm_inspection()
+
+# Development Only:
+# Runs EHDEN CatalogueExport for submission the EHDEN Database Catalogue
+# amstel::catalogue_export()

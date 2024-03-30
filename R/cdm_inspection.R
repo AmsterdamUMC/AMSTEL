@@ -1,5 +1,11 @@
-#' Runs the CdmInspection to check the OMOP-CDM instance before submission
-#' to EHDEN
+#' Runs EHDEN CdmInspection
+#'
+#' @description
+#' Runs the EHDEN CdmInspection tool to check the OMOP-CDM instance
+#' before submission to EHDEN.
+#'
+#' CdmInspection was created to support quality control inspection of an
+#' OMOP-CDM instance.
 #'
 #' @export
 cdm_inspection <- function() {

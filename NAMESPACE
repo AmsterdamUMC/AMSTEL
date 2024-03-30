@@ -3,6 +3,7 @@
 export(achilles)
 export(alter_system_settings)
 export(apply_corrections)
+export(catalogue_export)
 export(cdm_inspection)
 export(cloud_auth)
 export(connect)

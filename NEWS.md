@@ -1,4 +1,7 @@
-# amstel 0.9.1
+# amstel 1.0.0
+## First release
+First release for Milestone 3 reporting.
+
 ## ETL Changes
 * SET `SOURCE_CONCEPT_ID` TO NULL instead of 0 since this is a not required field and considered `FAIL` in DQD.
 * Added mapped unit from source date into UNIT_SOURCE_CONCEPT_ID for future ETL specification based on issue (https://github.com/OHDSI/CommonDataModel/issues/259) for future releases.
@@ -9,7 +12,7 @@
 * Improved ETL unit testing by increasing coverage.
 
 ## Mappings
-* Remapped many concepts due to changes deprecations of concepts in `Vocabulary v5.0 29-FEB-24`
+* Remapped many concepts due to changes and deprecations of concepts in `Vocabulary v5.0 29-FEB-24`
 * Changed mappings from `Volume fraction` (%) to `Pure Volume Fraction` (decimal fraction) for hematocrit
 * Improved mappings from `listitems` table  (e.g. all Glasgow Coma Scale, MRC muscle strength)
 * Removed the `None` and `Geen` units from mapping to allow NULL value for unit_concept_id to be stored in the MEASUREMENT table for unitless measurements (e.g. Hematocrit = 0.40)

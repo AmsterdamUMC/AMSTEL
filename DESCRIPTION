@@ -1,6 +1,6 @@
 Package: amstel
 Title: AmsterdamUMCdb extracting, transforming and loading (ETL) into the OMOP Common Data Model
-Version: 0.9.0.0000
+Version: 1.0.0.0000
 Authors@R: c(
   person(given = "Patrick", family = "Thoral", email="p.thoral@amsterdamumc.nl", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-6140-7195")),
   person(given = "Paul", family = "Elbers", email="p.elbers@amsterdamumc.nl", role=c("aut"), comment = c(ORCID = "0000-0003-0447-6893")),
@@ -58,4 +58,4 @@ Remotes:
     OHDSI/Hades,
     EHDEN/CdmInspection
 License: MIT + file LICENSE
-URL: https://amsterdamumc.github.io/AMSTEL/
+URL: https://github.com/AmsterdamUMC/AMSTEL

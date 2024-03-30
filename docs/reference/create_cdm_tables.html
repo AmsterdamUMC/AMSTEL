@@ -12,7 +12,7 @@ from the OHDSI/CommonDataModel package."><!-- mathjax --><script src="https://cd
     
     <a class="navbar-brand me-2" href="../index.html">amstel</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.9.0.0000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0.0000</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,12 +24,21 @@ from the OHDSI/CommonDataModel package."><!-- mathjax --><script src="https://cd
   <a class="nav-link" href="../reference/index.html">Reference</a>
 </li>
 <li class="nav-item">
+  <a class="nav-link" href="../dqd/index.html">Data Quality Dashboard</a>
+</li>
+<li class="nav-item">
   <a class="nav-link" href="../news/index.html">Changelog</a>
 </li>
       </ul><form class="form-inline my-2 my-lg-0" role="search">
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off"></form>
 
-      <ul class="navbar-nav"></ul></div>
+      <ul class="navbar-nav"><li class="nav-item">
+  <a class="external-link nav-link" href="https://github.com/AmsterdamUMC/AMSTEL/" aria-label="github">
+    <span class="fab fa fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul></div>
 
     
   </div>
@@ -37,7 +46,7 @@ from the OHDSI/CommonDataModel package."><!-- mathjax --><script src="https://cd
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
       <img src="" class="logo" alt=""><h1>Create Common Data Model tables</h1>
-      
+      <small class="dont-index">Source: <a href="https://github.com/AmsterdamUMC/AMSTEL/blob/HEAD/R/create_cdm_tables.R" class="external-link"><code>R/create_cdm_tables.R</code></a></small>
       <div class="d-none name"><code>create_cdm_tables.Rd</code></div>
     </div>
 
@@ -72,15 +81,46 @@ or the <code>executeDdl</code> function from the <code>OHDSI/CommonDataModel</co
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">create_cdm_tables</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Using github PAT from envvar GITHUB_PAT</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Skipping install of 'CommonDataModel' from a github remote, the SHA1 (43f65730) has not changed since last install.</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span>   Use `force = TRUE` to force installation</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Using github PAT from envvar GITHUB_PAT. Use `gitcreds::gitcreds_set()` and unset GITHUB_PAT in .Renviron (or elsewhere) if you want to use the more secure git credential store instead.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Downloading GitHub repo OHDSI/CommonDataModel@HEAD</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> xfun      (0.42         -&gt; 0.43        ) [CRAN]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> htmltools (0.5.7        -&gt; 0.5.8       ) [CRAN]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> bslib     (0.6.1        -&gt; 0.7.0       ) [CRAN]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> SqlRender (bd72fb4b5... -&gt; a1d4ab994...) [GitHub]</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Installing 3 packages: xfun, htmltools, bslib</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Installing packages into ‘/tmp/RtmpzTxfho/temp_libpath763ab5a799f’</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> (as ‘lib’ is unspecified)</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Downloading GitHub repo OHDSI/SqlRender@HEAD</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">──</span> <span style="color: #00BBBB;">R CMD build</span> <span style="color: #00BBBB;">─────────────────────────────────────────────────────────────────</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> * checking for file ‘/tmp/RtmpvOL3gt/remotes2e0e657d9aced/OHDSI-SqlRender-a1d4ab9/DESCRIPTION’ ... OK</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> * preparing ‘SqlRender’:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> * checking DESCRIPTION meta-information ... OK</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> * checking for LF line-endings in source and make files and shell scripts</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> * checking for empty or unneeded directories</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> * building ‘SqlRender_1.17.0.tar.gz’</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Installing package into ‘/tmp/RtmpzTxfho/temp_libpath763ab5a799f’</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> (as ‘lib’ is unspecified)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">──</span> <span style="color: #00BBBB;">R CMD build</span> <span style="color: #00BBBB;">─────────────────────────────────────────────────────────────────</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> * checking for file ‘/tmp/RtmpvOL3gt/remotes2e0e65461fc29d/OHDSI-CommonDataModel-e80f0e4/DESCRIPTION’ ... OK</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> * preparing ‘CommonDataModel’:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> * checking DESCRIPTION meta-information ... OK</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> * checking for LF line-endings in source and make files and shell scripts</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> * checking for empty or unneeded directories</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Omitted ‘LazyData’ from DESCRIPTION</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> * building ‘CommonDataModel_0.2.0.tar.gz’</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Installing package into ‘/tmp/RtmpzTxfho/temp_libpath763ab5a799f’</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> (as ‘lib’ is unspecified)</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Connecting using PostgreSQL driver</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Executing SQL took 0.00793 secs</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Executing SQL took 0.00447 secs</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Creating CDM data tables...</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Connecting using PostgreSQL driver</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Executing SQL took 0.1 secs</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Executing SQL took 0.0559 secs</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Creating CDM vocabulary tables...</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Connecting using PostgreSQL driver</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Executing SQL took 0.0153 secs</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Executing SQL took 0.0384 secs</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

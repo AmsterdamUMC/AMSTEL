@@ -14,7 +14,7 @@ has been created to select patients receiving mechanical ventilation."><!-- math
     
     <a class="navbar-brand me-2" href="../index.html">amstel</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.9.0.0000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0.0000</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,12 +26,21 @@ has been created to select patients receiving mechanical ventilation."><!-- math
   <a class="nav-link" href="../reference/index.html">Reference</a>
 </li>
 <li class="nav-item">
+  <a class="nav-link" href="../dqd/index.html">Data Quality Dashboard</a>
+</li>
+<li class="nav-item">
   <a class="nav-link" href="../news/index.html">Changelog</a>
 </li>
       </ul><form class="form-inline my-2 my-lg-0" role="search">
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off"></form>
 
-      <ul class="navbar-nav"></ul></div>
+      <ul class="navbar-nav"><li class="nav-item">
+  <a class="external-link nav-link" href="https://github.com/AmsterdamUMC/AMSTEL/" aria-label="github">
+    <span class="fab fa fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul></div>
 
     
   </div>
@@ -39,7 +48,7 @@ has been created to select patients receiving mechanical ventilation."><!-- math
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
       <img src="" class="logo" alt=""><h1>Create the Common Data Model Results Cohort Tables</h1>
-      
+      <small class="dont-index">Source: <a href="https://github.com/AmsterdamUMC/AMSTEL/blob/HEAD/R/create_cohort_tables.R" class="external-link"><code>R/create_cohort_tables.R</code></a></small>
       <div class="d-none name"><code>create_cohort_tables.Rd</code></div>
     </div>
 
@@ -66,21 +75,25 @@ with CDM data and vocabulary tables.</p>
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu"><a href="create_cdm_tables.html">create_cdm_tables</a></span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Using github PAT from envvar GITHUB_PAT</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Skipping install of 'CommonDataModel' from a github remote, the SHA1 (43f65730) has not changed since last install.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Using github PAT from envvar GITHUB_PAT. Use `gitcreds::gitcreds_set()` and unset GITHUB_PAT in .Renviron (or elsewhere) if you want to use the more secure git credential store instead.</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Skipping install of 'CommonDataModel' from a github remote, the SHA1 (e80f0e4d) has not changed since last install.</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span>   Use `force = TRUE` to force installation</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Connecting using PostgreSQL driver</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Executing SQL took 0.00698 secs</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Executing SQL took 0.00401 secs</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Creating CDM data tables...</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Connecting using PostgreSQL driver</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Executing SQL took 0.0932 secs</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Executing SQL took 0.0309 secs</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Creating CDM vocabulary tables...</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Connecting using PostgreSQL driver</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Executing SQL took 0.122 secs</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Executing SQL took 0.0178 secs</span>
 <span class="r-in"><span><span class="fu"><a href="create_vocabulary_tables.html">create_vocabulary_tables</a></span><span class="op">(</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Creating CDM vocabulary tables...</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Connecting using PostgreSQL driver</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Executing SQL took 0.0271 secs</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Executing SQL took 0.0161 secs</span>
 <span class="r-in"><span><span class="fu">create_cohort_tables</span><span class="op">(</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Creating Cohort tables...</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Connecting using PostgreSQL driver</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Executing SQL took 0.092 secs</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Executing SQL took 0.0704 secs</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
