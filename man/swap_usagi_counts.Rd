@@ -10,14 +10,10 @@ swap_usagi_counts(concept_group)
 \item{concept_group}{concept group name that will be used to read the file}
 }
 \value{
-tibble containing the usagi mappings with counts swapped
+tibble containing the Usagi mappings with counts swapped
 }
 \description{
 Swaps the sourceFrequency and counts/counts_validated columns to allow
 correct sorting in OHDSI Usagi. This is mainly used to help prioritizing
 mapping to (manually) validated values vs not-validated (device) data.
-}
-\examples{
-swapped <- swap_usagi_counts("numericitems_other")
-swapped
 }

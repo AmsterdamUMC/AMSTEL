@@ -56,7 +56,7 @@ SELECT
 
     a.gender AS gender_source_value,
 
-    0 AS gender_source_concept_id,
+    NULL AS gender_source_concept_id,
 
     NULL AS race_source_value,
 

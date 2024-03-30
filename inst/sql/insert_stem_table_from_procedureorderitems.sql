@@ -78,9 +78,9 @@ SELECT
 
     NULL AS visit_detail_id,
 
-    po.item AS source_value,
+    LEFT(po.item, 50) AS source_value,
 
-    0 AS source_concept_id,
+    NULL AS source_concept_id,
 
     NULL AS value_as_number,
     NULL AS value_as_string,
@@ -118,7 +118,7 @@ SELECT
     -- this is mainly used for adding a qualifier (provider) to the
     -- consultation Observation
     stcm_q.target_concept_id AS qualifier_concept_id,
-    po.item AS qualifier_source_value,
+    LEFT(po.item, 50) AS qualifier_source_value,
 
     NULL AS event_id,
     NULL AS event_field_concept_id

@@ -9,6 +9,7 @@
 achilles <- function() {
 
     log_info("Running OHDSI ACHILLES database characterization...")
+
     connection_details <- get_connection_details("cdm")
 
     cdm_database_schema <- amstel_env$config$databases$cdm$schema

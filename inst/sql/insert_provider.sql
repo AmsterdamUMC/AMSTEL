@@ -26,7 +26,7 @@ SELECT
     NULL AS gender_concept_id,
     source_code AS provider_source_value,
     source_code AS specialty_source_value,
-    0 AS specialty_source_concept_id,
+    NULL AS specialty_source_concept_id,
     NULL AS gender_source_value,
     NULL AS gender_source_concept_id
 

@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">amstel</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.9.0.0000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0.0000</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,12 +22,21 @@
   <a class="nav-link" href="../reference/index.html">Reference</a>
 </li>
 <li class="nav-item">
+  <a class="nav-link" href="../dqd/index.html">Data Quality Dashboard</a>
+</li>
+<li class="nav-item">
   <a class="nav-link" href="../news/index.html">Changelog</a>
 </li>
       </ul><form class="form-inline my-2 my-lg-0" role="search">
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off"></form>
 
-      <ul class="navbar-nav"></ul></div>
+      <ul class="navbar-nav"><li class="nav-item">
+  <a class="external-link nav-link" href="https://github.com/AmsterdamUMC/AMSTEL/" aria-label="github">
+    <span class="fab fa fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul></div>
 
     
   </div>
@@ -58,6 +67,22 @@
           <code><a href="alter_system_settings.html">alter_system_settings()</a></code> 
         </dt>
         <dd>Alters PostgreSQL System settings.</dd>
+      </dl><dl><dt>
+          
+          <code><a href="apply_corrections.html">apply_corrections()</a></code> 
+        </dt>
+        <dd>Apply corrections</dd>
+      </dl><dl><dt>
+          
+          <code><a href="catalogue_export.html">catalogue_export()</a></code> 
+        </dt>
+        <dd>Run EHDEN CatalogueExport</dd>
+      </dl><dl><dt>
+          
+          <code><a href="cdm_inspection.html">cdm_inspection()</a></code> 
+        </dt>
+        <dd>Runs EHDEN CdmInspection to check the OMOP-CDM instance before submission
+to EHDEN</dd>
       </dl><dl><dt>
           
           <code><a href="cloud_auth.html">cloud_auth()</a></code> 
@@ -116,7 +141,7 @@ example purposes.</dd>
           
           <code><a href="data_quality_dashboard.html">data_quality_dashboard()</a></code> 
         </dt>
-        <dd>Shows the OHDSI Data Quality Dashboard with the most recents results</dd>
+        <dd>Shows the OHDSI Data Quality Dashboard</dd>
       </dl><dl><dt>
           
           <code><a href="download_drivers.html">download_drivers()</a></code> 
@@ -202,6 +227,11 @@ example code</dd>
         <dd>Load source_to_concept_map table from Usagi mapping Files.</dd>
       </dl><dl><dt>
           
+          <code><a href="load_source_to_value_map.html">load_source_to_value_map()</a></code> 
+        </dt>
+        <dd>Load source_to_value_map table from SQL file.</dd>
+      </dl><dl><dt>
+          
           <code><a href="load_usagi_concepts.html">load_usagi_concepts()</a></code> 
         </dt>
         <dd>Load Usagi Concepts</dd>
@@ -210,6 +240,12 @@ example code</dd>
           <code><a href="load_vocabulary_tables.html">load_vocabulary_tables()</a></code> 
         </dt>
         <dd>Load Vocabulary Tables From CSV Files.</dd>
+      </dl><dl><dt>
+          
+          <code><a href="migrate_source_to_value_map.html">migrate_source_to_value_map()</a></code> 
+        </dt>
+        <dd>Migrates the source_to_concept_map data to the
+new source_to_value_map table</dd>
       </dl><dl><dt>
           
           <code><a href="read_vocabulary.html">read_vocabulary()</a></code> 
@@ -224,7 +260,7 @@ example code</dd>
           
           <code><a href="show_dqd_log.html">show_dqd_log()</a></code> 
         </dt>
-        <dd>Show Data Quality Dashboard log (Shiny App)</dd>
+        <dd>Show Data Quality Dashboard log</dd>
       </dl><dl><dt>
           
           <code><a href="swap_usagi_counts.html">swap_usagi_counts()</a></code> 

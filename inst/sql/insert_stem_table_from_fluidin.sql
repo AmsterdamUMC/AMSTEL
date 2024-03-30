@@ -94,8 +94,8 @@ SELECT
     visit_occurrence_id,
     NULL AS visit_detail_id,
 
-    LEFT(CONCAT('Fluid In: ', s.source_value),50) AS source_value,
-    0 AS source_concept_id,
+    LEFT(CONCAT('Fluid In: ', s.source_value), 50) AS source_value,
+    NULL AS source_concept_id,
 
     -- stem_table for drug_exposure records (temporarily) stores fluidin in
     -- value_as_number field
@@ -105,7 +105,7 @@ SELECT
     NULL AS value_as_concept_id,
     8587 AS unit_concept_id, --milliliter
     s.value_as_number AS value_source_value,
-    0 AS unit_source_concept_id,
+    NULL AS unit_source_concept_id,
     'ml' AS unit_source_value,
     NULL AS verbatim_end_date,
     NULL AS days_supply,

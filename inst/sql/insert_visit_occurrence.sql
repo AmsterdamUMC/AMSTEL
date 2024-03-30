@@ -51,7 +51,7 @@ SELECT
 
     a.location AS visit_source_value,
 
-    0 AS visit_source_concept_id,
+    NULL AS visit_source_concept_id,
 
     stcm_origin.target_concept_id AS admitted_from_concept_id,
 

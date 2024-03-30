@@ -15,6 +15,9 @@
 #' @examplesIf has_example_environment()
 #' create_data_tables()
 create_data_tables <- function() {
+
+  log_info("Creating CDM data tables...")
+
   connection_details <- get_connection_details("cdm")
   conn <- DatabaseConnector::connect(connection_details)
   on.exit(DatabaseConnector::disconnect(conn))

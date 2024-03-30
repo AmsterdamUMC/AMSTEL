@@ -77,7 +77,7 @@ SELECT
     a.weight as value_as_number,
     NULL AS value_as_string,
     NULL AS value_as_concept_id,
-    NULL AS unit_concept_id,
+    9529 AS unit_concept_id, --kilogram
     a.weightgroup AS value_source_value,
     9529 AS unit_source_concept_id, --kilogram
     'kg' AS unit_source_value,
@@ -191,7 +191,7 @@ SELECT
     a.height as value_as_number,
     NULL AS value_as_string,
     NULL AS value_as_concept_id,
-    NULL AS unit_concept_id,
+    8582 AS unit_concept_id, --centimeter
     a.heightgroup AS value_source_value,
     8582 AS unit_source_concept_id, --centimeter
     'cm' AS unit_source_value,

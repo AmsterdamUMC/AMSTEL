@@ -4,10 +4,30 @@
 \alias{execute_dqd_checks}
 \title{Evaluate Data Quality of AmsterdamUMCdb OMOP CDM after ETL.}
 \usage{
-execute_dqd_checks()
+execute_dqd_checks(custom_control = TRUE, check_names = c(), sql_only = FALSE)
+}
+\arguments{
+\item{custom_control}{Specifies whether to apply the customized control files (thresholds)
+for AmsterdamUMCdb
+Default: TRUE}
+
+\item{check_names}{Vector (\code{c()}) of data quality checks to run. Names can be found at:
+https://github.com/OHDSI/DataQualityDashboard/blob/main/inst/csv/OMOP_CDMv5.4_Check_Descriptions.csv
+Default: c()}
+
+\item{sql_only}{Specifies to output the SQL query files instead of executing them. The files
+will be stored in the \code{sql} folder of the \code{dqd} output folder as specified in
+\code{config.yaml}. Default: FALSE}
 }
 \description{
 This function runs the tests of the OHDSI Data Quality
 Dashboard.
 Based on: https://ohdsi.github.io/DataQualityDashboard/articles/DataQualityDashboard.html
+}
+\details{
+This function runs \code{DataQualityDashboard::executeDqChecks()}
+to perform the data quality checks on the AmsterdamUMCdb CDM instance. After
+a successful execution a json results file will be created, that can be
+shown in the DataQualityDashboard Shiny app using
+\code{amstel::data_quality_dashboard()}.
 }

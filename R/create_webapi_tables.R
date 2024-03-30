@@ -12,11 +12,13 @@
 #'
 #' @export
 create_webapi_tables <- function() {
+
+  log_info("Creating WebAPI tables...")
+
   connection_details <- get_connection_details("cdm")
   conn <- DatabaseConnector::connect(connection_details)
   on.exit(DatabaseConnector::disconnect(conn))
 
-  log_info("Creating WebAPI tables...")
   sql <- load_sql('create_webapi_tables.sql')
   DatabaseConnector::renderTranslateExecuteSql(
     progressBar = interactive(),
@@ -71,4 +73,7 @@ create_webapi_tables <- function() {
     connection = conn,
     sql = sql
   )
+
+  # Refreshes WebAPI with the new source
+  httr::GET("http://localhost:8080/WebAPI/source/refresh")
 }

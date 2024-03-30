@@ -48,6 +48,7 @@ load_data_tables <- function() {
     source_description = amstel_env$config$metadata$source_description,
     source_documentation_reference = amstel_env$config$metadata$source_documentation_reference,
     cdm_etl_reference = amstel_env$config$metadata$cdm_etl_reference,
+    cdm_version = amstel_env$config$metadata$cdm_version,
     source_release_date = amstel_env$config$metadata$source_release_date
   )
 
@@ -216,6 +217,17 @@ load_data_tables <- function() {
   # inserts listitems into stem_table
   log_info("- listitems -> stem_table")
   sql <- load_sql('insert_stem_table_from_listitems.sql')
+  DatabaseConnector::renderTranslateExecuteSql(
+    progressBar = interactive(),
+    connection = conn,
+    sql = sql,
+    cdm_schema = amstel_env$config$databases$cdm$schema,
+    ams_schema = amstel_env$config$databases$amsterdamumcdb$schema
+  )
+
+  # inserts listitems values into stem_table
+  log_info("- listitems values -> stem_table")
+  sql <- load_sql('insert_stem_table_from_listitems_values.sql')
   DatabaseConnector::renderTranslateExecuteSql(
     progressBar = interactive(),
     connection = conn,

@@ -68,6 +68,9 @@ etl <- function(vocabulary = TRUE, mappings = TRUE,
   # Index the CDM to improve query performance
   index_data_tables()
 
+  # correct data issues
+  apply_corrections()
+
   # Create example AmsterdamUMCdb cohort tables (mechanical ventilation)
   create_cohort_tables()
 

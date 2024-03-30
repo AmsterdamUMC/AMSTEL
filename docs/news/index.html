@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">amstel</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.9.0.0000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0.0000</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,13 +21,22 @@
       <ul class="navbar-nav me-auto"><li class="nav-item">
   <a class="nav-link" href="../reference/index.html">Reference</a>
 </li>
+<li class="nav-item">
+  <a class="nav-link" href="../dqd/index.html">Data Quality Dashboard</a>
+</li>
 <li class="active nav-item">
   <a class="nav-link" href="../news/index.html">Changelog</a>
 </li>
       </ul><form class="form-inline my-2 my-lg-0" role="search">
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off"></form>
 
-      <ul class="navbar-nav"></ul></div>
+      <ul class="navbar-nav"><li class="nav-item">
+  <a class="external-link nav-link" href="https://github.com/AmsterdamUMC/AMSTEL/" aria-label="github">
+    <span class="fab fa fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul></div>
 
     
   </div>
@@ -35,9 +44,93 @@
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
       <img src="" class="logo" alt=""><h1>Changelog</h1>
-      
+      <small>Source: <a href="https://github.com/AmsterdamUMC/AMSTEL/blob/HEAD/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="1.0.0" id="amstel-100">amstel 1.0.0<a class="anchor" aria-label="anchor" href="#amstel-100"></a></h2>
+<div class="section level3">
+<h3 id="first-release-1-0-0">First release<a class="anchor" aria-label="anchor" href="#first-release-1-0-0"></a></h3>
+<p>First release for Milestone 3 reporting.</p>
+</div>
+<div class="section level3">
+<h3 id="etl-changes-1-0-0">ETL Changes<a class="anchor" aria-label="anchor" href="#etl-changes-1-0-0"></a></h3>
+<ul><li>SET <code>SOURCE_CONCEPT_ID</code> TO NULL instead of 0 since this is a not required field and considered <code>FAIL</code> in DQD.</li>
+<li>Added mapped unit from source date into UNIT_SOURCE_CONCEPT_ID for future ETL specification based on issue (<a href="https://github.com/OHDSI/CommonDataModel/issues/259" class="external-link uri">https://github.com/OHDSI/CommonDataModel/issues/259</a>) for future releases.</li>
+<li>Allows the ETL to process manually added units in Usagi using the <code>MAP_TO_UNIT</code> type to fix missing (implausible) units for some concepts that <code>FAIL</code> in DQD</li>
+<li>Conditional index creation (IF NOT EXISTS) to allow continuing index creation if there is a failure (i.e. <code>DISK FULL</code>)</li>
+<li>Added DRUG_STRENGTH to ignore list of DQD since this table is OHDSI maintained</li>
+<li>Migrated source vocabularies <code>AUMC Drug Quantity</code>, <code>AUMC Quantity</code> from <code>source_to_concept_map</code> to new <code>source_to_value_map</code> intermediate table since Vocabulary v5.0 29-FEB-24 deprecated many concepts representing numeric values.</li>
+<li>Improved ETL unit testing by increasing coverage.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="mappings-1-0-0">Mappings<a class="anchor" aria-label="anchor" href="#mappings-1-0-0"></a></h3>
+<ul><li>Remapped many concepts due to changes and deprecations of concepts in <code>Vocabulary v5.0 29-FEB-24</code>
+</li>
+<li>Changed mappings from <code>Volume fraction</code> (%) to <code>Pure Volume Fraction</code> (decimal fraction) for hematocrit</li>
+<li>Improved mappings from <code>listitems</code> table (e.g. all Glasgow Coma Scale, MRC muscle strength)</li>
+<li>Removed the <code>None</code> and <code>Geen</code> units from mapping to allow NULL value for unit_concept_id to be stored in the MEASUREMENT table for unitless measurements (e.g. Hematocrit = 0.40)</li>
+</ul></div>
+<div class="section level3">
+<h3 id="dataqualitydashboard-1-0-0">DataQualityDashboard<a class="anchor" aria-label="anchor" href="#dataqualitydashboard-1-0-0"></a></h3>
+<div class="section level4">
+<h4 id="field-level-checks-1-0-0">Field level checks<a class="anchor" aria-label="anchor" href="#field-level-checks-1-0-0"></a></h4>
+<ol style="list-style-type: decimal"><li><p><code>field_plausiblestartbeforeend_cdm_source_cdm_release_date</code> The recent DQD version 2.6.0. that added the <code>plausibleStartBeforeEnd</code> check, introduced a bug by adding a check that fails if CDM_RELEASE DATE &gt; CDM_SOURCE. This should, of course, be the other way around. This check is equivalent to the soon to be deprecated, but still active <code>field_plausibletemporalafter_cdm_source_cdm_release_date</code> check. To allow this check to function as intended the check has to be added to the row for <code>cdm_source_date</code> and not <code>cdm_release_date</code> (or the source code changed). The control file has been updated to reflect this.</p></li>
+<li><p><code>field_plausiblevaluehigh_drug_exposure_quantity</code> Failing the default threshold of 1% is entirely expected for this ICU dataset, since most medication was administered intravenously and for most medication in DRUG_STRENGTH this means that the unit of quantity is milligram. As an example, 500 ml of normal saline contains 4500 mg sodium chloride. The threshold has been increased to 10% based on the current database value of ~8% records.</p></li>
+<li><p><code>field_sourcevaluecompleteness_drug_exposure_drug_source_value</code> For completeness, the clinical database was updated to routinely contain every medication administration entry, thus leading to many drugs that were only administered sporadically. The ~40% of unmapped DRUG_SOURCE_VALUE fields have been used in only 1% of drug administrations. The acceptable threshold was increased to 40%.</p></li>
+<li><p><code>field_standardconceptrecordcompleteness_observation_observation_concept_id</code> Many ICU specific concepts, mostly device generated measurements, such as Work of Breathing and Shallow Breathing Index, cannot be mapped to corresponding Standard Concepts. Since by specification, the MEASUREMENT table only allows concepts that are part of the Measurement domain, these unmapped concepts are placed in the OBSERVATION table. In addition since these observations are frequent (up to once every minute) this will lead to a very high number of <code>0</code> values in the <code>observation_concept_id</code> column. While alternatively these concepts could have been omitted, we have decided that these values could be of value in research outside of the standard network analyses. The acceptable threshold was increased to 90%, and hopefully can be decreased by improvements in the LOINC and SNOMED vocabularies.</p></li>
+<li><p><code>field_standardconceptrecordcompleteness_observation_unit_concept_id</code> Similary, some device generated ICU specific concepts use units that currently do not have a corresponding Standard Concept, e.g. <code>J/l</code> (Joule per liter) and <code>µV</code> (microvolt). The acceptable threshold was increased to 30%.</p></li>
+</ol></div>
+<div class="section level4">
+<h4 id="concept-level-checks-1-0-0">Concept level checks<a class="anchor" aria-label="anchor" href="#concept-level-checks-1-0-0"></a></h4>
+<ol style="list-style-type: decimal"><li>
+<code>concept_plausibleunitconceptids_measurement_measurement_concept_id_3026361</code> Added UNIT_CONCEPT_ID 8734 (<code>10*12/L</code>, <code>trillion per liter</code>) to the list of plausible units <code>"32706,8785,8815,8931"</code> for MEASUREMENT_CONCEPT_ID 3026361 (<code>Erythrocytes [#/volume] in Blood</code>) since this is equivalent to 8815 and 8931. It is common in the Netherlands to express absolute cell counts per liter. 8785 seems a very unlikely unit based on the expected number of significant digits. Is this really used in the wild? For future work it would probably help to define a base unit (i.e. ‘L’) and derive the equivalent units (and perhaps acceptable values) from the base unit.</li>
+</ol><p>List of plausible units:</p>
+<table class="table"><thead><tr class="header"><th>ID</th>
+<th>Code</th>
+<th>Name</th>
+</tr></thead><tbody><tr class="odd"><td>32706</td>
+<td>10*4/uL</td>
+<td>ten thousand per microliter</td>
+</tr><tr class="even"><td>8785</td>
+<td>/mm3</td>
+<td>per cubic millimeter</td>
+</tr><tr class="odd"><td>8815</td>
+<td>10*6/uL</td>
+<td>million per microliter</td>
+</tr><tr class="even"><td>8931</td>
+<td>10*6/mm3</td>
+<td>million per cubic millimeter</td>
+</tr><tr class="odd"><td>NEW: 8734</td>
+<td>10*12/L</td>
+<td>trillion per liter</td>
+</tr></tbody></table><ol start="2" style="list-style-type: decimal"><li><p><code>concept_plausibleunitconceptids_measurement_measurement_concept_id_3010910</code> Similar to <code>concept_plausibleunitconceptids_measurement_measurement_concept_id_3026361</code>: Added UNIT_CONCEPT_ID_ID 8734 (<code>10*12/L</code>, <code>trillion per liter</code>) to the list of plausible units (8647,8785,8815,8931) for MEASUREMENT_CONCEPT_ID 3010910 (<code>ERYTHROCYTES [#/VOLUME] IN BODY FLUID</code>)</p></li>
+<li><p><code>concept_plausibleunitconceptids_measurement_measurement_concept_id_3022174</code> Added UNIT_CONCEPT_ID 9444 (<code>10*9/L</code>, <code>billion per liter</code>) to the list of plausible units for MEASUREMENT_CONCEPT_ID 3022174 (<code>LEUKOCYTES [#/VOLUME] IN BODY FLUID</code>).</p></li>
+</ol><table class="table"><thead><tr class="header"><th>ID</th>
+<th>Code</th>
+<th>Name</th>
+</tr></thead><tbody><tr class="odd"><td>8647</td>
+<td>/uL</td>
+<td>per microliter</td>
+</tr><tr class="even"><td>8784</td>
+<td>{cells}/uL</td>
+<td>cells per microliter</td>
+</tr><tr class="odd"><td>8785</td>
+<td>/mm3</td>
+<td>per cubic millimeter</td>
+</tr><tr class="even"><td>8848</td>
+<td>10*3/uL</td>
+<td>thousand per microliter</td>
+</tr><tr class="odd"><td>8961</td>
+<td>10*3/mm3</td>
+<td>thousand per cubic millimeter</td>
+</tr><tr class="even"><td>NEW: 9444</td>
+<td>10*9/L billion per liter</td>
+<td></td>
+</tr></tbody></table><ol start="4" style="list-style-type: decimal"><li>Missing <code>FEMALE</code> gender for person(s) having procedures with ancestor concept 4041261 (<code>Procedure on female genital system</code>) This has been fixed by adding the gender_concept_id to the record in <code>person</code>. The function <code><a href="../reference/apply_corrections.html">amstel::apply_corrections()</a></code> has been created to allow future data corrections to be applied during the ETL process.</li>
+</ol></div>
+</div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.9.0" id="amstel-090">amstel 0.9.0<a class="anchor" aria-label="anchor" href="#amstel-090"></a></h2>
 <div class="section level3">

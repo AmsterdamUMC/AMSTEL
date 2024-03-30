@@ -12,7 +12,7 @@ files created with the OHDSI Usagi (https://github.com/OHDSI/Usagi) application.
     
     <a class="navbar-brand me-2" href="../index.html">amstel</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.9.0.0000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0.0000</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,12 +24,21 @@ files created with the OHDSI Usagi (https://github.com/OHDSI/Usagi) application.
   <a class="nav-link" href="../reference/index.html">Reference</a>
 </li>
 <li class="nav-item">
+  <a class="nav-link" href="../dqd/index.html">Data Quality Dashboard</a>
+</li>
+<li class="nav-item">
   <a class="nav-link" href="../news/index.html">Changelog</a>
 </li>
       </ul><form class="form-inline my-2 my-lg-0" role="search">
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off"></form>
 
-      <ul class="navbar-nav"></ul></div>
+      <ul class="navbar-nav"><li class="nav-item">
+  <a class="external-link nav-link" href="https://github.com/AmsterdamUMC/AMSTEL/" aria-label="github">
+    <span class="fab fa fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul></div>
 
     
   </div>
@@ -37,7 +46,7 @@ files created with the OHDSI Usagi (https://github.com/OHDSI/Usagi) application.
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
       <img src="" class="logo" alt=""><h1>Load source_to_concept_map table from Usagi mapping Files.</h1>
-      
+      <small class="dont-index">Source: <a href="https://github.com/AmsterdamUMC/AMSTEL/blob/HEAD/R/load_source_to_concept_map.R" class="external-link"><code>R/load_source_to_concept_map.R</code></a></small>
       <div class="d-none name"><code>load_source_to_concept_map.Rd</code></div>
     </div>
 
@@ -67,9 +76,8 @@ Usagi csv files in the <code>mappings</code> folder.</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Loading source_to_concept_map table...</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Connecting using PostgreSQL driver</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Deleting all records from table: source_to_concept_map</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Executing SQL took 0.0386 secs</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Executing SQL took 0.0326 secs</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Reading vocabulary_id from concept vocabulary...</span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Parameter 'progressBar' not found in SQL</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Processing Usagi mapping files...</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> - admissions_gender</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC Gender' for MAPS_TO mapping</span>
@@ -83,7 +91,6 @@ Usagi csv files in the <code>mappings</code> folder.</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC Unit' for MAPS_TO mapping</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> - drugitems_item</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC Drug' for MAPS_TO mapping</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC Drug Quantity' for MAPS_TO_VALUE mapping</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC Drug Route' for MAPS_TO_TYPE mapping</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> - drugitems_ordercategory</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC Route' for MAPS_TO mapping</span>
@@ -93,12 +100,26 @@ Usagi csv files in the <code>mappings</code> folder.</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC Text Value' for MAPS_TO mapping</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> - listitems_item</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC List' for MAPS_TO mapping</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> - listitems_value</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC List Value' for MAPS_TO mapping</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC Qualifier' for MAPS_TO_TYPE mapping</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - listitems_meas_value</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC Meas Value' for MAPS_TO mapping</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC List Unit' for MAPS_TO_UNIT mapping</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - listitems_obs_value</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC Obs Value' for MAPS_TO mapping</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC List Unit' for MAPS_TO_UNIT mapping</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC Qualifier' for MAPS_TO_TYPE mapping</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - listitems_device</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC Device' for MAPS_TO mapping</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - listitems_procedure</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC Procedure' for MAPS_TO mapping</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - listitems_condition</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC Condition' for MAPS_TO mapping</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> - numericitems_lab</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC Laboratory' for MAPS_TO mapping</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC Numeric Unit' for MAPS_TO_UNIT mapping</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> - numericitems_other</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC Numeric' for MAPS_TO mapping</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC Numeric Unit' for MAPS_TO_UNIT mapping</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> - numericitems_tag</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC Tag' for MAPS_TO mapping</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> - numericitems_unit</span>
@@ -109,7 +130,6 @@ Usagi csv files in the <code>mappings</code> folder.</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> - processitems_item</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC Process' for MAPS_TO mapping</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC Anatomic Site' for MAPS_TO_VALUE mapping</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC Quantity' for MAPS_TO_NUMBER mapping</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> - providers</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC Provider' for MAPS_TO mapping</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> - reason_for_admission</span>
@@ -118,10 +138,19 @@ Usagi csv files in the <code>mappings</code> folder.</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   * 'AUMC Specimen Source' for MAPS_TO mapping</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Saving source_to_concept_map.csv in mappings folder...</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Loading mapping records into table: source_to_concept_map</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Inserting data took 1.05 secs</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Inserting data took 1.7 secs</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Loading source_to_value_map table...</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Connecting using PostgreSQL driver</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Deleting source_to_value_map table: source_to_value_map</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Executing SQL took 0.0225 secs</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Creating source_to_value_map table: source_to_value_map</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Executing SQL took 0.0098 secs</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Loading mapping records into table: source_to_value_map</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Inserting data took 0.0284 secs</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Success: source_to_value_map loaded.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Success: source_to_concept_map loaded.</span>
 <span class="r-in"><span><span class="va">stcm</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 5,058 × 9</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 9,746 × 9</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    source_code     source_concept_id source_vocabulary_id source_code_descript…¹</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> Vrouw                           0 AUMC Gender          Vrouw                 </span>
@@ -134,7 +163,7 @@ Usagi csv files in the <code>mappings</code> folder.</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> Operatiekamer …                 0 AUMC Origin          Operatiekamer vanaf v…</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> Special/Medium…                 0 AUMC Origin          Special/Medium care a…</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> Operatiekamer …                 0 AUMC Origin          Operatiekamer vanaf E…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 5,048 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 9,736 more rows</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ abbreviated name: ¹​source_code_description</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 5 more variables: target_concept_id &lt;dbl&gt;, target_vocabulary_id &lt;chr&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   valid_start_date &lt;date&gt;, valid_end_date &lt;date&gt;, invalid_reason &lt;lgl&gt;</span></span>

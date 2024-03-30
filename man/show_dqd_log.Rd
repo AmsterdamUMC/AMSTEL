@@ -2,11 +2,14 @@
 % Please edit documentation in R/data_quality_dashboard.R
 \name{show_dqd_log}
 \alias{show_dqd_log}
-\title{Show Data Quality Dashboard log (Shiny App)}
+\title{Show Data Quality Dashboard log}
 \usage{
 show_dqd_log()
 }
 \description{
-Shows the log created while executing
-DataQualityDashboard::executeDqChecks()
+Shows the log created by \code{amstel::exececute_dqd_checks()}.
+}
+\details{
+Runs the ParallelLogger logviewer shiny app using
+\code{ParallelLogger::launchLogViewer}.
 }

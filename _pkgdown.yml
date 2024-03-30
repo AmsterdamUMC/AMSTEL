@@ -12,3 +12,10 @@ template:
 navbar:
   bg: secondary
   type: dark
+  structure:
+    left:  [intro, reference, dqd, articles, tutorials, news]
+    right: [search, github]
+  components:
+    dqd:
+      text: Data Quality Dashboard
+      href: dqd/index.html

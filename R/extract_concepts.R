@@ -198,6 +198,7 @@ load_usagi_concepts <- function(concept_group) {
       }
       else {
         concepts <- readr::read_csv(
+          col_types = list("comment" = readr::col_character()),
           file = input_file,
           show_col_types = FALSE)
         # return translated concepts
@@ -222,12 +223,9 @@ load_usagi_concepts <- function(concept_group) {
 #'
 #' @param concept_group concept group name that will be used to read the file
 #'
-#' @return tibble containing the usagi mappings with counts swapped
+#' @return tibble containing the Usagi mappings with counts swapped
 #' @export
 #'
-#' @examples
-#' swapped <- swap_usagi_counts("numericitems_other")
-#' swapped
 swap_usagi_counts <- function(concept_group) {
   usagi_mappings <- load_usagi_concepts(concept_group)
 

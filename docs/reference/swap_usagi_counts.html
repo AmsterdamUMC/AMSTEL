@@ -14,7 +14,7 @@ mapping to (manually) validated values vs not-validated (device) data."><!-- mat
     
     <a class="navbar-brand me-2" href="../index.html">amstel</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.9.0.0000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0.0000</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,12 +26,21 @@ mapping to (manually) validated values vs not-validated (device) data."><!-- mat
   <a class="nav-link" href="../reference/index.html">Reference</a>
 </li>
 <li class="nav-item">
+  <a class="nav-link" href="../dqd/index.html">Data Quality Dashboard</a>
+</li>
+<li class="nav-item">
   <a class="nav-link" href="../news/index.html">Changelog</a>
 </li>
       </ul><form class="form-inline my-2 my-lg-0" role="search">
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off"></form>
 
-      <ul class="navbar-nav"></ul></div>
+      <ul class="navbar-nav"><li class="nav-item">
+  <a class="external-link nav-link" href="https://github.com/AmsterdamUMC/AMSTEL/" aria-label="github">
+    <span class="fab fa fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul></div>
 
     
   </div>
@@ -39,7 +48,7 @@ mapping to (manually) validated values vs not-validated (device) data."><!-- mat
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
       <img src="" class="logo" alt=""><h1>Swap counts</h1>
-      
+      <small class="dont-index">Source: <a href="https://github.com/AmsterdamUMC/AMSTEL/blob/HEAD/R/extract_concepts.R" class="external-link"><code>R/extract_concepts.R</code></a></small>
       <div class="d-none name"><code>swap_usagi_counts.Rd</code></div>
     </div>
 
@@ -64,35 +73,9 @@ mapping to (manually) validated values vs not-validated (device) data.</p>
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
     
 
-<p>tibble containing the usagi mappings with counts swapped</p>
+<p>tibble containing the Usagi mappings with counts swapped</p>
     </div>
 
-    <div class="section level2">
-    <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">swapped</span> <span class="op">&lt;-</span> <span class="fu">swap_usagi_counts</span><span class="op">(</span><span class="st">"numericitems_other"</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="va">swapped</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 738 × 31</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    sourceCode sourceName                  sourceFrequency sourceAutoAssignedCo…¹</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                                 <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span>                 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span>      <span style="text-decoration: underline;">16</span>612 MCA_ABPm                                  6 <span style="color: #BB0000;">NA</span>                    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span>      <span style="text-decoration: underline;">20</span>655 ECMO - Tven                             465 <span style="color: #BB0000;">NA</span>                    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span>      <span style="text-decoration: underline;">19</span>499 NICE Apache II Score                   <span style="text-decoration: underline;">2</span>393 <span style="color: #BB0000;">NA</span>                    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span>      <span style="text-decoration: underline;">20</span>656 ECMO - FiO2                             478 <span style="color: #BB0000;">NA</span>                    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span>      <span style="text-decoration: underline;">20</span>656 ECMO - FiO2                             478 <span style="color: #BB0000;">NA</span>                    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span>      <span style="text-decoration: underline;">16</span>613 MCA_Respiratory Rate                     29 <span style="color: #BB0000;">NA</span>                    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span>      <span style="text-decoration: underline;">12</span>322 respiratory rate setting                 69 <span style="color: #BB0000;">NA</span>                    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span>      <span style="text-decoration: underline;">20</span>657 ECMO - Gas flow                         476 <span style="color: #BB0000;">NA</span>                    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span>      <span style="text-decoration: underline;">16</span>624 MCA_Apache_Score                       <span style="text-decoration: underline;">1</span>898 <span style="color: #BB0000;">NA</span>                    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span>      <span style="text-decoration: underline;">19</span>331 Physio Mobility Shoulder a…            <span style="text-decoration: underline;">1</span>993 <span style="color: #BB0000;">NA</span>                    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 728 more rows</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ abbreviated name: ¹​sourceAutoAssignedConceptIds</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 27 more variables: `ADD_INFO:count_validated` &lt;dbl&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   `ADD_INFO:vocabulary_id` &lt;chr&gt;, `ADD_INFO:vocabulary_concept_code` &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   `ADD_INFO:vocabulary_concept_name` &lt;chr&gt;, `ADD_INFO:source_concept` &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   `ADD_INFO:abbreviation` &lt;chr&gt;, `ADD_INFO:category` &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   `ADD_INFO:unitid` &lt;dbl&gt;, `ADD_INFO:unit` &lt;chr&gt;, …</span></span>
-</code></pre></div>
-    </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside></div>
 
