@@ -83,7 +83,8 @@ SELECT
 
     NULL AS visit_detail_id,
 
-    LEFT(p.item, 50) AS source_value,
+    -- OMOP CDM compliant: LEFT(p.item, 50) AS source_value,
+    LEFT(p.item, 255) AS source_value,
 
     NULL AS source_concept_id,
     NULL AS value_as_number,
@@ -235,7 +236,8 @@ SELECT
     s.visit_occurrence_id,
     NULL AS visit_detail_id,
 
-    LEFT(CONCAT('Anatomic location: ', s.source_value), 50) AS source_value,
+    -- OMOP CDM compliant: LEFT(CONCAT('Anatomic location: ', s.source_value), 50) AS source_value,
+    LEFT(CONCAT('Anatomic location: ', s.source_value), 255) AS source_value,
 
     0 AS source_concept_id,
     NULL AS value_as_number,

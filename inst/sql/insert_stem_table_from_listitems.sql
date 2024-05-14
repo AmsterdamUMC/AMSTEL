@@ -82,7 +82,8 @@ SELECT
 
     NULL AS visit_detail_id,
 
-    LEFT(l.item, 50) AS source_value,
+    -- OMOP CDM compliant: LEFT(l.item, 50) AS source_value,
+    LEFT(l.item, 255) AS source_value,
 
     NULL AS source_concept_id,
 
@@ -96,7 +97,9 @@ SELECT
         ) AS NUMERIC)
       ELSE NULL
     END AS value_as_number,
-    LEFT(l.value, 60) AS value_as_string,
+    
+    -- OMOP CDM compliant: LEFT(l.value, 60) AS value_as_string,
+    LEFT(l.value, 1024) AS value_as_string,
 
     CASE stcm_value.target_concept_id
       WHEN 4035566 -- 'Text Value'
@@ -104,7 +107,9 @@ SELECT
       ELSE stcm_value.target_concept_id
     END AS value_as_concept_id,
     stcm_unit.target_concept_id  AS unit_concept_id,
-    LEFT(l.value, 50) AS value_source_value,
+    
+    -- OMOP CDM compliant: LEFT(l.value, 50) AS value_source_value,
+    LEFT(l.value, 1024) AS value_source_value,
 
     NULL AS unit_source_concept_id,
     NULL AS unit_source_value,

@@ -82,7 +82,10 @@ CREATE TABLE IF NOT EXISTS @cdm_schema.condition_occurrence (
 			provider_id integer NULL,
 			visit_occurrence_id integer NULL,
 			visit_detail_id integer NULL,
-			condition_source_value varchar(50) NULL,
+			
+			-- OMOP CDM compliant: condition_source_value varchar(50) NULL,
+			condition_source_value varchar(255) NULL,
+			
 			condition_source_concept_id integer NULL,
 			condition_status_source_value varchar(50) NULL );
 
@@ -106,7 +109,10 @@ CREATE TABLE IF NOT EXISTS @cdm_schema.drug_exposure (
 			provider_id integer NULL,
 			visit_occurrence_id integer NULL,
 			visit_detail_id integer NULL,
-			drug_source_value varchar(50) NULL,
+
+			-- OMOP CDM compliant: drug_source_value varchar(50) NULL,
+			drug_source_value varchar(255) NULL,
+
 			drug_source_concept_id integer NULL,
 			route_source_value varchar(50) NULL,
 			dose_unit_source_value varchar(50) NULL );
@@ -125,7 +131,10 @@ CREATE TABLE IF NOT EXISTS @cdm_schema.procedure_occurrence (
 			provider_id integer NULL,
 			visit_occurrence_id integer NULL,
 			visit_detail_id integer NULL,
-			procedure_source_value varchar(50) NULL,
+			
+			-- OMOP CDM compliant: procedure_source_value varchar(50) NULL,
+			procedure_source_value varchar(255) NULL,
+
 			procedure_source_concept_id integer NULL,
 			modifier_source_value varchar(50) NULL );
 
@@ -144,7 +153,10 @@ CREATE TABLE IF NOT EXISTS @cdm_schema.device_exposure (
 			provider_id integer NULL,
 			visit_occurrence_id integer NULL,
 			visit_detail_id integer NULL,
-			device_source_value varchar(50) NULL,
+			
+			-- OMOP CDM compliant: device_source_value varchar(50) NULL,
+			device_source_value varchar(255) NULL,
+
 			device_source_concept_id integer NULL,
 			unit_concept_id integer NULL,
 			unit_source_value varchar(50) NULL,
@@ -167,11 +179,19 @@ CREATE TABLE IF NOT EXISTS @cdm_schema.measurement (
 			provider_id integer NULL,
 			visit_occurrence_id integer NULL,
 			visit_detail_id integer NULL,
-			measurement_source_value varchar(50) NULL,
+			
+			-- OMOP CDM compliant: measurement_source_value varchar(50) NULL,
+			measurement_source_value varchar(255) NULL,
+			
 			measurement_source_concept_id integer NULL,
 			unit_source_value varchar(50) NULL,
 			unit_source_concept_id integer NULL,
-			value_source_value varchar(50) NULL,
+			
+			-- OMOP CDM compliant: value_source_value varchar(50) NULL,
+			-- Strictly not OMOP CDM conformant but allows 
+			-- storing full source values including comments:
+			value_source_value varchar(1024) NULL,
+
 			measurement_event_id integer NULL,
 			meas_event_field_concept_id integer NULL );
 
@@ -183,18 +203,31 @@ CREATE TABLE IF NOT EXISTS @cdm_schema.observation (
 			observation_datetime TIMESTAMP NULL,
 			observation_type_concept_id integer NOT NULL,
 			value_as_number NUMERIC NULL,
-			value_as_string varchar(60) NULL,
+			
+			-- OMOP CDM compliant: value_as_string varchar(60) NULL,
+			-- Strictly not OMOP CDM conformant but allows 
+			-- storing full source values
+			value_as_string varchar(1024) NULL,
+
 			value_as_concept_id Integer NULL,
 			qualifier_concept_id integer NULL,
 			unit_concept_id integer NULL,
 			provider_id integer NULL,
 			visit_occurrence_id integer NULL,
 			visit_detail_id integer NULL,
-			observation_source_value varchar(50) NULL,
+			
+			-- OMOP CDM compliant: observation_source_value varchar(50) NULL,
+			observation_source_value varchar(255) NULL,
+
 			observation_source_concept_id integer NULL,
 			unit_source_value varchar(50) NULL,
 			qualifier_source_value varchar(50) NULL,
-			value_source_value varchar(50) NULL,
+			
+			-- OMOP CDM compliant: value_source_value varchar(50) NULL,
+			-- Strictly not OMOP CDM conformant but allows 
+			-- storing full source values including comments:
+			value_source_value varchar(1024) NULL,
+
 			observation_event_id integer NULL,
 			obs_event_field_concept_id integer NULL );
 

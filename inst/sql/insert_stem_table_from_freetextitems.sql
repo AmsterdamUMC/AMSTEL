@@ -79,18 +79,28 @@ SELECT
     NULL AS end_date,
     NULL AS end_datetime,
 
-    32856 AS type_concept_id, -- Lab
+    -- When the source of the laboratory result is the lab interface system, then
+    -- set the value to 'Lab'. This allows distinction of data that was manually 
+    -- entered by health care providers.
+    CASE
+      WHEN ft.islabresult = b'1' AND ft.registeredby = 'Systeem' THEN 32856	-- Lab
+      ELSE 32817	-- EHR
+    END AS type_concept_id,
 
     -- Keep most recent provider (updatedby -> registeredby)
-    -- With the exception of manual corrections of errors this would be
-    -- 'Systeem' -> 38004692 (Clinical Laboratory)
-    COALESCE(upd_prov.provider_id, reg_prov.provider_id) AS provider_id,
+    -- However, for lab results keep the original provider to allow distinction
+    -- between manually entered laboratory data and those from the lab system
+    CASE 
+      WHEN ft.islabresult = b'1' THEN reg_prov.provider_id
+      ELSE COALESCE(upd_prov.provider_id, reg_prov.provider_id) 
+    END AS provider_id,
 
     ft.admissionid AS visit_occurrence_id,
 
     NULL AS visit_detail_id,
 
-    LEFT(ft.item, 50) AS source_value,
+    -- OMOP CDM compliant: LEFT(ft.item, 50) AS source_value,
+    LEFT(ft.item, 255) AS source_value,
 
     NULL AS source_concept_id,
 
@@ -103,7 +113,8 @@ SELECT
 
     NULL AS unit_concept_id,
 
-    LEFT(ft.value, 50) AS value_source_value,
+    -- OMOP CDM compliant: LEFT(ft.value, 50) AS value_source_value,
+    LEFT(ft.value, 1024) AS value_source_value,
 
     NULL AS unit_source_concept_id,
     NULL AS unit_source_value,

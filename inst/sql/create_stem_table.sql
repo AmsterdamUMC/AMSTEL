@@ -18,13 +18,26 @@ CREATE TABLE IF NOT EXISTS @cdm_schema.stem_table (
     provider_id int,
     visit_occurrence_id int,
     visit_detail_id int,
-    source_value varchar(50),
+    
+    -- OMOP CDM compliant: source_value varchar(50),
+    source_value varchar(255),
+
     source_concept_id int,
     value_as_number numeric,
-    value_as_string varchar(60),
+
+	-- OMOP CDM compliant: value_as_string varchar(60),
+	-- Strictly not OMOP CDM conformant but allows 
+	-- storing full source values
+    value_as_string varchar(1024),
+
     value_as_concept_id int,
     unit_concept_id int,
-    value_source_value varchar(50),
+    
+    -- OMOP CDM compliant: value_source_value varchar(50),
+    -- Strictly not OMOP CDM conformant but allows 
+    -- storing full source values including comments:
+    value_source_value varchar(1024) NULL,
+
     unit_source_concept_id int,
     unit_source_value varchar(50),
     verbatim_end_date date,

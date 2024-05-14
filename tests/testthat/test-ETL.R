@@ -309,6 +309,18 @@ test_that("ETL validation", {
   expect_no_measurement(measurement_concept_id = 3010421,
                         unit_concept_id = 0)
 
+  # allow non-compliant increase in varchar size to allow values and comments
+  # to populate source values
+  declareTest(911, "measurement comment in source_value")
+  add_admissions(patientid = 911, admissionid = 1911)
+  add_numericitems(admissionid = 1911, itemid = 9835,
+                   item = "Vancomycine (bloed)", value = 9.4,
+                   unitid = 63, unit = "mg/l",
+                   comment = "Doseeradvies: 500 mg a 12 uur. Spiegel na 1 week herhalen of na verandering nierfunctie. Ziekenhuisapotheker, sein 1234.")
+
+  expect_measurement(person_id = 911,
+                     value_source_value = "9.4\ncomment: Doseeradvies: 500 mg a 12 uur. Spiegel na 1 week herhalen of na verandering nierfunctie. Ziekenhuisapotheker, sein 1234.")
+
   ### Observation ###
   declareTest(1001, "observation person_id")
   add_admissions(patientid = 1001, admissionid = 11001)

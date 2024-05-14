@@ -230,7 +230,10 @@ SELECT
     -- the drugitems -> concept mappings have been performed using a combination
     -- of `item` and `ordercategory` to allow mapping to specific products
     -- instead of only ingredients.
-    LEFT(CONCAT(d.item,' (', d.ordercategory,')'), 50) AS source_value,
+    
+    -- OMOP CDM compliant: LEFT(CONCAT(d.item,' (', d.ordercategory,')'), 50) AS source_value,
+    LEFT(CONCAT(d.item,' (', d.ordercategory,')'), 255) AS source_value,
+    
     NULL AS source_concept_id,
 
     -- stores fluidin value in value_as_number field to allow creating fluidin

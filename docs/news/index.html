@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">amstel</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0.0000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.1.0000</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,6 +47,23 @@
       <small>Source: <a href="https://github.com/AmsterdamUMC/AMSTEL/blob/HEAD/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="1.0.1" id="amstel-101">amstel 1.0.1<a class="anchor" aria-label="anchor" href="#amstel-101"></a></h2>
+<div class="section level3">
+<h3 id="etl-changes-1-0-1">ETL Changes<a class="anchor" aria-label="anchor" href="#etl-changes-1-0-1"></a></h3>
+<ul><li>
+<p>Based on feedback from the EHDEN team, a number of source fields have been updated to allow storing longer string values and their possible comments (i.e. 255/1024 instead of 50/60 characters) from the source database even though this implies that these fields are technically not OMOP CDM compliant:</p>
+<ul><li><code>source_value</code></li>
+<li><code>value_source_value</code></li>
+<li><code>value_as_string</code></li>
+</ul></li>
+<li><p>Updated <code>provider_id</code> logic to allow recognizing manually entered laboratory measurement values from those that originated from the laboratory system (<code>provider_id = 58</code>)</p></li>
+</ul></div>
+<div class="section level3">
+<h3 id="mapping-1-0-1">Mapping<a class="anchor" aria-label="anchor" href="#mapping-1-0-1"></a></h3>
+<p>Improved mapping for toxicology/therapeutic drug monitoring measurements</p>
+</div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="1.0.0" id="amstel-100">amstel 1.0.0<a class="anchor" aria-label="anchor" href="#amstel-100"></a></h2>
 <div class="section level3">

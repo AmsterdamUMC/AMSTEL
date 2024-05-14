@@ -81,7 +81,8 @@ SELECT
 
     NULL AS visit_detail_id,
 
-    LEFT(l.value, 50) AS source_value,
+    -- OMOP CDM compliant: LEFT(l.value, 50) AS source_value,
+    LEFT(l.value, 255) AS source_value,
 
     NULL AS source_concept_id,
     NULL AS value_as_number,

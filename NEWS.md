@@ -1,3 +1,17 @@
+# amstel 1.0.1
+## ETL Changes
+* Based on feedback from the EHDEN team, a number of source fields have been updated to allow storing longer string values and their possible comments (i.e. 255/1024 instead of 50/60 characters) from the source database even though this implies that these fields are technically not OMOP CDM compliant:
+
+    - `source_value`
+    - `value_source_value`
+    - `value_as_string`
+
+* Updated `provider_id` logic to allow recognizing manually entered laboratory measurement values from those that originated from the laboratory system (`provider_id = 58`)
+
+## Mapping
+Improved mapping for toxicology/therapeutic drug monitoring measurements
+
+
 # amstel 1.0.0
 ## First release
 First release for Milestone 3 reporting.

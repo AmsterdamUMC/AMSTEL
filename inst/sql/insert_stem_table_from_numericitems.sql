@@ -67,7 +67,7 @@ SELECT
     -- id,
     a.patientid AS person_id,
 
- -- [MAPPING   LOGIC] Missing 'fluid output' concept in CDM VOCABULARIES for ultrafiltration (itemid = 8805 -- CVVH onttrokken) =>concept_id = 3020433 (Fluid Output miscellaneous Measured); LINK to CVVH output:  UPDATE stem_table s SET  event_id = (  SELECT id FROM numericitems n2   WHERE itemid = 20079 --MFT_Filtraatvolume_totaal  AND s.person_id = s2.person_id AND s.start_datetime = s2.start_datetime ), event_field_concept_id = 1147330 --measurement WHERE unit_source_concept_id = 8805 --CVVH ontrokken
+ -- TODO [MAPPING   LOGIC] Missing 'fluid output' concept in CDM VOCABULARIES for ultrafiltration (itemid = 8805 -- CVVH onttrokken) =>concept_id = 3020433 (Fluid Output miscellaneous Measured); LINK to CVVH output:  UPDATE stem_table s SET  event_id = (  SELECT id FROM numericitems n2   WHERE itemid = 20079 --MFT_Filtraatvolume_totaal  AND s.person_id = s2.person_id AND s.start_datetime = s2.start_datetime ), event_field_concept_id = 1147330 --measurement WHERE unit_source_concept_id = 8805 --CVVH ontrokken
     COALESCE(stcm_num.target_concept_id, 0) AS concept_id,
 
     DATE(a.admissiondatetime + make_interval(secs =>
@@ -78,19 +78,28 @@ SELECT
     NULL AS end_date,
     NULL AS end_datetime,
 
+    -- When the source of the laboratory result is the lab interface system, then
+    -- set the value to 'Lab'. This allows distinction of data that was manually 
+    -- entered by health care providers.
     CASE
-      WHEN n.islabresult = b'1' THEN 32856	-- Lab
+      WHEN n.islabresult = b'1' AND n.registeredby = 'Systeem' THEN 32856	-- Lab
       ELSE 32817	-- EHR
     END AS type_concept_id,
 
-    -- Keep most recent provider (updatedby -> registeredby)
-    COALESCE(upd_prov.provider_id, reg_prov.provider_id) AS provider_id,
+    -- Keep most recent provider (updatedby -> registeredby).
+    -- However, for lab results keep the original provider to allow distinction
+    -- between manually entered laboratory data and those from the lab system
+    CASE 
+      WHEN n.islabresult = b'1' THEN reg_prov.provider_id
+      ELSE COALESCE(upd_prov.provider_id, reg_prov.provider_id) 
+    END AS provider_id,
 
     n.admissionid AS visit_occurrence_id,
 
     NULL AS visit_detail_id,
 
-    LEFT(n.item, 50) AS source_value,
+    -- OMOP CDM compliant: LEFT(n.item, 50) AS source_value,
+    LEFT(n.item, 255) AS source_value,
 
     NULL AS source_concept_id,
 
@@ -117,10 +126,16 @@ SELECT
       stcm_unit.target_concept_id
       ) AS unit_concept_id,
 
-    -- comments will not fit the current varchar(50) limitation:
-    -- CONCAT_WS('\ncomment: ', value, comment) AS value_source_value ->
-    -- only store the numeric value
-    n.value AS value_source_value,
+    -- comments will not fit the OMOP CDM compliant varchar(50) limitation:
+    -- only store the numeric value:
+    -- OMOP CDM Compliant: n.value AS value_source_value,
+    
+    -- allow comments in the value_source_value
+    CASE
+      WHEN NOT comment IS NULL AND comment != 'Opmerking verwijderd'
+        THEN CONCAT(n.value, CHR(10), 'comment: ', comment) 
+      ELSE CAST(n.value AS VARCHAR)
+    END AS value_source_value,
 
     -- To allow future ETLs to handle conversion to a 'standardized unit',
     -- put the original (mapped) unit here:
